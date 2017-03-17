@@ -6,7 +6,7 @@
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Markdown是一种轻量级和易于使用的语法，用于设计您的写作风格。它包括约定如下
 
 ```markdown
 Syntax highlighted code block
