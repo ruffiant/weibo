@@ -1,1 +1,45 @@
-theme: jekyll-theme-minimal
+permalink: /blog/:year/:month/:title.html 
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+markdown: kramdown
+highlights: pygments
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "/weibo" # does not include hostname
+show_dir_listing: false
+
+url: 
+#cdn_url: 7u2t01.com1.z0.glb.clouddn.com
+lsi: false
+safe: true
+timezone: Asia/Shanghai
+auto: false 
+
+paginate: 8
+paginate_path: "page:num"
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+JB :
+  IMAGE_PATH : https://ruffiant.github.io/weibo/images
+
+# presonal config
+# domain: http://coolshell.info
+title: RUFFIAN
+description: Draw my life with code
+author: Lippi.OuYang
+email: ouyanglip@gmail.com
+github: LippiOuYang
+
+config:
+  js_dir:
+  img_dir:
+  css_dir:
