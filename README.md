@@ -1,8 +1,8 @@
 ## Welcome to GitHub Pages
 我的第一篇微博用来记录常用样式,代码等
-You can use the [editor on GitHub](https://github.com/ruffiant/weibo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+[editor on GitHub](https://github.com/ruffiant/weibo/edit/master/README.md) 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[Jekyll](https://jekyllrb.com/) 
 
 ### Markdown
 
@@ -26,12 +26,15 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+ [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Jekyll主题
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ruffiant/weibo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+您的Pages网站将使用您在存储库设置中选择的Jekyll主题的布局和样式。此主题的名称保存在Jekyll _config.yml配置文件中。
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 支持或联系
+
+与Pages有麻烦？请查看我们的文档或与支持小组联系([documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact))，我们将帮助您解决问题。
+
+
