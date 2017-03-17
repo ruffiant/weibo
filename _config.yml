@@ -1,13 +1,14 @@
 permalink: /blog/:year/:month/:title.html 
 include: ['.htaccess']
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+#exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+exclude:["README.md"]
 markdown: kramdown
 highlights: pygments
 
 # Serving
 detach:  false
-port:    4000
-host:    127.0.0.1
+#port:    4000
+host:    https://ruffiant.github.io/weibo
 baseurl: "/weibo" # does not include hostname
 show_dir_listing: false
 
