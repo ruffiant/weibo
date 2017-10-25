@@ -1,0 +1,9 @@
+{
+  "url": [ "edit" ],
+  "fileurl":["E:\\\\DevKit\\\\weibo\\\\_posts"],
+  "post_url":["https://api.github.com/repos/ruffiant/weibo/git/trees/a9a10d66e9dfd24a30124f5904237cc1a3eff67f"],
+  "head_tag":["---\\r\\nlayout: post\\r\\ntitle:  \\r\\ndate:    +0800\\r\\ncategories: \\r\\ntag: \\r\\n---\\r\\n"],
+}
+// var url="https://api.github.com/repos/ruffiant/weibo/contents/";//github weibo下面的内容
+// var url="https://api.github.com/repos/ruffiant/weibo/git/trees/a9a10d66e9dfd24a30124f5904237cc1a3eff67f";//github weibo/_posts下面的内容
+// var url="https://api.github.com/repos/ruffiant/weibo/git/blobs/9c71c4ebd97795542787402ded08d4b01d480713";//github weibo/_posts下面文章的内容

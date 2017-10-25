@@ -4,7 +4,6 @@
   {% include head.html %}
 
   <body class="index">
-
     {% include header.html %}
     {% include docs_header.html %}
     {% if page.title %}
@@ -12,8 +11,8 @@
     {% endif %}
 
     {{ content }}
-    
-    {% include footer.html %}
 
+    {% include footer.html %}
+    {% include search/cb-footer-add.html%}
   </body>
 </html>

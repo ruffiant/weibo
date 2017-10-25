@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>更换评论系统之从多说到云跟帖 - Less Or More</title>
+	<title>更换评论系统之从多说到云跟帖 - 记事</title>
 
 	<link rel="shortcut icon" href="/weibo/styles/images/favicon.jpg">
 	<link rel="icon" href="/weibo/styles/images/favicon.jpg">
@@ -13,10 +13,14 @@
 	<link rel="stylesheet" href="/weibo/styles/css/index.css">
 	<link rel="stylesheet" href="/weibo/styles/css/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/weibo/styles/css/syntax.css">
+
+
+	<link rel="stylesheet" href="/weibo/styles/css/bootstrap-combined.min.css">
+
 	<link rel="canonical" href="/weibo/2017/06/08/change-the-comment-provider-to-yuntentie/">
-	<link rel="alternate" type="application/rss+xml" title="Less Or More" href="/weibo/feed.xml">
+	<link rel="alternate" type="application/rss+xml" title="记事" href="/weibo/feed.xml">
 	
-	<meta name="keywords" content="更换评论系统之从多说到云跟帖, Less Or More, RUFFIAN;个人博客;">
+	<meta name="keywords" content="更换评论系统之从多说到云跟帖, 记事, RUFFIAN;个人博客;">
 	<meta name="description" content="RUFFIAN;个人博客;">
 
 	<script src="/weibo/styles/js/jquery.min.js"></script>
@@ -40,7 +44,6 @@
 </head>
 
   <body class="index">
-
     <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
@@ -69,22 +72,18 @@
         <li>
             <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
         </li>
-        <li>
-          <a href="/weibo/donate/"><strong>打赏</strong></a>
+        <li class="dropdown">
+          <a href="/weibo/edit" target="_blank"  class="dropdown-toggle" >添加文章<b class="caret"></b></a>
         </li>
         <li class="dropdown">
+          <a href="https://github.com/" target="_blank"  class="dropdown-toggle" >Github<b class="caret"></b></a>
+        </li>
+        <li class="dropdown">
+          <a href="http://less.bootcss.com" target="_blank"  class="dropdown-toggle" >Temp<b class="caret"></b></a>
+        </li>
 
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">关于1<b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <!--<li><a rel="nofollow" target="_blank" href="https://github.com/">Github</a></li>-->
-            <!--<li><a rel="nofollow" target="_blank" href="">关于作者</a></li>-->
-            <!--<li><a rel="nofollow" href="/weibo/books">我的书单</a></li>-->
-            <!--<li><a rel="nofollow" href="http://www.hifreud.com/domains/">域名管理</a></li>-->
-            <!--<li><a rel="nofollow" href="/weibo/reference">推荐博客</a></li>-->
-            <!--<li><a href="/weibo/feed.xml">RSS订阅</a></li>-->
-            <li class="divider"></li>
-            <li><a rel="nofollow" target="_blank" href="https://github.com/luoyan35714/LessOrMore.git">本项目</a></li>
-          </ul>
+        <li>
+
         </li>
       </ul>
     </nav>
@@ -128,7 +127,7 @@
   </div>
 </div>
 
- 
+
       </div>
     </div>
     <div class="col-md-9" role="main">
@@ -136,9 +135,9 @@
         <div class="wrapper">
             <header class="post-header">
               <h1 class="post-title">更换评论系统之从多说到云跟帖</h1>
-              <!--
+              <a href="javascript:void(0);" onclick="toedit('/2017/06/08/change-the-comment-provider-to-yuntentie/');" class="active">编辑</a>
                 <p class="post-meta">Jun 8, 2017</p>
-              -->
+
               <div class="meta">Posted on <span class="postdate">Jun 08, 2017</span> By <a target="_blank" href="http://localhost:4000">ruffian</a></div>
               <br />
             </header>
@@ -210,20 +209,62 @@
   </div>
 </div>
 
-    
+
     <footer class="footer" role="contentinfo">
 	<div class="container">
 		<p class="copyright">Copyright &copy; 2014-2017 <a href=""><code>ruffian</code></a>.</p>
 		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
 	</div>
 </footer>
+<script>
+	var baseurl="/weibo/";
+</script>
 
 <script src="/weibo/styles/js/jquery.min.js"></script>
 <script src="/weibo/styles/js/bootstrap.min.js"></script>
 <script src="/weibo/styles/js/holder.min.js"></script>
 <script src="/weibo/styles/js/lessismore.js"></script>
 <script src="/weibo/styles/js/application.js"></script>
+
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="/weibo/styles/js/jquery.base64.js"></script>
+<script src="/weibo/styles/js/edit.js"></script>
+<script src="/weibo/styles/js/markdown.js"></script>
+<script type="application/javascript">
+
+	var file_dir="E:\\DevKit\\weibo\\_posts";
+	var head_tag_str="---\r\nlayout: post\r\ntitle:  \r\ndate:    +0800\r\ncategories: \r\ntag: \r\n---\r\n";
+
+	function toedit(file_dir){
+		var file_name;
+		var regex = /\//g;
+		file_name=file_dir.replace(regex, "-");
+		file_name=file_name.substr(1);
+		file_name=file_name.substr(0,file_name.length-1);
+		file_name+='.md';
+		location.href= '/weibo'+'/edit?file='+file_name;
+		console.log(file_name);
+	}
+	</script>
+    <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" >
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <img src="/weibo/styles/search/img/cb-close.png "  id="cb-close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/weibo/styles/search/img/cb-search.png "  id="cb-search-btn"  title="双击ctrl试一下"/>
+</div>
+<link rel="stylesheet" href="/weibo/styles/search/css/cb-search.css">
+
+
+<script src="/weibo/styles/search/js/bootstrap3-typeahead.min.js"></script>
+<script src="/weibo/styles/search/js/cb-search.js"></script>
+
 
   </body>
 </html>

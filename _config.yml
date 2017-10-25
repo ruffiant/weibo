@@ -10,11 +10,13 @@ description: Actually, less is more!
 meta_description: RUFFIAN;个人博客;
 motto: It's our wits that make us men.
 banner:
+template: http://less.bootcss.com
 
-
+editurl: "/weibo"
 
 #permalink: /:categories/:year/:month/:day/:title/
 permalink: /:year/:month/:day/:title/
+
 paginate: 10
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']

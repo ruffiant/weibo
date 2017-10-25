@@ -4,10 +4,34 @@
 		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="http://www.hifreud.com/">Freud Kang</a></p>
 	</div>
 </footer>
+<script>
+	var baseurl="{{ '/' | prepend: site.baseurl }}";
+</script>
 
 <script src="{{ '/styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/styles/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/styles/js/holder.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/styles/js/lessismore.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/styles/js/application.js' | prepend: site.baseurl }}"></script>
+
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<script src="{{ '/styles/js/jquery.base64.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/styles/js/edit.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/styles/js/markdown.js' | prepend: site.baseurl }}"></script>
+<script type="application/javascript">
+
+	var file_dir="{{ site.data.config.fileurl }}";
+	var head_tag_str="{{ site.data.config.head_tag }}";
+
+	function toedit(file_dir){
+		var file_name;
+		var regex = /\//g;
+		file_name=file_dir.replace(regex, "-");
+		file_name=file_name.substr(1);
+		file_name=file_name.substr(0,file_name.length-1);
+		file_name+='.md';
+		location.href= '{{ node.url | prepend: site.baseurl }}'+'/{{ site.data.config.url }}?file='+file_name;
+		console.log(file_name);
+	}
+	</script>
