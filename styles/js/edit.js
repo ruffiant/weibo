@@ -77,7 +77,7 @@ function writefile(){
     //加入文本换行
     var content=$("#editor").val();
     var content=content.replace(/[\r\n]/g,"\r\n");
-    if(title!==""||title!=="标题"){
+    if(title!==""&&title!=="标题"){
         var now=new Date();
         file_name=now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()+"-"+title+".md";
     }else {
@@ -90,10 +90,10 @@ function writefile(){
     reader.onloadend = function (e) {
         if(this.readyState == FileReader.DONE) {
             a.href = reader.result;
-            a.donwload = file_name;
             a.textContent =reader.result;
-            a.download=a.donwload;
+            a.download=file_name
             a.click();
+            window.URL.revokeObjectURL(reader.result);
         }
     };
     if (file) {
