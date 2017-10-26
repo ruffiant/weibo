@@ -77,7 +77,7 @@ var w_content=function(){
 
     $("#editor").insertAtCaret(html_str);
 }
-var w_content=function(){
+var w_image=function(){
     var html_str="{{ '/styles/images/jiezishu.jpg' | prepend: site.baseurl  }}";
     $("#editor").insertAtCaret(html_str);
 }
