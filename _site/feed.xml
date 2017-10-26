@@ -5,8 +5,8 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Oct 2017 16:38:50 +0800</pubDate>
-    <lastBuildDate>Thu, 26 Oct 2017 16:38:50 +0800</lastBuildDate>
+    <pubDate>Thu, 26 Oct 2017 16:46:07 +0800</pubDate>
+    <lastBuildDate>Thu, 26 Oct 2017 16:46:07 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -17,7 +17,6 @@
 
 &lt;h1 id=&quot;php调试技术a&quot;&gt;php调试技术{#a}&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;/weibo/styles/book/PHP-Debug-Manual-public.pdf&quot; title=&quot;调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/p&gt;
-
 </description>
         <pubDate>Thu, 26 Oct 2017 16:32:31 +0800</pubDate>
         <link>http://localhost:4000/weibo/2017/10/26/PHP%E6%9D%90%E6%96%99%E7%9B%AE%E5%BD%95/</link>
@@ -52,6 +51,37 @@
         
         
         <category>php</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#zhugeliang&quot; id=&quot;markdown-toc-zhugeliang&quot;&gt;诫子书&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;First POST build by Jekyll.&lt;/p&gt;
+
+&lt;h2 id=&quot;zhugeliang&quot;&gt;诫子书&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;/weibo/styles/images/jiezishu.jpg&quot; alt=&quot;诫子书&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;诸葛亮&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;夫君子之行，静以修身，俭以养德。非淡泊(澹泊)无以明志，非宁静无以致远。夫学须静也，才须学也。非学无以广才，非志无以成学。淫慢则不能励精，险躁则不能冶性。
+年与时驰，意与日去，遂成枯落，多不接世，悲守穷庐，将复何及！&lt;/p&gt;
+
+</description>
+        <pubDate>Mon, 17 Nov 2014 13:31:01 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2014/11/17/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2014/11/17/welcome-to-jekyll/</guid>
+        
+        <category>jekyll</category>
+        
+        
+        <category>jekyll</category>
+        
+        <category>翻译文章</category>
         
       </item>
     
