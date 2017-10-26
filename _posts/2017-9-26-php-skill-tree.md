@@ -11,4 +11,4 @@ tag: [技能树]
 技能树 {#a}
 ===============
 
-!({{ '/styles/images/LAMPer.swf' | prepend: site.baseurl  }})
+![诫子书]({{ '/styles/images/LAMPer.swf' | prepend: site.baseurl  }}))
