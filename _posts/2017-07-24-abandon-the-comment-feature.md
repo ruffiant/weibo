@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  永久放弃评论功能
-date:   2017-07-24 00:00:00 +0800
+title:  google javascript语言规范
+date:   2017-9-26 00:00:00 +0800
 categories: document
 tag: 教程
 ---
@@ -10,7 +10,7 @@ tag: 教程
 {:toc}
 
 
-云跟帖			{#yungentie}
+云跟帖   {#yungentie}
 ====================================
 
 看了下历史记录，在6月8号切换的云跟帖，未到一个月，7月6号，云跟帖也宣告结束了。

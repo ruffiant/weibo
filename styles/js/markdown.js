@@ -45,12 +45,18 @@ $(function() {
 
 });
 //标题
+/*
+* 变量 {#a}
+* =
+* 现在的标题如上,没有追寻markdown语法
+* */
 var h=function(i){
     var html_str="";
-    for(var j=0;j<i;j++){
-        html_str+="#";
-    }
-    html_str="{"+html_str+"}";
+    //for(var j=0;j<i;j++){
+    //    html_str+="#";
+    //}
+    html_str="标题{"+html_str+"#a}\r\n";
+    html_str+="===============\r\n";
     $("#editor").insertAtCaret(html_str);
 }
 //头标签
