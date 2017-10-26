@@ -42,6 +42,7 @@ $(function() {
             }
         }
     })
+
 });
 //标题
 var h=function(i){
@@ -115,7 +116,6 @@ var w_strong=function(){
     $("#editor").insertAtCaret(html_str);
 }
 //行内代码
-
 var line_code=function(){
     var html_str='`printf()`';
     $("#editor").insertAtCaret(html_str);
