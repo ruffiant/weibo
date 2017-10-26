@@ -73,7 +73,7 @@ function writefile(){
     var content=content.replace(/[\r\n]/g,"\r\n");
     if(title!==""&&title!=="标题"){
         var now=new Date();
-        file_name=now.getFullYear()+"-"+now.getMonth()+"-"+now.getDate()+"-"+title+".md";
+        file_name=now.getFullYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()+"-"+title+".md";
     }else {
         file_name=$("#file_name").val()
     }
@@ -122,36 +122,18 @@ function urlToDataurl(url) {
 
 function get_github_con($file_name){
     var url=post_url;//github weibo/_posts下面的内容
-    var data="";
-    var data;
-    var con_url;
     var content;
     var content_64;
     //Ajax调用处理
+
+    url= url.replace(/{file_name}/, $file_name);
     $.ajax({
         type: "get",
         url: url,
         data: "",
         async:false,
         success: function(d){
-            data=d;
-        }
-    });
-    for(file_id in data.tree){
-        if($file_name==data.tree[file_id].path){
-            con_url= data.tree[file_id].url
-        }
-    }
-    if(con_url==""){
-        return false;
-    }
-    $.ajax({
-        type: "get",
-        url: con_url,
-        data: "",
-        async:false,
-        success: function(c){
-            content_64= c.content;
+            content_64= d.content;
         }
     });
     content=  utf8to16(base64decode(content_64)) ;
