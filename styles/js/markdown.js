@@ -55,8 +55,6 @@ $(function() {
                     $t.selectionEnd = startPos + myValue.length;
                     $t.scrollTop = scrollTop;
                 }
-
-
                 this.value += myValue;
 
         }
@@ -131,7 +129,7 @@ var write_line=function(){
 //选择性地接着 title 内容，可以用单引号、双引号或是括弧包着
 var w_herf=function(){
    // var html_str='[题目](html_str "备注")';
-    var html_str='[html_str]({{ '/styles/book/' | prepend: site.baseurl  }} "备注")';
+    var html_str='[html_str]({{ "/styles/book/" | prepend: site.baseurl  }} "备注")';
     $("#editor").insertAtCaret(html_str);
 }
 var w_em=function(){

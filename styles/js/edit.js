@@ -18,15 +18,7 @@ $(function() {
 
     })
 
-    var fileSelect = document.getElementById("fileSelect"),
-        fileElem = document.getElementById("fileElem");
 
-    fileSelect.addEventListener("click", function (e) {
-        if (fileElem) {
-            fileElem.click();
-        }
-        e.preventDefault(); // prevent navigation to "#"
-    }, false);
     var file_name=$_GET['file'];
     if(file_name!==''&&file_name!==undefined){
         get_github_con(file_name);
@@ -129,7 +121,7 @@ function urlToDataurl(url) {
 }
 
 function get_github_con($file_name){
-    var url="https://api.github.com/repos/ruffiant/weibo/git/trees/a9a10d66e9dfd24a30124f5904237cc1a3eff67f";//github weibo/_posts下面的内容
+    var url=post_url;//github weibo/_posts下面的内容
     var data="";
     var data;
     var con_url;
