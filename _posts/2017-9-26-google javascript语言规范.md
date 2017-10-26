@@ -1,3 +1,12 @@
+---
+layout: post
+title:  google javascript语言规范
+date:    2017-10-26 10:09:39+0800
+categories: [js] 
+tag: [教程] 
+---
+* content
+{:toc}
 变量{###}
 声明变量必须加上 var 关键字.
 当你没有写 var, 变量就会暴露在全局上下文中, 这样很可能会和现有变量冲突.
