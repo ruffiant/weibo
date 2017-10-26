@@ -12,3 +12,4 @@ tag: [技能树]
 ===============
 
 ![诫子书]({{ '/styles/images/LAMPer.swf' | prepend: site.baseurl  }}))
+![诫子书]({{ '/styles/images/favicon.jpg' | prepend: site.baseurl  }}))
