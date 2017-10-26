@@ -36,6 +36,8 @@ $(function() {
     $("#class_s_zoom").hide();
     $("#class_f_zoom").hide();
 
+
+
 });
 var $_GET = (function(){
     var url = window.document.location.href.toString();
