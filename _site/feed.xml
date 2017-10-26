@@ -5,8 +5,8 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 26 Oct 2017 16:46:07 +0800</pubDate>
-    <lastBuildDate>Thu, 26 Oct 2017 16:46:07 +0800</lastBuildDate>
+    <pubDate>Thu, 26 Oct 2017 16:50:42 +0800</pubDate>
+    <lastBuildDate>Thu, 26 Oct 2017 16:50:42 +0800</lastBuildDate>
     <generator>Jekyll v3.6.0</generator>
     
       <item>
@@ -19,8 +19,8 @@
 &lt;p&gt;&lt;a href=&quot;/weibo/styles/book/PHP-Debug-Manual-public.pdf&quot; title=&quot;调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Oct 2017 16:32:31 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/10/26/PHP%E6%9D%90%E6%96%99%E7%9B%AE%E5%BD%95/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/PHP%E6%9D%90%E6%96%99%E7%9B%AE%E5%BD%95/</guid>
+        <link>http://localhost:4000/weibo/2017/10/26/PHP-data-Manual/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/PHP-data-Manual/</guid>
         
         <category>php</category>
         
@@ -38,14 +38,11 @@
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;a&quot;&gt;技能树&lt;/h1&gt;
-
-&lt;p&gt;/weibo/styles/images/LAMPer技能树1.swf
-/weibo/styles/images/jiezishu.jpg&lt;/p&gt;
-
+&lt;p&gt;!(/weibo/styles/images/LAMPer技能树1.swf “技能树”)&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Oct 2017 13:38:15 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/10/26/php%E5%AD%A6%E4%B9%A0%E6%8A%80%E8%83%BD%E6%A0%91/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/php%E5%AD%A6%E4%B9%A0%E6%8A%80%E8%83%BD%E6%A0%91/</guid>
+        <link>http://localhost:4000/weibo/2017/10/26/php-skill-tree/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/php-skill-tree/</guid>
         
         <category>技能树</category>
         

@@ -10,7 +10,4 @@ tag: [技能树]
 
 技能树 {#a}
 ===============
-
-{{  '/styles/images/LAMPer技能树1.swf' | prepend: site.baseurl  }}
-{{ '/styles/images/jiezishu.jpg' | prepend: site.baseurl  }}
-    
+!({{ '/styles/images/LAMPer技能树1.swf' | prepend: site.baseurl  }} "技能树")
