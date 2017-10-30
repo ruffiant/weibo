@@ -39,14 +39,14 @@ $(function() {
                             var l=text_array.length;
                             for(var i=0;i<l;i++){
                                 my_html+= myValue.replace(/html_str/, text_array[i]);
-                                my_html+="\r\n";
+                                if(i<l-1){
+                                    my_html+="\r\n";
+                                }
                             }
+
                         }else {
                             my_html+= myValue.replace(/code_str/, selectedText);
                         }
-
-
-
                         myValue=my_html;
                     }
                     $t.value = $t.value.substring(0, startPos) + myValue + $t.value.substring(endPos, $t.value.length);
@@ -69,11 +69,12 @@ $(function() {
 * */
 var h=function(i){
     var html_str="";
-    //for(var j=0;j<i;j++){
-    //    html_str+="#";
-    //}
-    html_str="\r\n";
-    html_str+="html_str{#a}\r\n";
+    var h_str="";
+    for(var j=0;j<i;j++){
+        h_str+="#";
+    }
+    html_str+="\r\n";
+    html_str+=h_str+"code_str\r\n";
     html_str+="===============\r\n";
     $("#editor").insertAtCaret(html_str);
 }

@@ -116,17 +116,54 @@
   <div class="row">
     <div class="col-md-3">
       <div class="sidebar hidden-print" role="complementary">
-        <div id="navigation">
+        
+<div id="navigation" >
   <h1>目录</h1>
-  <ul class="nav sidenav">
+  <ul class="nav sidenav" id="nav_ul" >
   </ul>
-  <div style="height: 200px;width: 200px;">
-    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=5ytn1ssq6za&amp;m=0&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> 
-    </script>
-  </div>
 </div>
 
 
+<script type="text/javascript">
+  var default_data=Array();
+  var nodes=Array();
+  var now_dimension=1;
+  $(window).load(function(){
+    var nav_ul;
+    var dimension;//维度
+    var default_data_str="default_data";
+    nav_ul=$("#nav_ul").html();
+    $("#nav_ul li").each(function(){
+      var obj = new Object();
+      obj.href=$(this).children("a:first").attr("href");
+      obj.text= $(this).children("a:first").text();
+      dimension=obj.text.split("#");
+      obj.text=obj.text.replace(new RegExp(/(#)/g),"");
+      obj.nodes=Array();
+      push_arr(obj,dimension.length-1,default_data_str);
+    });
+   // console.log(default_data);
+   //levels 没有下级菜单则为 - 号
+    $('#nav_ul').treeview({
+      enableLinks:true,
+      levels:4,
+      data: default_data
+    });
+
+  });
+  //给菜单对象末尾添加元素,按维度,字符串方式
+function push_arr(obj,dimension,default_data_str){
+  var this_obj=Array();
+  if(dimension<=1){
+    eval(default_data_str).push(obj);
+  }else {
+    var key=eval(default_data_str).length-1;
+    default_data_str+="["+key+"]['nodes']";
+    push_arr(obj,--dimension,default_data_str)
+  }
+}
+
+</script>
       </div>
     </div>
     <div class="col-md-9" role="main">
@@ -199,6 +236,8 @@
 <script src="/weibo/styles/js/jquery.base64.js"></script>
 <script src="/weibo/styles/js/edit.js"></script>
 <script src="/weibo/styles/js/markdown.js"></script>
+<script src="/weibo/styles/js/bootstrap-treeview.js"></script>
+
 <script type="application/javascript">
 
 	var file_dir="E:\\DevKit\\weibo\\_posts";

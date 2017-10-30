@@ -8,6 +8,6 @@ tag: [php,data]
 * content
 {:toc}
 
-php调试技术{#a}
+php调试技术
 ===============
 [php调试技术]({{ '/styles/book/PHP-Debug-Manual-public.pdf' | prepend: site.baseurl  }} "调试技术")
