@@ -5,9 +5,848 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 31 Oct 2017 10:44:04 +0800</pubDate>
-    <lastBuildDate>Tue, 31 Oct 2017 10:44:04 +0800</lastBuildDate>
+    <pubDate>Tue, 31 Oct 2017 16:07:15 +0800</pubDate>
+    <lastBuildDate>Tue, 31 Oct 2017 16:07:15 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#str1&quot; id=&quot;markdown-toc-str1&quot;&gt;#!str:~1!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#等待输入&quot; id=&quot;markdown-toc-等待输入&quot;&gt;#等待输入&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#获取时间&quot; id=&quot;markdown-toc-获取时间&quot;&gt;#获取时间&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#if&quot; id=&quot;markdown-toc-if&quot;&gt;#IF&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#修改ini变量file_name&quot; id=&quot;markdown-toc-修改ini变量file_name&quot;&gt;#修改ini,变量FILE_NAME&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;str1&quot;&gt;#!str:~1!&lt;/h1&gt;
+&lt;p&gt;teststring
+!str:~1!   结果 : eststring&lt;/p&gt;
+
+&lt;p&gt;!str:~0,1!  结果是 t&lt;/p&gt;
+
+&lt;p&gt;!str:~-1!    结果是 g&lt;/p&gt;
+
+&lt;h1 id=&quot;等待输入&quot;&gt;#等待输入&lt;/h1&gt;
+
+&lt;p&gt;set /p 变量名=显示内容&lt;/p&gt;
+
+&lt;h1 id=&quot;获取时间&quot;&gt;#获取时间&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;      &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;off&lt;/span&gt;  
+      &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%:%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%:%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;pause&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;if&quot;&gt;#IF&lt;/h1&gt;
+&lt;p&gt;EQU - 等于 
+NEQ - 不等于 
+LSS - 小于 
+LEQ - 小于或等于 
+GTR - 大于 
+GEQ - 大于或等于 
+字符串比较遥远 “ “
+例句:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;%str%&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;test&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NO&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;修改ini变量file_name&quot;&gt;#修改ini,变量FILE_NAME&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;off&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;请输入标题&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;delims=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;str=%%a&quot;&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;setlocal&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;enabledelayedexpansion&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;!str:~0,9!&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;EQU&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;FILE_NAME&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FILE_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!-%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;md&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;endlocal&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmp&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;move&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Tue, 31 Oct 2017 16:07:15 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/10/31/2017-10-31-bat/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/31/2017-10-31-bat/</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>学习</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#前言&quot; id=&quot;markdown-toc-前言&quot;&gt;前言&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;目录&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#资料篇&quot; id=&quot;markdown-toc-资料篇&quot;&gt;资料篇&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#技术站点&quot; id=&quot;markdown-toc-技术站点&quot;&gt;技术站点&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#必看书籍&quot; id=&quot;markdown-toc-必看书籍&quot;&gt;必看书籍&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#大牛博客&quot; id=&quot;markdown-toc-大牛博客&quot;&gt;大牛博客&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#github篇&quot; id=&quot;markdown-toc-github篇&quot;&gt;GitHub篇&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#工具篇&quot; id=&quot;markdown-toc-工具篇&quot;&gt;工具篇&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#平台工具&quot; id=&quot;markdown-toc-平台工具&quot;&gt;平台工具&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#常用工具&quot; id=&quot;markdown-toc-常用工具&quot;&gt;常用工具&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#第三方服务&quot; id=&quot;markdown-toc-第三方服务&quot;&gt;第三方服务&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#爬虫相关好玩的工具&quot; id=&quot;markdown-toc-爬虫相关好玩的工具&quot;&gt;爬虫相关(好玩的工具)&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#安全相关&quot; id=&quot;markdown-toc-安全相关&quot;&gt;安全相关&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#web服务器性能压力测试工具负载均衡器&quot; id=&quot;markdown-toc-web服务器性能压力测试工具负载均衡器&quot;&gt;Web服务器性能/压力测试工具/负载均衡器&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#大数据处理数据分析分布式工具&quot; id=&quot;markdown-toc-大数据处理数据分析分布式工具&quot;&gt;大数据处理/数据分析/分布式工具&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#web前端&quot; id=&quot;markdown-toc-web前端&quot;&gt;Web前端&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#语言篇&quot; id=&quot;markdown-toc-语言篇&quot;&gt;语言篇&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#scala&quot; id=&quot;markdown-toc-scala&quot;&gt;Scala&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#java&quot; id=&quot;markdown-toc-java&quot;&gt;Java&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#python&quot; id=&quot;markdown-toc-python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#swift&quot; id=&quot;markdown-toc-swift&quot;&gt;Swift&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#net&quot; id=&quot;markdown-toc-net&quot;&gt;.NET&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#c--c&quot; id=&quot;markdown-toc-c--c&quot;&gt;C &amp;amp; C++&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#其他&quot; id=&quot;markdown-toc-其他&quot;&gt;其他&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#游戏开发相关&quot; id=&quot;markdown-toc-游戏开发相关&quot;&gt;游戏开发相关&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#日志聚合分布式日志收集&quot; id=&quot;markdown-toc-日志聚合分布式日志收集&quot;&gt;日志聚合，分布式日志收集&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#rtp实时传输协议与音视频&quot; id=&quot;markdown-toc-rtp实时传输协议与音视频&quot;&gt;RTP,实时传输协议与音视频&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;前言&quot;&gt;前言&lt;/h1&gt;
+
+&lt;p&gt;成为一名专业程序员的道路上，需要坚持练习、学习与积累，技术方面既要有一定的广度，更要有自己的深度。&lt;/p&gt;
+
+&lt;p&gt;笔者作为一位tool mad，将工作以来用到的各种优秀资料、神器及框架整理在此，毕竟好记性不如烂键盘，此项目可以作为自己的不时之需。&lt;/p&gt;
+
+&lt;p&gt;本人喜欢折腾，记录的东西也比较杂，各方面都会有一些，内容按重要等级排序，大家各取所需。&lt;/p&gt;
+
+&lt;p&gt;这里的东西会持续积累下去，欢迎Star，也欢迎发PR给我。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/thonatos&quot;&gt;Thonatos.Yang&lt;/a&gt;整理的GitBook版本，阅读体验更佳：&lt;a href=&quot;https://thonatos.gitbooks.io/be-a-professional-programmer/&quot;&gt;https://thonatos.gitbooks.io/be-a-professional-programmer/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;目录&quot;&gt;目录&lt;/h2&gt;
+
+&lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
+&lt;!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#%E8%B5%84%E6%96%99%E7%AF%87&quot;&gt;资料篇&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E6%8A%80%E6%9C%AF%E7%AB%99%E7%82%B9&quot;&gt;技术站点&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E5%BF%85%E7%9C%8B%E4%B9%A6%E7%B1%8D&quot;&gt;必看书籍&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E5%A4%A7%E7%89%9B%E5%8D%9A%E5%AE%A2&quot;&gt;大牛博客&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#github%E7%AF%87&quot;&gt;GitHub篇&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#%E5%B7%A5%E5%85%B7%E7%AF%87&quot;&gt;工具篇&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E5%B9%B3%E5%8F%B0%E5%B7%A5%E5%85%B7&quot;&gt;平台工具&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7&quot;&gt;常用工具&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E7%AC%AC%E4%B8%89%E6%96%B9%E6%9C%8D%E5%8A%A1&quot;&gt;第三方服务&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E7%88%AC%E8%99%AB%E7%9B%B8%E5%85%B3%E5%A5%BD%E7%8E%A9%E7%9A%84%E5%B7%A5%E5%85%B7&quot;&gt;爬虫相关(好玩的工具)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E5%AE%89%E5%85%A8%E7%9B%B8%E5%85%B3&quot;&gt;安全相关&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#web%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%80%A7%E8%83%BD%E5%8E%8B%E5%8A%9B%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%99%A8&quot;&gt;Web服务器性能/压力测试工具/负载均衡器&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E5%88%86%E5%B8%83%E5%BC%8F%E5%B7%A5%E5%85%B7&quot;&gt;大数据处理/数据分析/分布式工具&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#web%E5%89%8D%E7%AB%AF&quot;&gt;Web前端&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#%E8%AF%AD%E8%A8%80%E7%AF%87&quot;&gt;语言篇&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#scala&quot;&gt;Scala&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#java&quot;&gt;Java&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#swift&quot;&gt;Swift&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#net&quot;&gt;.NET&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#c--c&quot;&gt;C &amp;amp; C++&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#%E5%85%B6%E4%BB%96&quot;&gt;其他&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3&quot;&gt;游戏开发相关&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#%E6%97%A5%E5%BF%97%E8%81%9A%E5%90%88%E5%88%86%E5%B8%83%E5%BC%8F%E6%97%A5%E5%BF%97%E6%94%B6%E9%9B%86&quot;&gt;日志聚合，分布式日志收集&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#rtp%E5%AE%9E%E6%97%B6%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE%E4%B8%8E%E9%9F%B3%E8%A7%86%E9%A2%91&quot;&gt;RTP,实时传输协议与音视频&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- END doctoc generated TOC please keep comment here to allow auto update --&gt;
+
+&lt;h2 id=&quot;资料篇&quot;&gt;资料篇&lt;/h2&gt;
+
+&lt;h3 id=&quot;技术站点&quot;&gt;技术站点&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;在线学习：&lt;a href=&quot;https://www.coursera.org/&quot;&gt;Coursera&lt;/a&gt;、&lt;a href=&quot;https://www.edx.org/&quot;&gt;edX&lt;/a&gt;、&lt;a href=&quot;https://cn.udacity.com/&quot;&gt;Udacity&lt;/a&gt;、&lt;a href=&quot;https://ocw.mit.edu/index.htm&quot;&gt;MIT公开课&lt;/a&gt;、&lt;a href=&quot;http://mooc.guokr.com/course/&quot;&gt;MOOC学院&lt;/a&gt;、&lt;a href=&quot;http://www.imooc.com/&quot;&gt;慕课网&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/&quot;&gt;Hacker News&lt;/a&gt;：非常棒的针对编程的链接聚合网站&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.techmeme.com/&quot;&gt;Techmeme&lt;/a&gt;：美国知名科技新闻和博客聚集网站，类似的还有（Panda, Hacker &amp;amp; Designer News）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/programming/&quot;&gt;Reddit - Programming板块&lt;/a&gt;：同上&lt;/li&gt;
+  &lt;li&gt;Java牛人必备：&lt;a href=&quot;http://www.programcreek.com/&quot;&gt;Program Creek&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;：IT技术问答网站&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/&quot;&gt;SegmentFault&lt;/a&gt;：中文的技术问答社区&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;：全球最大的源代码管理平台，很多知名开源项目都在上面，如&lt;a href=&quot;https://github.com/torvalds/linux&quot;&gt;Linux内核&lt;/a&gt;，&lt;a href=&quot;https://github.com/openstack/openstack&quot;&gt;OpenStack&lt;/a&gt;等&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://git.oschina.net/&quot;&gt;码云&lt;/a&gt;：支持中文可免费创建私有项目的代码托管平台，可作为备选&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://leetcode.com/&quot;&gt;LeetCode&lt;/a&gt;：来做做这些题吧，看看自己的算法水平如何？这可比什么面试宝典强多了。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.lintcode.com/zh-cn/&quot;&gt;LintCode&lt;/a&gt;：支持中文的编程题在线训练平台，可作为备选&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;,&lt;a href=&quot;https://www.topcoder.com/&quot;&gt;Topcoder&lt;/a&gt;: 机器学习、大数据竞赛&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gold.xitu.io/&quot;&gt;掘金&lt;/a&gt;：高质量的技术社区&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://toutiao.io/&quot;&gt;开发者头条&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn&quot;&gt;InfoQ&lt;/a&gt;：企业级应用，关注软件开发领域&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.v2ex.com/&quot;&gt;V2EX: way to explore&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;国内老牌技术社区：&lt;a href=&quot;https://www.oschina.net/&quot;&gt;OSChina&lt;/a&gt;、&lt;a href=&quot;http://www.cnblogs.com/&quot;&gt;博客园&lt;/a&gt;、&lt;a href=&quot;http://www.csdn.net/&quot;&gt;CSDN&lt;/a&gt;、&lt;a href=&quot;http://www.51cto.com/&quot;&gt;51CTO&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;免费的it电子书：&lt;a href=&quot;http://it-ebooks.info/&quot;&gt;http://it-ebooks.info/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;在线学习：&lt;a href=&quot;http://www.udemy.com/&quot;&gt;http://www.udemy.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;优质学习资源：&lt;a href=&quot;http://plus.mojiax.com/&quot;&gt;http://plus.mojiax.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;代码练习：&lt;a href=&quot;http://exercism.io/&quot;&gt;http://exercism.io/&lt;/a&gt;   and  &lt;a href=&quot;https://www.codingame.com&quot;&gt;https://www.codingame.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.devstore.cn/&quot;&gt;DevStore&lt;/a&gt;:开发者服务商店&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/zh-cn&quot;&gt;MSDN&lt;/a&gt;：微软相关的官方技术集中地，主要是文档类&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developers.google.cn/&quot;&gt;谷歌开发者&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ctolib.com/&quot;&gt;码库&lt;/a&gt; - 收录了实用的开源项目及资源&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://coding.net&quot;&gt;Coding&lt;/a&gt; 基于Git的国内代码托管平台，支持私有项目，有项目管理相关功能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;必看书籍&quot;&gt;必看书籍&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;SICP(&lt;a href=&quot;https://mitpress.mit.edu/sicp/&quot;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;深入理解计算机系统&lt;/li&gt;
+  &lt;li&gt;代码大全2&lt;/li&gt;
+  &lt;li&gt;人件&lt;/li&gt;
+  &lt;li&gt;人月神话&lt;/li&gt;
+  &lt;li&gt;软件随想录&lt;/li&gt;
+  &lt;li&gt;算法导论（麻省理工学院出版社）&lt;/li&gt;
+  &lt;li&gt;离散数学及其应用&lt;/li&gt;
+  &lt;li&gt;设计模式&lt;/li&gt;
+  &lt;li&gt;编程之美&lt;/li&gt;
+  &lt;li&gt;黑客与画家&lt;/li&gt;
+  &lt;li&gt;编程珠玑&lt;/li&gt;
+  &lt;li&gt;The Little Schemer&lt;/li&gt;
+  &lt;li&gt;Simply Scheme_Introducing_Computer_Science&lt;/li&gt;
+  &lt;li&gt;C++ Prime&lt;/li&gt;
+  &lt;li&gt;Effective C++&lt;/li&gt;
+  &lt;li&gt;TCP/IP详解&lt;/li&gt;
+  &lt;li&gt;Unix 编程艺术&lt;/li&gt;
+  &lt;li&gt;技术的本质&lt;/li&gt;
+  &lt;li&gt;软件随想录&lt;/li&gt;
+  &lt;li&gt;计算机程序设计艺术&lt;/li&gt;
+  &lt;li&gt;程序员的自我修养：链接、装载与库&lt;/li&gt;
+  &lt;li&gt;程序员修炼之道&lt;/li&gt;
+  &lt;li&gt;高效能程序员的修炼&lt;/li&gt;
+  &lt;li&gt;《精神分析引论》弗洛伊德&lt;/li&gt;
+  &lt;li&gt;《失控》《科技想要什么》《技术元素》凯文凯利&lt;/li&gt;
+  &lt;li&gt;程序开发心理学&lt;/li&gt;
+  &lt;li&gt;天地一沙鸥&lt;/li&gt;
+  &lt;li&gt;搞定：无压力工作的艺术&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;大牛博客&quot;&gt;大牛博客&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rekihattori/awesome-programmers&quot;&gt;awesome-programmers&lt;/a&gt; - 各领域大牛，值得纪念的程序员们&lt;/li&gt;
+  &lt;li&gt;云风（游戏界大牛）: &lt;a href=&quot;http://blog.codingnow.com/&quot;&gt;http://blog.codingnow.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;王垠（不少文章喷到蛮有道理）：&lt;a href=&quot;http://www.yinwang.org/&quot;&gt;http://www.yinwang.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;冰河-伞哥(Lisp大牛)：&lt;a href=&quot;http://tianchunbinghe.blog.163.com/&quot;&gt;http://tianchunbinghe.blog.163.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;R大&lt;a href=&quot;https://zhuanlan.zhihu.com/p/25042028&quot;&gt;【干货满满】RednaxelaFX写的文章/回答的导航帖&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;陈皓-左耳朵耗子：&lt;a href=&quot;http://coolshell.cn/&quot;&gt;http://coolshell.cn/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Jeff Atwood（国外知名博主）: &lt;a href=&quot;https://blog.codinghorror.com/&quot;&gt;https://blog.codinghorror.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;阮一峰（黑客与画家译者，Web）：&lt;a href=&quot;http://www.ruanyifeng.com/&quot;&gt;http://www.ruanyifeng.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;廖雪峰（他的Python、Git教程不少人都看过）：&lt;a href=&quot;http://www.liaoxuefeng.com/&quot;&gt;http://www.liaoxuefeng.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;道哥的黑板报（安全）：&lt;a href=&quot;https://zhuanlan.zhihu.com/taosay&quot;&gt;https://zhuanlan.zhihu.com/taosay&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/search?l=&amp;amp;o=desc&amp;amp;p=1&amp;amp;q=location%3AChina&amp;amp;ref=advsearch&amp;amp;s=followers&amp;amp;type=Users&amp;amp;utf8=%E2%9C%93&quot;&gt;国内GitHub上关注度较高的开发者&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;github篇&quot;&gt;GitHub篇&lt;/h3&gt;
+
+&lt;p&gt;** Awesome **&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sindresorhus/awesome&quot;&gt;Awesome&lt;/a&gt;: 这是个Awesome合集，常见的资料这里面都能找到&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sindresorhus/awesome&quot;&gt;Awesome2&lt;/a&gt;: 类似第一个Awesome&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jnv/lists&quot;&gt;杂七杂八、有用没用的Awesome合集&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bayandin/awesome-awesomeness&quot;&gt;非常不错的语言类学习资料集合：Awesomeness&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cjwirth/awesome-ios-ui&quot;&gt;awesome-ios-ui&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wasabeef/awesome-android-ui&quot;&gt;awesome-android-ui&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lightSky/Awesome-MaterialDesign&quot;&gt;Awesome-MaterialDesign&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/caesar0301/awesome-public-datasets&quot;&gt;awesome-public-datasets&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/paragonie/awesome-appsec&quot;&gt;awesome-AppSec(系统安全)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/okulbilisim/awesome-datascience&quot;&gt;awesome-datascience&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fasouto/awesome-dataviz&quot;&gt;awesome-dataviz&lt;/a&gt; - 数据可视化库及资料&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jacksu/awesome-es&quot;&gt;awesome-es&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Blankj/awesome-comment&quot;&gt;awesome-comment&lt;/a&gt; - 神注释大全&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/carpedm20/awesome-hacking&quot;&gt;awesome-hacking&lt;/a&gt; - 黑客工具箱&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jacksu/machine-learning&quot;&gt;awesome-machine-learning&lt;/a&gt; - 机器学习资料&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** 书籍资料 **&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mr-mig/every-programmer-should-know&quot;&gt;Every Programmer Should Know&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html&quot;&gt;Latency Numbers Every Programmer Should Know&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/donnemartin/system-design-primer&quot;&gt;system-design-primer&lt;/a&gt;: 系统设计入门&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bingwen/free-programming-books/blob/master/free-programming-books-ch.md&quot;&gt;free-programming-books&lt;/a&gt; &lt;a href=&quot;https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md&quot;&gt;中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/justjavac/free-programming-books-zh_CN&quot;&gt;免费的编程中文书籍索引&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/julycoding/The-Art-Of-Programming-By-July&quot;&gt;《程序员编程艺术 — 面试和算法心得》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/dariubs/GoBooks&quot;&gt;GoBooks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/papers-we-love/papers-we-love&quot;&gt;Papers we love&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JustFollowUs/Natural-Language-Processing&quot;&gt;自然语言处理NLP推荐学习路线及参考资料&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/josephmisiti/awesome-machine-learning&quot;&gt;超级棒的机器学习资料（框架，库，软件）&lt;/a&gt;, &lt;a href=&quot;http://www.oschina.net/news/53818/awesome-machine-learning&quot;&gt;中文翻译版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://news.cnblogs.com/n/504467/&quot;&gt;机器学习(Machine Learning)&amp;amp;深入学习(Deep Learning)资料&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://special.csdncms.csdn.net/BeDocker/&quot;&gt;Docker资料合集&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/apache/incubator-storm/tree/master/examples/storm-starter&quot;&gt;学习使用Strom&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ercoppa.github.io/HadoopInternals/&quot;&gt;Hadoop Internals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JerryLead/SparkInternals/tree/master/markdown&quot;&gt;Spark Internals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hadoop.readthedocs.org/en/latest/&quot;&gt;大数据时代的数据分析与数据挖掘 – 基于Hadoop实现&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://samypesse.gitbooks.io/how-to-create-an-operating-system/index.html&quot;&gt;如何制作操作系统&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/zhuangbiaowei/learn-with-open-source&quot;&gt;借助开源项目学习软件开发&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://code.csdn.net/news/2821842&quot;&gt;几个不错的开源游戏引擎&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hit9/PyZh&quot;&gt;一起写Python文章，一起看Python文章&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.fens.me/series-r/&quot;&gt;R的极客理想系列文章&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bolasblack/http-api-guide&quot;&gt;HTTP接口设计指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/foru17/front-end-collect&quot;&gt;分享自己长期关注的前端开发相关的优秀网站、博客、以及活跃开发者&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rxin/db-readings&quot;&gt;Readings in Databases&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rushter/data-science-blogs&quot;&gt;Data Science blogs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/oldratlee/translations/blob/master/log-what-every-software-engineer-should-know-about-real-time-datas-unifying/README.md&quot;&gt;日志：每个软件工程师都应该知道的有关实时数据的统一概念&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://guides.codepath.com/android&quot;&gt;Android Code Path&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/GeniusVJR/LearningNotes&quot;&gt;Android Learn Notes&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ziadoz/awesome-php&quot;&gt;PHP 类库框架，资料集合&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** 优秀项目 **&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://news.cnblogs.com/n/506775/&quot;&gt;最值得关注的10个C语言开源项目&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://code.csdn.net/news/2822568&quot;&gt;15款值得学习的小型开源项目&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Aufree/trip-to-iOS&quot;&gt;iOS-100个开源组件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://code.csdn.net/news/2822753&quot;&gt;十大Material Design开源项目&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project&quot;&gt;Android开源项目分类汇总&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** 前端 &amp;amp; Node.js **&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/moklick/frontend-stuff&quot;&gt;前端资源&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/w3crange/Front-End-Develop-Guide&quot;&gt;前端开发指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://html5ify.com/fks/&quot;&gt;前端技能汇总&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.daqianduan.com/nav&quot;&gt;前端资源大导航&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lisposter/frontend-books&quot;&gt;收集前端方面的书籍&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions&quot;&gt;2014年最新前端开发面试题&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/airbnb/javascript&quot;&gt;简单清晰的JavaScript语言教程，代码示例&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/airbnb/javascript&quot;&gt;JavaScript编程规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bolshchikov/js-must-watch&quot;&gt;JavaScript必看视频&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://javascript.ruanyifeng.com/&quot;&gt;JavaScript标准参考教程（阮一峰的，整理的不错）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bolshchikov/js-must-watch&quot;&gt;JS必看&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md&quot;&gt;AngularJS Guide的中文分支&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/timjacobi/angular2-education&quot;&gt;Angular2学习资料&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md&quot;&gt;AngularJS应用的最佳实践和风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/reactnativecn/react-native-guide&quot;&gt;React-Native学习指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nqdeng.github.io/7-days-nodejs/&quot;&gt;七天学会NodeJS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sergtitov/NodeJS-Learning/blob/master/cn_resource.md&quot;&gt;node.js中文资料导航&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.fens.me/nodejs-roadmap/&quot;&gt;Nodejs学习路线图&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js/9629682#9629682&quot;&gt;如何学习nodejs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** 工作，工具 **&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/kahun/awesome-sysadmin&quot;&gt;系统管理员工具集合&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://git-scm.com/book/zh&quot;&gt;Pro Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/taobao/nginx-book&quot;&gt;Nginx开发从入门到精通&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/justjavac/Google-IPs.git&quot;&gt;Google 全球 IP 地址库&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/greatghoul/remote-working&quot;&gt;收集整理远程工作相关的资料&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/chriskempson/base16&quot;&gt;Color schemes for hackers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ellisonleao/magictools&quot;&gt;游戏开发工具集，MagicTools&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ripienaar/free-for-dev&quot;&gt;开发者工具箱， free-for-dev&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md&quot;&gt;GitHub秘籍&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/agis-/git-style-guide&quot;&gt;Git风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hzlzh/Best-App&quot;&gt;Bast-App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;工具篇&quot;&gt;工具篇&lt;/h2&gt;
+
+&lt;h3 id=&quot;平台工具&quot;&gt;平台工具&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://swagger.io/&quot;&gt;Swagger&lt;/a&gt;: RESTful API设计工具，前后端分离项目必备，顺便推荐下&lt;a href=&quot;https://www.easy-mock.com/&quot;&gt;Easy Mock&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Phabricator: 软件开发平台，Facebook出品，现已开源，CodeReview神器（从这个往下一直到GitLab之间的工具统统可以忽略了）&lt;/li&gt;
+  &lt;li&gt;Redmine/Trac：项目管理平台&lt;/li&gt;
+  &lt;li&gt;Jenkins/Jira(非开源)：持续集成系统（Apache Continuum，这个是Apache下的CI系统，还没来得及研究）&lt;/li&gt;
+  &lt;li&gt;git，svn：源代码版本控制系统&lt;/li&gt;
+  &lt;li&gt;GitLab/Gitorious：构建自己的GitHub服务器&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ci.appveyor.com/&quot;&gt;AppVeyor&lt;/a&gt; - 云端持续集成工具，可以与GitHub搭配使用&lt;/li&gt;
+  &lt;li&gt;Postman:RESTful，api测试工具，HTTP接口开发必备神器；可替代工具：&lt;a href=&quot;https://insomnia.rest/&quot;&gt;Insomnia&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://airbnb.design/lottie/&quot;&gt;Lottie&lt;/a&gt;: AE动画变原生代码，设计师必备&lt;/li&gt;
+  &lt;li&gt;Sonar：代码质量管理平台&lt;/li&gt;
+  &lt;li&gt;Nessus: 系统漏洞扫描器&lt;/li&gt;
+  &lt;li&gt;gitbook：&lt;a href=&quot;https://www.gitbook.io/&quot;&gt;https://www.gitbook.io/&lt;/a&gt;写书的好东西，当然用来写文档也很不错的（发现不少产品的文档就是用的它）&lt;/li&gt;
+  &lt;li&gt;Travis-ci：开源项目持续集成必备，和GitHub相结合，&lt;a href=&quot;https://travis-ci.org/&quot;&gt;https://travis-ci.org/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Trello：简单高效的项目管理平台，注重看板管理&lt;/li&gt;
+  &lt;li&gt;日志聚合：graylog、ELK（推荐新一代的graylog，基本上算作是开源的Splunk了）&lt;/li&gt;
+  &lt;li&gt;开源测试工具、社区（Selenium、OpenQA.org）&lt;/li&gt;
+  &lt;li&gt;Puppet:一个自动管理引擎，可以适用于Linux、Unix以及Windows平台。所谓配置管理系统，就是管理机器里面诸如文件、用户、进程、软件包这些资源。无论是管理1台，还是上万台机器Puppet都能轻松搞定。其他类似工具：CFEngine、SaltStack、Ansible&lt;/li&gt;
+  &lt;li&gt;Nagios：系统状态监控报警，还有个Icinga(完全兼容nagios所有的插件,工作原理,配置文件以及方法,几乎一模一样。配置简单,功能强大)&lt;/li&gt;
+  &lt;li&gt;Ganglia：分布式监控系统&lt;/li&gt;
+  &lt;li&gt;fleet：分布式init系统&lt;/li&gt;
+  &lt;li&gt;Ansible：能够大大简化Unix管理员的自动化配置管理与流程控制方式。&lt;/li&gt;
+  &lt;li&gt;GeoLite免费数据库&lt;/li&gt;
+  &lt;li&gt;jsHint:js代码验证工具&lt;/li&gt;
+  &lt;li&gt;haproxy: 高可用负载均衡（此外类似的系统还有nginx，lvs）&lt;/li&gt;
+  &lt;li&gt;linux OS性能分析工具：dstat，iostat，iotop，nmon&lt;/li&gt;
+  &lt;li&gt;kimono：将网页信息转换为api接口的工具&lt;/li&gt;
+  &lt;li&gt;集群管理工具：pdsh，ClusterSSH，mussh（可以用它快速管理Hadoop集群）ipa-server做统一的认证管理&lt;/li&gt;
+  &lt;li&gt;influxdb: 分布式时序数据库，结合Grafana可以进行实时数据分析&lt;/li&gt;
+  &lt;li&gt;dot: 程序员绘图利器（是种语言，也是个工具）&lt;/li&gt;
+  &lt;li&gt;Graph::Easy: （Ascii Art工具）字符流程图绘制，实乃程序员装逼神器。其他类似的工具Asciiflow, vi插件：drawit!&lt;/li&gt;
+  &lt;li&gt;spf13-vim: 让你的vim飞起来！&lt;/li&gt;
+  &lt;li&gt;Kubernetes: 容器集群管理系统&lt;/li&gt;
+  &lt;li&gt;Gatling: 服务器性能压力测试工具&lt;/li&gt;
+  &lt;li&gt;systemtap: Linux内核探测工具、内核调试神器&lt;/li&gt;
+  &lt;li&gt;Cygwin：Windows下的类UNIX模拟环境&lt;/li&gt;
+  &lt;li&gt;MinGW：Windows下的GNU工具集&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;常用工具&quot;&gt;常用工具&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://editorconfig.org/&quot;&gt;EditorConfig&lt;/a&gt;: 让我们在各种不同IDE或编辑器下写代码保持风格一致&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hzlzh/Best-App&quot;&gt;Mac下的神兵利器&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://asciinema.org/&quot;&gt;asciinema&lt;/a&gt;: 终端录屏神器&lt;/li&gt;
+  &lt;li&gt;Fiddler：非常好用的Web前端调试工具，当然是针对底层http协议的，一般情况使用Chrome等自带的调试工具也足够了，特殊情况还得用它去处理&lt;/li&gt;
+  &lt;li&gt;Charles: Mac上的Web代理调试工具，类似Fiddler&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://fir.im/&quot;&gt;fir.im&lt;/a&gt;免费的移动App内测托管平台&lt;/li&gt;
+  &lt;li&gt;wireshark：知名的网络数据包分析工具&lt;/li&gt;
+  &lt;li&gt;PowerCmd:替代Windows Cmd的利器&lt;/li&gt;
+  &lt;li&gt;RegexBuddy:强大的正则表达式测试工具&lt;/li&gt;
+  &lt;li&gt;Soure Insight：源代码阅读神器&lt;/li&gt;
+  &lt;li&gt;SublimeText：程序员最爱的编辑器&lt;/li&gt;
+  &lt;li&gt;Database.NET：一个通用的关系型数据库客户端，基于.NET 4.0开发的，做简单的处理还是蛮方便的&lt;/li&gt;
+  &lt;li&gt;Navicat Premium：支持MySql、PostgreSQL、Oracle、Sqlite和SQL Server的客户端，通用性上不如Database.NET，但性能方面比Database.NET好很多，自带备份功能也用于数据库定时备份。&lt;/li&gt;
+  &lt;li&gt;Synergy : 局域网内一套键盘鼠标控制多台电脑&lt;/li&gt;
+  &lt;li&gt;DameWare：远程协助工具集（我在公司主要控制大屏幕用）&lt;/li&gt;
+  &lt;li&gt;Radmin: 远程控制工具，用了一段时间的DameWare，还要破解，对Win7支持的不好，还是发现这个好用&lt;/li&gt;
+  &lt;li&gt;Listary：能极大幅度提高你 Windows 文件浏览与搜索速度效率的「超级神器」&lt;/li&gt;
+  &lt;li&gt;Clover：给资源管理器加上多标签，我平时工作的时候就用它，像Chrome一样使用资源管理器，甚是方便啊（这是Windows平台的）&lt;/li&gt;
+  &lt;li&gt;WinLaunch：模拟Mac OS的Launch工具&lt;/li&gt;
+  &lt;li&gt;OllyDbg: OD大名鼎鼎的反汇编工具，Win平台&lt;/li&gt;
+  &lt;li&gt;Fritzing：绘制电路图&lt;/li&gt;
+  &lt;li&gt;LICEcap：gif教程制作&lt;/li&gt;
+  &lt;li&gt;git，svn：版本控制系统&lt;/li&gt;
+  &lt;li&gt;Enigma Virtual Box（将exe，dll等封装成一个可执行程序）&lt;/li&gt;
+  &lt;li&gt;Open DBDiff(针对SqlServer)数据库同步&lt;/li&gt;
+  &lt;li&gt;SymmetricDS：数据库同步&lt;/li&gt;
+  &lt;li&gt;BIEE,Infomatica，SPSS，weka，R语言：数据分析&lt;/li&gt;
+  &lt;li&gt;CodeSmith，LightSwitch：代码生成&lt;/li&gt;
+  &lt;li&gt;Pandoc：Markdown转换工具，出书用的。以前玩过docbook，不过现在还是Markdown盛行啊。&lt;/li&gt;
+  &lt;li&gt;Window Magnet[Mac]：增强Mac窗口管理功能，想Win7一样具有窗口拖放到屏幕边缘自动调整的功能&lt;/li&gt;
+  &lt;li&gt;log explorer：查看SqlServer日志&lt;/li&gt;
+  &lt;li&gt;dependency walker：查询Windows应用程序dll依赖项&lt;/li&gt;
+  &lt;li&gt;Shairport4w：将iPhone，iPad，iPod上的音频通过AirPlay协议传输到PC上&lt;/li&gt;
+  &lt;li&gt;ngrok：内网穿透工具&lt;/li&gt;
+  &lt;li&gt;Axure:快速原型制作工具，还有个在线作图的工具国内的一个创业团队做的，用着很不错&lt;a href=&quot;http://www.processon.com/&quot;&gt;http://www.processon.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Origami: 次世代交互设计神器&lt;/li&gt;
+  &lt;li&gt;百度脑图：&lt;a href=&quot;http://naotu.baidu.com/&quot;&gt;http://naotu.baidu.com/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;tinyproxy:（Linux）小型的代理服务器支持http和https协议&lt;/li&gt;
+  &lt;li&gt;EaseUS Partition Master：超级简单的分区调整工具，速度还是蛮快的，C盘不够用了就用它从D盘划点空间吧，不用重装系统这么折腾哦。&lt;/li&gt;
+  &lt;li&gt;CheatEngine：玩游戏修改内存值必备神器（记得我在玩轩辕剑6的时候就用的它，超级方便呢）&lt;/li&gt;
+  &lt;li&gt;ApkIDE:Android反编译神器&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;翻、墙工具（自&lt;/td&gt;
+          &lt;td&gt;由&lt;/td&gt;
+          &lt;td&gt;门、天行浏览器，免费的VPN：http://www.mangovpn.com/）,发现最方便还属Lantern，免费用起来超级方便（更新于2015-08-22）&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;设计工具：Sketch、OmniGraffle&lt;/li&gt;
+  &lt;li&gt;MindManger：思维导图&lt;/li&gt;
+  &lt;li&gt;MagicDraw:Uml图工具&lt;/li&gt;
+  &lt;li&gt;innotop：MySql状态监测工具&lt;/li&gt;
+  &lt;li&gt;墨刀：比Axure更为简单的原型工具，可以快速制作原型&lt;/li&gt;
+  &lt;li&gt;Karabiner: Mac专用，修改键盘键位的神器，机械键盘必备&lt;/li&gt;
+  &lt;li&gt;Timing：Mac专用，统计你的时间都花在哪了&lt;/li&gt;
+  &lt;li&gt;f.lux: 护眼神器，过滤蓝光，程序员护眼必备良品&lt;/li&gt;
+  &lt;li&gt;LaTeX: 基于ΤΕΧ的排版系统, 让写论文更方便&lt;/li&gt;
+  &lt;li&gt;Antlr：开源的语法分析器，可以让你毫无压力的写个小parser&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;第三方服务&quot;&gt;第三方服务&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt;: 免费、自动化、开放的证书签发服务&lt;/li&gt;
+  &lt;li&gt;DnsPod：一个不错的智能DNS服务解析提供商&lt;/li&gt;
+  &lt;li&gt;DigitalOcean：海外的云主机提供商，价格便宜，磁盘是SSD的，用过一段时间整体上还可以，不过毕竟是海外的，网速比较慢。国内的就是阿里云了。还有个比较知名的是：Linode，据说速度上比DigitalOcean好很多&lt;/li&gt;
+  &lt;li&gt;移动端推送服务：个推、JPush、云巴&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;：移动应用开发服务，包括:数据存储、用户管理、消息推送、应用统计、社交分享、实时聊天等服务&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.colorhunt.co/&quot;&gt;Color Hunt&lt;/a&gt;: 漂亮炫酷的配色网站，程序员的福音&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku: PaaS平台&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;爬虫相关好玩的工具&quot;&gt;爬虫相关(好玩的工具)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Phantomjs(Web自动化测试，服务端渲染等)&lt;/li&gt;
+  &lt;li&gt;berserkJS(基于Phantomjs的改进版本)&lt;/li&gt;
+  &lt;li&gt;SlimerJS&lt;/li&gt;
+  &lt;li&gt;CasperJS&lt;/li&gt;
+  &lt;li&gt;selenium&lt;/li&gt;
+  &lt;li&gt;HtmlUnit（开源的java 页面分析工具，也是个Headless的浏览器）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;安全相关&quot;&gt;安全相关&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;sql注入检测：sqlmap、haviji&lt;/li&gt;
+  &lt;li&gt;端口扫描：nmap&lt;/li&gt;
+  &lt;li&gt;渗透测试：BurpLoader&lt;/li&gt;
+  &lt;li&gt;sqltools: sql漏洞利用工具&lt;/li&gt;
+  &lt;li&gt;snort: 入侵检测&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;web服务器性能压力测试工具负载均衡器&quot;&gt;Web服务器性能/压力测试工具/负载均衡器&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ab: ab是apache自带的一款功能强大的测试工具&lt;/li&gt;
+  &lt;li&gt;curl-loader: 真实模拟、测试Web负载&lt;/li&gt;
+  &lt;li&gt;http_load: 程序非常小，解压后也不到100K&lt;/li&gt;
+  &lt;li&gt;webbench: 是Linux下的一个网站压力测试工具，最多可以模拟3万个并发连接去测试网站的负载能力。&lt;/li&gt;
+  &lt;li&gt;Siege: 一款开源的压力测试工具，可以根据配置对一个WEB站点进行多用户的并发访问，记录每个用户所有请求过程的相应时间，并在一定数量的并发访问下重复进行。&lt;/li&gt;
+  &lt;li&gt;squid（前端缓存），nginx（负载），nodejs（没错它也可以，自己写点代码就能实现高性能的负载均衡器）：常用的负载均衡器&lt;/li&gt;
+  &lt;li&gt;Piwik：开源网站访问量统计系统&lt;/li&gt;
+  &lt;li&gt;ClickHeat：开源的网站点击情况热力图&lt;/li&gt;
+  &lt;li&gt;HAProxy：高性能TCP /HTTP负载均衡器&lt;/li&gt;
+  &lt;li&gt;ElasticSearch：搜索引擎基于Lucene&lt;/li&gt;
+  &lt;li&gt;Page Speed SDK和YSLOW&lt;/li&gt;
+  &lt;li&gt;HAR Viewer: HAR分析工具&lt;/li&gt;
+  &lt;li&gt;protractor：E2E（end to end）自动化测试工具&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;大数据处理数据分析分布式工具&quot;&gt;大数据处理/数据分析/分布式工具&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hadoop：分布式的文件系统，结合其MapReduce编程模型可以用来做海量数据的批处理（Hive，Pig，HBase啥的就不说了），值得介绍的是Cloudera的Hadoop分支CDH5，基于YARN MRv2集成了Spark可直接用于生产环境的Hadoop，对于企业快速构建数据仓库非常有用。&lt;/li&gt;
+  &lt;li&gt;Spark：大规模数据处理框架（可以应付企业中常见的三种数据处理场景：复杂的批量数据处理（batch data processing）；基于历史数据的交互式查询（interactive query）；基于实时数据流的数据处理（streaming data processing）），CSND有篇文章介绍的不错&lt;/li&gt;
+  &lt;li&gt;除了Spark，其他几个不错的计算框架还有：Kylin，Flink，Drill&lt;/li&gt;
+  &lt;li&gt;Ignite: In-Memory Data Fabric&lt;/li&gt;
+  &lt;li&gt;CarbonData: 华为的孵化项目，支持索引的列式存储&lt;/li&gt;
+  &lt;li&gt;Ceph:Linux分布式文件系统（特点：无中心）&lt;/li&gt;
+  &lt;li&gt;Storm：实时流数据处理，可以看下IBM的一篇介绍 （还有个Yahoo的S4，也是做流数据处理的）&lt;/li&gt;
+  &lt;li&gt;Druid: 实时数据分析存储系统&lt;/li&gt;
+  &lt;li&gt;Ambari: 大数据平台搭建、监控利器；类似的还有CDH&lt;/li&gt;
+  &lt;li&gt;Tachyon：分布式内存文件系统&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://greenplum.org/&quot;&gt;Greenplum&lt;/a&gt;: 基于PostgreSQL的分布式MPP数据库&lt;/li&gt;
+  &lt;li&gt;Mesos：计算框架一个集群管理器，提供了有效的、跨分布式应用或框架的资源隔离和共享&lt;/li&gt;
+  &lt;li&gt;Impala：新一代开源大数据分析引擎，提供Sql语义，比Hive强在速度上&lt;/li&gt;
+  &lt;li&gt;presto: facebook的开源工具，大数据分布式sql查询引擎&lt;/li&gt;
+  &lt;li&gt;SNAPPY：快速的数据压缩系统，适用于Hadoop生态系统中&lt;/li&gt;
+  &lt;li&gt;Kafka:高吞吐量的分布式消息队列系统&lt;/li&gt;
+  &lt;li&gt;ActiveMQ:是Apache出品，最流行的，能力强劲的开源消息总线&lt;/li&gt;
+  &lt;li&gt;MQTT:Message Queuing Telemetry Transport，消息队列遥测传输）是IBM开发的一个即时通讯协议，有可能成为物联网的重要组成部分&lt;/li&gt;
+  &lt;li&gt;RabbitMQ：记得OpenStack就是用的这个东西吧&lt;/li&gt;
+  &lt;li&gt;ZeroMQ：宣称是将分布式计算变得更简单，是个分布式消息队列，可以看下云风的一篇文章的介绍&lt;/li&gt;
+  &lt;li&gt;开源的日志收集系统：scribe、chukwa、kafka、flume。这有一篇对比文章&lt;/li&gt;
+  &lt;li&gt;Zookeeper：可靠的分布式协调的开源项目&lt;/li&gt;
+  &lt;li&gt;Databus：LinkedIn 实时低延迟数据抓取系统&lt;/li&gt;
+  &lt;li&gt;数据源获取：Flume、Google Refine、Needlebase、ScraperWiki、BloomReach&lt;/li&gt;
+  &lt;li&gt;序列化技术：JSON、BSON、Thrift、Avro、Google Protocol Buffers&lt;/li&gt;
+  &lt;li&gt;NoSql：ScyllaDB（宣称是世界上最快的NoSql）、Apache Casandra、MongoDB、Apache CouchDB、Redis、BigTable、HBase、Hypertable、Voldemort、Neo4j&lt;/li&gt;
+  &lt;li&gt;MapReduce相关：Hive、Pig、Cascading、Cascalog、mrjob、Caffeine、S4、MapR、Acunu、Flume、Kafka、Azkaban、Oozie、Greenplum&lt;/li&gt;
+  &lt;li&gt;数据处理：R、Yahoo! Pipes、Mechanical Turk、Solr/ Lucene、ElasticSearch、Datameer、Bigsheets、Tinkerpop&lt;/li&gt;
+  &lt;li&gt;NLP自然语言处理：Natural Language Toolkit、Apache OpenNLP、Boilerpipe、OpenCalais&lt;/li&gt;
+  &lt;li&gt;机器学习：TensorFlow（Google出品），WEKA、Mahout、scikits.learn、SkyTree&lt;/li&gt;
+  &lt;li&gt;可视化技术：GraphViz、Processing、Protovis、Google Fusion Tables、Tableau、Highcharts、EChats（百度的还不错）、Raphaël.js&lt;/li&gt;
+  &lt;li&gt;Kettle：开源的ETL工具&lt;/li&gt;
+  &lt;li&gt;Pentaho：以工作流为核心的开源BI系统&lt;/li&gt;
+  &lt;li&gt;Mondrian：开源的Rolap服务器&lt;/li&gt;
+  &lt;li&gt;Oozie：开源hadoop的工作流调度引擎，类似的还有：Azkaban&lt;/li&gt;
+  &lt;li&gt;开源的数据分析可视化工具：Weka、Orange、KNIME&lt;/li&gt;
+  &lt;li&gt;Cobar：阿里巴巴的MySql分布式中间件&lt;/li&gt;
+  &lt;li&gt;数据清洗：data wrangler， Google Refine&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;web前端&quot;&gt;Web前端&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://material.io/&quot;&gt;Material Design&lt;/a&gt;: 谷歌出品，必属精品&lt;/li&gt;
+  &lt;li&gt;Vue.js: 借鉴了Angular及React的JS框架，设计理念较为先进&lt;/li&gt;
+  &lt;li&gt;GRUNT: js task runner&lt;/li&gt;
+  &lt;li&gt;Sea.js: js模块化&lt;/li&gt;
+  &lt;li&gt;knockout.js：MVVM开发前台，绑定技术&lt;/li&gt;
+  &lt;li&gt;Angular.js: 使用超动感HTML &amp;amp; JS开发WEB应用！&lt;/li&gt;
+  &lt;li&gt;Highcharts.js, ECharts, Flot: 常用的数据可视化库&lt;/li&gt;
+  &lt;li&gt;D3.js: 是一个基于JavaScript数据展示库（类似的还有P5.js）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://vega.github.io/vega/&quot;&gt;Vega&lt;/a&gt;: 基于D3的可视化语法&lt;/li&gt;
+  &lt;li&gt;NVD3: 基于d3.js的图表库&lt;/li&gt;
+  &lt;li&gt;Raw：非常不错的一款高级数据可视化工具&lt;/li&gt;
+  &lt;li&gt;Rickshaw:时序图标库，可用于构建实时图表&lt;/li&gt;
+  &lt;li&gt;JavaScript InfoVis Toolkit：另一款Web数据可视化插件&lt;/li&gt;
+  &lt;li&gt;Pdf.js，在html中展现pdf&lt;/li&gt;
+  &lt;li&gt;ACE，CodeMirror：Html代码编辑器（ACE甚好啊）&lt;/li&gt;
+  &lt;li&gt;NProcess：绚丽的加载进度条&lt;/li&gt;
+  &lt;li&gt;impress.js：让你制作出令人眩目的内容展示效果(类似的还有reveal)&lt;/li&gt;
+  &lt;li&gt;Threejs：3DWeb库&lt;/li&gt;
+  &lt;li&gt;Hightopo：基于Html5的2D、3D可视化UI库&lt;/li&gt;
+  &lt;li&gt;jQuery.dataTables.js:高度灵活的表格插件&lt;/li&gt;
+  &lt;li&gt;Raphaël：js，canvas绘图库，后来发现百度指数的图形就是用它绘出来的&lt;/li&gt;
+  &lt;li&gt;director.js：js路由模块，前端路由，Nodejs后端路由等，适合构造单页应用&lt;/li&gt;
+  &lt;li&gt;pace.js：页面加载进度条&lt;/li&gt;
+  &lt;li&gt;bower：Web包管理器&lt;/li&gt;
+  &lt;li&gt;jsnice：有趣的js反编译工具，猜压缩后的变量名，http://www.jsnice.org/&lt;/li&gt;
+  &lt;li&gt;Zepto.js：移动端替代jQuery的东东，当然也可以使用jquery-mobile.&lt;/li&gt;
+  &lt;li&gt;UI框架：Foundation，Boostrap，Pure，EasyUI，Polymer&lt;/li&gt;
+  &lt;li&gt;前段UI设计师必去的几个网站：Dribbble，awwwards，unmatchedstyle，UIMaker&lt;/li&gt;
+  &lt;li&gt;Mozilla 开发者中心：https://developer.mozilla.org/en-US/&lt;/li&gt;
+  &lt;li&gt;图标资源：IcoMoon（我的最爱），Font Awesome, Themify Icons，FreePik，Glyphicons&lt;/li&gt;
+  &lt;li&gt;artDialog:非常漂亮的对话框&lt;/li&gt;
+  &lt;li&gt;AdminLTE：github上的一个开源项目，基于Boostrap3的后台管理页面框架&lt;/li&gt;
+  &lt;li&gt;Respond.js：让不懂爱的IE6-8支持响应式设计&lt;/li&gt;
+  &lt;li&gt;require.js: js模块加载库&lt;/li&gt;
+  &lt;li&gt;select2：比chosen具有更多特性的选择框替代库&lt;/li&gt;
+  &lt;li&gt;AngularUI：集成angular.js的UI库&lt;/li&gt;
+  &lt;li&gt;normalize.css: 采用了现代化标准让各浏览器渲染出的html保持一致的库&lt;/li&gt;
+  &lt;li&gt;CreateJS：Html5游戏引擎&lt;/li&gt;
+  &lt;li&gt;Less,Compass:简化CSS开发&lt;/li&gt;
+  &lt;li&gt;emojify.js:用于自动识别网页上的Emoji文字并将其显示为图像&lt;/li&gt;
+  &lt;li&gt;simditor:一个不错的开源的html编辑器，简洁高效&lt;/li&gt;
+  &lt;li&gt;Sencha:  基于html5的移动端开发框架&lt;/li&gt;
+  &lt;li&gt;SuperScrollorama+TweenMax+skrollr:打造超酷的视差滚动效果网页动画&lt;/li&gt;
+  &lt;li&gt;jquery-smooth-scroll:同上，平滑滚动插件&lt;/li&gt;
+  &lt;li&gt;Animate.css:实现了各种动画效果的css库&lt;/li&gt;
+  &lt;li&gt;Emmet:前端工程师必备，前身为 Zen Coding&lt;/li&gt;
+  &lt;li&gt;React: facebook出品的js UI库&lt;/li&gt;
+  &lt;li&gt;highlight.js：专门用来做语法高亮的库&lt;/li&gt;
+  &lt;li&gt;GoJS: Html5交互式图表库，看demo更适合层次结构的图表。&lt;/li&gt;
+  &lt;li&gt;10 Pure CSS (Mostly) Flat Mobile Devices: &lt;a href=&quot;http://marvelapp.github.io/devices.css/&quot;&gt;http://marvelapp.github.io/devices.css/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;CodePen: &lt;a href=&quot;http://codepen.io/&quot;&gt;http://codepen.io/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;jsfiddle: &lt;a href=&quot;http://jsfiddle.net/&quot;&gt;http://jsfiddle.net/&lt;/a&gt; 前端js，html，css测试利器&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;语言篇&quot;&gt;语言篇&lt;/h2&gt;
+
+&lt;p&gt;折腾中：Scala、Python、Lua、JavaScript、Go&lt;/p&gt;
+
+&lt;p&gt;待折腾：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://racket-lang.org/&quot;&gt;Racket&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ocaml.org/&quot;&gt;OCaml&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://julialang.org/&quot;&gt;Julia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;scala&quot;&gt;Scala&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.scala-lang.org/api/current/&quot;&gt;Scala Standard Library API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://twitter.github.io/scala_school/&quot;&gt;Scala School!&lt;/a&gt;: A Scala tutorial by Twitter&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.scala-lang.org/tutorials/tour/tour-of-scala.html&quot;&gt;A Tour of Scala&lt;/a&gt;: Tutorial introducing the main concepts of Scala&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/tags/scala/info&quot;&gt;Scala Overview on StackOverflow&lt;/a&gt;: A list of useful questions sorted by topic&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.artima.com/pins1ed/&quot;&gt;Programming in Scala&lt;/a&gt;，最新的第3版，还没有电子版，电子版是第一版&lt;/li&gt;
+  &lt;li&gt;《Scala for the Impatient》&lt;/li&gt;
+  &lt;li&gt;《Scala in Depth》&lt;/li&gt;
+  &lt;li&gt;《Programming Scala》Dean Wampler and Alex Payne. O’Reilly 2009&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.scala-lang.org/docu/files/ScalaByExample.pdf&quot;&gt;Scala By Example&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.scala-lang.org/cheatsheets/&quot;&gt;Scala Cheatsheet&lt;/a&gt;学习模式匹配的好资料&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.scala-lang.org/glossary/&quot;&gt;Glossary of Scala and FP terms&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lihaoyi/Metascala&quot;&gt;Metascala: A JVM written in Scala&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://scala-lms.github.io/&quot;&gt;LMS: Program Generation and Embedded Compilers in Scala&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sirthias/parboiled2&quot;&gt;parboiled2&lt;/a&gt;: 性能很好的parser&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;常用的IDE：IntelliJ IDEA(强烈推荐)，Eclipse，Netbeans&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fastutil.di.unimi.it/&quot;&gt;fastutil&lt;/a&gt;: 性能更好的Java集合框架&lt;/li&gt;
+  &lt;li&gt;Guava: 谷歌的Java工具包，应用广泛&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.lagomframework.com/&quot;&gt;Lagom&lt;/a&gt;: 微服务框架，提供了Java、Scala API&lt;/li&gt;
+  &lt;li&gt;Curator：Netflix公司开源的一个Zookeeper client library，用于简化Zookeeper客户端编程，现在已经是apache下的一个独立项目了。Spark的HA也用的这货。&lt;/li&gt;
+  &lt;li&gt;Rx(Reactive Extensions)框架：Vert.x, RxJava(Android中用的比较多),  Quasar&lt;/li&gt;
+  &lt;li&gt;FindBugs: 代码静态分析工具，找出代码缺陷&lt;/li&gt;
+  &lt;li&gt;Java反编译工具：Luyten，JD-Gui&lt;/li&gt;
+  &lt;li&gt;Drools: 规则引擎&lt;/li&gt;
+  &lt;li&gt;Jersey: Java RESTful 框架&lt;/li&gt;
+  &lt;li&gt;canal: 阿里巴巴出品，binlog增量订阅&amp;amp;消费组件&lt;/li&gt;
+  &lt;li&gt;Web开发相关：Tomcat、Resin、Jetty、WebLogic等，常用的组件Struts，Spring，Hibernate&lt;/li&gt;
+  &lt;li&gt;Netty: 异步事件驱动网络应用编程框架，用于高并发网络编程比较好（NIO框架，spark 1.2.0就用netty替代了nio）&lt;/li&gt;
+  &lt;li&gt;MINA：简单地开发高性能和高可靠性的网络应用程序（也是个NIO框架），不少手游服务端是用它开发的&lt;/li&gt;
+  &lt;li&gt;jOOQ：java Orm框架&lt;/li&gt;
+  &lt;li&gt;Janino: 超级小又快的Java编译器，Spark的Tungsten引起用的它&lt;/li&gt;
+  &lt;li&gt;Activiti:工作流引擎，类似的还有jBPM、Snaker&lt;/li&gt;
+  &lt;li&gt;Perfuse:是一个用户界面包用来把有结构与无结构数据以具有交互性的可视化图形展示出来.&lt;/li&gt;
+  &lt;li&gt;Gephi:复杂网络分析软件, 其主要用于各种网络和复杂系统，动态和分层图的交互可视化与探测开源工具&lt;/li&gt;
+  &lt;li&gt;Nutch:知名的爬虫项目，hadoop就是从这个项目中发展出来的&lt;/li&gt;
+  &lt;li&gt;web-harvest：Web数据提取工具&lt;/li&gt;
+  &lt;li&gt;POM工具：Maven+Artifactory&lt;/li&gt;
+  &lt;li&gt;Akka:一款基于actor模型实现的 并发处理框架&lt;/li&gt;
+  &lt;li&gt;EclEmma：覆盖测试工具&lt;/li&gt;
+  &lt;li&gt;Shiro:安全框架&lt;/li&gt;
+  &lt;li&gt;joda-time:简化时间处理&lt;/li&gt;
+  &lt;li&gt;parboiled:表达式解析&lt;/li&gt;
+  &lt;li&gt;dozer: 深拷贝神器&lt;/li&gt;
+  &lt;li&gt;dubbo: 阿里巴巴出品的分布式服务框架&lt;/li&gt;
+  &lt;li&gt;jackson databind: json序列化工具(fastjson,simplejson)&lt;/li&gt;
+  &lt;li&gt;Atomikos: 分布式事务管理&lt;/li&gt;
+  &lt;li&gt;BoneCP：性能很赞的数据库连接池组件，据说比c3p0快好多&lt;/li&gt;
+  &lt;li&gt;ProGuard: obconfuscation tool, 强大的混淆工具&lt;/li&gt;
+  &lt;li&gt;S-99：Scala相关的99个问题&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PyCharm：最佳Python IDE&lt;/li&gt;
+  &lt;li&gt;Eric,Eclipse+pydev,比较不错的Python IDE&lt;/li&gt;
+  &lt;li&gt;PyWin:Win32 api编程包&lt;/li&gt;
+  &lt;li&gt;numpy:科学计算包，主要用来处理大型矩阵计算等，此外还有SciPy，Matplotlib&lt;/li&gt;
+  &lt;li&gt;GUI相关：PyQt，PyQwt&lt;/li&gt;
+  &lt;li&gt;supervisor:进程监控工具&lt;/li&gt;
+  &lt;li&gt;PyGame: 基于Python的多媒体开发和游戏软件开发模块&lt;/li&gt;
+  &lt;li&gt;Web框架: Django 开源web开发框架，它鼓励快速开发,并遵循MVC设计&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ipader/SwiftGuide&quot;&gt;Swift精选资料&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.csdn.net/article/2015-01-09/2823502-swift-open-source-libs&quot;&gt;43个优秀的开源项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;客户端&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/YANGReal/JokeClient-Swift&quot;&gt;糗事百科 Swift&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/amitburst/HackerNews&quot;&gt;HackerNews Swift&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jxd001/Swift-ZhihuDaily&quot;&gt;知乎日报app&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Framework&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mattdonnelly/Swifter&quot;&gt;Twitter框架&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/glock45/swifter&quot;&gt;Mac下简单HTTP Server Swifter&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;小工具&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisChares/swift-alarm&quot;&gt;Swift Alarm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/mslathrop/SwiftNote&quot;&gt;Swift Note&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wantedly/swift-rss-sample&quot;&gt;Swift RSS Reader&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sxyx2008/Swift-PM25&quot;&gt;Swift-PM2.5查询app&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;游戏&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fullstackio/FlappySwift&quot;&gt;Flappy Swift&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/geek5nan/FanFanSwift&quot;&gt;FanFan Swift&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;net&quot;&gt;.NET&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Xilium.CefGlue:基于CEF框架的.NET封装，基于.NET开发Chrome内核浏览器&lt;/li&gt;
+  &lt;li&gt;CefSharp：同上，有一款WebKit的封装，C#和Js交互会更简单&lt;/li&gt;
+  &lt;li&gt;netz:免费的 .NET 可执行文件压缩工具&lt;/li&gt;
+  &lt;li&gt;SmartAssembly:变态的.net代码优化混淆工具&lt;/li&gt;
+  &lt;li&gt;NETDeob0：.net反混淆工具，真是魔高一尺道高一丈啊(还有个de4dot，在GitHub上，都是开源的)&lt;/li&gt;
+  &lt;li&gt;ILMerge：将所有引用的DLL和exe文件打成一个exe文件&lt;/li&gt;
+  &lt;li&gt;ILSpy:开源.net程序反编译工具&lt;/li&gt;
+  &lt;li&gt;Javascript.NET：很不错的js执行引擎，对v8做了封装&lt;/li&gt;
+  &lt;li&gt;NPOI: Excel操作&lt;/li&gt;
+  &lt;li&gt;DotRAS:远程访问服务的模块&lt;/li&gt;
+  &lt;li&gt;WinHtmlEditor: Winform下的html编辑器&lt;/li&gt;
+  &lt;li&gt;SmartThreadPool:使用C#实现的，带高级特性的线程池&lt;/li&gt;
+  &lt;li&gt;Snoop: WPF Spy Utility&lt;/li&gt;
+  &lt;li&gt;Autofac: 轻量级IoC框架&lt;/li&gt;
+  &lt;li&gt;HtmlAgilityPack：Html解析利器&lt;/li&gt;
+  &lt;li&gt;Quartz.NET：Job调度&lt;/li&gt;
+  &lt;li&gt;HttpLib：@CodePlex，简化http请求&lt;/li&gt;
+  &lt;li&gt;SuperSocket：简化Socket操作，基于他的还有个SuperWebSocket，可以开发独立的WebSocket服务器了&lt;/li&gt;
+  &lt;li&gt;DocX：未安装Office的情况下操作Word文件&lt;/li&gt;
+  &lt;li&gt;Dapper：轻量级的ORM类，性能不错&lt;/li&gt;
+  &lt;li&gt;HubbleDotNet：支持接入数据库的全文搜索系统&lt;/li&gt;
+  &lt;li&gt;fastJSON：@CodeProject，高性能的json序列化类&lt;/li&gt;
+  &lt;li&gt;ZXing.NET：@CodePlex，QR，条形码相关&lt;/li&gt;
+  &lt;li&gt;Nancy：轻量级Http服务器，做个小型的Web应用可以摆脱IIS喽(Nancy.Viewengines.Razor,可以加入Razor引擎)&lt;/li&gt;
+  &lt;li&gt;AntiXSS：微软的XSS防御库Microsoft Web Protection Library&lt;/li&gt;
+  &lt;li&gt;Jint：JavaScript解释器&lt;/li&gt;
+  &lt;li&gt;CS-Script：将C#代码文件作为脚本执行&lt;/li&gt;
+  &lt;li&gt;Jexus：Linux下 高性能、易用、免费的ASP.NET服务器&lt;/li&gt;
+  &lt;li&gt;Clay：将dynamic发挥的更加灵活，像写js一样写C#&lt;/li&gt;
+  &lt;li&gt;DynamicJSON：不必定义数据模型获取json数据&lt;/li&gt;
+  &lt;li&gt;SharpPcap：C#版的WinPcap调用端，牛逼的网络包分析库（自带PacketNotNet用于包协议分析）&lt;/li&gt;
+  &lt;li&gt;Roslyn：C#，VB编译器&lt;/li&gt;
+  &lt;li&gt;ImageResizer: 服务端自由控制图片大小，真乃神器也，对手机端传小图，PC端传大图，CMS用它很方便&lt;/li&gt;
+  &lt;li&gt;UI相关：DevExpress, Fluent(Office 07风格), mui（Modern UI for WPF）&lt;/li&gt;
+  &lt;li&gt;NetSparkle：应用自动更新组件&lt;/li&gt;
+  &lt;li&gt;ConfuserEx: 开源.net混淆工具&lt;/li&gt;
+  &lt;li&gt;ServiceStack: 开源高性能Web服务框架，可用于构建高性能的REST服务&lt;/li&gt;
+  &lt;li&gt;Expression Evaluator：Eval for C#,处理字符串表达式&lt;/li&gt;
+  &lt;li&gt;http://nugetmusthaves.com/&lt;/li&gt;
+  &lt;li&gt;Reactive Extensions (Rx):异步，事件驱动编程包， Rx = Observables + LINQ + Schedulers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c--c&quot;&gt;C &amp;amp; C++&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Thrift:用来进行可扩展且跨语言的服务的开发(类似的还有个Avro，Google protobuf)。&lt;/li&gt;
+  &lt;li&gt;libevent:是一个事件触发的网络库，适用于windows、linux、bsd等多种平台，内部使用select、epoll、kqueue等系统调用管理事件机制。（对了还有个libev呢）&lt;/li&gt;
+  &lt;li&gt;Boost:不多说了，准C++标准库&lt;/li&gt;
+  &lt;li&gt;Valgrind\Ptmalloc\Purify: 调试工具&lt;/li&gt;
+  &lt;li&gt;NetworkServer架构：acceptor-&amp;gt;dispatcher-&amp;gt;worker(这个不算工具哦)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pocoproject.org/&quot;&gt;POCO&lt;/a&gt; - 开源的C++类库及应用程序框架的集合,它主要提供简单的、快速的网络和可移植应用程序&lt;/li&gt;
+  &lt;li&gt;breakpad:崩溃转储和分析模块，很多crashreport会用到&lt;/li&gt;
+  &lt;li&gt;UI界面相关：MFC、BCG和QT这类的就不说了，高端一点的还有Html和DirectUI技术：libcef（基于chrome内核的，想想使用html5开发页面，还真有点小激动呢）、HtmlLayout、Duilib、Bolt，非C++的，还有node-webkit也不错，集成了node和webkit内核。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;其他&quot;&gt;其他&lt;/h2&gt;
+
+&lt;h3 id=&quot;游戏开发相关&quot;&gt;游戏开发相关&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;MINA：使用Java开发手游和页游服务器(对了还有Netty，也很猛的，都是基于NIO的)&lt;/li&gt;
+  &lt;li&gt;HP-Socket：见有有些页游服务器使用这个构建的&lt;/li&gt;
+  &lt;li&gt;Unreal: 虚幻引擎，C++，基于这个引擎的游戏很多&lt;/li&gt;
+  &lt;li&gt;OGRE：大名鼎鼎的3D图形渲染引擎，天龙八部OL、火炬之光等不少游戏都用了这个引擎&lt;/li&gt;
+  &lt;li&gt;OpenVDB：梦工厂C++的特效库，开源的&lt;/li&gt;
+  &lt;li&gt;cocos2d：跨平台2D游戏引擎&lt;/li&gt;
+  &lt;li&gt;unity3d：跨平台3D游戏引擎，很火的哦&lt;/li&gt;
+  &lt;li&gt;Nodejs：也有不少使用它来开发手游和页游服务器（网易的Pomelo）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;日志聚合分布式日志收集&quot;&gt;日志聚合，分布式日志收集&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Scribe：Facebook的（nodejs + scribe + inotify 同步日志）&lt;/li&gt;
+  &lt;li&gt;logstash:强大的日志收集系统，可以基于logstash+kibana+elasticsearch+redis开发强大的日志分析平台&lt;/li&gt;
+  &lt;li&gt;log.io: nodejs开发的实时日志收集系统&lt;/li&gt;
+  &lt;li&gt;Graylog: 易用、功能丰富的日志管理系统， 部署、维护、搜索比&lt;code class=&quot;highlighter-rouge&quot;&gt;ELK&lt;/code&gt;简单&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rtp实时传输协议与音视频&quot;&gt;RTP,实时传输协议与音视频&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;RTP，RTCP，RTSP-&amp;gt; librtp，JRTPLIB(遵循了RFC1889标准)&lt;/li&gt;
+  &lt;li&gt;环形缓冲区，实时数据传输用&lt;/li&gt;
+  &lt;li&gt;SDL,ffmpeg,live555,Speex&lt;/li&gt;
+  &lt;li&gt;Red5:用Java开发开源的Flash流媒体服务器。它支持：把音频（MP3）和视频（FLV）转换成播放流； 录制客户端播放流（只支持FLV）；共享对象；现场直播流发布；远程调用。&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Mon, 30 Oct 2017 10:41:15 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/10/30/%E5%AD%A6%E4%B9%A0/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/30/%E5%AD%A6%E4%B9%A0/</guid>
+        
+        <category>php</category>
+        
+        
+        <category>学习资料</category>
+        
+      </item>
     
       <item>
         <title>学习</title>
@@ -708,19 +1547,22 @@
       </item>
     
       <item>
-        <title>测试中文</title>
+        <title>PHP材料目录</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#测试中文文件名a&quot; id=&quot;markdown-toc-测试中文文件名a&quot;&gt;测试中文文件名{#a}&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#php调试技术a&quot; id=&quot;markdown-toc-php调试技术a&quot;&gt;php调试技术{#a}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;测试中文文件名a&quot;&gt;测试中文文件名{#a}&lt;/h1&gt;
+&lt;h1 id=&quot;php调试技术a&quot;&gt;php调试技术{#a}&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;/weibo/styles/book/PHP-Debug-Manual-public.pdf&quot; title=&quot;调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 26 Oct 2017 17:56:25 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/10/26/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87%E6%96%87%E4%BB%B6%E5%90%8D/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87%E6%96%87%E4%BB%B6%E5%90%8D/</guid>
+        <pubDate>Thu, 26 Oct 2017 16:32:31 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/10/26/PHP%E6%9D%90%E6%96%99%E7%9B%AE%E5%BD%95/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/PHP%E6%9D%90%E6%96%99%E7%9B%AE%E5%BD%95/</guid>
         
-        <category>js</category>
+        <category>php</category>
+        
+        <category>data</category>
         
         
         <category>php</category>
@@ -730,10 +1572,10 @@
       <item>
         <title>PHP材料目录</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#php调试技术&quot; id=&quot;markdown-toc-php调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#php调试技术a&quot; id=&quot;markdown-toc-php调试技术a&quot;&gt;php调试技术{#a}&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;php调试技术&quot;&gt;php调试技术&lt;/h1&gt;
+&lt;h1 id=&quot;php调试技术a&quot;&gt;php调试技术{#a}&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;/weibo/styles/book/PHP-Debug-Manual-public.pdf&quot; title=&quot;调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Oct 2017 16:32:31 +0800</pubDate>
@@ -743,6 +1585,29 @@
         <category>php</category>
         
         <category>data</category>
+        
+        
+        <category>php</category>
+        
+      </item>
+    
+      <item>
+        <title>php学习技能树</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#a&quot; id=&quot;markdown-toc-a&quot;&gt;技能树&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;a&quot;&gt;技能树&lt;/h1&gt;
+
+&lt;p&gt;/weibo/images/LAMPer技能树1.swf
+/weibo/styles/images/jiezishu.jpg&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 26 Oct 2017 13:38:15 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/10/26/php%E5%AD%A6%E4%B9%A0%E6%8A%80%E8%83%BD%E6%A0%91/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/php%E5%AD%A6%E4%B9%A0%E6%8A%80%E8%83%BD%E6%A0%91/</guid>
+        
+        <category>技能树</category>
         
         
         <category>php</category>
@@ -772,6 +1637,37 @@
       </item>
     
       <item>
+        <title>google javascript语言规范</title>
+        <description>&lt;p&gt;变量{###}
+声明变量必须加上 var 关键字.
+当你没有写 var, 变量就会暴露在全局上下文中, 这样很可能会和现有变量冲突.
+另外, 如果没有加上, 很难明确该变量的作用域是什么, 变量也很可能像在局部作用域中, 很轻易地泄漏到 Document 或者 Window 中,
+所以务必用 var 去声明
+变量.{###}
+常量的形式如: NAMES_LIKE_THIS, 即使用大写字符, 并用下划线分隔.
+你也可用 @const 标记来指明它是一个常量.
+但请永远不要使用 const 关键词.
+对于基本类型的常量, 只需转换命名.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;      &lt;span class=&quot;sd&quot;&gt;/**
+       * The number of seconds in a minute.
+       * @type {number}
+       */&lt;/span&gt;
+      &lt;span class=&quot;nx&quot;&gt;goog&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;SECONDS_IN_A_MINUTE&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;60&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Thu, 26 Oct 2017 10:09:39 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/10/26/google-javascript%E8%AF%AD%E8%A8%80%E8%A7%84%E8%8C%83/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/google-javascript%E8%AF%AD%E8%A8%80%E8%A7%84%E8%8C%83/</guid>
+        
+        <category>教程</category>
+        
+        
+        <category>js</category>
+        
+      </item>
+    
+      <item>
         <title>Welcome to Jekyll!</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#zhugeliang&quot; id=&quot;markdown-toc-zhugeliang&quot;&gt;诫子书&lt;/a&gt;&lt;/li&gt;
@@ -797,8 +1693,6 @@
         
         
         <category>jekyll</category>
-        
-        <category>翻译文章</category>
         
       </item>
     

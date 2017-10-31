@@ -2,9 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-11-17 13:31:01 +0800
-categories: [jekyll,翻译文章]
+categories: jekyll
 tag: jekyll
-
 ---
 
 * content
