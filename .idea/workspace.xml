@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc4fb0ed-d780-47d8-b168-c1260cba7a3a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/2017-10-26-测试中文文件名.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/test.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/批处理/FilePath.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/批处理/INIReader.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/批处理/task.ini" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/_posts/批处理/test.bat" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2014-11-17-welcome-to-jekyll.md" afterPath="$PROJECT_DIR$/_posts/2014-11-17-welcome-to-jekyll.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-26-PHP-data-Manual.md" afterPath="$PROJECT_DIR$/_posts/2017-10-26-PHP-data-Manual.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/categories/index.html" afterPath="$PROJECT_DIR$/_site/categories/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/index.html" afterPath="$PROJECT_DIR$/_site/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/tag/index.html" afterPath="$PROJECT_DIR$/_site/tag/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="weibo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-13.636364">
-              <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -694,7 +682,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.636364">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding />
         </state>
       </provider>
