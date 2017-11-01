@@ -46,7 +46,7 @@
 }
 #page-content-wrapper {
     padding-top: 70px;
-    width: 100%;
+
 }
 /*-------------------------------*/
 /*     Sidebar nav styles        */
@@ -156,13 +156,14 @@
 /*       Hamburger-Cross         */
 /*-------------------------------*/
 .hamburger {
-    background: transparent;
+    background:rgba(29,54,93,1);
     border: none;
     display: block;
     height: 32px;
     margin-left: 15px;
     position: fixed;
-    top: 150px;
+    top: 350px;
+   right: 100px;
     width: 32px;
     z-index: 999;
 }
@@ -282,7 +283,3 @@
 /*.navbar-fixed-top{*/
     /*width: 0px;*/
 /*}*/
-.menu{
-    width: 10px;
-    height: 100px;
-}
