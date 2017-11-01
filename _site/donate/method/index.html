@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="/weibo/styles/css/index.css">
 	<link rel="stylesheet" href="/weibo/styles/css/fontawesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="/weibo/styles/css/syntax.css">
+	<link rel="stylesheet" href="/weibo/styles/css/menu.css">
 
 
 	<link rel="stylesheet" href="/weibo/styles/css/bootstrap-combined.min.css">
@@ -125,12 +126,18 @@
     
 
     <div class="container docs-container">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="sidebar hidden-print" role="complementary">
-        
+  <div class="row" id="wrapper">
+
+    <div class="col-md-3 menu" style="">
+        <button type="button" class="hamburger is-closed animated fadeInLeft " data-toggle="offcanvas">
+            <span class="hamb-top"></span>
+            <span class="hamb-middle"></span>
+            <span class="hamb-bottom"></span>
+        </button>
+
+        <div class="sidebar hidden-print " id="sidebar-wrapper" role="">
+            
 <div id="navigation" >
-  <h1>目录</h1>
   <ul class="nav sidenav" id="nav_ul" >
   </ul>
 </div>
@@ -176,9 +183,12 @@ function push_arr(obj,dimension,default_data_str){
 }
 
 </script>
-      </div>
+        </div>
+
+
     </div>
-    <div class="col-md-9" role="main">
+
+    <div class="col-md-9" id="page-content-wrapper" role="main">
       <div class="panel docs-content">
         <div class="wrapper">
             <header class="post-header">
@@ -225,6 +235,7 @@ function push_arr(obj,dimension,default_data_str){
     </div>
   </div>
 </div>
+
 
 
     <footer class="footer" role="contentinfo">

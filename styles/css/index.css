@@ -6432,10 +6432,19 @@ hr {
   padding-top: 40px;
 }
 .sidebar {
-  display: none;
+  /*display: none;*/
+}
+.col-md-3.menu-left{
+  left: 0px;
+  margin-left: 0px;
+  width: 263px;
 }
 .sidebar.affix {
-  position: static;
+  position: absolute;
+
+}
+.sidebar.affix-top {
+  position: absolute;
 
 }
 /* First level of nav */
@@ -6495,6 +6504,14 @@ hr {
   .sidebar.affix-bottom {
     width: 213px;
   }
+  .sidebar.affix-top
+  {
+    width: 0px;
+  }
+  .sidebar.affix-top.toggled
+  {
+    width: 263px;
+  }
   .sidebar.affix {
     position: fixed;
     top: 45px;
@@ -6511,8 +6528,12 @@ hr {
 @media (min-width: 1200px) {
   .sidebar.affix-bottom,
   .sidebar.affix {
+    width: 0;
+  }
+  .sidebar.affix.toggled {
     width: 263px;
   }
+
 }
 .docs-nav {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
