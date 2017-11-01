@@ -102,8 +102,8 @@
 
   //左侧菜单手机隐藏
   var trigger = $('.hamburger'),
-      isClosed = true;
-  $('#wrapper').toggleClass('toggled');
+      isClosed = false;
+
   $('[data-toggle="offcanvas"]').click(function () {
     $('#wrapper').toggleClass('toggled');
   });
