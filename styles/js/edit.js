@@ -73,7 +73,12 @@ function writefile(){
     var content=content.replace(/[\r\n]/g,"\r\n");
     if(title!==""&&title!=="标题"){
         var now=new Date();
-        file_name=now.getFullYear()+"-"+(now.getMonth()+1)+"-"+now.getDate()+"-"+title+".md";
+        var month=now.getMonth()+1;
+        var date=now.getDate();
+        month=month<10?"0"+month:month;
+        date=date<10?"0"+date:date;
+
+        file_name=now.getFullYear()+"-"+month+"-"+date+"-"+title+".md";
     }else {
         file_name=$("#file_name").val()
     }
