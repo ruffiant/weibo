@@ -5,37 +5,30 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Nov 2017 14:26:34 +0800</pubDate>
-    <lastBuildDate>Thu, 02 Nov 2017 14:26:34 +0800</lastBuildDate>
+    <pubDate>Thu, 02 Nov 2017 14:40:16 +0800</pubDate>
+    <lastBuildDate>Thu, 02 Nov 2017 14:40:16 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
         <title>免费的编程中文书籍索引</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#免费的编程中文书籍索引&quot; id=&quot;markdown-toc-免费的编程中文书籍索引&quot;&gt;##免费的编程中文书籍索引&lt;/a&gt;    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#参与交流&quot; id=&quot;markdown-toc-参与交流&quot;&gt;参与交流&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#语言无关类&quot; id=&quot;markdown-toc-语言无关类&quot;&gt;语言无关类&lt;/a&gt;        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#操作系统&quot; id=&quot;markdown-toc-操作系统&quot;&gt;操作系统&lt;/a&gt;            &lt;ul&gt;
-              &lt;li&gt;&lt;a href=&quot;#智能系统&quot; id=&quot;markdown-toc-智能系统&quot;&gt;智能系统&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#分布式系统&quot; id=&quot;markdown-toc-分布式系统&quot;&gt;分布式系统&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#编译原理&quot; id=&quot;markdown-toc-编译原理&quot;&gt;编译原理&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#函数式概念&quot; id=&quot;markdown-toc-函数式概念&quot;&gt;函数式概念&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#计算机图形学&quot; id=&quot;markdown-toc-计算机图形学&quot;&gt;计算机图形学&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#web服务器&quot; id=&quot;markdown-toc-web服务器&quot;&gt;WEB服务器&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#版本控制&quot; id=&quot;markdown-toc-版本控制&quot;&gt;版本控制&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#编辑器&quot; id=&quot;markdown-toc-编辑器&quot;&gt;编辑器&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#nosql&quot; id=&quot;markdown-toc-nosql&quot;&gt;NoSQL&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#postgresql&quot; id=&quot;markdown-toc-postgresql&quot;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#mysql&quot; id=&quot;markdown-toc-mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#管理和监控&quot; id=&quot;markdown-toc-管理和监控&quot;&gt;管理和监控&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#项目相关&quot; id=&quot;markdown-toc-项目相关&quot;&gt;项目相关&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#设计模式&quot; id=&quot;markdown-toc-设计模式&quot;&gt;设计模式&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#web&quot; id=&quot;markdown-toc-web&quot;&gt;Web&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#大数据&quot; id=&quot;markdown-toc-大数据&quot;&gt;大数据&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#操作系统&quot; id=&quot;markdown-toc-操作系统&quot;&gt;#操作系统&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#智能系统&quot; id=&quot;markdown-toc-智能系统&quot;&gt;智能系统&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#分布式系统&quot; id=&quot;markdown-toc-分布式系统&quot;&gt;分布式系统&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#编译原理&quot; id=&quot;markdown-toc-编译原理&quot;&gt;编译原理&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#函数式概念&quot; id=&quot;markdown-toc-函数式概念&quot;&gt;函数式概念&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#计算机图形学&quot; id=&quot;markdown-toc-计算机图形学&quot;&gt;计算机图形学&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#web服务器&quot; id=&quot;markdown-toc-web服务器&quot;&gt;WEB服务器&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#版本控制&quot; id=&quot;markdown-toc-版本控制&quot;&gt;版本控制&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#编辑器&quot; id=&quot;markdown-toc-编辑器&quot;&gt;编辑器&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#nosql&quot; id=&quot;markdown-toc-nosql&quot;&gt;NoSQL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#postgresql&quot; id=&quot;markdown-toc-postgresql&quot;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#mysql&quot; id=&quot;markdown-toc-mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#管理和监控&quot; id=&quot;markdown-toc-管理和监控&quot;&gt;管理和监控&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#项目相关&quot; id=&quot;markdown-toc-项目相关&quot;&gt;项目相关&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#设计模式&quot; id=&quot;markdown-toc-设计模式&quot;&gt;设计模式&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#web&quot; id=&quot;markdown-toc-web&quot;&gt;Web&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#大数据&quot; id=&quot;markdown-toc-大数据&quot;&gt;大数据&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#编程艺术&quot; id=&quot;markdown-toc-编程艺术&quot;&gt;编程艺术&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#其它&quot; id=&quot;markdown-toc-其它&quot;&gt;其它&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;&lt;a href=&quot;#语言相关类&quot; id=&quot;markdown-toc-语言相关类&quot;&gt;语言相关类&lt;/a&gt;        &lt;ul&gt;
@@ -77,35 +70,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;免费的编程中文书籍索引&quot;&gt;##免费的编程中文书籍索引&lt;/h1&gt;
-
-&lt;p&gt;免费的编程中文书籍索引，欢迎投稿。&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;国外程序员在 &lt;a href=&quot;http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read/1713%231713&quot;&gt;stackoverflow&lt;/a&gt; 推荐的程序员必读书籍，&lt;a href=&quot;http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html&quot; title=&quot;一个合格的程序员应该读过哪些书&quot;&gt;中文版&lt;/a&gt;。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/38210/what-non-programming-books-should-programmers-read&quot;&gt;stackoverflow&lt;/a&gt; 上的程序员应该阅读的非编程类书籍有哪些？ &lt;a href=&quot;what-non-programming-books-should-programmers-read.md&quot;&gt;中文版&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/vhf/free-programming-books&quot;&gt;github&lt;/a&gt; 上的一个流行的编程书籍索引  &lt;a href=&quot;https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md&quot;&gt;中文版&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;欢迎订阅我的微信公众帐号，只推送原创文字。欢迎扫描二维码订阅：&lt;/p&gt;
-
-&lt;h2 id=&quot;参与交流&quot;&gt;参与交流&lt;/h2&gt;
-&lt;p&gt;===============&lt;/p&gt;
-
-&lt;p&gt;欢迎大家将珍藏已久的经典免费书籍共享出来，您可以：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;使用 &lt;a href=&quot;https://github.com/justjavac/free-programming-books-zh_CN/issues&quot;&gt;Issues&lt;/a&gt; 以及 Pull Request&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;贡献者名单: https://github.com/justjavac/free-programming-books-zh_CN/graphs/contributors&lt;/p&gt;
-
-&lt;h2 id=&quot;语言无关类&quot;&gt;语言无关类&lt;/h2&gt;
-&lt;p&gt;===============&lt;/p&gt;
-
-&lt;h3 id=&quot;操作系统&quot;&gt;操作系统&lt;/h3&gt;
-&lt;p&gt;===============&lt;/p&gt;
-
+&lt;h1 id=&quot;操作系统&quot;&gt;#操作系统&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://i.linuxtoy.org/docs/guide/index.html&quot;&gt;开源世界旅行手册&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://vbird.dic.ksu.edu.tw/&quot;&gt;鸟哥的Linux私房菜&lt;/a&gt;&lt;/li&gt;
@@ -358,10 +323,8 @@
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;语言相关类&quot;&gt;语言相关类&lt;/h2&gt;
-&lt;p&gt;===============&lt;/p&gt;
 
 &lt;h3 id=&quot;android&quot;&gt;Android&lt;/h3&gt;
-&lt;p&gt;===============&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.apkbus.com/design/index.html&quot;&gt;Android Design(中文版)&lt;/a&gt;&lt;/li&gt;
