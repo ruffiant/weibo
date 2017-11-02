@@ -19,7 +19,6 @@ tag: [php,mysql,技能树]
 
 欢迎订阅我的微信公众帐号，只推送原创文字。欢迎扫描二维码订阅：
 
-![justjavac微信公众帐号](http://justjavac.com/assets/images/weixin-justjavac.jpg)
 
 ## 参与交流
 
@@ -29,7 +28,10 @@ tag: [php,mysql,技能树]
 
 贡献者名单: https://github.com/justjavac/free-programming-books-zh_CN/graphs/contributors
 
+
+
 ## 目录
+===============
 
 * [语言无关类](#语言无关类)
   * [操作系统](#操作系统)
@@ -89,9 +91,9 @@ tag: [php,mysql,技能树]
 * [测试相关](#测试相关)
 
 ## 语言无关类
-
+===============
 ### 操作系统
-
+===============
 * [开源世界旅行手册](http://i.linuxtoy.org/docs/guide/index.html)
 * [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw/)
 * [The Linux Command Line](http://billie66.github.io/TLCL/index.html) (中英文版)
@@ -116,22 +118,32 @@ tag: [php,mysql,技能树]
 * [操作系统思考](https://github.com/wizardforcel/think-os-zh)
 
 #### 智能系统
+===============
 * [一步步搭建物联网系统](https://github.com/phodal/designiot)
 
 ### 分布式系统
+===============
+
 * [走向分布式](http://dcaoyuan.github.io/papers/pdfs/Scalability.pdf)
 
 ### 编译原理
+===============
+
 * [《计算机程序的结构和解释》公开课 翻译项目](https://github.com/DeathKing/Learning-SICP)
 
 ### 函数式概念
+===============
+
 * [傻瓜函数编程](https://github.com/justinyhuang/Functional-Programming-For-The-Rest-of-Us-Cn)
 
 ### 计算机图形学
+===============
+
 * [OpenGL 教程](https://github.com/zilongshanren/opengl-tutorials)
 * [WebGL自学网](http://html5.iii.org.tw/course/webgl/)
 
 ### WEB服务器
+===============
 
 * [Nginx开发从入门到精通](http://tengine.taobao.org/book/index.html) (淘宝团队出品)
 * [Nginx教程从入门到精通](http://www.ttlsa.com/nginx/nginx-stu-pdf/)(PDF版本，运维生存时间出品)
@@ -139,7 +151,7 @@ tag: [php,mysql,技能树]
 * [Apache 中文手册](http://works.jinbuguo.com/apache/menu22/index.html)
 
 ### 版本控制
-
+===============
 * [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000) （本文由 [廖雪峰](http://www.liaoxuefeng.com) 创作，如果觉得本教程对您有帮助，可以去 [iTunes](https://itunes.apple.com/cn/app/git-jiao-cheng/id876420437) 购买）
 * [git - 简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 * [猴子都能懂的GIT入门](http://backlogtool.com/git-guide/cn/)
@@ -161,7 +173,7 @@ tag: [php,mysql,技能树]
 * [GitHub漫游指南](https://github.com/phodal/github-roam)
 
 ### 编辑器
-
+===============
 * [exvim--vim 改良成IDE项目](http://exvim.github.io/docs-zh/intro/)
 * [笨方法学Vimscript 中译本](http://learnvimscriptthehardway.onefloweroneworld.com/)
 * [Vim中文文档](https://github.com/vimcn/vimcdoc)
@@ -173,7 +185,7 @@ tag: [php,mysql,技能树]
 * [Atom官方手册](https://atom-china.org/t/atom/62)
 
 ### NoSQL
-
+===============
 * [NoSQL数据库笔谈](http://old.sebug.net/paper/databases/nosql/Nosql.html)
 * [Redis 设计与实现](http://redisbook.com/)
 * [Redis 命令参考](http://redisdoc.com/)
@@ -187,18 +199,18 @@ tag: [php,mysql,技能树]
 * [Apache Spark 设计与实现](https://github.com/JerryLead/SparkInternals/tree/master/markdown)
 
 ### PostgreSQL
-
+===============
 * [PostgreSQL 8.2.3 中文文档](http://works.jinbuguo.com/postgresql/menu823/index.html)
 * [PostgreSQL 9.3.1 中文文档](http://www.postgres.cn/docs/9.3/index.html)
 * [PostgreSQL 9.5.3 中文文档](http://www.postgres.cn/docs/9.5/index.html)
 
 ### MySQL
-
+===============
 * [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 * [21分钟MySQL入门教程](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html)
 
 ### 管理和监控
-
+===============
 * [ELKstack 中文指南](http://kibana.logstash.es)
 * [Mastering Elasticsearch(中文版)](http://udn.yyuap.com/doc/mastering-elasticsearch/)
 * [ElasticSearch 权威指南](https://www.gitbook.com/book/fuxiaopang/learnelasticsearch/details)
@@ -333,7 +345,7 @@ tag: [php,mysql,技能树]
 * [Boost 库中文教程](http://zh.highscore.de/cpp/boost/)
 * [笨办法学C](https://github.com/wizardforcel/lcthw-zh)
 
-### C&#35;
+### C#
 
 * [MSDN C# 中文文档](https://msdn.microsoft.com/zh-cn/library/kx37x362.aspx)
 * [.NET 类库参考](https://msdn.microsoft.com/zh-cn/library/gg145045.aspx)
