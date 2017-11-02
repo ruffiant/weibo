@@ -92,8 +92,10 @@ tag: [php,mysql,技能树]
 
 ## 语言无关类
 ===============
+
 ### 操作系统
 ===============
+
 * [开源世界旅行手册](http://i.linuxtoy.org/docs/guide/index.html)
 * [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw/)
 * [The Linux Command Line](http://billie66.github.io/TLCL/index.html) (中英文版)
@@ -119,6 +121,7 @@ tag: [php,mysql,技能树]
 
 #### 智能系统
 ===============
+
 * [一步步搭建物联网系统](https://github.com/phodal/designiot)
 
 ### 分布式系统
@@ -152,6 +155,7 @@ tag: [php,mysql,技能树]
 
 ### 版本控制
 ===============
+
 * [Git教程](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000) （本文由 [廖雪峰](http://www.liaoxuefeng.com) 创作，如果觉得本教程对您有帮助，可以去 [iTunes](https://itunes.apple.com/cn/app/git-jiao-cheng/id876420437) 购买）
 * [git - 简易指南](http://rogerdudler.github.io/git-guide/index.zh.html)
 * [猴子都能懂的GIT入门](http://backlogtool.com/git-guide/cn/)
@@ -174,6 +178,7 @@ tag: [php,mysql,技能树]
 
 ### 编辑器
 ===============
+
 * [exvim--vim 改良成IDE项目](http://exvim.github.io/docs-zh/intro/)
 * [笨方法学Vimscript 中译本](http://learnvimscriptthehardway.onefloweroneworld.com/)
 * [Vim中文文档](https://github.com/vimcn/vimcdoc)
@@ -186,6 +191,7 @@ tag: [php,mysql,技能树]
 
 ### NoSQL
 ===============
+
 * [NoSQL数据库笔谈](http://old.sebug.net/paper/databases/nosql/Nosql.html)
 * [Redis 设计与实现](http://redisbook.com/)
 * [Redis 命令参考](http://redisdoc.com/)
@@ -200,12 +206,14 @@ tag: [php,mysql,技能树]
 
 ### PostgreSQL
 ===============
+ 
 * [PostgreSQL 8.2.3 中文文档](http://works.jinbuguo.com/postgresql/menu823/index.html)
 * [PostgreSQL 9.3.1 中文文档](http://www.postgres.cn/docs/9.3/index.html)
 * [PostgreSQL 9.5.3 中文文档](http://www.postgres.cn/docs/9.5/index.html)
 
 ### MySQL
 ===============
+
 * [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
 * [21分钟MySQL入门教程](http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html)
 
@@ -219,7 +227,8 @@ tag: [php,mysql,技能树]
 * [Puppet 2.7 Cookbook 中文版](http://bbs.konotes.org/workdoc/puppet-27/)
 
 ### 项目相关
-
+===============
+ 
 * [持续集成（第二版）](http://article.yeeyan.org/view/2251/94882) (译言网)
 * [让开发自动化系列专栏](http://www.ibm.com/developerworks/cn/java/j-ap/)
 * [追求代码质量](http://www.ibm.com/developerworks/cn/java/j-cq/)
@@ -236,14 +245,16 @@ tag: [php,mysql,技能树]
 * [The Twelve-Factor App](http://12factor.net/zh_cn/)
 
 ### 设计模式
-
+===============
+ 
 * [图说设计模式](https://github.com/me115/design_patterns)
 * [史上最全设计模式导学目录](http://blog.csdn.net/lovelion/article/details/17517213)
 * [design pattern 包教不包会](https://github.com/AlfredTheBest/Design-Pattern)
 * [设计模式 Java 版](https://quanke.gitbooks.io/design-pattern-java/content/)
 
 ### Web
-
+===============
+ 
 * [关于浏览器和网络的 20 项须知](http://www.20thingsilearned.com/zh-CN/home)
 * [浏览器开发工具的秘密](http://jinlong.github.io/2013/08/29/devtoolsecrets/)
 * [Chrome 开发者工具中文手册](https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools)
@@ -273,7 +284,8 @@ tag: [php,mysql,技能树]
 * [站点可靠性工程](https://github.com/hellorocky/Site-Reliability-Engineering)
 
 ### 大数据
-
+===============
+ 
 * [大数据/数据挖掘/推荐系统/机器学习相关资源](https://github.com/Flowerowl/Big-Data-Resources)
 * [面向程序员的数据挖掘指南](https://github.com/egrcc/guidetodatamining)
 * [大型集群上的快速和通用数据处理架构](https://code.csdn.net/CODE_Translation/spark_matei_phd)
@@ -281,13 +293,15 @@ tag: [php,mysql,技能树]
 * [Spark 编程指南简体中文版](https://aiyanbo.gitbooks.io/spark-programming-guide-zh-cn/content/)
 
 ## 编程艺术
-
+===============
+ 
 * [程序员编程艺术](https://github.com/julycoding/The-Art-Of-Programming-by-July)
 * [每个程序员都应该了解的内存知识(译)](http://www.oschina.net/translate/what-every-programmer-should-know-about-memory-part1?print)【第一部分】
 * [取悦的工序：如何理解游戏](http://read.douban.com/ebook/4972883/) (豆瓣阅读，免费书籍)
 
 ## 其它
-
+===============
+ 
 * [OpenWrt智能、自动、透明翻墙路由器教程](https://www.gitbook.com/book/softwaredownload/openwrt-fanqiang/details)
 * [SAN 管理入门系列](https://community.emc.com/docs/DOC-16067)
 * [Sketch 中文手册](http://sketchcn.com/sketch-chinese-user-manual.html#introduce)
