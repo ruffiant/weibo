@@ -9,37 +9,9 @@ tag: [php,mysql,技能树]
 {:toc}
 
 
-##免费的编程中文书籍索引
+
+#操作系统
 ===============
-
-
-免费的编程中文书籍索引，欢迎投稿。
-
-- 国外程序员在 [stackoverflow](http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read/1713%231713) 推荐的程序员必读书籍，[中文版](http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html "一个合格的程序员应该读过哪些书")。
-- [stackoverflow](http://stackoverflow.com/questions/38210/what-non-programming-books-should-programmers-read) 上的程序员应该阅读的非编程类书籍有哪些？ [中文版](what-non-programming-books-should-programmers-read.md)
-- [github](https://github.com/vhf/free-programming-books) 上的一个流行的编程书籍索引  [中文版](https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md)
-
-欢迎订阅我的微信公众帐号，只推送原创文字。欢迎扫描二维码订阅：
-
-
-
-## 参与交流
-===============
-
-
-欢迎大家将珍藏已久的经典免费书籍共享出来，您可以：
-
-* 使用 [Issues](https://github.com/justjavac/free-programming-books-zh_CN/issues) 以及 Pull Request
-
-贡献者名单: https://github.com/justjavac/free-programming-books-zh_CN/graphs/contributors
-
-
-## 语言无关类
-===============
-
-### 操作系统
-===============
-
 * [开源世界旅行手册](http://i.linuxtoy.org/docs/guide/index.html)
 * [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw/)
 * [The Linux Command Line](http://billie66.github.io/TLCL/index.html) (中英文版)
@@ -245,7 +217,7 @@ tag: [php,mysql,技能树]
 
 ## 其它
 ===============
-  
+ 
 * [OpenWrt智能、自动、透明翻墙路由器教程](https://www.gitbook.com/book/softwaredownload/openwrt-fanqiang/details)
 * [SAN 管理入门系列](https://community.emc.com/docs/DOC-16067)
 * [Sketch 中文手册](http://sketchcn.com/sketch-chinese-user-manual.html#introduce)
@@ -254,11 +226,9 @@ tag: [php,mysql,技能树]
 * [Growth: 全栈增长工程师指南](https://github.com/phodal/growth-ebook)
 
 ## 语言相关类
-===============
-  
+
 ### Android
-===============
-  
+
 * [Android Design(中文版)](http://www.apkbus.com/design/index.html)
 * Google Material Design 正體中文版 ([译本一](https://wcc723.gitbooks.io/google_design_translate/content/style-icons.html) [译本二](https://github.com/1sters/material_design_zh))
 * [Material Design 中文版](http://wiki.jikexueyuan.com/project/material-design/)
