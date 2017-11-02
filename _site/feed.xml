@@ -5,9 +5,946 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Nov 2017 17:35:03 +0800</pubDate>
-    <lastBuildDate>Wed, 01 Nov 2017 17:35:03 +0800</lastBuildDate>
+    <pubDate>Thu, 02 Nov 2017 14:26:34 +0800</pubDate>
+    <lastBuildDate>Thu, 02 Nov 2017 14:26:34 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>免费的编程中文书籍索引</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#免费的编程中文书籍索引&quot; id=&quot;markdown-toc-免费的编程中文书籍索引&quot;&gt;##免费的编程中文书籍索引&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#参与交流&quot; id=&quot;markdown-toc-参与交流&quot;&gt;参与交流&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#语言无关类&quot; id=&quot;markdown-toc-语言无关类&quot;&gt;语言无关类&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#操作系统&quot; id=&quot;markdown-toc-操作系统&quot;&gt;操作系统&lt;/a&gt;            &lt;ul&gt;
+              &lt;li&gt;&lt;a href=&quot;#智能系统&quot; id=&quot;markdown-toc-智能系统&quot;&gt;智能系统&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#分布式系统&quot; id=&quot;markdown-toc-分布式系统&quot;&gt;分布式系统&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#编译原理&quot; id=&quot;markdown-toc-编译原理&quot;&gt;编译原理&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#函数式概念&quot; id=&quot;markdown-toc-函数式概念&quot;&gt;函数式概念&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#计算机图形学&quot; id=&quot;markdown-toc-计算机图形学&quot;&gt;计算机图形学&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#web服务器&quot; id=&quot;markdown-toc-web服务器&quot;&gt;WEB服务器&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#版本控制&quot; id=&quot;markdown-toc-版本控制&quot;&gt;版本控制&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#编辑器&quot; id=&quot;markdown-toc-编辑器&quot;&gt;编辑器&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#nosql&quot; id=&quot;markdown-toc-nosql&quot;&gt;NoSQL&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#postgresql&quot; id=&quot;markdown-toc-postgresql&quot;&gt;PostgreSQL&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#mysql&quot; id=&quot;markdown-toc-mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#管理和监控&quot; id=&quot;markdown-toc-管理和监控&quot;&gt;管理和监控&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#项目相关&quot; id=&quot;markdown-toc-项目相关&quot;&gt;项目相关&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#设计模式&quot; id=&quot;markdown-toc-设计模式&quot;&gt;设计模式&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#web&quot; id=&quot;markdown-toc-web&quot;&gt;Web&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#大数据&quot; id=&quot;markdown-toc-大数据&quot;&gt;大数据&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#编程艺术&quot; id=&quot;markdown-toc-编程艺术&quot;&gt;编程艺术&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#其它&quot; id=&quot;markdown-toc-其它&quot;&gt;其它&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#语言相关类&quot; id=&quot;markdown-toc-语言相关类&quot;&gt;语言相关类&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#android&quot; id=&quot;markdown-toc-android&quot;&gt;Android&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#app&quot; id=&quot;markdown-toc-app&quot;&gt;APP&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#awk&quot; id=&quot;markdown-toc-awk&quot;&gt;AWK&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#cc&quot; id=&quot;markdown-toc-cc&quot;&gt;C/C++&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#c&quot; id=&quot;markdown-toc-c&quot;&gt;C&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#clojure&quot; id=&quot;markdown-toc-clojure&quot;&gt;Clojure&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#dart&quot; id=&quot;markdown-toc-dart&quot;&gt;Dart&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#elixir&quot; id=&quot;markdown-toc-elixir&quot;&gt;Elixir&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#erlang&quot; id=&quot;markdown-toc-erlang&quot;&gt;Erlang&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#fortran&quot; id=&quot;markdown-toc-fortran&quot;&gt;Fortran&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#go&quot; id=&quot;markdown-toc-go&quot;&gt;Go&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#groovy&quot; id=&quot;markdown-toc-groovy&quot;&gt;Groovy&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#haskell&quot; id=&quot;markdown-toc-haskell&quot;&gt;Haskell&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#ios&quot; id=&quot;markdown-toc-ios&quot;&gt;iOS&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#java&quot; id=&quot;markdown-toc-java&quot;&gt;Java&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#javascript&quot; id=&quot;markdown-toc-javascript&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#latex&quot; id=&quot;markdown-toc-latex&quot;&gt;LaTeX&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#lisp&quot; id=&quot;markdown-toc-lisp&quot;&gt;LISP&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#lua&quot; id=&quot;markdown-toc-lua&quot;&gt;Lua&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#ocaml&quot; id=&quot;markdown-toc-ocaml&quot;&gt;OCaml&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#perl&quot; id=&quot;markdown-toc-perl&quot;&gt;Perl&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#php&quot; id=&quot;markdown-toc-php&quot;&gt;PHP&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#prolog&quot; id=&quot;markdown-toc-prolog&quot;&gt;Prolog&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#python&quot; id=&quot;markdown-toc-python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#r&quot; id=&quot;markdown-toc-r&quot;&gt;R&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#ruby&quot; id=&quot;markdown-toc-ruby&quot;&gt;Ruby&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#rust&quot; id=&quot;markdown-toc-rust&quot;&gt;Rust&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#scala&quot; id=&quot;markdown-toc-scala&quot;&gt;Scala&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#shell&quot; id=&quot;markdown-toc-shell&quot;&gt;Shell&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#swift&quot; id=&quot;markdown-toc-swift&quot;&gt;Swift&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#读书笔记及其它&quot; id=&quot;markdown-toc-读书笔记及其它&quot;&gt;读书笔记及其它&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#测试相关&quot; id=&quot;markdown-toc-测试相关&quot;&gt;测试相关&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;免费的编程中文书籍索引&quot;&gt;##免费的编程中文书籍索引&lt;/h1&gt;
+
+&lt;p&gt;免费的编程中文书籍索引，欢迎投稿。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;国外程序员在 &lt;a href=&quot;http://stackoverflow.com/questions/1711/what-is-the-single-most-influential-book-every-programmer-should-read/1713%231713&quot;&gt;stackoverflow&lt;/a&gt; 推荐的程序员必读书籍，&lt;a href=&quot;http://justjavac.com/other/2012/05/15/qualified-programmer-should-read-what-books.html&quot; title=&quot;一个合格的程序员应该读过哪些书&quot;&gt;中文版&lt;/a&gt;。&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/38210/what-non-programming-books-should-programmers-read&quot;&gt;stackoverflow&lt;/a&gt; 上的程序员应该阅读的非编程类书籍有哪些？ &lt;a href=&quot;what-non-programming-books-should-programmers-read.md&quot;&gt;中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/vhf/free-programming-books&quot;&gt;github&lt;/a&gt; 上的一个流行的编程书籍索引  &lt;a href=&quot;https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md&quot;&gt;中文版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;欢迎订阅我的微信公众帐号，只推送原创文字。欢迎扫描二维码订阅：&lt;/p&gt;
+
+&lt;h2 id=&quot;参与交流&quot;&gt;参与交流&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;p&gt;欢迎大家将珍藏已久的经典免费书籍共享出来，您可以：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;使用 &lt;a href=&quot;https://github.com/justjavac/free-programming-books-zh_CN/issues&quot;&gt;Issues&lt;/a&gt; 以及 Pull Request&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;贡献者名单: https://github.com/justjavac/free-programming-books-zh_CN/graphs/contributors&lt;/p&gt;
+
+&lt;h2 id=&quot;语言无关类&quot;&gt;语言无关类&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;h3 id=&quot;操作系统&quot;&gt;操作系统&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://i.linuxtoy.org/docs/guide/index.html&quot;&gt;开源世界旅行手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://vbird.dic.ksu.edu.tw/&quot;&gt;鸟哥的Linux私房菜&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://billie66.github.io/TLCL/index.html&quot;&gt;The Linux Command Line&lt;/a&gt; (中英文版)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://oss.org.cn/kernel-book/ldd3/index.html&quot;&gt;Linux 设备驱动&lt;/a&gt; (第三版)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kerneltravel.net/kernel-book/%E6%B7%B1%E5%85%A5%E5%88%86%E6%9E%90Linux%E5%86%85%E6%A0%B8%E6%BA%90%E7%A0%81.html&quot;&gt;深入分析Linux内核源码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cb.vu/unixtoolbox_zh_CN.xhtml&quot;&gt;UNIX TOOLBOX&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/widuu/chinese_docker&quot;&gt;Docker中文指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/yeasy/docker_practice&quot;&gt;Docker —— 从入门到实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yuedu.baidu.com/ebook/d817967416fc700abb68fca1&quot;&gt;Docker入门实战&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wsargent/docker-cheat-sheet/tree/master/zh-cn#docker-cheat-sheet&quot;&gt;Docker Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://freeradius.akagi201.org&quot;&gt;FreeRADIUS新手入门&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://aaaaaashu.gitbooks.io/mac-dev-setup/content/&quot;&gt;Mac 开发配置手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freebsd.org/doc/zh_CN/books/handbook/index.html&quot;&gt;FreeBSD 使用手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://billie66.github.io/TLCL/book/&quot;&gt;Linux 命令行(中文版)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://works.jinbuguo.com/lfs/lfs62/index.html&quot;&gt;Linux 构建指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/me115/linuxtools_rst&quot;&gt;Linux工具快速教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/tinylab/linux-doc/details&quot;&gt;Linux Documentation (中文版)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/tinylab/elinux/details&quot;&gt;嵌入式 Linux 知识库 (eLinux.org 中文版)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tobegit3hub/understand_linux_process&quot;&gt;理解Linux进程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md&quot;&gt;命令行的艺术&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://spacewander.gitbooks.io/systemtapbeginnersguide_zh/content/index.html&quot;&gt;SystemTap新手指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wizardforcel/think-os-zh&quot;&gt;操作系统思考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;智能系统&quot;&gt;智能系统&lt;/h4&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/phodal/designiot&quot;&gt;一步步搭建物联网系统&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;分布式系统&quot;&gt;分布式系统&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dcaoyuan.github.io/papers/pdfs/Scalability.pdf&quot;&gt;走向分布式&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;编译原理&quot;&gt;编译原理&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/DeathKing/Learning-SICP&quot;&gt;《计算机程序的结构和解释》公开课 翻译项目&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;函数式概念&quot;&gt;函数式概念&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/justinyhuang/Functional-Programming-For-The-Rest-of-Us-Cn&quot;&gt;傻瓜函数编程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;计算机图形学&quot;&gt;计算机图形学&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/zilongshanren/opengl-tutorials&quot;&gt;OpenGL 教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://html5.iii.org.tw/course/webgl/&quot;&gt;WebGL自学网&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;web服务器&quot;&gt;WEB服务器&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tengine.taobao.org/book/index.html&quot;&gt;Nginx开发从入门到精通&lt;/a&gt; (淘宝团队出品)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ttlsa.com/nginx/nginx-stu-pdf/&quot;&gt;Nginx教程从入门到精通&lt;/a&gt;(PDF版本，运维生存时间出品)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/moonbingbing/openresty-best-practices/details&quot;&gt;OpenResty最佳实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://works.jinbuguo.com/apache/menu22/index.html&quot;&gt;Apache 中文手册&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;版本控制&quot;&gt;版本控制&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot;&gt;Git教程&lt;/a&gt; （本文由 &lt;a href=&quot;http://www.liaoxuefeng.com&quot;&gt;廖雪峰&lt;/a&gt; 创作，如果觉得本教程对您有帮助，可以去 &lt;a href=&quot;https://itunes.apple.com/cn/app/git-jiao-cheng/id876420437&quot;&gt;iTunes&lt;/a&gt; 购买）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rogerdudler.github.io/git-guide/index.zh.html&quot;&gt;git - 简易指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://backlogtool.com/git-guide/cn/&quot;&gt;猴子都能懂的GIT入门&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gitref.justjavac.com&quot;&gt;Git 参考手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://git-scm.com/book/zh/v2&quot;&gt;Pro Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/0532/progit/details&quot;&gt;Pro Git 中文版&lt;/a&gt; (整理在gitbook上)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/&quot;&gt;Git Magic&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.worldhello.net/gotgithub/index.html&quot;&gt;GotGitHub&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.worldhello.net/gotgit/&quot;&gt;Git权威指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gitbook.liuhui998.com/index.html&quot;&gt;Git Community Book 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.mercurial-scm.org/wiki/ChineseTutorial&quot;&gt;Mercurial 使用教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bucunzai.net/hginit/&quot;&gt;HgInit (中文版)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://igit.linuxtoy.org&quot;&gt;沉浸式学 Git&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/flyhigher139/Git-Cheat-Sheet&quot;&gt;Git-Cheat-Sheet&lt;/a&gt; （感谢 @flyhigher139 翻译了中文版）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://snowdream86.gitbooks.io/github-cheat-sheet/content/zh/index.html&quot;&gt;GitHub秘籍&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/github-help&quot;&gt;GitHub帮助文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://danielkummer.github.io/git-flow-cheatsheet/index.zh_CN.html&quot;&gt;git-flow 备忘清单&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://svnbook.red-bean.com/nightly/zh/index.html&quot;&gt;svn 手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/phodal/github-roam&quot;&gt;GitHub漫游指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;编辑器&quot;&gt;编辑器&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://exvim.github.io/docs-zh/intro/&quot;&gt;exvim–vim 改良成IDE项目&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://learnvimscriptthehardway.onefloweroneworld.com/&quot;&gt;笨方法学Vimscript 中译本&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/vimcn/vimcdoc&quot;&gt;Vim中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/yangyangwithgnu/use_vim_as_ide&quot;&gt;所需即所获：像 IDE 一样使用 vim&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wizardforcel/atom-flight-manual-zh-cn&quot;&gt;Atom飞行手册中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wizardforcel/markdown-simple-world&quot;&gt;Markdown·简单的世界&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/guide-zh.org&quot;&gt;一年成为 Emacs 高手&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lifegoo.pluskid.org/upload/blog/152/Survive.in.Emacs.pdf&quot;&gt;Emacs 生存指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://atom-china.org/t/atom/62&quot;&gt;Atom官方手册&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;nosql&quot;&gt;NoSQL&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://old.sebug.net/paper/databases/nosql/Nosql.html&quot;&gt;NoSQL数据库笔谈&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://redisbook.com/&quot;&gt;Redis 设计与实现&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://redisdoc.com/&quot;&gt;Redis 命令参考&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/huangz1990/redis-3.0-annotated&quot;&gt;带有详细注释的 Redis 3.0 代码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/huangz1990/annotated_redis_source&quot;&gt;带有详细注释的 Redis 2.6 代码&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/justinyhuang/the-little-mongodb-book-cn/blob/master/mongodb.md&quot;&gt;The Little MongoDB Book&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JasonLai256/the-little-redis-book/blob/master/cn/redis.md&quot;&gt;The Little Redis Book&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.neo4j.org.cn/&quot;&gt;Neo4j 简体中文手册 v1.8&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://neo4j.tw/&quot;&gt;Neo4j .rb 中文資源&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://disquebook.com&quot;&gt;Disque 使用教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JerryLead/SparkInternals/tree/master/markdown&quot;&gt;Apache Spark 设计与实现&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;postgresql&quot;&gt;PostgreSQL&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://works.jinbuguo.com/postgresql/menu823/index.html&quot;&gt;PostgreSQL 8.2.3 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.postgres.cn/docs/9.3/index.html&quot;&gt;PostgreSQL 9.3.1 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.postgres.cn/docs/9.5/index.html&quot;&gt;PostgreSQL 9.5.3 中文文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;mysql&quot;&gt;MySQL&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.codinglabs.org/articles/theory-of-mysql-index.html&quot;&gt;MySQL索引背后的数据结构及算法原理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/mr-wid/archive/2013/05/09/3068229.html&quot;&gt;21分钟MySQL入门教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;管理和监控&quot;&gt;管理和监控&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kibana.logstash.es&quot;&gt;ELKstack 中文指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://udn.yyuap.com/doc/mastering-elasticsearch/&quot;&gt;Mastering Elasticsearch(中文版)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/fuxiaopang/learnelasticsearch/details&quot;&gt;ElasticSearch 权威指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://es.xiaoleilu.com&quot;&gt;Elasticsearch 权威指南（中文版）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/chenryn/logstash-best-practice-cn&quot;&gt;Logstash 最佳实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bbs.konotes.org/workdoc/puppet-27/&quot;&gt;Puppet 2.7 Cookbook 中文版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;项目相关&quot;&gt;项目相关&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://article.yeeyan.org/view/2251/94882&quot;&gt;持续集成（第二版）&lt;/a&gt; (译言网)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/java/j-ap/&quot;&gt;让开发自动化系列专栏&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/java/j-cq/&quot;&gt;追求代码质量&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fool2fish/selenium-doc&quot;&gt;selenium 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://it-ebooks.flygon.net/selenium-simple-tutorial/&quot;&gt;Selenium Webdriver 简易教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://local.joelonsoftware.com/wiki/Chinese_\(Simplified\)&quot;&gt;Joel谈软件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://local.joelonsoftware.com/wiki/%E9%A6%96%E9%A0%81&quot;&gt;約耳談軟體(Joel on Software)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/Gradle-2-User-Guide&quot;&gt;Gradle 2 用户指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yuedu.baidu.com/ebook/f23af265998fcc22bcd10da2&quot;&gt;Gradle 中文使用文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/ecomfe/spec&quot;&gt;编码规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ituring.com.cn/book/1143&quot;&gt;开源软件架构&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.huihoo.com/gnu/linux/gmake.html&quot;&gt;GNU make 指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.yayu.org/book/gnu_make/&quot;&gt;GNU make 中文手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://12factor.net/zh_cn/&quot;&gt;The Twelve-Factor App&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;设计模式&quot;&gt;设计模式&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/me115/design_patterns&quot;&gt;图说设计模式&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/lovelion/article/details/17517213&quot;&gt;史上最全设计模式导学目录&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/AlfredTheBest/Design-Pattern&quot;&gt;design pattern 包教不包会&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://quanke.gitbooks.io/design-pattern-java/content/&quot;&gt;设计模式 Java 版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;web&quot;&gt;Web&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.20thingsilearned.com/zh-CN/home&quot;&gt;关于浏览器和网络的 20 项须知&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://jinlong.github.io/2013/08/29/devtoolsecrets/&quot;&gt;浏览器开发工具的秘密&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/CN-Chrome-DevTools/CN-Chrome-DevTools&quot;&gt;Chrome 开发者工具中文手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://open.chrome.360.cn/extension_dev/overview.html&quot;&gt;Chrome扩展开发文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.gruntjs.net/&quot;&gt;Grunt中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.gulpjs.com.cn/docs/&quot;&gt;gulp中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nimojs/gulp-book&quot;&gt;Gulp 入门指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/AlloyTeam/Mars&quot;&gt;移动Web前端知识库&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://deerchao.net/tutorials/regex/regex.htm&quot;&gt;正则表达式30分钟入门教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fouber/blog/issues/2&quot;&gt;前端开发体系建设日记&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hoosin/mobile-web-favorites&quot;&gt;移动前端开发收藏夹&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md&quot;&gt;JSON风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bolasblack/http-api-guide&quot;&gt;HTTP 接口设计指北&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hacke2/hacke2.github.io/issues/1&quot;&gt;前端资源分享（一）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hacke2/hacke2.github.io/issues/3&quot;&gt;前端资源分享（二）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://coderlmn.github.io/code-standards/&quot;&gt;前端代码规范 及 最佳实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/dwqs/frontenddevhandbook/details&quot;&gt;前端开发者手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/leohxj/front-end-database/details&quot;&gt;前端工程师手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wizardforcel/w3school&quot;&gt;w3school教程整理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://man.lupaworld.com/content/network/wireshark/index.html&quot;&gt;Wireshark用户手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://community.emc.com/thread/194901&quot;&gt;一站式学习Wireshark&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://happypeter.github.io/tealeaf-http/&quot;&gt;HTTP 下午茶&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yuedu.baidu.com/ebook/478d1a62376baf1ffc4fad99?pn=1&quot;&gt;HTTP/2.0 中文翻译&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/abbshr/rfc7540-translation-zh_cn&quot;&gt;RFC 7540 - HTTP/2 中文翻译版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/ye11ow/http2-explained/details&quot;&gt;http2讲解&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/juntao/3-web-designs-in-3-weeks/details&quot;&gt;3 Web Designs in 3 Weeks&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hellorocky/Site-Reliability-Engineering&quot;&gt;站点可靠性工程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;大数据&quot;&gt;大数据&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Flowerowl/Big-Data-Resources&quot;&gt;大数据/数据挖掘/推荐系统/机器学习相关资源&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/egrcc/guidetodatamining&quot;&gt;面向程序员的数据挖掘指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://code.csdn.net/CODE_Translation/spark_matei_phd&quot;&gt;大型集群上的快速和通用数据处理架构&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/linyiqun/DataMiningAlgorithm&quot;&gt;数据挖掘中经典的算法实现和详细的注释&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://aiyanbo.gitbooks.io/spark-programming-guide-zh-cn/content/&quot;&gt;Spark 编程指南简体中文版&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;编程艺术&quot;&gt;编程艺术&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/julycoding/The-Art-Of-Programming-by-July&quot;&gt;程序员编程艺术&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.oschina.net/translate/what-every-programmer-should-know-about-memory-part1?print&quot;&gt;每个程序员都应该了解的内存知识(译)&lt;/a&gt;【第一部分】&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://read.douban.com/ebook/4972883/&quot;&gt;取悦的工序：如何理解游戏&lt;/a&gt; (豆瓣阅读，免费书籍)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;其它&quot;&gt;其它&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/softwaredownload/openwrt-fanqiang/details&quot;&gt;OpenWrt智能、自动、透明翻墙路由器教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://community.emc.com/docs/DOC-16067&quot;&gt;SAN 管理入门系列&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sketchcn.com/sketch-chinese-user-manual.html#introduce&quot;&gt;Sketch 中文手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ifeve.com/perfbook/&quot;&gt;深入理解并行编程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kancloud.cn/kancloud/a-programmer-prepares&quot;&gt;程序员的自我修养&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/phodal/growth-ebook&quot;&gt;Growth: 全栈增长工程师指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;语言相关类&quot;&gt;语言相关类&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;h3 id=&quot;android&quot;&gt;Android&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.apkbus.com/design/index.html&quot;&gt;Android Design(中文版)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Google Material Design 正體中文版 (&lt;a href=&quot;https://wcc723.gitbooks.io/google_design_translate/content/style-icons.html&quot;&gt;译本一&lt;/a&gt; &lt;a href=&quot;https://github.com/1sters/material_design_zh&quot;&gt;译本二&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wiki.jikexueyuan.com/project/material-design/&quot;&gt;Material Design 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://hukai.me/android-training-course-in-chinese/index.html&quot;&gt;Google Android官方培训课程中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.stormzhang.com/android/2014/07/07/learn-android-from-rookie/&quot;&gt;Android学习之路&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bboyfeiyu/android-tech-frontier&quot;&gt;Android开发技术前线(android-tech-frontier)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/FX-Max/Point-of-Android&quot;&gt;Point-of-Android&lt;/a&gt; Android 一些重要知识点解析整理&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://leanote.com/blog/post/561658f938f41126b2000298?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io&quot;&gt;Android6.0新特性详解&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;app&quot;&gt;APP&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/cordova-dev-guide&quot;&gt;Apache Cordova 开发指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;awk&quot;&gt;AWK&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wuzhouhui/awk&quot;&gt;awk程序设计语言&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://awk.readthedocs.org/en/latest/index.html&quot;&gt;awk中文指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cc&quot;&gt;C/C++&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zh.cppreference.com/&quot;&gt;C/C++ 中文参考手册&lt;/a&gt; (欢迎大家参与在线翻译和校对)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/tinylab/cbook/details&quot;&gt;C 语言编程透视&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/forhappy/Cplusplus-Concurrency-In-Practice&quot;&gt;C++ 并发编程指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://akaedu.github.io/book/&quot;&gt;Linux C编程一站式学习&lt;/a&gt; (宋劲杉, 北京亚嵌教育研究中心)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/leeyiw/cgdb-manual-in-chinese&quot;&gt;CGDB中文手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hellogcc/100-gdb-tips/blob/master/src/index.md&quot;&gt;100个gdb小技巧&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hellogcc/100-gcc-tips/blob/master/src/index.md&quot;&gt;100个gcc小技巧&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/anjuke/zguide-cn&quot;&gt;ZMQ 指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ituring.com.cn/book/1203&quot;&gt;How to Think Like a Computer Scientist&lt;/a&gt; (中英文版)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://scc.qibebt.cas.cn/docs/linux/base/%B8%FA%CE%D2%D2%BB%C6%F0%D0%B4Makefile-%B3%C2%F0%A9.pdf&quot;&gt;跟我一起写Makefile(PDF)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.yayu.org/book/gnu_make/&quot;&gt;GNU make中文手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://docs.huihoo.com/gnu/linux/gmake.html&quot;&gt;GNU make 指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zh-google-styleguide.readthedocs.org/en/latest/google-cpp-styleguide/contents/&quot;&gt;Google C++ 风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/andycai/cprimer&quot;&gt;C/C++ Primer&lt;/a&gt; (by @andycai)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.nowamagic.net/librarys/books/contents/c&quot;&gt;简单易懂的C魔法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sewm.pku.edu.cn/src/paradise/reference/CMake%20Practice.pdf&quot;&gt;Cmake 实践&lt;/a&gt; (PDF版)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.sunistudio.com/cppfaq/&quot;&gt;C++ FAQ LITE(中文版)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Mooophy/Cpp-Primer&quot;&gt;C++ Primer 5th Answers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/chenxiaowei/cpp_concurrency_in_action/details&quot;&gt;C++ 并发编程(基于C++11)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kuqin.com/qtdocument/tutorial.html&quot;&gt;QT 教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.devbean.net/category/qt-study-road-2/&quot;&gt;DevBean的《Qt学习之路2》(Qt5)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wuye9036/CppTemplateTutorial&quot;&gt;C++ Template 进阶指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/luohaha/Chinese-uvbook&quot;&gt;libuv中文教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zh.highscore.de/cpp/boost/&quot;&gt;Boost 库中文教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wizardforcel/lcthw-zh&quot;&gt;笨办法学C&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;c&quot;&gt;C&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/zh-cn/library/kx37x362.aspx&quot;&gt;MSDN C# 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/zh-cn/library/gg145045.aspx&quot;&gt;.NET 类库参考&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/powertoolsteam/p/aspnetmvc5-tutorials-grapecity.html&quot;&gt;ASP.NET MVC 5 入门指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/LonelyShadow/p/4162318.html&quot;&gt;超全面的 .NET GDI+ 图形图像编程教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JackWangCUMT/customcontrol&quot;&gt;.NET控件开发基础&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sherlockchou86/-free-ebook-.NET-&quot;&gt;.NET开发要点精讲（初稿）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;clojure&quot;&gt;Clojure&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xumingming.sinaapp.com/302/clojure-functional-programming-for-the-jvm-clojure-tutorial/&quot;&gt;Clojure入门教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;csshtml&quot;&gt;CSS/HTML&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zh.learnlayout.com/&quot;&gt;学习CSS布局&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/chadluo/CSS-Guidelines/blob/master/README.md&quot;&gt;通用 CSS 笔记、建议与指导&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://css.doyoe.com/&quot;&gt;CSS参考手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yanxyz.github.io/emmet-docs/&quot;&gt;Emmet 文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://alloyteam.github.io/CodeGuide/&quot;&gt;前端代码规范&lt;/a&gt; (腾讯 AlloyTeam 团队)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://codeguide.bootcss.com/&quot;&gt;HTML和CSS编码规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sass-guidelin.es/zh/&quot;&gt;Sass Guidelines 中文&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/css3-tutorial&quot;&gt;CSS3 Tutorial 《CSS3 教程》&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/HTML&quot;&gt;MDN HTML 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/CSS&quot;&gt;MDN CSS 中文文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;dart&quot;&gt;Dart&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dart.lidian.info/wiki/Language_Tour&quot;&gt;Dart 语言导览&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;elixir&quot;&gt;Elixir&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/straightdave/programming_elixir&quot;&gt;Elixir编程入门&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;erlang&quot;&gt;Erlang&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://xn--21erlang-p00o82pmp3o.github.io/&quot;&gt;21天学通Erlang&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;fortran&quot;&gt;Fortran&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://micro.ustc.edu.cn/Fortran/ZJDing/&quot;&gt;Fortran77和90/95编程入门&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;go&quot;&gt;Go&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Unknwon/go-fundamental-programming&quot;&gt;Go编程基础&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/Unknwon/the-way-to-go_ZH_CN&quot;&gt;Go入门指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mikespook.com/learning-go/&quot;&gt;学习Go语言&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/astaxie/build-web-application-with-golang&quot;&gt;Go Web 编程&lt;/a&gt; (此书已经出版，希望开发者们去购买，支持作者的创作)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/astaxie/Go-in-Action&quot;&gt;Go实战开发&lt;/a&gt; (当我收录此项目时，作者已经写完第三章，如果读完前面章节觉得有帮助，可以给作者&lt;a href=&quot;https://me.alipay.com/astaxie&quot;&gt;捐赠&lt;/a&gt;，以鼓励作者的继续创作)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/astaxie/NPWG_zh&quot;&gt;Network programming with Go 中文翻译版本&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.hellogcc.org/effective_go.html&quot;&gt;Effective Go&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/polaris1119/The-Golang-Standard-Library-by-Example&quot;&gt;Go 语言标准库&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://godoc.ml/&quot;&gt;Golang标准库文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gorevel.cn/docs/manual/index.html&quot;&gt;Revel 框架手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/dc_726/article/details/46565241&quot;&gt;Java程序员的Golang入门指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hyper-carrot/go_command_tutorial&quot;&gt;Go命令教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/achun/Go-Blog-In-Action&quot;&gt;Go语言博客实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/golang-china/golangdoc.translations&quot;&gt;Go 官方文档翻译&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/tiancaiamao/go-internals&quot;&gt;深入解析Go&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://bitbucket.org/golang-china/gopl-zh/wiki/Home&quot;&gt;Go语言圣经(中文版)&lt;/a&gt; (&lt;a href=&quot;https://www.gitbook.com/book/wizardforcel/gopl-zh/details&quot;&gt;GitBook&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;groovy&quot;&gt;Groovy&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ibm.com/developerworks/cn/java/j-pg/&quot;&gt;实战 Groovy 系列&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;haskell&quot;&gt;Haskell&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rwh.readthedocs.org/en/latest/&quot;&gt;Real World Haskell 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fleurer-lee.com/lyah/&quot;&gt;Haskell趣学指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ios&quot;&gt;iOS&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qinjx/30min_guides/blob/master/ios.md&quot;&gt;iOS开发60分钟入门&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://isux.tencent.com/ios-human-interface-guidelines-ui-design-basics-ios7.html&quot;&gt;iOS7人机界面指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zh-google-styleguide.readthedocs.org/en/latest/google-objc-styleguide/&quot;&gt;Google Objective-C Style Guide 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wileam.com/iphone-6-screen-cn/&quot;&gt;iPhone 6 屏幕揭秘&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://nilsun.github.io/apple-watch/&quot;&gt;Apple Watch开发初探&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOSCh/index.html&quot;&gt;马上着手开发 iOS 应用程序&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jkyin/Subtitle&quot;&gt;网易斯坦福大学公开课：iOS 7应用开发字幕文件&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;java&quot;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/apache-shiro-1.2.x-reference&quot;&gt;Apache Shiro 用户指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/Jersey-2.x-User-Guide&quot;&gt;Jersey 2.x 用户指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/spring-framework-4-reference&quot;&gt;Spring Framework 4.x参考文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qibaoguang/Spring-Boot-Reference-Guide&quot;&gt;Spring Boot参考指南&lt;/a&gt; (翻译中)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mybatis.org/mybatis-3/zh/index.html&quot;&gt;MyBatis中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mbg.cndocs.tk/&quot;&gt;MyBatis Generator 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/RestDemo&quot;&gt;用jersey构建REST服务&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/activiti-5.x-user-guide&quot;&gt;Activiti 5.x 用户指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.hawstein.com/posts/google-java-style.html&quot;&gt;Google Java编程风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/netty-4-user-guide&quot;&gt;Netty 4.x 用户指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/essential-netty-in-action&quot;&gt;Netty 实战(精髓)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/rest-in-action&quot;&gt;REST 实战&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/java-code-conventions&quot;&gt;Java 编码规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/apache-mina-2.x-user-guide&quot;&gt;Apache MINA 2 用户指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/h2-database-doc&quot;&gt;H2 Database 教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/servlet-3.1-specification&quot;&gt;Java Servlet 3.1 规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/jsse-reference-guide&quot;&gt;JSSE 参考指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/biezhi/jb&quot;&gt;Java开源实现及最佳实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/waylau/essential-java&quot;&gt;Java 编程要点&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ituring.com.cn/minibook/69&quot;&gt;Think Java&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wizardforcel/modern-java-zh&quot;&gt;Java 8 简明教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;javascript&quot;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bq69.com/blog/articles/script/868/google-javascript-style-guide.html&quot;&gt;Google JavaScript 代码风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/darcyliu/google-styleguide/blob/master/JSONStyleGuide.md&quot;&gt;Google JSON 风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/adamlu/javascript-style-guide&quot;&gt;Airbnb JavaScript 规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://javascript.ruanyifeng.com/&quot;&gt;JavaScript 标准参考教程（alpha）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pij.robinqu.me/&quot;&gt;Javascript编程指南&lt;/a&gt; (&lt;a href=&quot;https://github.com/RobinQu/Programing-In-Javascript&quot;&gt;源码&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/justjavac/12-javascript-quirks&quot;&gt;javascript 的 12 个怪癖&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://bonsaiden.github.io/JavaScript-Garden/zh/&quot;&gt;JavaScript 秘密花园&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://icodeit.org/jsccp/&quot;&gt;JavaScript核心概念及实践&lt;/a&gt; (PDF) (此书已由人民邮电出版社出版发行，但作者依然免费提供PDF版本，希望开发者们去购买，支持作者)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jayli/javascript-patterns&quot;&gt;《JavaScript 模式》&lt;/a&gt; “JavaScript patterns”中译本&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://justjavac.com/named-function-expressions-demystified.html&quot;&gt;命名函数表达式探秘&lt;/a&gt;  (注:原文由&lt;a href=&quot;http://www.cn-cuckoo.com&quot;&gt;为之漫笔&lt;/a&gt;翻译，原始地址无法打开，所以此处地址为我博客上的备份)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.oschina.net/translate/learning-javascript-design-patterns&quot;&gt;学用 JavaScript 设计模式&lt;/a&gt; (开源中国)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/TomXu/archive/2011/12/15/2288411.html&quot;&gt;深入理解JavaScript系列&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yanhaijing.com/es5&quot;&gt;ECMAScript 5.1 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://es6.ruanyifeng.com/&quot;&gt;ECMAScript 6 入门&lt;/a&gt; (作者：阮一峰)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liubin.github.io/promises-book/&quot;&gt;JavaScript Promise迷你书&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS&quot;&gt;You-Dont-Know-JS&lt;/a&gt; (深入JavaScript语言核心机制的系列图书)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000&quot;&gt;JavaScript 教程&lt;/a&gt; 廖雪峰&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/zh-CN/docs/Web/JavaScript&quot;&gt;MDN JavaScript 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;jQuery
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.cn-cuckoo.com/deconstructed/jquery.html&quot;&gt;jQuery 解构&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.nowamagic.net/librarys/books/contents/jquery&quot;&gt;简单易懂的JQuery魔法&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://i5ting.github.io/How-to-write-jQuery-plugin/build/jquery.plugin.html&quot;&gt;How to write jQuery plugin&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README.zh-CN.md&quot;&gt;You Don’t Need jQuery&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/MeCKodo/forchange&quot;&gt;如何实现一个类jQuery？&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Node.js
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.nodebeginner.org/index-zh-cn.html&quot;&gt;Node入门&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://nqdeng.github.io/7-days-nodejs/&quot;&gt;七天学会NodeJS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/nodejs-tw/nodejs-wiki-book&quot;&gt;Nodejs Wiki Book&lt;/a&gt; (繁体中文)&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://expressjs.jser.us/&quot;&gt;express.js 中文文档&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/guo-yu/koa-guide&quot;&gt;koa 中文文档&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://base-n.github.io/koa-generator-examples/&quot;&gt;一起学koa&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/nswbmw/N-blog&quot;&gt;使用 Express + MongoDB 搭建多人博客&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://javascript.ruanyifeng.com/nodejs/express.html&quot;&gt;Express框架&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/alsotang/node-lessons&quot;&gt;Node.js 包教不包会&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/learnyounode-zh-cn&quot;&gt;Learn You The Node.js For Much Win! (中文版)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://i5ting.github.io/node-debug-tutorial/&quot;&gt;Node debug 三法三例&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/0532/nodejs/details&quot;&gt;nodejs中文文档&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/wizardforcel/orm2-doc-zh-cn&quot;&gt;orm2 中文文档&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;underscore.js
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://learningcn.com/underscore/&quot;&gt;Underscore.js中文文档&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;backbone.js
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.css88.com/doc/backbone/&quot;&gt;backbone.js中文文档&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.the5fire.com/backbone-js-tutorials-pdf-download.html&quot;&gt;backbone.js入门教程&lt;/a&gt; (PDF)&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/the5fire/backbonejs-learning-note&quot;&gt;Backbone.js入门教程第二版&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://feliving.github.io/developing-backbone-applications/&quot;&gt;Developing Backbone.js Applications(中文版)&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;AngularJS
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md&quot;&gt;AngularJS最佳实践和风格指南&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/peiransun/angularjs-cn&quot;&gt;AngularJS中译本&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/zensh/AngularjsTutorial_cn&quot;&gt;AngularJS入门教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/xufei/Make-Your-Own-AngularJS/blob/master/01.md&quot;&gt;构建自己的AngularJS&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.waylau.com/build-angularjs-app-with-yeoman-in-windows/&quot;&gt;在Windows环境下用Yeoman构建AngularJS项目&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Zepto.js
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://mweb.baidu.com/zeptoapi/&quot;&gt;Zepto.js 中文文档&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Sea.js
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://island205.com/HelloSea.js/&quot;&gt;Hello Sea.js&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;React.js
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://reactjs.cn/&quot;&gt;React.js 中文文档&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/fakefish/react-webpack-cookbook&quot;&gt;React webpack-cookbook&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://fraserxu.me/intro-to-react/&quot;&gt;React 入门教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://wiki.jikexueyuan.com/project/react-native/&quot;&gt;React Native 中文文档(含最新Android内容)&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/theJian/build-a-hn-front-page&quot;&gt;Learn React &amp;amp; Webpack by building the Hacker News front page&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;impress.js
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/kokdemo/impress.js-tutorial-in-Chinese&quot;&gt;impress.js的中文教程&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;CoffeeScript
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://island205.com/coffeescript-cookbook.github.com/&quot;&gt;CoffeeScript Cookbook&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://island205.com/tlboc/&quot;&gt;The Little Book on CoffeeScript中文版&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/geekplux/coffeescript-style-guide&quot;&gt;CoffeeScript 编码风格指南&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;TypeScipt
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;https://zhongsp.gitbooks.io/typescript-handbook/content/&quot;&gt;TypeScript Handbook&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ExtJS
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://extjs-doc-cn.github.io/ext4api/&quot;&gt;Ext4.1.0 中文文档&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Meteor
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://zh.discovermeteor.com/&quot;&gt;Discover Meteor&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://docs.meteorhub.org/#/basic/&quot;&gt;Meteor 中文文档&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://angular.meteorhub.org/&quot;&gt;Angular-Meteor 中文教程&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ituring.com.cn/minibook/950&quot;&gt;Chrome扩展及应用开发&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;latex&quot;&gt;LaTeX&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liam0205.me/2014/09/08/latex-introduction/&quot;&gt;一份其实很短的 LaTeX 入门文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.mohu.org/info/lshort-cn.pdf&quot;&gt;一份不太简短的 LATEX 2ε 介绍&lt;/a&gt; （PDF版）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lisp&quot;&gt;LISP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Common Lisp
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://acl.readthedocs.org/en/latest/&quot;&gt;ANSI Common Lisp 中文翻譯版&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.ituring.com.cn/minibook/862&quot;&gt;On Lisp 中文翻译版本&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Scheme
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://deathking.github.io/yast-cn/&quot;&gt;Yet Another Scheme Tutorial Scheme入门教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://songjinghe.github.io/TYS-zh-translation/&quot;&gt;Scheme语言简明教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Racket
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/tyrchen/racket-book&quot;&gt;Racket book&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;lua&quot;&gt;Lua&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/andycai/luaprimer&quot;&gt;Lua编程入门&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.codingnow.com/2000/download/lua_manual.html&quot;&gt;Lua 5.1 参考手册 中文翻译&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://cloudwu.github.io/lua53doc/&quot;&gt;Lua 5.3 参考手册 中文翻译&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.codingnow.com/temp/readinglua.pdf&quot;&gt;Lua源码欣赏&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ocaml&quot;&gt;OCaml&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/zforget/translation/tree/master/real_world_ocaml&quot;&gt;Real World OCaml&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;perl&quot;&gt;Perl&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/horus/modern_perl_book&quot;&gt;Modern Perl 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://perl.linuxtoy.org/&quot;&gt;Perl 程序员应该知道的事&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;php&quot;&gt;PHP&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://php.net/manual/zh/&quot;&gt;PHP 官方手册&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.laruence.com/2010/06/21/1608.html&quot;&gt;PHP调试技术手册&lt;/a&gt;(PDF)&lt;/li&gt;
+  &lt;li&gt;PHP之道：php-the-right-way (&lt;a href=&quot;http://wulijun.github.io/php-the-right-way/&quot;&gt;@wulijun版&lt;/a&gt; &lt;a href=&quot;http://laravel-china.github.io/php-the-right-way/&quot;&gt;PHPHub版&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/justjavac/PHP-Best-Practices-zh_CN&quot;&gt;PHP 最佳实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ryancao.gitbooks.io/php-developer-prepares/content/&quot;&gt;PHP 开发者实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/reeze/tipi&quot;&gt;深入理解PHP内核&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.walu.cc/phpbook/&quot;&gt;PHP扩展开发及内核应用&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://laravel-china.org/docs/5.1&quot;&gt;Laravel5.1 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://cs.phphub.org/&quot;&gt;Laravel 5.1 LTS 速查表&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wiki.jikexueyuan.com/project/symfony-cookbook/&quot;&gt;Symfony2 Cookbook 中文版&lt;/a&gt;(版本 2.7.0 LTS)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://symfony-docs-chs.readthedocs.org/en/latest/&quot;&gt;Symfony2中文文档&lt;/a&gt; (未译完)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://yiibook.com//doc&quot;&gt;YiiBook几本Yii框架的在线教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.digpage.com/&quot;&gt;深入理解 Yii 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.yiichina.com/&quot;&gt;Yii 框架中文文檔&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.nowamagic.net/librarys/books/contents/php&quot;&gt;简单易懂的PHP魔法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/LinkedDestiny/swoole-doc&quot;&gt;swoole文档及入门教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.phpcomposer.com&quot;&gt;Composer 中文网&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ww1.minimee.org/php/slim&quot;&gt;Slim 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lumen.laravel-china.org/&quot;&gt;Lumen 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://phpunit.de/manual/current/zh_cn/installation.html&quot;&gt;PHPUnit 中文文档&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;prolog&quot;&gt;Prolog&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fengdidi.github.io/blog/2011/11/15/qian-yan/&quot;&gt;笨办法学Prolog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;python&quot;&gt;Python&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/001374738125095c955c1e6d8bb493182103fac9270762a000&quot;&gt;廖雪峰 Python 2.7 中文教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000&quot;&gt;廖雪峰 Python 3 中文教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kuqin.com/abyteofpython_cn/&quot;&gt;简明Python教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kancloud.cn/kancloud/python-basic&quot;&gt;零基础学 Python 第一版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kancloud.cn/kancloud/starter-learning-python&quot;&gt;零基础学 Python 第二版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lovelypython.readthedocs.org/en/latest/&quot;&gt;可爱的 Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.pythondoc.com/pythontutorial27/index.html&quot;&gt;Python 2.7 官方教程中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.pythondoc.com/pythontutorial3/index.html&quot;&gt;Python 3.3 官方教程中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kancloud.cn/thinkphp/python-cookbook&quot;&gt;Python Cookbook 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/yidao620c/python3-cookbook&quot;&gt;Python3 Cookbook 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kuqin.com/docs/diveintopythonzh-cn-5.4b/html/toc/&quot;&gt;深入 Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://old.sebug.net/paper/books/dive-into-python3/&quot;&gt;深入 Python 3&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://code.google.com/p/zhong-wiki/wiki/PEP8&quot;&gt;PEP8 Python代码风格规范&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zh-google-styleguide.readthedocs.org/en/latest/google-python-styleguide/&quot;&gt;Google Python 风格指南 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liam0205.me/2013/11/02/Python-tutorial-zh_cn/&quot;&gt;Python入门教程&lt;/a&gt; (&lt;a href=&quot;http://liam0205.me/attachment/Python/The_Python_Tutorial_zh-cn.pdf&quot;&gt;PDF&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://old.sebug.net/paper/books/LearnPythonTheHardWay/&quot;&gt;笨办法学 Python&lt;/a&gt; (&lt;a href=&quot;http://liam0205.me/attachment/Python/PyHardWay/Learn_Python_The_Hard_Way_zh-cn.pdf&quot;&gt;PDF&lt;/a&gt; &lt;a href=&quot;https://www.gitbook.com/download/epub/book/wizardforcel/lpthw&quot;&gt;EPUB&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pan.baidu.com/s/1qW4pvnY&quot;&gt;Python自然语言处理中文版&lt;/a&gt; （感谢陈涛同学的翻译，也谢谢 &lt;a href=&quot;https://github.com/shwley&quot;&gt;@shwley&lt;/a&gt; 联系了作者）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://liam0205.me/2014/09/11/matplotlib-tutorial-zh-cn/&quot;&gt;Python 绘图库 matplotlib 官方指南中文翻译&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://scrapy-chs.readthedocs.org/zh_CN/latest/&quot;&gt;Scrapy 0.25 文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/carfly/thinkpython-cn&quot;&gt;ThinkPython&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/bingjin/ThinkPython2-CN&quot;&gt;ThinkPython 2ed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.cnblogs.com/vamei/archive/2012/09/13/2682778.html&quot;&gt;Python快速教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://wiki.ubuntu.org.cn/Python正则表达式操作指南&quot;&gt;Python 正则表达式操作指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.crifan.com/files/doc/docbook/python_beginner_tutorial/release/html/python_beginner_tutorial.html&quot;&gt;python初级教程：入门详解&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/likebeta/twisted-intro-cn/details&quot;&gt;Twisted 与异步编程入门&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://textgrocery.readthedocs.org/zh/latest/index.html&quot;&gt;TextGrocery 中文 API&lt;/a&gt; ( 基于svm算法的一个短文本分类 Python 库 )&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://requests-docs-cn.readthedocs.org/zh_CN/latest/&quot;&gt;Requests: HTTP for Humans&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pillow-cn.readthedocs.org/en/latest/#&quot;&gt;Pillow 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pymotwcn.readthedocs.org/en/latest/index.html&quot;&gt;PyMOTW 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://data.digitser.net/zh-CN/python_index.html&quot;&gt;Python 官方文档中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://fabric-chs.readthedocs.org&quot;&gt;Fabric 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://beautifulsoup.readthedocs.org/zh_CN/latest/&quot;&gt;Beautiful Soup 4.2.0 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://old.sebug.net/paper/books/scipydoc&quot;&gt;用Python做科学计算&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.pythondoc.com/sphinx/index.html&quot;&gt;Sphinx 中文文档&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cundi/Mastering.Python.Design.Patterns&quot;&gt;精通 Python 设计模式&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/smartFlash/pySecurity&quot;&gt;python 安全编程教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/wizardforcel/sjtu-cs902-courseware/details&quot;&gt;程序设计思想与方法&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://read.douban.com/ebook/16691849/&quot;&gt;知乎周刊·编程小白学Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/cloga/scipy-lecture-notes_cn&quot;&gt;Scipy 讲义&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kuqin.com/docs/pythonbasic.html&quot;&gt;Python 学习笔记 基础篇&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kuqin.com/docs/pythonmodule.html&quot;&gt;Python 学习笔记 模块篇&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://old.sebug.net/paper/books/python/%E3%80%8APython%E6%A0%87%E5%87%86%E5%BA%93%E3%80%8B%E4%B8%AD%E6%96%87%E7%89%88.pdf&quot;&gt;Python 标准库 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/eastlakeside/interpy-zh/details&quot;&gt;Python进阶&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wizardforcel.gitbooks.io/core-python-2e/content/&quot;&gt;Python 核心编程 第二版&lt;/a&gt; CPyUG译&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://pythonguidecn.readthedocs.io/zh/latest/&quot;&gt;Python最佳实践指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/wizardforcel/python-essential-tutorial/details&quot;&gt;Python 精要教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/wizardforcel/python-quant-uqer/details&quot;&gt;Python 量化交易教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Django
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://django-chinese-docs.readthedocs.org/en/latest/&quot;&gt;Django 1.5 文档中文版&lt;/a&gt; 正在翻译中&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://django-1-7-doc.coding.io/&quot;&gt;Diango 1.7 文档中文版&lt;/a&gt;  正在翻译中，目前只翻译了目录&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://python.usyiyi.cn/django/index.html&quot;&gt;Django 1.8.2 文档中文版&lt;/a&gt;
+   正在翻译中&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/yangyubo/zh-django-best-practices&quot;&gt;Django 最佳实践&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/andrew-liu/django-blog/details&quot;&gt;Django搭建简易博客教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://djangobook.py3k.cn/2.0/&quot;&gt;The Django Book 中文版&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/cundi/Django-Design-Patterns-and-Best-Practices&quot;&gt;Django 设计模式与最佳实践&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/cundi/Web.Development.with.Django.Cookbook&quot;&gt;Django 网站开发 Cookbook&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/djangogirlstaipei/django-girls-taipei-tutorial/details&quot;&gt;Django Girls 學習指南&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Flask
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://docs.jinkan.org/docs/flask/&quot;&gt;Flask 文档中文版&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://docs.jinkan.org/docs/jinja2/&quot;&gt;Jinja2 文档中文版&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://werkzeug-docs-cn.readthedocs.org/zh_CN/latest/&quot;&gt;Werkzeug 文档中文版&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://spacewander.github.io/explore-flask-zh/&quot;&gt;Flask之旅&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/wizardforcel/flask-extension-docs/details&quot;&gt;Flask 扩展文档汇总&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.pythondoc.com/flask-mega-tutorial/index.html&quot;&gt;Flask 大型教程&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/sixu05202004/sqlalchemy-docs-cn&quot;&gt;SQLAlchemy 中文文档&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;web.py
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://webpy.org/tutorial3.zh-cn&quot;&gt;web.py 0.3 新手指南&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://webpy.org/cookbook/index.zh-cn&quot;&gt;Web.py Cookbook 简体中文版&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Tornado
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;http://demo.pythoner.com/itt2zh/index.html&quot;&gt;Introduction to Tornado 中文翻译&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;http://www.nowamagic.net/academy/detail/13321002&quot;&gt;Tornado源码解析&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://tornado-zh.readthedocs.org/zh/latest/&quot;&gt;Tornado 4.3 文档中文版&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;r&quot;&gt;R&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/yihui/r-ninja&quot;&gt;R语言忍者秘笈&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ruby&quot;&gt;Ruby&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md&quot;&gt;Ruby 风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JuanitoFatas/rails-style-guide/blob/master/README-zhCN.md&quot;&gt;Rails 风格指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lrthw.github.io/&quot;&gt;笨方法學 Ruby&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://guides.ruby-china.org/&quot;&gt;Ruby on Rails 指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ihower.tw/rails4/index.html&quot;&gt;Ruby on Rails 實戰聖經&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://railstutorial-china.org/&quot;&gt;Ruby on Rails Tutorial 原书第 3 版&lt;/a&gt; (本书网页版免费提供，电子版以 PDF、EPub 和 Mobi 格式提供购买，仅售 9.9 美元)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://rails-practice.com/content/index.html&quot;&gt;Rails 实践&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/kelby/rails-beginner-s-guide/details&quot;&gt;Rails 5 开发进阶(Beta)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/rocodev/rails-102/details&quot;&gt;Rails 102&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wusuopu.gitbooks.io/write-ruby-extension-with-c/content/&quot;&gt;编写Ruby的C拓展&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://ruby-china.org/topics/22386&quot;&gt;Ruby 源码解读&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://deathking.github.io/metaprogramming-in-ruby/&quot;&gt;Ruby中的元编程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;rust&quot;&gt;Rust&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/kaisery/rust-book-chinese/details&quot;&gt;rust book 中文翻译&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/rustcc/RustPrimer&quot;&gt;rust primer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;scala&quot;&gt;Scala&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://twitter.github.io/scala_school/zh_cn/index.html&quot;&gt;Scala课堂&lt;/a&gt; (Twitter的Scala中文教程)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://twitter.github.io/effectivescala/index-cn.html&quot;&gt;Effective Scala&lt;/a&gt;(Twitter的Scala最佳实践的中文翻译)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://zh.scala-tour.com/&quot;&gt;Scala指南&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;shell&quot;&gt;Shell&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qinjx/30min_guides/blob/master/shell.md&quot;&gt;Shell脚本编程30分钟入门&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.sae.sina.com.cn/archives/3606&quot;&gt;Bash脚本15分钟进阶教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/me115/linuxtools_rst&quot;&gt;Linux工具快速教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/wzb56/13_questions_of_shell&quot;&gt;shell十三问&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/tinylab/shellbook/details&quot;&gt;Shell编程范例&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;swift&quot;&gt;Swift&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://numbbbbb.github.io/the-swift-programming-language-in-chinese/&quot;&gt;The Swift Programming Language 中文版&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://dev.swiftguide.cn&quot;&gt;Swift 语言指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/x140yu/Developing_iOS_8_Apps_With_Swift&quot;&gt;Stanford 公开课，Developing iOS 8 Apps with Swift 字幕翻译文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://c4ios.swift.gg&quot;&gt;C4iOS - COSMOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;读书笔记及其它&quot;&gt;读书笔记及其它&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/fool2fish/dragon-book-exercise-answers&quot;&gt;编译原理（紫龙书）中文第2版习题答案&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.hawstein.com/posts/make-thiner-programming-pearls.html&quot;&gt;把《编程珠玑》读薄&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/XiaolongJason/ReadingNote/blob/master/Effective%20C%2B%2B/Effective%20C%2B%2B.md&quot;&gt;Effective C++读书笔记&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qyuhen/book&quot;&gt;Golang 学习笔记、Python 学习笔记、C 学习笔记&lt;/a&gt; (PDF)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/code4craft/jsoup-learning&quot;&gt;Jsoup 学习笔记&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/lzjun567/note&quot;&gt;学习笔记: Vim、Python、memcached&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ituring.com.cn/activity/details/2004&quot;&gt;图灵开放书翻译计划–C++、Python、Java等&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://g.yeeyan.org/books/2095&quot;&gt;蒂姆·奥莱利随笔&lt;/a&gt; （由译言网翻译，电子版免费）&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://sicp.readthedocs.org/en/latest/&quot;&gt;SICP 解题集&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/hacke2/hacke2.github.io/issues/2&quot;&gt;精彩博客集合&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/sparanoid/chinese-copywriting-guidelines&quot;&gt;中文文案排版指北&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ganquan.info/standard-c/&quot;&gt;Standard C 语言标准函数库速查 (Cheat Sheet)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://gh.amio.us/git-cheatsheet-chs/&quot;&gt;Git Cheatsheet Chs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.chengweiyang.cn/gitbook/index.html&quot;&gt;GitBook简明教程&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qibaoguang/Study-Step-by-Step/blob/master/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/javascript_the_good_parts.md&quot;&gt;JavaScript语言精粹&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://producingoss.com/zh/&quot;&gt;制造开源软件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.dianbo.org/9238/stone/tiwendezhihui.htm&quot;&gt;提问的智慧&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/LearnShare/Learning-Markdown&quot;&gt;Markdown 入门参考&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/stanzgy/wiki/blob/master/markup/asciidoc-guide.asciidoc&quot;&gt;AsciiDoc简明指南&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://love-oriented.com/pack/&quot;&gt;背包问题九讲&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/qiwsir/ITArticles&quot;&gt;老齐的技术资料&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/JacksonTian/fks&quot;&gt;前端技能汇总&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/zhuangbiaowei/learn-with-open-source&quot;&gt;借助开源项目，学习软件开发&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/h5bp/Front-end-Developer-Interview-Questions/tree/master/Translations/Chinese&quot;&gt;前端工作面试问题&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.gitbook.com/book/yuanbin/algorithm/details&quot;&gt;leetcode/lintcode题解/算法学习笔记&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/li-xinyang/FEND_Note&quot;&gt;前端开发笔记本&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;测试相关&quot;&gt;测试相关&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://appium.io/slate/cn/v1.2.0/&quot;&gt;移动APP自动化测试优秀框架Appium API Reference V1.2.0 CN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+        <pubDate>Thu, 02 Nov 2017 14:11:44 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/11/02/some-book-code/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/02/some-book-code/</guid>
+        
+        <category>php</category>
+        
+        <category>mysql</category>
+        
+        <category>技能树</category>
+        
+        
+        <category>学习资料</category>
+        
+      </item>
     
       <item>
         <title>bootstrap-对于不同设备实现某一div块的自动隐藏或者显示</title>
@@ -833,29 +1770,6 @@ GEQ - 大于或等于
 
 &lt;h1 id=&quot;php调试技术a&quot;&gt;php调试技术{#a}&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;/weibo/styles/book/PHP-Debug-Manual-public.pdf&quot; title=&quot;调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 26 Oct 2017 16:32:31 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/10/26/PHP%E6%9D%90%E6%96%99%E7%9B%AE%E5%BD%95/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/PHP%E6%9D%90%E6%96%99%E7%9B%AE%E5%BD%95/</guid>
-        
-        <category>php</category>
-        
-        <category>data</category>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>PHP材料目录</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#php调试技术a&quot; id=&quot;markdown-toc-php调试技术a&quot;&gt;php调试技术{#a}&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;php调试技术a&quot;&gt;php调试技术{#a}&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;/weibo/styles/book/PHP-Debug-Manual-public.pdf&quot; title=&quot;调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Thu, 26 Oct 2017 16:32:31 +0800</pubDate>
         <link>http://localhost:4000/weibo/2017/10/26/PHP-data-Manual/</link>
@@ -864,29 +1778,6 @@ GEQ - 大于或等于
         <category>php</category>
         
         <category>data</category>
-        
-        
-        <category>php</category>
-        
-      </item>
-    
-      <item>
-        <title>php学习技能树</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#a&quot; id=&quot;markdown-toc-a&quot;&gt;技能树&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;a&quot;&gt;技能树&lt;/h1&gt;
-
-&lt;p&gt;/weibo/images/LAMPer技能树1.swf
-/weibo/styles/images/jiezishu.jpg&lt;/p&gt;
-
-</description>
-        <pubDate>Thu, 26 Oct 2017 13:38:15 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/10/26/php%E5%AD%A6%E4%B9%A0%E6%8A%80%E8%83%BD%E6%A0%91/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/php%E5%AD%A6%E4%B9%A0%E6%8A%80%E8%83%BD%E6%A0%91/</guid>
-        
-        <category>技能树</category>
         
         
         <category>php</category>

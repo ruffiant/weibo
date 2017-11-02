@@ -33,6 +33,7 @@ html {
 }
 body {
   margin: 0;
+  overflow-x:hidden;
 }
 a {
   background: transparent;
@@ -947,6 +948,7 @@ pre code {
   }
   .col-md-9 {
     width: 75%;
+
   }
   .col-md-8 {
     width: 66.66666667%;
@@ -6361,6 +6363,10 @@ hr {
   background: #fff;
   text-align: center;
   border-top: 1px solid #eeeeee;
+
+  bottom: auto;
+  position: absolute;
+  left: 500px;
 }
 .footer-links {
   margin: 10px 0;
@@ -7130,4 +7136,9 @@ td.visible-print {
 :target{
     padding-top: 70px;
     margin-top: -70px;
+}
+@media screen and (max-width: 768px) {
+#page-content-wrapper{
+  left: 1px;
+}
 }

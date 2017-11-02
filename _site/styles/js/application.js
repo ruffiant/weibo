@@ -88,7 +88,8 @@
             return (this.top = offsetTop - navOuterHeight - sideBarMargin)
           },
           bottom: function () {
-            return (this.bottom = $('.footer').outerHeight(true))
+
+            //return (this.bottom = $('.footer').outerHeight(true))
           }
         }
       })
@@ -102,7 +103,7 @@
 
   //左侧菜单手机隐藏
   var trigger = $('.hamburger'),
-      isClosed = false;
+      isClosed = true;
 
   $('[data-toggle="offcanvas"]').click(function () {
     $('#wrapper').toggleClass('toggled');
