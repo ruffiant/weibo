@@ -8,8 +8,10 @@ tag: [php,mysql,技能树]
 * content
 {:toc}
 
-免费的编程中文书籍索引
-============================
+
+##免费的编程中文书籍索引
+===============
+
 
 免费的编程中文书籍索引，欢迎投稿。
 
@@ -20,7 +22,10 @@ tag: [php,mysql,技能树]
 欢迎订阅我的微信公众帐号，只推送原创文字。欢迎扫描二维码订阅：
 
 
+
 ## 参与交流
+===============
+
 
 欢迎大家将珍藏已久的经典免费书籍共享出来，您可以：
 
@@ -28,67 +33,6 @@ tag: [php,mysql,技能树]
 
 贡献者名单: https://github.com/justjavac/free-programming-books-zh_CN/graphs/contributors
 
-
-
-## 目录
-===============
-
-* [语言无关类](#语言无关类)
-  * [操作系统](#操作系统)
-  * [智能系统](#智能系统)
-  * [分布式系统](#分布式系统)
-  * [编译原理](#编译原理)
-  * [函数式概念](#函数式概念)
-  * [计算机图形学](#计算机图形学)
-  * [WEB服务器](#web服务器)
-  * [版本控制](#版本控制)
-  * [编辑器](#编辑器)
-  * [NoSQL](#nosql)
-  * [PostgreSQL](#postgresql)
-  * [MySQL](#mysql)
-  * [管理和监控](#管理和监控)
-  * [项目相关](#项目相关)
-  * [设计模式](#设计模式)
-  * [Web](#web)
-  * [大数据](#大数据)
-  * [编程艺术](#编程艺术)
-  * [其它](#其它)
-
-* [语言相关类](#语言相关类)
-  * [Android](#android)
-  * [APP](#app)
-  * [AWK](#awk)
-  * [C/C++](#cc)
-  * [C#](#c)
-  * [Clojure](#clojure)
-  * [CSS/HTML](#csshtml)
-  * [Dart](#dart)
-  * [Elixir](#elixir)
-  * [Erlang](#erlang)
-  * [Fortran](#fortran)
-  * [Go](#go)
-  * [Groovy](#groovy)
-  * [Haskell](#haskell)
-  * [iOS](#ios)
-  * [Java](#java)
-  * [JavaScript](#javascript)
-  * [LaTeX](#latex)
-  * [LISP](#lisp)
-  * [Lua](#lua)
-  * [OCaml](#OCaml)
-  * [Perl](#perl)
-  * [PHP](#php)
-  * [Prolog](#prolog)
-  * [Python](#python)
-  * [R](#r)
-  * [Ruby](#ruby)
-  * [Rust](#rust)
-  * [Scala](#scala)
-  * [Shell](#shell)
-  * [Swift](#swift)
-
-* [读书笔记及其它](#读书笔记及其它)
-* [测试相关](#测试相关)
 
 ## 语言无关类
 ===============
@@ -301,7 +245,7 @@ tag: [php,mysql,技能树]
 
 ## 其它
 ===============
- 
+  
 * [OpenWrt智能、自动、透明翻墙路由器教程](https://www.gitbook.com/book/softwaredownload/openwrt-fanqiang/details)
 * [SAN 管理入门系列](https://community.emc.com/docs/DOC-16067)
 * [Sketch 中文手册](http://sketchcn.com/sketch-chinese-user-manual.html#introduce)
@@ -310,9 +254,11 @@ tag: [php,mysql,技能树]
 * [Growth: 全栈增长工程师指南](https://github.com/phodal/growth-ebook)
 
 ## 语言相关类
-
+===============
+  
 ### Android
-
+===============
+  
 * [Android Design(中文版)](http://www.apkbus.com/design/index.html)
 * Google Material Design 正體中文版 ([译本一](https://wcc723.gitbooks.io/google_design_translate/content/style-icons.html) [译本二](https://github.com/1sters/material_design_zh))
 * [Material Design 中文版](http://wiki.jikexueyuan.com/project/material-design/)
