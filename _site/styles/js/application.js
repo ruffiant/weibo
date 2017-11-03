@@ -24,7 +24,7 @@
     var $body   = $(document.body)
 
     $body.scrollspy({
-      target: '.sidebar',
+      target: '.treeview',
       offset: 20 // required to select the right thing. if this is smaller then you are at the top of one section
                  // but the next section is highlighted
     });
@@ -77,7 +77,8 @@
 
     // back to top
     setTimeout(function () {
-      var $sideBar = $('#sidebar-wrapper')
+      //var $sideBar = $('#sidebar-wrapper')
+      var $sideBar = $('#nav_ul')
 
       $sideBar.affix({
         offset: {

@@ -6437,9 +6437,9 @@ hr {
 .docs-section + .docs-section {
   padding-top: 40px;
 }
-.sidebar {
-  display: none;
-}
+/*.sidebar {*/
+  /*display: none;*/
+/*}*/
 .sidebar.affix {
   position: static;
 
@@ -7138,10 +7138,17 @@ td.visible-print {
     margin-top: -70px;
 }
 @media screen and (max-width: 768px) {
-#page-content-wrapper{
-  left: 1px;
-}
+  #page-content-wrapper{
+    left: 1px;
+  }
   .footer{
     top:-9px;
   }
+  #navigation{
+    position:absolute;
+  }
 }
+.footer{
+  display: none;
+}
+
