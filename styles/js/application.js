@@ -87,10 +87,10 @@
             var navOuterHeight = $('.docs-nav').height()
             return (this.top = offsetTop - navOuterHeight - sideBarMargin)
           },
-          bottom: function () {
-
-            //return (this.bottom = $('.footer').outerHeight(true))
-          }
+          //bottom: function () {
+          //
+          //  //return (this.bottom = $('.footer').outerHeight(true))
+          //}
         }
       })
     }, 100);
@@ -103,15 +103,32 @@
 
   //左侧菜单手机隐藏
   var trigger = $('.hamburger'),
+      isClosed = false;
+
+  trigger.click(function () {
+    hamburger_cross();
+  });
+
+  function hamburger_cross() {
+
+    if (isClosed == true) {
+      trigger.removeClass('is-open');
+      trigger.addClass('is-closed');
+      isClosed = false;
+    } else {
+
+      trigger.removeClass('is-closed');
+      trigger.addClass('is-open');
       isClosed = true;
+    }
+  }
+
 
   $('[data-toggle="offcanvas"]').click(function () {
     $('#wrapper').toggleClass('toggled');
   });
 
 
-  //$('[data-toggle="offcanvas"]').click(function () {
-  //  $('#sidebar').toggleClass('toggled');
-  //});
+
 
 }(jQuery)

@@ -5,8 +5,8 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 02 Nov 2017 14:40:16 +0800</pubDate>
-    <lastBuildDate>Thu, 02 Nov 2017 14:40:16 +0800</lastBuildDate>
+    <pubDate>Fri, 03 Nov 2017 09:22:34 +0800</pubDate>
+    <lastBuildDate>Fri, 03 Nov 2017 09:22:34 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
@@ -1722,6 +1722,30 @@ GEQ - 大于或等于
         
         
         <category>学习资料</category>
+        
+      </item>
+    
+      <item>
+        <title>PHP材料目录</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#php调试技术a&quot; id=&quot;markdown-toc-php调试技术a&quot;&gt;php调试技术{#a}&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;php调试技术a&quot;&gt;php调试技术{#a}&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;/weibo/styles/book/PHP-Debug-Manual-public.pdf&quot; title=&quot;调试技术&quot;&gt;php调试技术&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;&quot; title=&quot;php设计模式&quot;&gt;php设计模式&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Thu, 26 Oct 2017 16:32:31 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/10/26/PHP-data-Manual/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/26/PHP-data-Manual/</guid>
+        
+        <category>php</category>
+        
+        <category>data</category>
+        
+        
+        <category>php</category>
         
       </item>
     
