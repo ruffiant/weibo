@@ -28,15 +28,7 @@
 	<!--[if lt IE 9]>
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
-  	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?94be4b0f9fc5d94cc0d0415ea6761ae9";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
+
 
 </head>
 
@@ -426,6 +418,24 @@
 		console.log(file_name);
 	}
 	</script>
-    <!--{/% include search/cb-footer-add.html%/}-->
+    <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" >
+
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <img src="/weibo/styles/search/img/cb-close.png "  id="cb-close-btn"/>
+    </div>
+</div>
+
+<div style="position: fixed; right: 16px; bottom: 20px;">
+    <img src="/weibo/styles/search/img/cb-search.png "  id="cb-search-btn"  title="双击ctrl试一下"/>
+</div>
+<link rel="stylesheet" href="/weibo/styles/search/css/cb-search.css">
+
+
+<script src="/weibo/styles/search/js/bootstrap3-typeahead.min.js"></script>
+<script src="/weibo/styles/search/js/cb-search.js"></script>
+
+
   </body>
 </html>

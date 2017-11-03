@@ -7141,4 +7141,7 @@ td.visible-print {
 #page-content-wrapper{
   left: 1px;
 }
+  .footer{
+    top:-9px;
+  }
 }
