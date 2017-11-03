@@ -321,7 +321,6 @@
 		var target = $(event.target);
 		var node = this.findNode(target);
 		if (!node || node.state.disabled) return;
-		
 		var classList = target.attr('class') ? target.attr('class').split(' ') : [];
 		if ((classList.indexOf('expand-icon') !== -1)) {
 
@@ -587,10 +586,12 @@
 			// Add text
 			if (_this.options.enableLinks) {
 				// Add hyperlink
+				//添加a标签属性
 				treeItem
 					.append($(_this.template.link)
 						.attr('href', node.href)
 						.append(node.text)
+						.attr('target', '_self')
 					);
 			}
 			else {
