@@ -11,6 +11,7 @@ tag: [linux]
 
 #简单命令
 ===============
+在云服务器 ECS Linux CentOS 7 下重启服务不再通过 service  操作，而是通过 systemctl 操作
 systemctl restart network 启动网卡
       echo － 显示一行文本
       date
