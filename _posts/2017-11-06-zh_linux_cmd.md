@@ -11,6 +11,7 @@ tag: [linux]
 
 #简单命令
 ===============
+systemctl restart network 启动网卡
       echo － 显示一行文本
       date
 
