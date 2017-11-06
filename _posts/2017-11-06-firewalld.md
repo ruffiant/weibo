@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  CentOS7使用firewalld打开关闭防火墙与端口
-date:    +0800
+date:    2017-11-6 15:45:18 +0800
 categories: [系统] 
 tag: [linux] 
 ---
