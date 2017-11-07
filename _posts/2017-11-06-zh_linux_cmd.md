@@ -646,6 +646,125 @@ g	这是“全局”的意思，意味着对文本行中所有匹配的字符串
       另外，上面所描述的转换方法，vim（和一些版本的 vi）也提供了一些 ex 命令，这些命令使 多个文件更容易管理。我们可以查看正在编辑的文件列表，使用:buffers 命令。运行这个 命令后，屏幕顶部就会显示出一个文件列表：
 
 
+#软件包管理
+===============
+
+例如：搜索一个 yum 资源库来查找 emacs 文本编辑器，使用以下命令：
+
+yum search emacs
+
+
+##软件包安装命令
+===============
+
+风格	|命令
+Debian	|apt-get update; apt-get install package_name
+Red Hat	|yum install package_name
+
+
+##通过软件包文件来安装软件
+===============
+
+
+底层软件包安装命令
+风格	|命令
+Debian	|dpkg --install package_file
+Red Hat	|rpm -i package_file
+
+注意：因为这项技术使用底层的 rpm 程序来执行安装任务，所以没有运行依赖解析。 如果 rpm 程序发现缺少了一个依赖，则会报错并退出。
+
+
+##卸载软件
+===============
+
+
+软件包删除命令
+风格	|命令
+Debian	|apt-get remove package_name
+Red Hat	|yum erase package_name
+
+
+##经过资源库来更新软件包
+===============
+
+
+ 软件包更新命令
+风格	|命令
+Debian	|apt-get update; apt-get upgrade
+Red Hat	|yum update
+
+经过软件包文件来升级软件
+
+如果已经从一个非资源库网站下载了一个软件包的最新版本，可以安装这个版本，用它来 替代先前的版本：
+
+
+##底层软件包升级命令
+===============
+
+风格	|命令
+Debian	|dpkg --install package_file
+Red Hat	|rpm -U package_file
+
+注意：rpm 程序安装一个软件包和升级一个软件包所用的选项是不同的，而 dpkg 程序所用的选项是相同的。
+
+
+##列出所安装的软件包
+===============
+
+
+列出所安装的软件包命令
+风格	|命令
+Debian	|dpkg --list
+Red Hat	|rpm -qa
+
+
+##确定是否安装了一个软件包
+===============
+
+
+软件包状态命令
+风格	|命令
+Debian	|dpkg --status package_name
+Red Hat	|rpm -q package_name
+
+
+##显示所安装软件包的信息
+===============
+
+
+查看软件包信息命令
+风格	|命令
+Debian	|apt-cache show package_name
+Red Hat	|yum info package_name
+
+
+##查找安装了某个文件的软件包
+===============
+
+
+包文件识别命令
+风格	|命令
+Debian	|dpkg --search file_name
+Red Hat	|rpm -qf file_name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
