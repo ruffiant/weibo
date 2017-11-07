@@ -97,7 +97,9 @@ var w_content=function(){
     $("#editor").insertAtCaret(html_str);
 }
 var w_image=function(){
-    var html_str="![html_str]({{ '/styles/images/' | prepend: site.baseurl  }})";
+    //var html_str="![html_str]({{ '/styles/images/' | prepend: site.baseurl  }})";
+    var html_str="![html_str]({{ ''}})";
+
     $("#editor").insertAtCaret(html_str);
 }
 //有序表
