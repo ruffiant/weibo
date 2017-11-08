@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  chrome_测试
-date:    +0800
+date:   2017-11-8 11:17:36 +0800
 categories: [测试] 
 tag: [chrome] 
 ---
