@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc4fb0ed-d780-47d8-b168-c1260cba7a3a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/feed.xml" afterPath="$PROJECT_DIR$/_site/feed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_site/styles/css/index.css" afterPath="$PROJECT_DIR$/_site/styles/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/index.css" afterPath="$PROJECT_DIR$/styles/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/js/markdown.js" afterPath="$PROJECT_DIR$/styles/js/markdown.js" />
     </list>
     <list id="a8badec5-6796-44f0-9ed7-cf982f147741" name="Rejected commit: Default" comment="" />
     <ignored path="weibo.iws" />
@@ -88,8 +85,8 @@
       <file leaf-file-name="markdown.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/js/markdown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.028184893">
-              <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.44248825">
+              <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -207,8 +204,8 @@
         <option value="$PROJECT_DIR$/edit/index.html" />
         <option value="$PROJECT_DIR$/styles/js/edit.js" />
         <option value="$PROJECT_DIR$/_posts/2017-11-07-vbox_centos7_ssh.md" />
-        <option value="$PROJECT_DIR$/styles/js/markdown.js" />
         <option value="$PROJECT_DIR$/styles/css/index.css" />
+        <option value="$PROJECT_DIR$/styles/js/markdown.js" />
       </list>
     </option>
   </component>
@@ -859,8 +856,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/js/markdown.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028184893">
-          <caret line="90" column="41" selection-start-line="90" selection-start-column="41" selection-end-line="90" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.44248825">
+          <caret line="147" column="40" selection-start-line="147" selection-start-column="40" selection-end-line="147" selection-end-column="40" />
           <folding />
         </state>
       </provider>

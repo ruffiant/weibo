@@ -96,12 +96,7 @@ var w_content=function(){
 
     $("#editor").insertAtCaret(html_str);
 }
-var w_image=function(){
-    //var html_str="![html_str]({{ '/styles/images/' | prepend: site.baseurl  }})";
-    var html_str="![html_str]({{ ''}})";
 
-    $("#editor").insertAtCaret(html_str);
-}
 //有序表
 var byorder=function(){
     var html_str="   1.html_str";
@@ -150,8 +145,7 @@ var line_code=function(){
 }
 //图片
 var w_img=function(){
-
-    var html_str=' ![html_str](/path/to/img.jpg "Optional title")';
+    var html_str="![html_str]({{ ''}})";
     $("#editor").insertAtCaret(html_str);
 }
 //高亮这个是jekyll特意
