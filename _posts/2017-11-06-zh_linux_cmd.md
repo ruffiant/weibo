@@ -1360,6 +1360,138 @@ a) 	|若单词为 “a”，则匹配
 {% endhighlight %}
 
 
+#字符串和数字
+===============
+
+$a
+
+${a}
+${11}
+
+${parameter:-word}
+${parameter:=word}
+${parameter:?word}
+${parameter:+word}
+
+${!prefix*}
+${!prefix@}
+
+${#parameter}
+
+
+##截取字符
+===============
+
+${parameter:offset}
+${parameter:offset:length}
+
+
+##清除文本
+===============
+
+${parameter#pattern}
+${parameter##pattern}
+
+${parameter%pattern}
+${parameter%%pattern}
+
+
+##替换字符串
+===============
+
+${parameter/pattern/string}
+${parameter//pattern/string}
+${parameter/#pattern/string}
+${parameter/%pattern/string}
+
+
+##declare 强制大写小写
+===============
+
+大小写转换参数展开 
+格式 |	结果
+${parameter,,} |	把 parameter 的值全部展开成小写字母。
+${parameter,}|	仅仅把 parameter 的第一个字符展开成小写字母。
+${parameter^^} |	把 parameter 的值全部转换成大写字母。
+${parameter^} |	仅仅把 parameter 的第一个字符转换成大写字母（首字母大写）。
+
+
+
+##算术求值和展开
+===============
+
+$((expression))
+
+
+###javascript:void(0);
+===============
+
+ 运算符 |	描述
++ |加
+- 	|减
+* 	|乘
+/ 	|整除
+** 	|乘方
+% 	|取模（余数）
+
+
+
+### 位运算符 
+===============
+
+运算符 	|描述
+~ 	|按位取反。对一个数字所有位取反。
+<< |位左移. 把一个数字的所有位向左移动。
+>> |	位右移. 把一个数字的所有位向右移动。
+& 	|位与。对两个数字的所有位执行一个 AND 操作。
+| 	|位或。对两个数字的所有位执行一个 OR 操作。
+^ 	|位异或。对两个数字的所有位执行一个异或操作。
+
+
+
+###比较运算符 
+===============
+
+运算符 |	描述
+<= |	小于或相等
+>= |大于或相等
+< 	|小于
+> 	|大于
+== 	|相等
+!= 	|不相等
+&& 	|逻辑与
+|| 	|逻辑或
+expr1?expr2:expr3 	|条件（三元）运算符。若表达式 expr1 的计算结果为非零值（算术真），则 执行表达式 expr2，否则执行表达式 expr3。
+
+
+#数组
+===============
+
+     
+## 赋值
+===============
+
+      name[subscript]=value
+      name=(value1 value2 ...)
+      
+      
+      ${!array[*]}
+      ${!array[@]}
+      
+      for i in "${foo[@]}"; do echo $i; done
+
+
+##      添加数组元素
+===============
+
+      foo+=(d e f)
+      
+##删除数组
+===============
+
+unset foo
+
+for ((expr; expr; expr))
 
 
 
