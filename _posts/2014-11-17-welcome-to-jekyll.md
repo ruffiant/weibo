@@ -13,8 +13,14 @@ tag: jekyll
 First POST build by Jekyll.
 
 
-诫子书				{#zhugeliang}
+#诫子书				{#zhugeliang}
+==============
 ------------------------
+
+
+
+###3333333333333
+=======================
 
 ![诫子书]({{ '/styles/images/jiezishu.jpg' | prepend: site.baseurl  }})
 

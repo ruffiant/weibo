@@ -5,9 +5,157 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 08 Nov 2017 10:34:00 +0800</pubDate>
-    <lastBuildDate>Wed, 08 Nov 2017 10:34:00 +0800</lastBuildDate>
+    <pubDate>Thu, 09 Nov 2017 14:29:22 +0800</pubDate>
+    <lastBuildDate>Thu, 09 Nov 2017 14:29:22 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>GIT技巧收藏</title>
+        <description>
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  默记多次从fork到pull request的基础流程
+  
+  首先，fork 一个repository，实际上是复制了一份 repository 到自己的 GitHub 账户下，然后就可以从 GitHub 将它 clone 到你的电脑上，命令如下：
+  git clone &amp;lt;URLFROMGITHUB&amp;gt;
+  
+  连接到原始的Repository，因为如果原始的Repository内容有所改变时，我们希望能够pull这些变化，所以新增一个远端链接，并把它命名为’upstream’，命令如下：
+  git remote add upstream &amp;lt;URLFROMUPSTREAMGITHUB&amp;gt;
+  
+  新增branch分支，并选用新增分支。避免与主分支master造成冲突，当我们在新增分支上完成了自己的功能后再合并到主分支，命令如下：
+  git branch &amp;lt;BRANCHNAME&amp;gt;
+  
+  git checkout &amp;lt;BRANCHNAME&amp;gt;
+  
+  git checkout -b &amp;lt;BRANCHNAME&amp;gt; –创建新的分支并切换到新的分支上
+  
+  记录，在我们自己的分支上修改后，需要记录下来。
+  git status –查看当前状态
+  git add -A –记录修改文件，加上 -A，會將新增檔案跟刪除檔案的動作一起記錄下來
+  git commit -m &quot;add a file&quot; –提交全部修改
+  git checkout master –第二天开始工作前，切换到master分支
+  git pull origin master –从master的远程分支拉取代码
+  git checkout &amp;lt;BRANCHNAME&amp;gt; –切换到task所在的本地分支
+  git rebase -i master –将master上的最新的代码合并到当前分支上，这里的-i的作用是将我们 当前分支之前的commit压缩成为一个commit，这样做的好处在于当我们之后创建pull request并进行相应的code review的时候，代码的改动会集中在一个commit，使得code review更直观方便
+  git push --set-upstream origin &amp;lt;my branch name&amp;gt; –最后，当task的所有编码完成之后，将代码push到远程分支
+  先获取远端，再提交，每次提交代码前，都需要先获取最新代码，防止覆盖他人代码
+  git fetch --dry-run –检查远端是否有变动
+  git pull –从远端分支更新最新代码
+  建立Pull Requests，进入你的github项目页，一般情况下 GitHub会检测到你有了新的推送，会主动提示你，点击Create pull request，写上说明，再按Send pull request就完成了，如果 Pull Request 沒有问题的话，很快就會被自动合并 merged 了哦！
+  本地合并分支，并删除分支，将分支合并到主分支上，并删除之
+  git checkout master –首先切换到主分支中
+  git merge &amp;lt;BRANCHNAME&amp;gt; –合并另一个分支进来
+  git branch -d &amp;lt;BRANCHNAME&amp;gt; –删掉刚刚合并的分支
+  git push &amp;lt;REMOTENAME&amp;gt; --delete &amp;lt;BRANCHNAME&amp;gt; –也可以把合并分支从GitHub上的副本repository中刪除
+  其他常用命令
+  
+  git init –将一个文件夹初始化为git仓库
+  git status –检查当前repository中的修改
+  git diff –查看对文件的修改
+  git add &amp;lt;FILENAME&amp;gt; –准备提交对于一个文件的修改
+  git add . –准备提交对所有文件的修改
+  git commit -m &quot;&amp;lt;your commit message&amp;gt;&quot; –提交你所准备好的修改，并附上简短说明
+  git config --global user.username &amp;lt;USerNamE&amp;gt; –配置github账号
+  git remote add &amp;lt;REMOTENAME&amp;gt; –新增远端链接
+  git remote set-url &amp;lt;REMOTENAME&amp;gt; –对一个远端设定地址
+  git remote add &amp;lt;REMOTENAME&amp;gt; &amp;lt;URL&amp;gt; –新增带地址的远端链接
+  git remote -v –查看所有远端
+  git pull &amp;lt;REMOTENAME&amp;gt; &amp;lt;BRANCHNAME&amp;gt; –从一个远端收取更新（默认为主分支）
+  git push &amp;lt;REMOTENAME&amp;gt; &amp;lt;BRANCHNAME&amp;gt; –提交代码到指定远端（默认为主分支）
+  git branch -M &amp;lt;NEWBRANCHNAME&amp;gt; –修改当前分支名字
+  git branch –列出所有分支
+  git clone &amp;lt;URL&amp;gt; –复制repository 到自己电脑
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 08 Nov 2017 14:13:26 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/11/08/git_cmd/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/08/git_cmd/</guid>
+        
+        <category>git</category>
+        
+        
+        <category>系统</category>
+        
+      </item>
+    
+      <item>
+        <title>chrome_测试</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#监测事件&quot; id=&quot;markdown-toc-监测事件&quot;&gt;#监测事件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#获取某个dom元素绑定的事件&quot; id=&quot;markdown-toc-获取某个dom元素绑定的事件&quot;&gt;#获取某个DOM元素绑定的事件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#用计时器来获取某段代码块的运行时间&quot; id=&quot;markdown-toc-用计时器来获取某段代码块的运行时间&quot;&gt;用计时器来获取某段代码块的运行时间&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#列出某个元素的所有属性&quot; id=&quot;markdown-toc-列出某个元素的所有属性&quot;&gt;#列出某个元素的所有属性&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;监测事件&quot;&gt;#监测事件&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  当你需要监视某个DOM触发的事件时，也可以用到控制台。例如下面这些方法：
+  
+  monitorEvents($('selector')) 会监测某个元素上绑定的所有事件，一旦该元素的某个事件被触发就会在控制台里显示出来。
+  monitorEvents($('selector'),'eventName') 可以监听某个元素上绑定的具体事件。第二个参数代表事件类型的名称。例如 monitorEvents($('#firstName'),'click') 只监测ID为firstName的元素上的click事件。
+  monitorEvents($('selector'),['eventName1','eventName3',….]) 同上。可以同时检测具体指定的多个事件类型。
+  unmonitorEvents($('selector')) 用来停止对某个元素的事件监测。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;获取某个dom元素绑定的事件&quot;&gt;#获取某个DOM元素绑定的事件&lt;/h1&gt;
+
+&lt;p&gt;在调试的时候，你肯定需要知道某个元素上面绑定了什么触发事件。Chrome的开发者控制台可以让你很轻松地找到它们。&lt;/p&gt;
+
+&lt;p&gt;getEventListeners($(‘selector’)) 方法以数组对象的格式返回某个元素绑定的所有事件。你可以在控制台里展开对象查看详细的内容。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wAARCADFAtADASIAAhEBAxEB/8QAGwABAAIDAQEAAAAAAAAAAAAAAAEEAgMFBgf/xABAEAACAgIBAwIFAwIEAgoABwABAgADBBESBSExE0EiUVJhcRQygZGhFSNCscHRBiQzNVNyc7Lh8BZEgpKiwvH/xAAXAQEBAQEAAAAAAAAAAAAAAAAAAQID/8QAIxEBAQACAQUBAAIDAAAAAAAAAAECERIDEyExUUEi8DJhgf/aAAwDAQACEQMRAD8A+gTVdk0Ua9a1K9+OTASMq79Pi23a3wUtr8TytVXpNX1DqlS5WPlDbOdn0j+PlA9cjK6hkYMp8EHcynBxQvTes00Yr8sTLQsq72FI77E70CInO63gvm4qmscmqbn6ZJHMfLYnJrHRGpNhxbV4/uBsb4SPI8wPTyZw+hYajIszq6mopdeNVZYkkb3yOzO5ARIJCgliAB5Jlb9YLKrXx0axUUkN4Vj8gT5gWonOxuo2WYeM747NfenIVqR3Ghs732HeZf4mp9JVota2xmT0+21Ze5B76gX4mjFyRkox4MjoxV0bypnNxuoWp6tt9VzNZeakQMCO29AD+PMDsxKVvUBTbUl1D1iwqvIsvYn21vZ+Uwbqqqx/6tcUFpp5DXdvAHn3+cDoRKDdUrShntRq3Wz0vTYgHlrfnevHeZ0dQrvxmuRHbg3F1XTEf08/xAuRNdN1d6c6nDr8xNkBERAREQEREBERAREQEREBERARE13+p6L+iVFmvh5DtuBsieU6f13q2Z1NcM1UqwbVnwn4QPPvPVQJmBtrB0XUH8yXOq2P2M59PH0UJRd8R7QOgrKw2pBH2MylLGP/AFpgAACm+35mjMybEybwMwUitFZEKqeRO/n3/pA6kSkOoAMyvU6+moa1u2k7bmC9Wp4uWUgqvIAMp2N69j2/mB0IlS3OFNaG2so7khULL3++96mA6mjir0qnsa3lpVI7cSAe+9e8C9EqDPqNdTkMA/LYP+nj53IxeoVZN3pgcSV5L8QOx/B7QLkSi+V6ObfzLFFrTio9ySR2/PaZ/rlQWetU9TIvLidHY8dtfftAtxK1OWbMj0Xoep+HP4iD23r2lmAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgYui2IyONqw0R9pwRj9S6dU+JXjJnYh3xBbRUH2M73I/SY5H6TA4fQ+jW4136nK7MARVUG2KwfvO9MeR+kxyP0mBM8vm9Mz2yMtK8bml9hZX5gAA/Oen5H6THI/SYEVKUqRT5CgTOY8j9JjkfpMA6LYhR1DKw0QRsGaasVaQyo7+mw1wJ2F/HvN3I/SY5H6TAoV9Puqqx/TyEFtClFY19ivbsRvz2Hfc024l1WVienbu1nsd7CmwSV+Xy/mdXkfpMcj9JgacTHOOjl39Syxi7trQJ8ePwBNKYHEp/mb45DXft8732/vLnI/SY5H6TA5t/SmtvZxcgVrVt717bsQdct+O03jA+AL6n/5j1vH33qW+R+kxyP0mBRu6abGsdbQHNwuQlNgHjx0R7zeuPZ+n9N7uLE7LVKF7fL3m/kfpMcj9JgYUUVY6lakC7OyfJJ+ZPvNsx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBpqw6Kcq3JRALbgAx/EsTHkfpMcj9JgSw2pHzEojEvUBVdNDsNiXeR+kxyP0mBoxsd67GexgWI0NCZLjKMuy86YsFA2O41v3/mbeR+kxyP0mBXbDV/1QdtrkAAgDx21Irxr1qZWspLEaB9LQ/nv3lnkfpMcj9JgUF6aURCliCxGZgCm0APka34/mWExmFtNjOpNasCFXQO9f8pv5H6THI/SYFQdPT1chmYlLQQF1+3f7v6zZi49lHayytwBoca+J/k7m/kfpMcj9JgVb8H1rrLPU4llQLoftKkkH+8wuxC1dtmTdtuAAZE0F0d71333l3kfpMcj9Jgc/CNl2e1zWeoq1cOQQqN7323OlMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUTHkfpMcj9JgZRMeR+kxyP0mBlEx5H6THI/SYGUiTOfQWGe4xyWp/18vAb7QOhEieY6nn2v1l8QZ1mOQ6KnG2tF12J2D8RPnxA9RI2NkbGx7TzOR1HMXrJq9daytqolb3oode3+kjZJ79wZvFVeP8A9I7Rf1O+trBW1aPYoFndvh8dwPkO/eB2/XpFnp+rXz3rjyG/6TbPNY/of4/kc7+nLZ+p7JbWDcew/ad/8JfS7IOX+hNjc1uNhb3NXkf3+H+IHWieYw+o5lvWRW9yqxtZWpa9B8I34TXLfjvuWsQ5fqYl1mba4yLHrNehxAAbWu3nt5gdwEHeiDrsYVgw2pBHzE4PSK6qOp5NL9Sva8WtqiyxfjGh8WtbP8Sx0LOxGw68Zcqk3qX3WHHIfEfaB0qsiq2y2utwzVHi4+R1ubZxuk52M2Rl0V9RXKIbkhaxWbXEb8eQDNPSMhsp78Z8+y6xk2bKrFZV7/6dDan7GB3gQw2CCPtJnmul2fpem5X6fNtyMypLD+md1PEhj3463/8A7NWH1HLfDzmXLV+FBcH10sZH/CgaH2MD1UTh22ZmDXmqmRZkuuOtq+oBtWJIOtDx23qU8TqGW/T89lylf06wyt66Wsrf/pA0PsYHqJE5dtWViYeTY3USeSAh7gAK29zsDsP66lfEzHt6JmtTdZdZUradnV9njv4WUAGB2UvqdGdXUopILb7dvMijIqyahbRYrof9QM5nU68VegoGurqpQKyFxtW0NgEe4Mp4V4//AAxetFVdfpgKz0ftcEDkwPz0Tv8AEDvrkVPR6y2KatE899u0zDqVDBhxPg78zBqanxjRxHpFeOh27anN63XcMfGqxhZrmB8FgXx3HkH5SW6axx5XTqmxFQuWUKPJ32E0jNxTjNkLejUqdF1Ox/acSvGym6CpbIsrDMCVbi/IFh9u0udR/wCpdMAuzylqklWHFOf21Jt07c3rf663mTObkWtlXYq42UVqtViXrIO9a8GaOovdi0UJZncdb5HkqM/y0SNb+3vLtiYb8OwSBrZA34kcl5ceQ5a3rffU43UgtleDlPl30VlhyOwoXanue3Y+0i0BcwZNNhuFWOp572XQk78efn/Em2p0/Ht2wQQCCCD7iTPM5Oe9OFipTa6N6AcasVA39Qd/gTe9+XfeCuU9akovFQPdCT/tHJezfrvzBrEV1RnUM++IJ7nXynm8jqWZurdwqPpIyFrVQOSO+9jv/E9CaUtem2xf8yvZXR8EjRll2zl0+Htn6tfrelyHqceXH3184FtZuNQYeoByK++vnKfUQBkYLr/2nrcRr3BB5D+n+0Zw1nYDp/2hsK/leJ3/ALCVzX4iICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgJAAHgARNaXK7sq7IX/V7bgbANDQnNyOiY+RfZY914W07eoMOLf237exnTnOv63hY1zVWu6up0RwMC96aEglFJHgkeJJVWIJUEjwSPExpuS+hbk2EYbBYa7SvT1TBvssSnJR2rBZgD7DyR8/4gWfTTly4Ly+eu8y0N70N/OY02LdSlqb4uoYbGuxmKXc8iyn0rF4AHmV0rb+R94GfBOXLiOXz13k6HbsO3iTIJAGz4ECOK8uXEcvnrvIFaKdhFB+YEVWJdWtlbBkYbUj3EyPYbMDFa0U7VFB+YElVVd8VA350Jowstcys2JVYle/hZwBzHzH2m2+5KKmtsOlXzqBkEUMWCgE+TqQK0G9Io357eZLtwrZ+JbQ3oDuZFT+pUj8WTkAeLDRH2MDLQ3vUxFaDekUb86HmRbclTVhz3sbiv51v/hM4AgEaI2JAVQvEKAPkBMpozMurCoN15IQfIbP9IEV4dKYrY3EtSdjgx2AD7fibvTT0+HEcCNcddtSDYgUMXUAjfc67Q1iKNs6gee5gY49K49C1IWKp2HI7OpsIB8iYtYia5uq78bOtyea6J5DQ89/ECdDWtDXykMit+5QfyJVzMyynIpox8f17LAWI5heKjXfv+Zldn49OVVjO59aw6CqCdfn5eIFgKo1oAa8aEMqt+5QfyJVzMu3Gux0XH9RLXCF+YHEn7e8uQIKhhogEfIyAqjwB414mUrZObVjOqMtju3cLWhc6+Z17RpfbfwXt8I7eO3iOK/If0kxCIKI2tqp142JMRA1HHRslb22XVeK7PZfnr7yf06HJ/UHZcLxGz2Ue+vzNsQESvTmU333U1sS1OuXbt/B/gzcLEJIDqdDZ7+IGUTEOrEhWBI8gHxIFtbb1Yp150YGcTFnVQxJHwjZ/Ep4ee12IcrJpGNVoMpawNtT7/b8QL0SvjZdeXim/HDOvcAMOOyO3v95j0/Ksy6Ge2j0WVyhXmG8fcQLURNd1yUhS5PxMFGh7mBsiRECYkRAmJEmAiV8zMpwqhZexCk6Ghszczov7mUfkwMomLWIv7nUfkyGsRNc3Vd+NnW4GcTHmoBPIaHnv4lXJzLa8yrGoxvWZ15OeYXguwN/f/wCIFyJVfPx0zK8Qvu5zoKATrtvufbtMcnLtoy8eoY3Ou5uJs5gcT3Pj38QLkSuctRnDEauwMyF1cgcW15Hnz3m2xxXWznwBAziURnOd6q2B95Yx7/XUnWiPM1cbPaSyt0REypERAREQEREBERAREQEREBERAREQEREBERAREQERECCNjRmlMcJtDpqt7APkGb4gROX1Po6Z2ZRd2HE6sH1CdWIFLqtbt0u+uhCTw1xTyR7gfxucvMNmXQ9mNiX1VU47VoGqKuS2h2XzoCegPYblXD6jjZoPo2DmPKHsRA5/ScVTba1aZVWO9QrPrFld2920e47dvaaRVbR0zqP+G8xu/igBLkAaDEd9/PxO5dRTkKFvqSwA7AdQdGa7raOnYoPpFal7caqyeP8AA8CBw8KnIq6XlW0/qA7sqtWlViEDfxMockk6Pn7SzZhY1vRMsYuLkD1FJCW8wzMPB0Tv/nOvbeKsc3BHsAG+KDbH8CbAdjcDn9Gx8SjE3h49tKtoMLVZWOvs0y60bV6Za1NvpsPJC72D219vPmW2uRbkqJ+NwSo18vP+8m2uu6s12oro3lWGwYFDqCGnEoqrS446kLYKQS3EDsO3fzrxNeRWlPTqRRj3ik2qzJxZmAB348+wnUVVRQqgKoGgAOwmF+TTj8PWsCc2Crv3M1K1MtKXUkGX0trBVdyC8kTuGB+eh/tNebabacYvTlHGbfqKiHmflsDvqdaIlJlpxM3EZ0orxqbPSqra3gxYbJ7cd/gntuWfRrTpuPjWJkWpYyjaggr79++wBOlEXLc0XLc0icjqWL1DMyLPQNFdSVsii5C3MkdyNEa+X9ZduzhVm1YoousZ15FkA4oN62dmbP1mP+qGL6yG8jfpg99TLLmU9N/WZFL9Qx+SVYypwfupY+dj31oTIdHotzWF9HPGppWqpX+JT52de+u0u2Zwrz68RqLh6m+NuhwJA3rzv2+UtwPNdR6da7ZFC9POSOKJRbYQy1poA62d8t79vl3lq2r9R1G/Eo0abqkFzKd8ANjX5I0J25qox6cdClFSVKTshFAG/wCIFWkq/WL+4/yqlrUb+eyf+ErZF11vWcYfoMk00s27NLxJI0D+7etEzpDEx1yTkrRUL2GjaEHIj8+Zugc/JdbuqYlCsD6fK1gD40ND/wB0sJl1vnWYgDepWiuTr4dHfv8APtMqsTGpue6rHqS2z97qgDN+T7zKqimlnaqpELnbFVA5H5mBnORjYCP1DKyBdkk1uFUes2iQNkefGz4nXZQylWAII0QfeY1VV0pwqRUXzpRoSy6WXTi4dT25NNnpZK5KsTfZZyC60fhHsRv5Tb09Fe42XU5P6xdlnfkF/A9iJ2IluTVycTCsudsRTj5CrSjO7OhHJ9eBv8mZdIrP621/SvIIP+barIT38EE6P5E7MRyLkq4YRmvuSu6trLCGFuxvXbYHy7TLNa5cV/0y8rm+FfkCfc/YeZYiZYeeTB6jjjIVxVbzxDWhpUr8W/fZPfuTLN3R6cbp9gxKf+stQaS4PxNvXcn3nYiBxsrpNWLhO2FQxtKqlnpnT2JsFu/uSN9zKgxUpxeo2viVYAdFFKDiCddwTr/Vsz0k1WY9Nro9tSO9Z2jMoJX8fKBy7RYnTcrLuHp35ShAp/0A9lB/rs/mXsi04mEvoY9mRoBVWrR9ux7kdpvvoqyKjVfUltZ8q6gg/wAGTXWlVa11oqIo0qqNAD7QOf0qw43Rq/1NT47VqeYt0CT5J7E/eMbIXA6CmVerEBPUcKNkljv/AIy7kYuPloEyaK7kB2FsUMN/zJsx6LVRbKa3CHahlB4/iBsB2AfnOb1em7IaiulWPEtYdEgHQ0BseN7nTiWXV2surt5zLpyKsHFrqFpoPJrFNTsQT4UgHevPv7S0Q2Hi4DqbLXDEBSCCeQPbR79u3nxOzNfoVet63pJ6utc+Pf8ArNcmubmOLcK3H5VXXkI7H01JBsJHn5Dz5lJu749WTVlOfQLvXUrHbMd6Yjx4956SYhFDlwoDN2J13MTImbnrTxwcPGyUudiy7NZJ4EdxyPy7anSiJhhw+qYnUc2zIan0UqWtqkS1CWbY7kaI1vx/E2L01c7Me3Po5IKErVH7jfck6+Y3OxEDjr0ejIzLzlU86VrSmoOdjQHn89/MpZ3T7b776m6f6xLoK77OJFdfYHjvvvzPSyPMDitV+r6llY1RDY9npvc6nYGv9P5Ol/iXMUrZ1XMfY2gSsDffsNn/AN0t0UU49YroqSpB/pRQo/oJimJjV5D5CUVLc/ZrAgDN+TA5zXXW9coJwMlaag6+oQvHkdfF+7etD+832ut/WKK1YEUo1jaPgnSj/jOhNNOJjUWWWU49Vb2HbsiAFvyfeBTdXv64pqs4LjV/H23y5H9v2/aJcyhvGfXymVVFNHL0akr5HbcVA2fmZnLPA5KcfTYHQb2lrpw+Fz9xLPo1f+Gn/wC2ZqoUaUAD5Cbyz3NMTHSYiJzbIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiBB7gzhdO/6PCq718qwlwdhEOgPyZ3T2E042XRlpyosDa8j3H8QNHVg5xk0trV8x6oq3yK++td/lK91tNPRnWmnJ4OrKiGt2bZHy8gfmdRmVFLMQFA2SfaasbLoy0L49gsUHRI+c1L4al8Ob1C2q/o6k05LNrSAVOGDAe4Hf+szzrRkY+PYa8k4pJ9VFRlfx22POtzqxHI5OPk1XOuJ+hW1AEfXMHkB27bPg/Lcs2ig9Op/ycj0+aaRAQ4O/f31vzL8mS3ZbuInF6tTnZmW9eNRU1ddJXla5Qcm9xoHetD+s7c1X5FOPw9awJzYKu/c/KRlyExW6nko2Wl9aHFXkoZkHPZ3/Imy7poyeoele+Q1KYygMHK7bZ7kjyZ2IgeW68mUMhaqKbnaqkenbqxix79xxIUH8y/lLauWMZC3HOUcjv8AYR+4/ba/3namivEorybMhKwLrP3PvZ/+IGgAL1oAeBja/wD5SlmZFVPXsZlxsg8A4sdMdiCWA13A7yxmfpW6tjLZi3W5AXa2Vn4UG/fuPf7GXP1eP+qGN6yeuRv0999QK+d/3j07/wBR/wD2GX5zLf0i9cpNmLf+oYEJfv4PB2PPnW/adOAiIgIkEgDZOhGx37jt5gTEgEN4IP4kKyuNqQw+YMDKIiAiYl1U6LAHW9E+3zkghgCCCD4IgTExDKxIVgSp0dHxMoCIiAiIgIkEgAknQHkmQXUJzLAJrfLfbUDKJEgsoYKSAT4G/MDKJEhWVhtSCN67GBlESIExMXsStS1jqqjyWOhCOti8kYMPmDuF1fbKIkBgd6I7QiYkAgjYOxJgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgQfBnnul9Burv8A1F9rVHewqHufyZ6E9hNWNlUZScqLA4HnXkQKvWqXt6bbwuevipJCgHl9jsSvlq+JRRXfmX+gzH1LgAGHbsNqOwnVexEKh2A5Hiu/czKal01MtRwzkWDCr9XIvXFNrA36PPhrts67d/eWGy68YYdv6i1sYhgbG2eXy3OpEcjk4OTku3TMex8myoM77BLIWGzocgDqX7LUbptFltt9AZk7j95Ox2Pb395fiS3ZbsnF6vVm5mW9eNj1uldJXlY5TTN7jsd61/eduYPYlfH1HVeR0OR1s/KRlxkx26pkocoZFaHFXahmQB9nfj3E2W9O/U9Q9G6zINKYygMHK7bZ7kjyZ2IgeW68MoZC1U1XO9VI9O3VjFj37jjpQfzOhlC5csYys+s5Rs7/AGEfuP22v952ZorxKK8l8ha/86zszkknXy+38QNAAXrQA8DG/wD7SlmZNFPXscii7ahxY6Y7EEkDXcDvLOZ+g/xTG9dbDla/yygfQG/fXbW/nL5sQWCsuocjYXfc/wAQKed/3j07/wBR/wD2GX5zbP8AD/8AG6ua2frSDwYh+Pg+P9O9bnSgIiIGq74uNf1Hv+BIqAatnYAhzvv8vb+026EEArxIBHjUjW/GnP6Qaa+nVheC8mbsPc7MxTLs9Gp+ahNnlwA+rXj5fiXlxqEO1prU/MKBJFFI46qQcTsaUdpNXWnW9TG5W2e3PW+5EtPr8tXPsfDsAfISzlZBSipq34mwgA689t+/ib2pqb91aHvvuo8zJlVhplBA76IjVS9TG2XTkrf+oFVthXm+I5Ov4m+12Xo1TV2FDxT4hrx2l00Uk7NSHtr9o8TIVoE4BF4eOOu0nGtXq4+NT1XMS5qcq5ltUqb0RgQPi2omzAy78i7bNV6ZB2obbKQflr/eXP09O9+jXve98R5mYRVJKqAW8kDzLJUy6mNnry55ysizOaqt60VX4lSfi1ryBr/4mIy8hMV7Hbb0ArYCNAtvz+Nd50uC8+fEcta3rvJ0O/Yd/Mav1O5j4/i5teTkE1I11X+ZYVDKQ2xx3+NzCrJusdLPXUE0E8ToKW3rc6RoqIUGpNL4+EdoFNQXiKkAHbXESca13cPivXYbcK7kSzKGU7AHt9u0pjJupxCPUresYwcfD+09ux+e/wDhOsqKi8UUKo9gNCY+jVwKemnEnZHEaMtlTHqYy3x4UXy7Rc+rE4pcicdeQQP+c0nKdrKcosrNwtIq13UgeJ0/09H/AINfnf7RMhWgYsEUMfJ13k41Z1cJ+ObXnXlV5WVFLHVVsUhuOwfPt7dvzN2DsYV4DjkLLPiUDzsy56VfAp6a8T5GuxkqqqNKAB8gJZKmXUxs1Jpyq8y4YoAuHNKFtBYA+oe+x/8AfnLea1rY9YRbAzkbCcd/M+ZZ9KvSj01+H9vbx+JloHyIkuky6mO5ZHJHqs+FzsdC9rHThe/Yn2maZNrNTVVZWnOyxeyg/tPbtOi1VblS1asV8EjepiMelSCtNYIOwQo7Sca1erjfc/vlz7sm41WKb+LAqQVA1xLa7H/nBq9C+/IxwHXYF1Y/1jiO4Hz/AN50hVWAwFaAN+4cR3/MLWiElEVS3kga3HE7sk1J/fDlNlnHx6BjFFQIjleIGwTr/wC6m0ZdzW6FyBTkNVrj7a2D+Z0DXW37kU6Gu49pj+no3v0a/O/2jz84407uF/HMPUMhkREeoWab4nPEMQxH/wB1OupJUE+dTAU1KABUgAOwAo7H5zZLJZ7Y6meOX+M0RETTkREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBEjvHeBMSO8d4A+DPO9L6FkV5H6i61qe+wqHufzPRd47wKHVzaK8Y0KGsFw4gnsTxMoZ2VanTaWpucguRe7OUKnXgnR4953u/yjv8hNTJqZacXGyrk6fRmWXCyutyH4vyBQ9hs6GyDr2m1sh8P9Jbl2sqWcy+9kAnuB/wAJeyMVMh0NhYqh3wDaU/ke839/kI3F5RwLMwNViHIzbceuz1dkHRbTdh9pcW0/4TQ+VkXVEuoDgfE3xfCD29+25falWuS0j4kBA7/PX/KbO8W7iWywnC60cjJyzRjYj5Ho1E7V1Xg5/ae5HjX953e8d5llxEe3quSgTKvx62xVcrWdENsj+02XUZGR1D9Mc6+sJjKS1el5Nsjf/wATr947wPMdez8jFyFprvtF1VIbl6nAOe+yFCnl47jep0Mm7IryDjrY+8xV9JvoPh9fLt3nX7yumHWuW2US72EaHJyQg+QHtA1Aa60B3Osb3/8ANOdl5XTcX/pJjsbaq7iri0nzsgcQZ1LsFbsyrK9S1HrHHSPoMN70R7y13gUc7/vHp3/qP/7DL8qPgo+fXltZaWr/AGpz+Adtb1LXeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4ExI7x3gTEjvHeBMSO8d4EyvXlA3tTYvpuP27/wBQ+0sStXi6yGvtbm/+n5KPtAsyhl9YwcO70r7mD9tha2bW/G9A6l4eO/meUzzenW72VLLAbFYY/GwC3QGjsDj7e5gegfqeGmUMdrtWkga4nQJ8AnWgfsZor65iv1GzD1aGUhQ3pPokkjX7ew7efEqW9CsfqDXj03qssFjK9tilfG9BTxPj5S++Nlp1Q5OO1JqtVVsWwHkACe41+YGlOrW2dSfFWjHCJZ6ZZskBz2B2E19/nLozcc1iwWfCbPTHwnfLeta/MoVdOyaup2XirCeuy31ObKfVUaA7HX2lhensOom7kvocjYE9xYRon+n+8DYnU8N8s4y3bt2RridEjyAdaJ+25hV1fBuv9Gq/lZ37cG128jetb+05+N0KzH6gtp9OylbDYC1tgYb2f274+8vU9PeuvDXkv+RYztr32G/5wMcDreLn3vTWLQ6sVXlU4BAG97IAH4MtYOT+rxEv4cOW/h3vWiR/wmjGxsvHzriGpbFtc2HYIcEjx8vaa+m4/UcQLRacVsdeWivLn3JI+3vA3YGYMt8lltDVo+lHpshUa9+XmKuq4dyWvXYzLUOTEVt4+Y7d/wCNzThY/UUyr7Mk4nC7v/l8iQQAB59u0dMwMnEvdrXqWojQqqLcd/PRPb8CBPTutYufUzrzrKAs3NGAAB1vZAE2V9WwbarbVv8AgpXk5ZGXQ+eiO4+4lerpuV+jyMC6yk41iuEdAQ45Env7e8rY3Q7q6MpLPR521emri2x/6hidfxA6dHVMLIS16rwVqHJyyldD59x3H3kV9VwraLblu0lQ2/JGUgfPRG9fea83ppy/1Clwq20LUCN7BBJ3/eU8folyY2XW4qFlyBFcW2P2+/InX8QOhV1XCtS10vHGkbclSND5jY7j8TOrqGPbi2ZKO3p1gliyFSNDfggGTl4/rY1iIlRdl4/5i7BHyPvqVMfp2R/huTjZNyk3AhVUsRXsa7Fu5gZ3dQtxemrlX1KXsYBU5cQu/G2/3MYmfd/hH63NqWtuPLSNy5D29hIubLyejsKKkXJ4lWrtHYnWiB/wMr4/R7qej34pdOb6ZETYRCNaA39x/eB0eeSmAbHRWyAhbgvjfsP+E15XUEwsaqy9W5OQOKqTonz4BljGtN9CWFGrLDurDRB9xK/UcBc4VBiwCNs6dl2P4/iS7/G8eO/5elZ+vYwwDkcgrElUSza8jv7j+ZJ6kf8ADRe19HJ24q9SM6fzqbauminpi4qN8WwSWYnvsE+Zs6lRk34ppxvSHMaY2b8fbUnlv+G9T62ZGZRihfXs4lgeI0TvXy1MH6liJTXabSVs/bxUkn+ANyFx7nuxrrzXzqDBgm9d/luYdQw7LwgxxSvEnu3JSN+4Ky+WZMd6pmdVx8SylXDt6vfaox0NHv2H28R/iSnMrpFZ9OysOth2O53oaI7eDJyMXIbHxvTtRr6GDcrB2c6IO9fmY24Nt7PZayLY1SqOO9K4JO/xJ5WTDTL/ABTHSimy8ms2ry0FLa/OhJu6rhUWenZeA2t6Ck+2/YSjkdIyrqaavXTilXBhycAH5jRG/wCZvTpliuGLIdFT/RCv+5jda49P6s2dTw6ynK794DAhSRo+Ce3b+ZststXIoSuvlW5PNvp7dpyLehWngVat91qjq1jqOw124nv/ADO4oCqFHgDUs3+sZTCa4+Ve7IejMpRgDTd8APureR/Bi3IenOqrcA1XAqpHkMO+j+R/tMMtXvy8alVPCtvVdtdhreh+Sf8AaMlWyM/GRVPClvVdyO29EAD+p/pK5rsqN1HEXMGKbd3E60FJAPyJA0P5m0jI/VqQ1f6fidro8uXt3+UqU4uZj5lnpWUHGtsNjBlPME+QPaBspyMn/FLca4Ven6fqVlN71vXfcY+YL+o5FKWArUoBQ1srA7Ozs9iPxNK4/Uf8X/Uk4vocfT0C3Ljvf43Jqo6iOqtkWHF9Bl4aUty4gkj7b7wN69SxHyzirbyuB0QFOgfly1rf23MMLqCZCVLYQLrOWkUE9gSN/bx7zDDxczFvasWUNiF2cfCefck6+Xk+Zh0/ptuBbzrdCLCfWU779yQQf58QNmLdkPkZdt1yfp6nKKgr0RoA7Lb7/wBJqxOsG7Nqx7scU+uher/NDMQO/dfbt+ZODZXZfn4jcw5tYkFCBxIA7HWpq6Z0azDurNjUenTviUU8rCRrbE/adMeOrsWsKzK/X5WPk3JaqBGQrXx0Dvse534l5t8Tx1y1234nNwL0yOq5tlQfgErTbIV7jlvyO8t1jKCXeo1TOWPpaBAA9tzmNWDlXPj3PlisPS7K3pAkaHy95GBmrdgvk2XI1as3xBGTioPuG77E1YNHUqBkescQmwl04Fv3H579pjh4memPk05JxCLSzLxDEbY9wQfaBuPV8T9Hbko1jJX2I9Jwd/jW/wCZGJ1jEycM5PJq1RQz80Zdb9gSBv8AiY9PwMimi+vItTjYNLXWWZU/BY7/AImlum5mR0o4WTZSOAUVPXyG+P1d+3j2MC2vVsE4zZHr8akYKxZWUqT42CNiTX1TDsxXyVu/yqzxYlSCD8tEb95Rw+j2VUsLBUrm2tyVssfYU7/1kzZm9JbLryl9QKbbltTuR+0AaJBB9vaBZHVcI4pyfXC1BghLKVIPyII2JtxM3HzUZ8dywU8TtSpB/B7zm4vR7KsUo4qVzelrFbHcEKR7sSdzsBVUkhQC3kgeYGUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQESD2BIG5WptduTnbNvXpj/AEwLUiJx+pV5mXnrihcdqAps4uzDkPHfUsm2sZuuxJnKOZ+nosRPTTjatFK/ft/zP9JDZmabiy+kKVyBUAQSz9wD79td5eNXhXWic9b8rIyH9B6a6arOBDqSz68+/aaqxn2dVuK5VQqrIXh6Z8Hvrz517xpOLqchyC7HI99SZzqTYeqW+v6TenWCjKuioJPbe+/ia687KazHtLU+je2lqAPMDv33v7fKOK8K6sTlYmZm23YzW+kKr+WkAPLQ3o73+O0t9QyXxqU9JVNtritOR0Nn3MlmmbjpakTl5pyk6RemTdVZZYRWrVoVHxEDxs/Ob+pPbT02x8V6l9JTvmpYaA8aBEiLqsGUMpBB8EHzJnNsufFxcPGxEqrtt+BQf2JobPb3/EqdVvyqMfFW62p7RabGsRCFCqD3K7J7HUDuxOBmvnZWJh0PVzvsdnda7TTyQb77GyPK9pbqdunpiVuprrs5eoHtNhU63+4/gwOpE4OT1bNRKKq6T69ytZtaTZwTfw7UEd/5m1szqTGmpVppt9A23M6khO/bsD79+24HZkTh329Ry/8ADRTkVUNevqMDWT3A39Q7dx2lvIFt12Lg3WBuas9zIOPILrsPkCSIHR5Dt3Hfx38yGZUUsxCqPJJ0BKPVlVMWpkHGxLa/T18+QGv6bmGf/wBa6hj4NtJ9HvazNorYB/p1+SD3gdIEMAQQQe4IkyFAVQqgADsAPaTAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBMQihiwA5H3mUQIlbGxrK7rLr7VsscBRxXiAo9v7y1ELtW/QYvrm/0E9UkEtrvsTYMeoBQEGlYuP8AzfP+82xLs3VcYWMMn9SKU9b69d5Jw8c5QyTUvrAa5+83xJs3WlsShslchqlNyjQfXcCYVYGLRY9lVCI7/uIEsxLs3WtaKkNZVAPTXiv2H/0SMjHpyqTVkVrZWfKsNibYkRWOBiHD/SGhP0//AIeu3zmSYePXinFSlFoIIKAdiD5m+IFRumYLYi4rYtZoU7Ca7A/ObVxaECBakARCijXhT5H9pGbkDExLcgjkK1J185z8bOy1zL68q3GdaqPVYVKQUPsCSe/g+wgWr+lYOSlaXYyOtQ0gO/hE3vi0PVXU9StXWQUU+BrxKFGR/h/QFyHUu4r9QqPJZu+v6mV6ep9RGJl330ABK+VfKpq9v7LonZ9u/aB08zp+JnBf1WOlvH9vIeJsGLQAwFa/EgrP3Ue395QazqteNfbc2KgFXNSFJ4EeQe/ft79phh2Z2F0dsjNuruK1c1CoQd633JJ3Av5GDiZdaVX0JYtf7QR+2TbjB8mi9W4tVseP3KfI/sP6SMLH/T0/Gedz/FY58s0pZFbYOJj4dNxVsi4qbj5G9sSPv7CBebGFmWt9jchWP8tNdlPufuZhdjWNn0ZKWqq1qyurLvYOj2O+x7Snm4qYfTMhKbrnN5Wv/MtL6LHXbfjzLHVLLqenWPitSPTUlvUUsCAPGgRAvKwZQykEHwRJnNsufFx8TFxK6ktt+BQ37E0Nn8/iVOqZGVRRiC6ylrRYbGdFbgFUeSO58kQO7ErdPsyLcNHylVbTvfEaBG+x1s67Sj1317WxcbHR7GZi7qlxqJUD6h9yIHXicum1unjGqsUpU1bs/qWmxlYaOuR89tyrk9WzkFFNdB/UPX6rlaWsCgnsNA+fuTA70Ti3Z3USQiJRSyYwuuNgLcD37aB+xmOTZ1LIycBaL6aPUr9Vlast3A770w2Pi8QO5I2Ngb7mVsjEOVjV1X2d1ZXYoNBiDv8Ap2mrq3w149i/9qt6BNee50R/TcC/E02m316RU1QXZNgbfIjXt/OpugIiICIiAiIgIiICIiAiJXDszDR/c+x/5R/9/vCybWIlG5rm6mlKZD11tUW0qr5BA9x95hTluXaq8sXrvFfJBoN22NzPJ07V1uOjEp/r09M2em/EMF7a7knXz7TBsw22UhA9ZW/07EbW/wBpP/KXlEnSyX4lBupoFtPo2k1gMVGt6J1vz2lqu71GcBDpdd9jR7b7RuVL08sfcbYnMXNud8az0nAcWbrBHfXibW6pQDX+48wp9tjfjt5k5Rq9HOfi9Ep5jWrlYi13Mi2OVYAA7HEn3H2m26wJbSCX+InXHwexPeXbPC+P9t8Sic8mut66GYPYF/cPf+YPVKA7qAzcQx2NHx5HmTlF7WfxeiU26hUgf1FZCvHQbQ3vx7/YyK+opaaxXVYxcE6Gu2iAff7y8odrP4uxKWRkvRmdlssQVFii6+fmP1tYZ3HqMNJodtfF4IjlDtZa3F2JU/XK3wCuz1eRXh2328nzr3Er09TSrEp9cs1jKGbxsAnXj/lJyizo52enTiULMsvk461B/TNpRm7abQOx8/Im2/M9DJ4Oh9MVl2fY7al5RO1l4i1E0U5IttapkauxQG02u4Pv2lR8y17K9VsgGQa9Aj4wAY5QnTyt06USg/VaErVyG2Rsr22O+vn3/iWbb1rCaUuznSqPJ7b943EvTynuN0Sg2SxusY+oifpufDWmU7P95tXLBKoldjjsrMADxJG+8bi3p5RaiUen5LXVIpDWEb5PsaB2ex+8zt6hTXkCnRZuQU612J8dvMcprZellyuK3Epp1BDULGrdFHLly1tOPnfeRX1Kuw6VHJ5hNDR7kb8717Ryh2s/i7Ep15ptupRKW42KxJJHwlTqZ35qUFwUdhWA1hXXwgxuJ28t60sxKNVtl/ULVPNUq4lSGGm2PeY/rycr0gvbnx/evy7+8nKNdrL1/wBdCJzMe97GS231kLWtWFDDidE/8puHUVKB/RsAZuKk8Rs9/v8AaOUL0spdLsTn35GRb6yUbpaplCsdENvXYj+ZNWS91iEs9bIGFtIAPcfxuOUO1lra/Eor1Ktgf8t9h1Qr2Pc+PeZpnozIGqsTkzLttdiN7Hn7S8ol6Wc/FuJVxc6rKsZK99gGB7EEfxLUS7ZyxuN1SIiVkiIgIiICIiAiIgJiGViQGBI8gHxMpy6OKf8ASDJ9Og6epQ9iAABu5+L5nRHzgdSIiBhbWl1TV2qHRxplPgiaMfp+JjIyUY6IrrxYAeR9/wCstRAqU9NwqKLKasata7OzrrfL8xR0zDx6mqqoVa2YMV2e5HiW4gYuquhVwGVhog+4lZOm4teHbi1VCuqwEMF+8txA10I9dCJY/N1UAtrW/vMcnGoy6TVkVLZWe+mE3RAqnp2GcP8ASfp0/T/Rrt85muHjJiHFWlBQQQUA7EHzN8QKbdLwXxVxmxqzSp2q68H5zauJjqFAqUBEKKNdgp8j+03xAwqrSmta6xxRRoD5CV8zpuHnMrZVC2FBpSSe0txA0PiUWJUj1Ky1EFAf9JA0Jhl9Ow81lbJoWxl7AnsRLUQNJxaGWwGsEWKFf7ge0wycHFy/T/UUq/pnab9pZiBE0HG55gvsfkEGq012Xfk/cyxECmuEzdTOZbYG4IUqVV1xB1vZ9z2lyIgIiICIiAiIgIiICIiBBGwRvUxWtVII9l4j8TOIXatbh+plDIF9qOF4ALx1r+QflMf0FYVAr2Lxs9QkEEu332JbiTUa7mXrbnZeC/pE1Gy2xmTZJUEANv7f3m44CMUY22hhZ6hPbbHWu/b5fKW4k4xru5a0pLhDGXlSHtbgK+LsANb/AB95vxaFx8dKl8KJuiWSRnLPLKeVMdPUNWVuuX0+QUDj/q8+0VdPSkoVuu+FQpHIacDxvt/tLkRxi93P6r5GL69lVnrWVmokrw4+da9wZicPk9bNkXFkYtv4e+xr5f7S1EaiTPKTSoMBPJssL8g3PtvY8e0g9PThagtuCWb+EMNLvzrtLkRqL3MvqkenIxYtfcWIUA7AK8fBGh57zYuIFvru9a0sildEjTb877fYSzEaiXqZX9aLsVbrA/N1PEoeJHcfKaX6cjMxF1qBuHwrx0OPjXaXYjUJ1Mp6qmOnoLDZ61vqcy4bt22NEePHaF6fWhQpZavEcTpv3De9H+suRHGL3c/qquDWtgZXsAFnqBNjQJ3v2+8yvxK8h+VnLXAoVB7EGWIjUTuZb3toox1pYtzexyAvJ9b0PbtNbYCGwOLbV1Z6gAI1vWvcS3Eahzy3tSTpyV8St9wZd7PIAsCd6PabsjGXIVNs6Mh5KyHRE3xGoXqZW72qPgK7O3rWjnV6R0R4+fceYTBSuzmttoOgGGxpiBoE9vMtxGodzL1tTxunpjWK9d1p0NEHjpu++/abP0q/qTcLLF5aLID8LH5yxEaheplbu1oOJSTdtT/nfv7/AG1Nf6Ear3kXk1tyDEgk/Y9vvLcRqE6mU/VWnCWlq2FtrFOWuRHfkdneh85NuHXbY7lnXmvFwpGnH3lmI1DuZb3toqxhVkW3Cxz6mtqdaGvGu0kY9avzA+Lud6HvN0RpLlapL08KqKMi74LDYP2+Tv7eO5mS4CrjCj17SuySTx778g9pbiOMa7uX1VOCvxcLbU5cd8SP9PjyD8hMrMSq2w2MDzKGssDokGWIjUTuZfVH/DK+2rrgQyt5XuV8e0yHT1DKTfa3GxrNHjok+fbx3MuRHGL3c/rRjYq4y8VsscDsoc74j5Cb4iX0xbcrukREIREQEREBERAREQMLSy1Oy65AEjY2JW6bS1dDW2uLLb25uwXiN61oDZ7aAiIFyIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIH/2Q==&quot; alt=&quot;html_str&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  要是你需要选择其中的某个事件，可以通过下面的方法来访问：
+  
+  getEventListeners($('selector')).eventName[0].listener
+  这里的 eventName 表示某种事件类型，例如：
+  
+  getEventListeners($('#firstName')).click[0].listener
+  上面的例子会返回ID为 firstName 元素绑定的click事件。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;用计时器来获取某段代码块的运行时间&quot;&gt;用计时器来获取某段代码块的运行时间&lt;/h1&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  通过 console.time('labelName') 来设定一个计时器，其中的 labelName 是计时器的名称。通过console.timeEnd('labelName') 方法来停止并输出某个计时器的时间。例如：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'myTime'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//设定计时器开始 - myTime
+&lt;/span&gt;      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;timeEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'mytime'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;结束并输出计时时长&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;myTime&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //输出: myTime:123.00 ms
+  再举一个通过计时器来计算代码块运行时间的例子：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'myTime'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//开始计时 - myTime
+&lt;/span&gt;      
+      &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+        &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+
+      
+      &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;timeEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'mytime'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//结束并输出计时时长 - myTime
+&lt;/span&gt;      &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  //输出 - myTime:12345.00 ms
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;列出某个元素的所有属性&quot;&gt;#列出某个元素的所有属性&lt;/h1&gt;
+
+&lt;p&gt;你也可以通过控制台列出某个元素的所有属性：&lt;/p&gt;
+
+&lt;p&gt;dir($(‘selector’)) 会返回匹配选择器的DOM元素的所有属性，你可以展开输出的结果查看详细内容。&lt;/p&gt;
+
+</description>
+        <pubDate>Wed, 08 Nov 2017 11:17:36 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/11/08/chrome_test/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/08/chrome_test/</guid>
+        
+        <category>chrome</category>
+        
+        
+        <category>测试</category>
+        
+      </item>
     
       <item>
         <title>虚拟机下CentOS7开启SSH连接</title>
@@ -487,7 +635,6 @@ firewall-cmd –zone= public –remove-port=80/tcp –permanent&lt;/p&gt;
         <title>LINUX命令整理(中文)</title>
         <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#简单命令&quot; id=&quot;markdown-toc-简单命令&quot;&gt;#简单命令&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#cd--更改目录&quot; id=&quot;markdown-toc-cd--更改目录&quot;&gt;#cd — 更改目录&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#ls--列出目录内容&quot; id=&quot;markdown-toc-ls--列出目录内容&quot;&gt;#ls — 列出目录内容&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#用-less-浏览文件内容&quot; id=&quot;markdown-toc-用-less-浏览文件内容&quot;&gt;#用 less 浏览文件内容&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#linux-系统中的目录&quot; id=&quot;markdown-toc-linux-系统中的目录&quot;&gt;Linux 系统中的目录&lt;/a&gt;&lt;/li&gt;
@@ -534,6 +681,7 @@ firewall-cmd –zone= public –remove-port=80/tcp –permanent&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#ps--报告当前进程快照&quot; id=&quot;markdown-toc-ps--报告当前进程快照&quot;&gt;##ps – 报告当前进程快照&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#top--显示任务&quot; id=&quot;markdown-toc-top--显示任务&quot;&gt;##top – 显示任务&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#vi&quot; id=&quot;markdown-toc-vi&quot;&gt;#vi&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#编程配置&quot; id=&quot;markdown-toc-编程配置&quot;&gt;##编程配置&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#光标移动按键&quot; id=&quot;markdown-toc-光标移动按键&quot;&gt;##光标移动按键&lt;/a&gt;    &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#文本删除命令&quot; id=&quot;markdown-toc-文本删除命令&quot;&gt;文本删除命令&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
@@ -561,6 +709,73 @@ firewall-cmd –zone= public –remove-port=80/tcp –permanent&lt;/p&gt;
   &lt;li&gt;&lt;a href=&quot;#grep&quot; id=&quot;markdown-toc-grep&quot;&gt;##grep&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#元字符和文本&quot; id=&quot;markdown-toc-元字符和文本&quot;&gt;##元字符和文本&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#文本处理&quot; id=&quot;markdown-toc-文本处理&quot;&gt;#文本处理&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sort--给文本行排序&quot; id=&quot;markdown-toc-sort--给文本行排序&quot;&gt;##sort – 给文本行排序&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#uniq--报告或者省略重复行&quot; id=&quot;markdown-toc-uniq--报告或者省略重复行&quot;&gt;##uniq – 报告或者省略重复行&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#cut--从每行中删除文本区域&quot; id=&quot;markdown-toc-cut--从每行中删除文本区域&quot;&gt;##cut – 从每行中删除文本区域&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#paste--合并文件文本行&quot; id=&quot;markdown-toc-paste--合并文件文本行&quot;&gt;##paste – 合并文件文本行&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#join-&quot; id=&quot;markdown-toc-join-&quot;&gt;##join –&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#comm--逐行比较两个有序的文件&quot; id=&quot;markdown-toc-comm--逐行比较两个有序的文件&quot;&gt;##comm – 逐行比较两个有序的文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#diff--逐行比较文件&quot; id=&quot;markdown-toc-diff--逐行比较文件&quot;&gt;##diff – 逐行比较文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#patch--给原始文件打补丁&quot; id=&quot;markdown-toc-patch--给原始文件打补丁&quot;&gt;##patch – 给原始文件打补丁*&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#tr--翻译或删除字符&quot; id=&quot;markdown-toc-tr--翻译或删除字符&quot;&gt;##tr – 翻译或删除字符*&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#sed--用于筛选和转换文本的流编辑器&quot; id=&quot;markdown-toc-sed--用于筛选和转换文本的流编辑器&quot;&gt;##sed – 用于筛选和转换文本的流编辑器*&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#aspell--交互式拼写检查器&quot; id=&quot;markdown-toc-aspell--交互式拼写检查器&quot;&gt;##aspell – 交互式拼写检查器*&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#格式化输出&quot; id=&quot;markdown-toc-格式化输出&quot;&gt;#格式化输出&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#nl--添加行号&quot; id=&quot;markdown-toc-nl--添加行号&quot;&gt;##nl – 添加行号&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fold--限制文件列宽&quot; id=&quot;markdown-toc-fold--限制文件列宽&quot;&gt;##fold – 限制文件列宽&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#fmt--一个简单的文本格式转换器&quot; id=&quot;markdown-toc-fmt--一个简单的文本格式转换器&quot;&gt;##fmt – 一个简单的文本格式转换器&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#pr--让文本为打印做好准备&quot; id=&quot;markdown-toc-pr--让文本为打印做好准备&quot;&gt;##pr – 让文本为打印做好准备&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#printf--格式化数据并打印出来&quot; id=&quot;markdown-toc-printf--格式化数据并打印出来&quot;&gt;##printf – 格式化数据并打印出来&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#groff--一个文件格式化系统&quot; id=&quot;markdown-toc-groff--一个文件格式化系统&quot;&gt;##groff – 一个文件格式化系统&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#打印&quot; id=&quot;markdown-toc-打印&quot;&gt;#打印&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#pr--转换需要打印的文本文件&quot; id=&quot;markdown-toc-pr--转换需要打印的文本文件&quot;&gt;##pr —— 转换需要打印的文本文件&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lpr--打印文件&quot; id=&quot;markdown-toc-lpr--打印文件&quot;&gt;lpr —— 打印文件&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#lp--打印文件system-v&quot; id=&quot;markdown-toc-lp--打印文件system-v&quot;&gt;lp —— 打印文件（System V）&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a2ps--为-postscript-打印机格式化文件&quot; id=&quot;markdown-toc-a2ps--为-postscript-打印机格式化文件&quot;&gt;##a2ps —— 为 PostScript 打印机格式化文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lpstat--显示打印机状态信息&quot; id=&quot;markdown-toc-lpstat--显示打印机状态信息&quot;&gt;##lpstat —— 显示打印机状态信息&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#lpq--显示打印机队列状态&quot; id=&quot;markdown-toc-lpq--显示打印机队列状态&quot;&gt;##lpq —— 显示打印机队列状态&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#lprm--取消打印任务&quot; id=&quot;markdown-toc-lprm--取消打印任务&quot;&gt;lprm —— 取消打印任务&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#cancel--取消打印任务system-v&quot; id=&quot;markdown-toc-cancel--取消打印任务system-v&quot;&gt;##cancel —— 取消打印任务（System V）&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#编译程序&quot; id=&quot;markdown-toc-编译程序&quot;&gt;#编译程序&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#make---维护程序的工具&quot; id=&quot;markdown-toc-make---维护程序的工具&quot;&gt;##make - 维护程序的工具&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#ftp下载文件&quot; id=&quot;markdown-toc-ftp下载文件&quot;&gt;#ftp下载文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#shell-脚本&quot; id=&quot;markdown-toc-shell-脚本&quot;&gt;Shell 脚本&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#添加path变量&quot; id=&quot;markdown-toc-添加path变量&quot;&gt;##添加PATH变量&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#if&quot; id=&quot;markdown-toc-if&quot;&gt;#IF&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#测试&quot; id=&quot;markdown-toc-测试&quot;&gt;##测试&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#测试文件表达式&quot; id=&quot;markdown-toc-测试文件表达式&quot;&gt;###测试文件表达式&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#测试字符串表达式&quot; id=&quot;markdown-toc-测试字符串表达式&quot;&gt;###测试字符串表达式&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#测试整数表达式&quot; id=&quot;markdown-toc-测试整数表达式&quot;&gt;测试整数表达式&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#读取键盘输入&quot; id=&quot;markdown-toc-读取键盘输入&quot;&gt;#读取键盘输入&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#read&quot; id=&quot;markdown-toc-read&quot;&gt;##read&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#while&quot; id=&quot;markdown-toc-while&quot;&gt;##while&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#until&quot; id=&quot;markdown-toc-until&quot;&gt;##until&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#检查错误&quot; id=&quot;markdown-toc-检查错误&quot;&gt;#检查错误&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#case-分支&quot; id=&quot;markdown-toc-case-分支&quot;&gt;#case 分支&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#for-循环&quot; id=&quot;markdown-toc-for-循环&quot;&gt;#for 循环&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#字符串和数字&quot; id=&quot;markdown-toc-字符串和数字&quot;&gt;#字符串和数字&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#截取字符&quot; id=&quot;markdown-toc-截取字符&quot;&gt;##截取字符&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#清除文本&quot; id=&quot;markdown-toc-清除文本&quot;&gt;##清除文本&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#替换字符串&quot; id=&quot;markdown-toc-替换字符串&quot;&gt;##替换字符串&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#declare-强制大写小写&quot; id=&quot;markdown-toc-declare-强制大写小写&quot;&gt;##declare 强制大写小写&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#算术求值和展开&quot; id=&quot;markdown-toc-算术求值和展开&quot;&gt;##算术求值和展开&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#javascriptvoid0&quot; id=&quot;markdown-toc-javascriptvoid0&quot;&gt;###javascript:void(0);&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#位运算符&quot; id=&quot;markdown-toc-位运算符&quot;&gt;位运算符&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#比较运算符&quot; id=&quot;markdown-toc-比较运算符&quot;&gt;###比较运算符&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#数组&quot; id=&quot;markdown-toc-数组&quot;&gt;#数组&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#赋值&quot; id=&quot;markdown-toc-赋值&quot;&gt;赋值&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#添加数组元素&quot; id=&quot;markdown-toc-添加数组元素&quot;&gt;添加数组元素&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#删除数组&quot; id=&quot;markdown-toc-删除数组&quot;&gt;##删除数组&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;简单命令&quot;&gt;#简单命令&lt;/h1&gt;
@@ -572,11 +787,10 @@ systemctl restart network 启动网卡
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  查看磁盘剩余空间的数量，输入 df:
   同样地，显示空闲内存的数量，输入命令 free。
   pwd — 打印出当前工作目录名
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  
+  which  #cd — 更改目录 ===============
 
-&lt;h1 id=&quot;cd--更改目录&quot;&gt;#cd — 更改目录&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  快捷键	运行结果
+  快捷键	运行结果
   cd	更改工作目录到你的家目录。
   cd -	更改工作目录到先前的工作目录。
   cd ~user_name	更改工作目录到用户家目录。例如, cd ~bob 会更改工作目录到用户“bob”的家目录。
@@ -1045,6 +1259,20 @@ systemctl restart network 启动网卡
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;o&quot;&gt;:%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;g&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
+&lt;h1 id=&quot;编程配置&quot;&gt;##编程配置&lt;/h1&gt;
+
+&lt;p&gt;打开语法高亮 :set syntax=sh。// syntax=sh&lt;/p&gt;
+
+&lt;p&gt;:set hlsearch 查找标记为高亮&lt;/p&gt;
+
+&lt;p&gt;:set tabstop=4 设置tab空格数&lt;/p&gt;
+
+&lt;p&gt;:set autoindent&lt;/p&gt;
+
+&lt;p&gt;打开 “auto indent” 功能。这导致 vim 能对新的文本行缩进与刚输入的文本行相同的列数。 对于许多编程结构来说，这就加速了输入。停止缩进，输入 Ctrl-d。&lt;/p&gt;
+
+&lt;p&gt;通过把这些命令（没有开头的冒号字符）添加到你的 ~/.vimrc 文件中，这些改动会永久生效。&lt;/p&gt;
+
 &lt;h1 id=&quot;光标移动按键&quot;&gt;##光标移动按键&lt;/h1&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  按键	移动光标
@@ -1380,7 +1608,7 @@ rsync -av playground foo&lt;/p&gt;
 &lt;p&gt;cat – 连接文件并且打印到标准输出
 按照格式输出文件内容&lt;/p&gt;
 
-&lt;p&gt;sort – 给文本行排序&lt;/p&gt;
+&lt;h1 id=&quot;sort--给文本行排序&quot;&gt;##sort – 给文本行排序&lt;/h1&gt;
 
 &lt;p&gt;常见的 sort 程序选项 
 选项 	|长选项 	|描述
@@ -1393,7 +1621,7 @@ rsync -av playground foo&lt;/p&gt;
 -o |	–output=file 	|把排好序的输出结果发送到文件，而不是标准输出。
 -t |	–field-separator=char |	定义域分隔字符。默认情况下，域由空格或制表符分隔。&lt;/p&gt;
 
-&lt;p&gt;uniq – 报告或者省略重复行&lt;/p&gt;
+&lt;h1 id=&quot;uniq--报告或者省略重复行&quot;&gt;##uniq – 报告或者省略重复行&lt;/h1&gt;
 
 &lt;p&gt;uniq 会删除任意重复行，并且把结果发送到标准输出。 它常常和 sort 程序一块使用，来清理重复的输出。&lt;/p&gt;
 
@@ -1406,7 +1634,7 @@ rsync -av playground foo&lt;/p&gt;
 -s n| 	跳过（忽略）每行开头的 n 个字符。
 -u 	|只输出独有的文本行。这是默认的。&lt;/p&gt;
 
-&lt;p&gt;cut – 从每行中删除文本区域&lt;/p&gt;
+&lt;h1 id=&quot;cut--从每行中删除文本区域&quot;&gt;##cut – 从每行中删除文本区域&lt;/h1&gt;
 
 &lt;p&gt;这个 cut 程序被用来从文本行中抽取文本，并把其输出到标准输出。它能够接受多个文件参数或者 标准输入。&lt;/p&gt;
 
@@ -1417,13 +1645,15 @@ rsync -av playground foo&lt;/p&gt;
 -d delim_char| 	当指定-f 选项之后，使用 delim_char 做为字段分隔符。默认情况下， 字段之间必须由单个 tab 字符分隔开。
 –complement 	|抽取整个文本行，除了那些由-c 和／或-f 选项指定的文本。&lt;/p&gt;
 
-&lt;p&gt;paste – 合并文件文本行&lt;/p&gt;
+&lt;h1 id=&quot;paste--合并文件文本行&quot;&gt;##paste – 合并文件文本行&lt;/h1&gt;
 
-&lt;p&gt;join – 基于某个共享字段来联合两个文件的文本行&lt;/p&gt;
+&lt;h1 id=&quot;join-&quot;&gt;##join –&lt;/h1&gt;
 
-&lt;p&gt;comm – 逐行比较两个有序的文件&lt;/p&gt;
+&lt;p&gt;基于某个共享字段来联合两个文件的文本行&lt;/p&gt;
 
-&lt;p&gt;diff – 逐行比较文件&lt;/p&gt;
+&lt;h1 id=&quot;comm--逐行比较两个有序的文件&quot;&gt;##comm – 逐行比较两个有序的文件&lt;/h1&gt;
+
+&lt;h1 id=&quot;diff--逐行比较文件&quot;&gt;##diff – 逐行比较文件&lt;/h1&gt;
 
 &lt;p&gt;diff 更改命令 
 改变 |	说明
@@ -1460,13 +1690,591 @@ blank 	|上下文显示行。它并不表示两个文件之间的差异。&lt;/p
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;patch – 给原始文件打补丁&lt;/p&gt;
+&lt;h1 id=&quot;patch--给原始文件打补丁&quot;&gt;##patch – 给原始文件打补丁*&lt;/h1&gt;
 
-&lt;p&gt;tr – 翻译或删除字符&lt;/p&gt;
+&lt;h1 id=&quot;tr--翻译或删除字符&quot;&gt;##tr – 翻译或删除字符*&lt;/h1&gt;
 
-&lt;p&gt;sed – 用于筛选和转换文本的流编辑器&lt;/p&gt;
+&lt;h1 id=&quot;sed--用于筛选和转换文本的流编辑器&quot;&gt;##sed – 用于筛选和转换文本的流编辑器*&lt;/h1&gt;
 
-&lt;p&gt;aspell – 交互式拼写检查器&lt;/p&gt;
+&lt;h1 id=&quot;aspell--交互式拼写检查器&quot;&gt;##aspell – 交互式拼写检查器*&lt;/h1&gt;
+
+&lt;h1 id=&quot;格式化输出&quot;&gt;#格式化输出&lt;/h1&gt;
+&lt;p&gt;http://billie66.github.io/TLCL/book/chap22.html&lt;/p&gt;
+
+&lt;h1 id=&quot;nl--添加行号&quot;&gt;##nl – 添加行号&lt;/h1&gt;
+
+&lt;h1 id=&quot;fold--限制文件列宽&quot;&gt;##fold – 限制文件列宽&lt;/h1&gt;
+
+&lt;h1 id=&quot;fmt--一个简单的文本格式转换器&quot;&gt;##fmt – 一个简单的文本格式转换器&lt;/h1&gt;
+
+&lt;h1 id=&quot;pr--让文本为打印做好准备&quot;&gt;##pr – 让文本为打印做好准备&lt;/h1&gt;
+
+&lt;h1 id=&quot;printf--格式化数据并打印出来&quot;&gt;##printf – 格式化数据并打印出来&lt;/h1&gt;
+
+&lt;h1 id=&quot;groff--一个文件格式化系统&quot;&gt;##groff – 一个文件格式化系统&lt;/h1&gt;
+
+&lt;h1 id=&quot;打印&quot;&gt;#打印&lt;/h1&gt;
+
+&lt;h1 id=&quot;pr--转换需要打印的文本文件&quot;&gt;##pr —— 转换需要打印的文本文件&lt;/h1&gt;
+
+&lt;h2 id=&quot;lpr--打印文件&quot;&gt;lpr —— 打印文件&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;h2 id=&quot;lp--打印文件system-v&quot;&gt;lp —— 打印文件（System V）&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;h1 id=&quot;a2ps--为-postscript-打印机格式化文件&quot;&gt;##a2ps —— 为 PostScript 打印机格式化文件&lt;/h1&gt;
+
+&lt;h1 id=&quot;lpstat--显示打印机状态信息&quot;&gt;##lpstat —— 显示打印机状态信息&lt;/h1&gt;
+
+&lt;h1 id=&quot;lpq--显示打印机队列状态&quot;&gt;##lpq —— 显示打印机队列状态&lt;/h1&gt;
+
+&lt;h2 id=&quot;lprm--取消打印任务&quot;&gt;lprm —— 取消打印任务&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;h1 id=&quot;cancel--取消打印任务system-v&quot;&gt;##cancel —— 取消打印任务（System V）&lt;/h1&gt;
+
+&lt;h1 id=&quot;编译程序&quot;&gt;#编译程序&lt;/h1&gt;
+
+&lt;h1 id=&quot;make---维护程序的工具&quot;&gt;##make - 维护程序的工具&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  tar tzvf tarfile \| head ---  
+  ./configure
+  make make install
+
+  注意：因为我们是这个源码的“维护者”，当我们编译它的时候，我们把它保存在 ~/src 目录下。 由你的系统发行版源码会把源码安装在 /usr/src 目录下，而供多个用户使用的源码，通常安装在 /usr/local/src 目录下。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;ftp下载文件&quot;&gt;#ftp下载文件&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  [me@linuxbox ~]$ mkdir src
+  [me@linuxbox ~]$ cd src
+  [me@linuxbox src]$ ftp ftp.gnu.org
+  Connected to ftp.gnu.org.
+  220 GNU FTP server ready.
+  Name (ftp.gnu.org:me): anonymous
+  230 Login successful.
+  Remote system type is UNIX.
+  Using binary mode to transfer files.
+  ftp&amp;gt; cd gnu/diction
+  250 Directory successfully changed.
+  ftp&amp;gt; ls
+  200 PORT command successful. Consider using PASV.
+  150 Here comes the directory listing.
+  -rw-r--r-- 1 1003 65534 68940 Aug 28 1998 diction-0.7.tar.gz
+  -rw-r--r-- 1 1003 65534 90957 Mar 04 2002 diction-1.02.tar.gz
+  -rw-r--r-- 1 1003 65534 141062 Sep 17 2007 diction-1.11.tar.gz
+  226 Directory send OK.
+  ftp&amp;gt; get diction-1.11.tar.gz
+  local: diction-1.11.tar.gz remote: diction-1.11.tar.gz
+  200 PORT command successful. Consider using PASV.
+  150 Opening BINARY mode data connection for diction-1.11.tar.gz
+  (141062 bytes).
+  226 File send OK.
+  141062 bytes received in 0.16 secs (847.4 kB/s)
+  ftp&amp;gt; bye
+  221 Goodbye.
+  [me@linuxbox src]$ ls
+  diction-1.11.tar.gz
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;shell-脚本&quot;&gt;Shell 脚本&lt;/h1&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  \#!/bin/bash  开头
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;添加path变量&quot;&gt;##添加PATH变量&lt;/h1&gt;
+
+&lt;p&gt;export PATH=~/bin:”$PATH”&lt;/p&gt;
+
+&lt;h1 id=&quot;if&quot;&gt;#IF&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ssh&quot; data-lang=&quot;ssh&quot;&gt;      if commands; then
+           commands
+      [elif commands; then
+           commands...]
+      [else
+           commands]
+      fi&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;测试&quot;&gt;##测试&lt;/h1&gt;
+
+&lt;p&gt;test expression&lt;/p&gt;
+
+&lt;h1 id=&quot;测试文件表达式&quot;&gt;###测试文件表达式&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;表达式&lt;/td&gt;
+      &lt;td&gt;如果下列条件为真则返回True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;file1 -ef file2&lt;/td&gt;
+      &lt;td&gt;file1 和 file2 拥有相同的索引号（通过硬链接两个文件名指向相同的文件）。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;file1 -nt file2&lt;/td&gt;
+      &lt;td&gt;file1新于 file2。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;file1 -ot file2&lt;/td&gt;
+      &lt;td&gt;file1早于 file2。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-b file&lt;/td&gt;
+      &lt;td&gt;file 存在并且是一个块（设备）文件。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-c file&lt;/td&gt;
+      &lt;td&gt;file 存在并且是一个字符（设备）文件。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-d file&lt;/td&gt;
+      &lt;td&gt;file 存在并且是一个目录。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-e file&lt;/td&gt;
+      &lt;td&gt;file 存在。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-f file&lt;/td&gt;
+      &lt;td&gt;file 存在并且是一个普通文件。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-g file&lt;/td&gt;
+      &lt;td&gt;file 存在并且设置了组 ID。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-G file&lt;/td&gt;
+      &lt;td&gt;file 存在并且由有效组 ID 拥有。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-k file&lt;/td&gt;
+      &lt;td&gt;file 存在并且设置了它的“sticky bit”。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-L file&lt;/td&gt;
+      &lt;td&gt;file 存在并且是一个符号链接。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-O file&lt;/td&gt;
+      &lt;td&gt;file 存在并且由有效用户 ID 拥有。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-p file&lt;/td&gt;
+      &lt;td&gt;file 存在并且是一个命名管道。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-r file&lt;/td&gt;
+      &lt;td&gt;file 存在并且可读（有效用户有可读权限）。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-s file&lt;/td&gt;
+      &lt;td&gt;file 存在且其长度大于零。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-S file&lt;/td&gt;
+      &lt;td&gt;file 存在且是一个网络 socket。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-t fd 	fd&lt;/td&gt;
+      &lt;td&gt;是一个定向到终端／从终端定向的文件描述符 。 这可以被用来决定是否重定向了标准输入／输出错误。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-u file&lt;/td&gt;
+      &lt;td&gt;file 存在并且设置了 setuid 位。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-w file&lt;/td&gt;
+      &lt;td&gt;file 存在并且可写（有效用户拥有可写权限）。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-x file&lt;/td&gt;
+      &lt;td&gt;file 存在并且可执行（有效用户有执行／搜索权限）。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;测试字符串表达式&quot;&gt;###测试字符串表达式&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;表达式&lt;/td&gt;
+      &lt;td&gt;如果下列条件为真则返回True&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;string&lt;/td&gt;
+      &lt;td&gt;string 不为 null。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-n string&lt;/td&gt;
+      &lt;td&gt;字符串 string 的长度大于零。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-z string&lt;/td&gt;
+      &lt;td&gt;字符串 string 的长度为零。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;string1 = string2&lt;/p&gt;
+
+&lt;p&gt;string1 == string2
+	string1 和 string2 相同。 单或双等号都可以，不过双等号更受欢迎。
+string1 != string2 |	string1 和 string2 不相同。
+string1 &amp;gt; string2 |	sting1 排列在 string2 之后。
+string1 &amp;lt; string2 |	string1 排列在 string2 之前。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  警告：当与 test 一块使用的时候， &amp;gt; 和 &amp;lt; 表达式操作符必须用引号引起来（或者是用反斜杠转义）。 如果不这样，它们会被 shell 解释为重定向操作符，造成潜在的破坏结果。 同时也要注意虽然 bash 文档声明排序遵从当前语系的排列规则，但并不这样。将来的 bash 版本，包含 4.0， 使用 ASCII（POSIX）排序规则。
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;测试整数表达式&quot;&gt;测试整数表达式&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;表达式&lt;/td&gt;
+      &lt;td&gt;如果为真…&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;integer1 -eq integer2&lt;/td&gt;
+      &lt;td&gt;integer1 等于 integer2。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;integer1 -ne integer2&lt;/td&gt;
+      &lt;td&gt;integer1 不等于 integer2。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;integer1 -le integer2&lt;/td&gt;
+      &lt;td&gt;integer1 小于或等于 integer2。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;integer1 -lt integer2&lt;/td&gt;
+      &lt;td&gt;integer1 小于 integer2。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;integer1 -ge integer2&lt;/td&gt;
+      &lt;td&gt;integer1 大于或等于 integer2。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;integer1 -gt integer2&lt;/td&gt;
+      &lt;td&gt;integer1 大于 integer2。&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  这里是一个演示以上表达式用法的脚本：
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;      &lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# test-integer: evaluate the value of an integer.&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;INT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-5&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-z&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$INT&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;then
+          &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;INT is empty.&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&amp;amp;2
+          &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;1
+      &lt;span class=&quot;k&quot;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;使用 [[ ]] 和 =~ 字符串表达式操作符，我们能够这样来改进脚本：&lt;/p&gt;
+
+&lt;p&gt;if [[ “$INT” =~ ^-?[0-9]+$ ]]; then&lt;/p&gt;
+
+&lt;p&gt;匹配正则表达式&lt;/p&gt;
+
+&lt;h1 id=&quot;读取键盘输入&quot;&gt;#读取键盘输入&lt;/h1&gt;
+
+&lt;h1 id=&quot;read&quot;&gt;##read&lt;/h1&gt;
+
+&lt;p&gt;read 选项 
+选项 |说明
+-a array |	把输入赋值到数组 array 中，从索引号零开始。我们 将在第36章中讨论数组问题。
+-d delimiter |	用字符串 delimiter 中的第一个字符指示输入结束，而不是一个换行符。
+-e 	|使用 Readline 来处理输入。这使得与命令行相同的方式编辑输入。
+-n num 	|读取 num 个输入字符，而不是整行。
+-p prompt |	为输入显示提示信息，使用字符串 prompt。
+-r 	|Raw mode. 不把反斜杠字符解释为转义字符。
+-s |Silent mode. 不会在屏幕上显示输入的字符。当输入密码和其它确认信息的时候，这会很有帮助。
+-t seconds 	|超时. 几秒钟后终止输入。若输入超时，read 会返回一个非零退出状态。
+-u fd |	使用文件描述符 fd 中的输入，而不是标准输入。&lt;/p&gt;
+
+&lt;h1 id=&quot;while&quot;&gt;##while&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;      &lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+      &lt;span class=&quot;c&quot;&gt;# while-count: display a series of numbers&lt;/span&gt;
+      &lt;span class=&quot;nv&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;1
+      &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$count&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-le&lt;/span&gt; 5 &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+          &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$count&lt;/span&gt;
+          &lt;span class=&quot;nv&quot;&gt;count&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;count &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;
+      &lt;span class=&quot;k&quot;&gt;done
+      &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Finished.&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;until&quot;&gt;##until&lt;/h1&gt;
+
+&lt;p&gt;until 命令与 while 非常相似，除了当遇到一个非零退出状态的时候， while 退出循环， 而 until 不退出。一个 until 循环会继续执行直到它接受了一个退出状态零。在我们的 while-count 脚本中， 我们继续执行循环直到 count 变量的数值小于或等于5。我们可以得到相同的结果，通过在脚本中使用&lt;/p&gt;
+
+&lt;h1 id=&quot;检查错误&quot;&gt;#检查错误&lt;/h1&gt;
+
+&lt;p&gt;http://billie66.github.io/TLCL/book/chap31.html&lt;/p&gt;
+
+&lt;h1 id=&quot;case-分支&quot;&gt;#case 分支&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;in&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pattern&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pattern&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;commands&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;;;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;esac&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  case 模式实例  模式 	|描述 a) 	|若单词为 “a”，则匹配 [[:alpha:]]) |	若单词是一个字母字符，则匹配 ???) 	|若单词只有3个字符，则匹配 *.txt) 	|若单词以 “.txt” 字符结尾，则匹配 *) 	|匹配任意单词。把这个模式做为 case 命令的最后一个模式，是一个很好的做法， 可以捕捉到任意一个与先前模式不匹配的数值；也就是说，捕捉到任何可能的无效值。 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;for-循环&quot;&gt;#for 循环&lt;/h1&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  for variable [in words]; do
+      commands
+  done
+  
+   C 语言中的 for 语法格式
+  for (( expression1; expression2; expression3 )); do
+      commands
+  done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;实例&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-shell&quot; data-lang=&quot;shell&quot;&gt;    &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;i &lt;span class=&quot;k&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$dir_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do
+        &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;total_files&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;find &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; f | wc &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;total_dirs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;find &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-type&lt;/span&gt; d | wc &lt;span class=&quot;nt&quot;&gt;-l&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;nv&quot;&gt;total_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$(&lt;/span&gt;du &lt;span class=&quot;nt&quot;&gt;-sh&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt; | cut &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; 1&lt;span class=&quot;k&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;H3&amp;gt;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$i&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;lt;/H3&amp;gt;&quot;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;PRE&amp;gt;&quot;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$format&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Dirs&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Files&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Size&quot;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$format&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;----&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;-----&quot;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;----&quot;&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;printf&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$format&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$total_dirs&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$total_files&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$total_size&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&amp;lt;/PRE&amp;gt;&quot;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;done&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;字符串和数字&quot;&gt;#字符串和数字&lt;/h1&gt;
+
+&lt;p&gt;$a&lt;/p&gt;
+
+&lt;p&gt;${a}
+${11}&lt;/p&gt;
+
+&lt;p&gt;${parameter:-word}
+${parameter:=word}
+${parameter:?word}
+${parameter:+word}&lt;/p&gt;
+
+&lt;p&gt;${!prefix*}
+${!prefix@}&lt;/p&gt;
+
+&lt;p&gt;${#parameter}&lt;/p&gt;
+
+&lt;h1 id=&quot;截取字符&quot;&gt;##截取字符&lt;/h1&gt;
+
+&lt;p&gt;${parameter:offset}
+${parameter:offset:length}&lt;/p&gt;
+
+&lt;h1 id=&quot;清除文本&quot;&gt;##清除文本&lt;/h1&gt;
+
+&lt;p&gt;${parameter#pattern}
+${parameter##pattern}&lt;/p&gt;
+
+&lt;p&gt;${parameter%pattern}
+${parameter%%pattern}&lt;/p&gt;
+
+&lt;h1 id=&quot;替换字符串&quot;&gt;##替换字符串&lt;/h1&gt;
+
+&lt;p&gt;${parameter/pattern/string}
+${parameter//pattern/string}
+${parameter/#pattern/string}
+${parameter/%pattern/string}&lt;/p&gt;
+
+&lt;h1 id=&quot;declare-强制大写小写&quot;&gt;##declare 强制大写小写&lt;/h1&gt;
+
+&lt;p&gt;大小写转换参数展开 
+格式 |	结果
+${parameter,,} |	把 parameter 的值全部展开成小写字母。
+${parameter,}|	仅仅把 parameter 的第一个字符展开成小写字母。
+${parameter^^} |	把 parameter 的值全部转换成大写字母。
+${parameter^} |	仅仅把 parameter 的第一个字符转换成大写字母（首字母大写）。&lt;/p&gt;
+
+&lt;h1 id=&quot;算术求值和展开&quot;&gt;##算术求值和展开&lt;/h1&gt;
+
+&lt;p&gt;$((expression))&lt;/p&gt;
+
+&lt;h1 id=&quot;javascriptvoid0&quot;&gt;###javascript:void(0);&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;运算符&lt;/td&gt;
+      &lt;td&gt;描述&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;+&lt;/td&gt;
+      &lt;td&gt;加&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;减&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;乘&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt;整除&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;**&lt;/td&gt;
+      &lt;td&gt;乘方&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;%&lt;/td&gt;
+      &lt;td&gt;取模（余数）&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;位运算符&quot;&gt;位运算符&lt;/h3&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;运算符&lt;/td&gt;
+      &lt;td&gt;描述&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;~&lt;/td&gt;
+      &lt;td&gt;按位取反。对一个数字所有位取反。&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;«&lt;/td&gt;
+      &lt;td&gt;位左移. 把一个数字的所有位向左移动。&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;»&lt;/td&gt;
+      &lt;td&gt;位右移. 把一个数字的所有位向右移动。&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;amp;&lt;/td&gt;
+      &lt;td&gt;位与。对两个数字的所有位执行一个 AND 操作。&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;位或。对两个数字的所有位执行一个 OR 操作。&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;^&lt;/td&gt;
+      &lt;td&gt;位异或。对两个数字的所有位执行一个异或操作。&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;比较运算符&quot;&gt;###比较运算符&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;运算符&lt;/td&gt;
+      &lt;td&gt;描述&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;=&lt;/td&gt;
+      &lt;td&gt;小于或相等&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;=&lt;/td&gt;
+      &lt;td&gt;大于或相等&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;lt;&lt;/td&gt;
+      &lt;td&gt;小于&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;gt;&lt;/td&gt;
+      &lt;td&gt;大于&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;==&lt;/td&gt;
+      &lt;td&gt;相等&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;!=&lt;/td&gt;
+      &lt;td&gt;不相等&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&amp;amp;&amp;amp;&lt;/td&gt;
+      &lt;td&gt;逻辑与&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;逻辑或&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;expr1?expr2:expr3&lt;/td&gt;
+      &lt;td&gt;条件（三元）运算符。若表达式 expr1 的计算结果为非零值（算术真），则 执行表达式 expr2，否则执行表达式 expr3。&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h1 id=&quot;数组&quot;&gt;#数组&lt;/h1&gt;
+
+&lt;h2 id=&quot;赋值&quot;&gt;赋值&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  name[subscript]=value
+  name=(value1 value2 ...)
+  
+  
+  ${!array[*]}
+  ${!array[@]}
+  
+  for i in &quot;${foo[@]}&quot;; do echo $i; done
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;添加数组元素&quot;&gt;添加数组元素&lt;/h2&gt;
+&lt;p&gt;===============&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  foo+=(d e f)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;删除数组&quot;&gt;##删除数组&lt;/h1&gt;
+
+&lt;p&gt;unset foo&lt;/p&gt;
+
+&lt;p&gt;for ((expr; expr; expr))&lt;/p&gt;
 
 </description>
         <pubDate>Mon, 06 Nov 2017 13:17:30 +0800</pubDate>
@@ -2425,774 +3233,6 @@ blank 	|上下文显示行。它并不表示两个文件之间的差异。&lt;/p
         
         
         <category>前端</category>
-        
-      </item>
-    
-      <item>
-        <title>bat</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#str1&quot; id=&quot;markdown-toc-str1&quot;&gt;!str:~1!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#等待输入&quot; id=&quot;markdown-toc-等待输入&quot;&gt;#等待输入&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#获取时间&quot; id=&quot;markdown-toc-获取时间&quot;&gt;#获取时间&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#if&quot; id=&quot;markdown-toc-if&quot;&gt;#IF&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#修改ini变量file_name&quot; id=&quot;markdown-toc-修改ini变量file_name&quot;&gt;#修改ini,变量FILE_NAME&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;str1&quot;&gt;!str:~1!&lt;/h1&gt;
-
-&lt;p&gt;===============
-teststring
-!str:~1!   结果 : eststring&lt;/p&gt;
-
-&lt;p&gt;!str:~0,1!  结果是 t&lt;/p&gt;
-
-&lt;p&gt;!str:~-1!    结果是 g&lt;/p&gt;
-
-&lt;h1 id=&quot;等待输入&quot;&gt;#等待输入&lt;/h1&gt;
-
-&lt;p&gt;set /p 变量名=显示内容&lt;/p&gt;
-
-&lt;h1 id=&quot;获取时间&quot;&gt;#获取时间&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;      &lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;off&lt;/span&gt;  
-      &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%:%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%:%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;filename&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;pause&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;if&quot;&gt;#IF&lt;/h1&gt;
-&lt;p&gt;EQU - 等于 
-NEQ - 不等于 
-LSS - 小于 
-LEQ - 小于或等于 
-GTR - 大于 
-GEQ - 大于或等于 
-字符串比较遥远 “ “
-例句:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;      &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;%str%&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;test&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;OK&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NO&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;h1 id=&quot;修改ini变量file_name&quot;&gt;#修改ini,变量FILE_NAME&lt;/h1&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;o&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;off&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;请输入标题&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;f&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;delims=&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;str=%%a&quot;&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;setlocal&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;enabledelayedexpansion&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;set&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%-%&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:~&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;
-          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;!str:~0,9!&quot;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;EQU&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;FILE_NAME&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-              &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FILE_NAME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!-%&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;md&lt;/span&gt;
-          &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;
-        &lt;span class=&quot;nx&quot;&gt;endlocal&lt;/span&gt;
-      &lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmp&lt;/span&gt;
-      &lt;span class=&quot;nx&quot;&gt;move&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tmp&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;git&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;ini&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-</description>
-        <pubDate>Wed, 01 Nov 2017 08:55:57 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/11/01/bat/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/01/bat/</guid>
-        
-        <category>cmd</category>
-        
-        
-        <category>win</category>
-        
-      </item>
-    
-      <item>
-        <title>学习</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#前言&quot; id=&quot;markdown-toc-前言&quot;&gt;前言&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#目录&quot; id=&quot;markdown-toc-目录&quot;&gt;#目录&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#资料篇&quot; id=&quot;markdown-toc-资料篇&quot;&gt;##资料篇&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#技术站点&quot; id=&quot;markdown-toc-技术站点&quot;&gt;###技术站点&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#必看书籍&quot; id=&quot;markdown-toc-必看书籍&quot;&gt;#必看书籍&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#大牛博客&quot; id=&quot;markdown-toc-大牛博客&quot;&gt;#大牛博客&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#github篇&quot; id=&quot;markdown-toc-github篇&quot;&gt;#GitHub篇&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#-awesome&quot; id=&quot;markdown-toc--awesome&quot;&gt;## Awesome&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#书籍资料-&quot; id=&quot;markdown-toc-书籍资料-&quot;&gt;##书籍资料 **&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#优秀项目-&quot; id=&quot;markdown-toc-优秀项目-&quot;&gt;##优秀项目 **&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#前端--nodejs-&quot; id=&quot;markdown-toc-前端--nodejs-&quot;&gt;##前端 &amp;amp; Node.js **&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#-工作工具-&quot; id=&quot;markdown-toc--工作工具-&quot;&gt;** 工作，工具 **&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#工具篇&quot; id=&quot;markdown-toc-工具篇&quot;&gt;工具篇&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#平台工具&quot; id=&quot;markdown-toc-平台工具&quot;&gt;平台工具&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#常用工具&quot; id=&quot;markdown-toc-常用工具&quot;&gt;常用工具&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#第三方服务&quot; id=&quot;markdown-toc-第三方服务&quot;&gt;第三方服务&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#爬虫相关好玩的工具&quot; id=&quot;markdown-toc-爬虫相关好玩的工具&quot;&gt;爬虫相关(好玩的工具)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#安全相关&quot; id=&quot;markdown-toc-安全相关&quot;&gt;安全相关&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#web服务器性能压力测试工具负载均衡器&quot; id=&quot;markdown-toc-web服务器性能压力测试工具负载均衡器&quot;&gt;Web服务器性能/压力测试工具/负载均衡器&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#大数据处理数据分析分布式工具&quot; id=&quot;markdown-toc-大数据处理数据分析分布式工具&quot;&gt;大数据处理/数据分析/分布式工具&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#web前端&quot; id=&quot;markdown-toc-web前端&quot;&gt;Web前端&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#语言篇&quot; id=&quot;markdown-toc-语言篇&quot;&gt;语言篇&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#scala&quot; id=&quot;markdown-toc-scala&quot;&gt;Scala&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#java&quot; id=&quot;markdown-toc-java&quot;&gt;Java&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#python&quot; id=&quot;markdown-toc-python&quot;&gt;Python&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#swift&quot; id=&quot;markdown-toc-swift&quot;&gt;Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#framework&quot; id=&quot;markdown-toc-framework&quot;&gt;&lt;strong&gt;Framework&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#小工具&quot; id=&quot;markdown-toc-小工具&quot;&gt;&lt;strong&gt;小工具&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#游戏&quot; id=&quot;markdown-toc-游戏&quot;&gt;&lt;strong&gt;游戏&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#net&quot; id=&quot;markdown-toc-net&quot;&gt;.NET&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#c--c&quot; id=&quot;markdown-toc-c--c&quot;&gt;C &amp;amp; C++&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#其他&quot; id=&quot;markdown-toc-其他&quot;&gt;其他&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#日志聚合分布式日志收集&quot; id=&quot;markdown-toc-日志聚合分布式日志收集&quot;&gt;日志聚合，分布式日志收集&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#rtp实时传输协议与音视频&quot; id=&quot;markdown-toc-rtp实时传输协议与音视频&quot;&gt;RTP,实时传输协议与音视频&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;前言&quot;&gt;前言&lt;/h1&gt;
-
-&lt;p&gt;成为一名专业程序员的道路上，需要坚持练习、学习与积累，技术方面既要有一定的广度，更要有自己的深度。&lt;/p&gt;
-
-&lt;p&gt;笔者作为一位tool mad，将工作以来用到的各种优秀资料、神器及框架整理在此，毕竟好记性不如烂键盘，此项目可以作为自己的不时之需。&lt;/p&gt;
-
-&lt;p&gt;本人喜欢折腾，记录的东西也比较杂，各方面都会有一些，内容按重要等级排序，大家各取所需。&lt;/p&gt;
-
-&lt;p&gt;这里的东西会持续积累下去，欢迎Star，也欢迎发PR给我。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/thonatos&quot;&gt;Thonatos.Yang&lt;/a&gt;整理的GitBook版本，阅读体验更佳：&lt;a href=&quot;https://thonatos.gitbooks.io/be-a-professional-programmer/&quot;&gt;https://thonatos.gitbooks.io/be-a-professional-programmer/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;目录&quot;&gt;#目录&lt;/h1&gt;
-
-&lt;h1 id=&quot;资料篇&quot;&gt;##资料篇&lt;/h1&gt;
-
-&lt;h1 id=&quot;技术站点&quot;&gt;###技术站点&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;在线学习：&lt;a href=&quot;https://www.coursera.org/&quot;&gt;Coursera&lt;/a&gt;、&lt;a href=&quot;https://www.edx.org/&quot;&gt;edX&lt;/a&gt;、&lt;a href=&quot;https://cn.udacity.com/&quot;&gt;Udacity&lt;/a&gt;、&lt;a href=&quot;https://ocw.mit.edu/index.htm&quot;&gt;MIT公开课&lt;/a&gt;、&lt;a href=&quot;http://mooc.guokr.com/course/&quot;&gt;MOOC学院&lt;/a&gt;、&lt;a href=&quot;http://www.imooc.com/&quot;&gt;慕课网&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://news.ycombinator.com/&quot;&gt;Hacker News&lt;/a&gt;：非常棒的针对编程的链接聚合网站&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.techmeme.com/&quot;&gt;Techmeme&lt;/a&gt;：美国知名科技新闻和博客聚集网站，类似的还有（Panda, Hacker &amp;amp; Designer News）&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/programming/&quot;&gt;Reddit - Programming板块&lt;/a&gt;：同上&lt;/li&gt;
-  &lt;li&gt;Java牛人必备：&lt;a href=&quot;http://www.programcreek.com/&quot;&gt;Program Creek&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/&quot;&gt;Stack Overflow&lt;/a&gt;：IT技术问答网站&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://segmentfault.com/&quot;&gt;SegmentFault&lt;/a&gt;：中文的技术问答社区&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/&quot;&gt;GitHub&lt;/a&gt;：全球最大的源代码管理平台，很多知名开源项目都在上面，如&lt;a href=&quot;https://github.com/torvalds/linux&quot;&gt;Linux内核&lt;/a&gt;，&lt;a href=&quot;https://github.com/openstack/openstack&quot;&gt;OpenStack&lt;/a&gt;等&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://git.oschina.net/&quot;&gt;码云&lt;/a&gt;：支持中文可免费创建私有项目的代码托管平台，可作为备选&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://leetcode.com/&quot;&gt;LeetCode&lt;/a&gt;：来做做这些题吧，看看自己的算法水平如何？这可比什么面试宝典强多了。&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.lintcode.com/zh-cn/&quot;&gt;LintCode&lt;/a&gt;：支持中文的编程题在线训练平台，可作为备选&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.kaggle.com/&quot;&gt;Kaggle&lt;/a&gt;,&lt;a href=&quot;https://www.topcoder.com/&quot;&gt;Topcoder&lt;/a&gt;: 机器学习、大数据竞赛&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://gold.xitu.io/&quot;&gt;掘金&lt;/a&gt;：高质量的技术社区&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://toutiao.io/&quot;&gt;开发者头条&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn&quot;&gt;InfoQ&lt;/a&gt;：企业级应用，关注软件开发领域&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.v2ex.com/&quot;&gt;V2EX: way to explore&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;国内老牌技术社区：&lt;a href=&quot;https://www.oschina.net/&quot;&gt;OSChina&lt;/a&gt;、&lt;a href=&quot;http://www.cnblogs.com/&quot;&gt;博客园&lt;/a&gt;、&lt;a href=&quot;http://www.csdn.net/&quot;&gt;CSDN&lt;/a&gt;、&lt;a href=&quot;http://www.51cto.com/&quot;&gt;51CTO&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;免费的it电子书：&lt;a href=&quot;http://it-ebooks.info/&quot;&gt;http://it-ebooks.info/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;在线学习：&lt;a href=&quot;http://www.udemy.com/&quot;&gt;http://www.udemy.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;优质学习资源：&lt;a href=&quot;http://plus.mojiax.com/&quot;&gt;http://plus.mojiax.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;代码练习：&lt;a href=&quot;http://exercism.io/&quot;&gt;http://exercism.io/&lt;/a&gt;   and  &lt;a href=&quot;https://www.codingame.com&quot;&gt;https://www.codingame.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.devstore.cn/&quot;&gt;DevStore&lt;/a&gt;:开发者服务商店&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://msdn.microsoft.com/zh-cn&quot;&gt;MSDN&lt;/a&gt;：微软相关的官方技术集中地，主要是文档类&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://developers.google.cn/&quot;&gt;谷歌开发者&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.ctolib.com/&quot;&gt;码库&lt;/a&gt; - 收录了实用的开源项目及资源&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://coding.net&quot;&gt;Coding&lt;/a&gt; 基于Git的国内代码托管平台，支持私有项目，有项目管理相关功能&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;必看书籍&quot;&gt;#必看书籍&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;SICP(&lt;a href=&quot;https://mitpress.mit.edu/sicp/&quot;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;深入理解计算机系统&lt;/li&gt;
-  &lt;li&gt;代码大全2&lt;/li&gt;
-  &lt;li&gt;人件&lt;/li&gt;
-  &lt;li&gt;人月神话&lt;/li&gt;
-  &lt;li&gt;软件随想录&lt;/li&gt;
-  &lt;li&gt;算法导论（麻省理工学院出版社）&lt;/li&gt;
-  &lt;li&gt;离散数学及其应用&lt;/li&gt;
-  &lt;li&gt;设计模式&lt;/li&gt;
-  &lt;li&gt;编程之美&lt;/li&gt;
-  &lt;li&gt;黑客与画家&lt;/li&gt;
-  &lt;li&gt;编程珠玑&lt;/li&gt;
-  &lt;li&gt;The Little Schemer&lt;/li&gt;
-  &lt;li&gt;Simply Scheme_Introducing_Computer_Science&lt;/li&gt;
-  &lt;li&gt;C++ Prime&lt;/li&gt;
-  &lt;li&gt;Effective C++&lt;/li&gt;
-  &lt;li&gt;TCP/IP详解&lt;/li&gt;
-  &lt;li&gt;Unix 编程艺术&lt;/li&gt;
-  &lt;li&gt;技术的本质&lt;/li&gt;
-  &lt;li&gt;软件随想录&lt;/li&gt;
-  &lt;li&gt;计算机程序设计艺术&lt;/li&gt;
-  &lt;li&gt;程序员的自我修养：链接、装载与库&lt;/li&gt;
-  &lt;li&gt;程序员修炼之道&lt;/li&gt;
-  &lt;li&gt;高效能程序员的修炼&lt;/li&gt;
-  &lt;li&gt;《精神分析引论》弗洛伊德&lt;/li&gt;
-  &lt;li&gt;《失控》《科技想要什么》《技术元素》凯文凯利&lt;/li&gt;
-  &lt;li&gt;程序开发心理学&lt;/li&gt;
-  &lt;li&gt;天地一沙鸥&lt;/li&gt;
-  &lt;li&gt;搞定：无压力工作的艺术&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;大牛博客&quot;&gt;#大牛博客&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/rekihattori/awesome-programmers&quot;&gt;awesome-programmers&lt;/a&gt; - 各领域大牛，值得纪念的程序员们&lt;/li&gt;
-  &lt;li&gt;云风（游戏界大牛）: &lt;a href=&quot;http://blog.codingnow.com/&quot;&gt;http://blog.codingnow.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;王垠（不少文章喷到蛮有道理）：&lt;a href=&quot;http://www.yinwang.org/&quot;&gt;http://www.yinwang.org/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;冰河-伞哥(Lisp大牛)：&lt;a href=&quot;http://tianchunbinghe.blog.163.com/&quot;&gt;http://tianchunbinghe.blog.163.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;R大&lt;a href=&quot;https://zhuanlan.zhihu.com/p/25042028&quot;&gt;【干货满满】RednaxelaFX写的文章/回答的导航帖&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;陈皓-左耳朵耗子：&lt;a href=&quot;http://coolshell.cn/&quot;&gt;http://coolshell.cn/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Jeff Atwood（国外知名博主）: &lt;a href=&quot;https://blog.codinghorror.com/&quot;&gt;https://blog.codinghorror.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;阮一峰（黑客与画家译者，Web）：&lt;a href=&quot;http://www.ruanyifeng.com/&quot;&gt;http://www.ruanyifeng.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;廖雪峰（他的Python、Git教程不少人都看过）：&lt;a href=&quot;http://www.liaoxuefeng.com/&quot;&gt;http://www.liaoxuefeng.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;道哥的黑板报（安全）：&lt;a href=&quot;https://zhuanlan.zhihu.com/taosay&quot;&gt;https://zhuanlan.zhihu.com/taosay&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/search?l=&amp;amp;o=desc&amp;amp;p=1&amp;amp;q=location%3AChina&amp;amp;ref=advsearch&amp;amp;s=followers&amp;amp;type=Users&amp;amp;utf8=%E2%9C%93&quot;&gt;国内GitHub上关注度较高的开发者&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;github篇&quot;&gt;#GitHub篇&lt;/h1&gt;
-
-&lt;h1 id=&quot;-awesome&quot;&gt;## Awesome&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/sindresorhus/awesome&quot;&gt;Awesome&lt;/a&gt;: 这是个Awesome合集，常见的资料这里面都能找到&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/sindresorhus/awesome&quot;&gt;Awesome2&lt;/a&gt;: 类似第一个Awesome&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jnv/lists&quot;&gt;杂七杂八、有用没用的Awesome合集&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bayandin/awesome-awesomeness&quot;&gt;非常不错的语言类学习资料集合：Awesomeness&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/cjwirth/awesome-ios-ui&quot;&gt;awesome-ios-ui&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/wasabeef/awesome-android-ui&quot;&gt;awesome-android-ui&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/lightSky/Awesome-MaterialDesign&quot;&gt;Awesome-MaterialDesign&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/caesar0301/awesome-public-datasets&quot;&gt;awesome-public-datasets&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/paragonie/awesome-appsec&quot;&gt;awesome-AppSec(系统安全)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/okulbilisim/awesome-datascience&quot;&gt;awesome-datascience&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fasouto/awesome-dataviz&quot;&gt;awesome-dataviz&lt;/a&gt; - 数据可视化库及资料&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jacksu/awesome-es&quot;&gt;awesome-es&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Blankj/awesome-comment&quot;&gt;awesome-comment&lt;/a&gt; - 神注释大全&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/carpedm20/awesome-hacking&quot;&gt;awesome-hacking&lt;/a&gt; - 黑客工具箱&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jacksu/machine-learning&quot;&gt;awesome-machine-learning&lt;/a&gt; - 机器学习资料&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;书籍资料-&quot;&gt;##书籍资料 **&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mr-mig/every-programmer-should-know&quot;&gt;Every Programmer Should Know&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://people.eecs.berkeley.edu/~rcs/research/interactive_latency.html&quot;&gt;Latency Numbers Every Programmer Should Know&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/donnemartin/system-design-primer&quot;&gt;system-design-primer&lt;/a&gt;: 系统设计入门&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bingwen/free-programming-books/blob/master/free-programming-books-ch.md&quot;&gt;free-programming-books&lt;/a&gt; &lt;a href=&quot;https://github.com/vhf/free-programming-books/blob/master/free-programming-books-zh.md&quot;&gt;中文版&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/justjavac/free-programming-books-zh_CN&quot;&gt;免费的编程中文书籍索引&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/julycoding/The-Art-Of-Programming-By-July&quot;&gt;《程序员编程艺术 — 面试和算法心得》&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/dariubs/GoBooks&quot;&gt;GoBooks&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/papers-we-love/papers-we-love&quot;&gt;Papers we love&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/JustFollowUs/Natural-Language-Processing&quot;&gt;自然语言处理NLP推荐学习路线及参考资料&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/josephmisiti/awesome-machine-learning&quot;&gt;超级棒的机器学习资料（框架，库，软件）&lt;/a&gt;, &lt;a href=&quot;http://www.oschina.net/news/53818/awesome-machine-learning&quot;&gt;中文翻译版&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://news.cnblogs.com/n/504467/&quot;&gt;机器学习(Machine Learning)&amp;amp;深入学习(Deep Learning)资料&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://special.csdncms.csdn.net/BeDocker/&quot;&gt;Docker资料合集&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/apache/incubator-storm/tree/master/examples/storm-starter&quot;&gt;学习使用Strom&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ercoppa.github.io/HadoopInternals/&quot;&gt;Hadoop Internals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/JerryLead/SparkInternals/tree/master/markdown&quot;&gt;Spark Internals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://hadoop.readthedocs.org/en/latest/&quot;&gt;大数据时代的数据分析与数据挖掘 – 基于Hadoop实现&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://samypesse.gitbooks.io/how-to-create-an-operating-system/index.html&quot;&gt;如何制作操作系统&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/zhuangbiaowei/learn-with-open-source&quot;&gt;借助开源项目学习软件开发&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://code.csdn.net/news/2821842&quot;&gt;几个不错的开源游戏引擎&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/hit9/PyZh&quot;&gt;一起写Python文章，一起看Python文章&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.fens.me/series-r/&quot;&gt;R的极客理想系列文章&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bolasblack/http-api-guide&quot;&gt;HTTP接口设计指南&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/foru17/front-end-collect&quot;&gt;分享自己长期关注的前端开发相关的优秀网站、博客、以及活跃开发者&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/rxin/db-readings&quot;&gt;Readings in Databases&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/rushter/data-science-blogs&quot;&gt;Data Science blogs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/oldratlee/translations/blob/master/log-what-every-software-engineer-should-know-about-real-time-datas-unifying/README.md&quot;&gt;日志：每个软件工程师都应该知道的有关实时数据的统一概念&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://guides.codepath.com/android&quot;&gt;Android Code Path&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/GeniusVJR/LearningNotes&quot;&gt;Android Learn Notes&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ziadoz/awesome-php&quot;&gt;PHP 类库框架，资料集合&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;优秀项目-&quot;&gt;##优秀项目 **&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://news.cnblogs.com/n/506775/&quot;&gt;最值得关注的10个C语言开源项目&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://code.csdn.net/news/2822568&quot;&gt;15款值得学习的小型开源项目&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Aufree/trip-to-iOS&quot;&gt;iOS-100个开源组件&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://code.csdn.net/news/2822753&quot;&gt;十大Material Design开源项目&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/Trinea/android-open-project&quot;&gt;Android开源项目分类汇总&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;前端--nodejs-&quot;&gt;##前端 &amp;amp; Node.js **&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/moklick/frontend-stuff&quot;&gt;前端资源&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/w3crange/Front-End-Develop-Guide&quot;&gt;前端开发指南&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://html5ify.com/fks/&quot;&gt;前端技能汇总&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.daqianduan.com/nav&quot;&gt;前端资源大导航&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/lisposter/frontend-books&quot;&gt;收集前端方面的书籍&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions&quot;&gt;2014年最新前端开发面试题&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/airbnb/javascript&quot;&gt;简单清晰的JavaScript语言教程，代码示例&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/airbnb/javascript&quot;&gt;JavaScript编程规范&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bolshchikov/js-must-watch&quot;&gt;JavaScript必看视频&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://javascript.ruanyifeng.com/&quot;&gt;JavaScript标准参考教程（阮一峰的，整理的不错）&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/bolshchikov/js-must-watch&quot;&gt;JS必看&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jmcunningham/AngularJS-Learning/blob/master/ZH-CN.md&quot;&gt;AngularJS Guide的中文分支&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/timjacobi/angular2-education&quot;&gt;Angular2学习资料&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mgechev/angularjs-style-guide/blob/master/README-zh-cn.md&quot;&gt;AngularJS应用的最佳实践和风格指南&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/reactnativecn/react-native-guide&quot;&gt;React-Native学习指南&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://nqdeng.github.io/7-days-nodejs/&quot;&gt;七天学会NodeJS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/sergtitov/NodeJS-Learning/blob/master/cn_resource.md&quot;&gt;node.js中文资料导航&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://blog.fens.me/nodejs-roadmap/&quot;&gt;Nodejs学习路线图&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/2353818/how-do-i-get-started-with-node-js/9629682#9629682&quot;&gt;如何学习nodejs&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;-工作工具-&quot;&gt;** 工作，工具 **&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/kahun/awesome-sysadmin&quot;&gt;系统管理员工具集合&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://git-scm.com/book/zh&quot;&gt;Pro Git&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/taobao/nginx-book&quot;&gt;Nginx开发从入门到精通&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/justjavac/Google-IPs.git&quot;&gt;Google 全球 IP 地址库&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/greatghoul/remote-working&quot;&gt;收集整理远程工作相关的资料&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/chriskempson/base16&quot;&gt;Color schemes for hackers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ellisonleao/magictools&quot;&gt;游戏开发工具集，MagicTools&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ripienaar/free-for-dev&quot;&gt;开发者工具箱， free-for-dev&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/tiimgreen/github-cheat-sheet/blob/master/README.zh-cn.md&quot;&gt;GitHub秘籍&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/agis-/git-style-guide&quot;&gt;Git风格指南&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/hzlzh/Best-App&quot;&gt;Bast-App&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;工具篇&quot;&gt;工具篇&lt;/h1&gt;
-&lt;h1 id=&quot;平台工具&quot;&gt;平台工具&lt;/h1&gt;
-&lt;p&gt;==============&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://swagger.io/&quot;&gt;Swagger&lt;/a&gt;: RESTful API设计工具，前后端分离项目必备，顺便推荐下&lt;a href=&quot;https://www.easy-mock.com/&quot;&gt;Easy Mock&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Phabricator: 软件开发平台，Facebook出品，现已开源，CodeReview神器（从这个往下一直到GitLab之间的工具统统可以忽略了）&lt;/li&gt;
-  &lt;li&gt;Redmine/Trac：项目管理平台&lt;/li&gt;
-  &lt;li&gt;Jenkins/Jira(非开源)：持续集成系统（Apache Continuum，这个是Apache下的CI系统，还没来得及研究）&lt;/li&gt;
-  &lt;li&gt;git，svn：源代码版本控制系统&lt;/li&gt;
-  &lt;li&gt;GitLab/Gitorious：构建自己的GitHub服务器&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://ci.appveyor.com/&quot;&gt;AppVeyor&lt;/a&gt; - 云端持续集成工具，可以与GitHub搭配使用&lt;/li&gt;
-  &lt;li&gt;Postman:RESTful，api测试工具，HTTP接口开发必备神器；可替代工具：&lt;a href=&quot;https://insomnia.rest/&quot;&gt;Insomnia&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://airbnb.design/lottie/&quot;&gt;Lottie&lt;/a&gt;: AE动画变原生代码，设计师必备&lt;/li&gt;
-  &lt;li&gt;Sonar：代码质量管理平台&lt;/li&gt;
-  &lt;li&gt;Nessus: 系统漏洞扫描器&lt;/li&gt;
-  &lt;li&gt;gitbook：&lt;a href=&quot;https://www.gitbook.io/&quot;&gt;https://www.gitbook.io/&lt;/a&gt;写书的好东西，当然用来写文档也很不错的（发现不少产品的文档就是用的它）&lt;/li&gt;
-  &lt;li&gt;Travis-ci：开源项目持续集成必备，和GitHub相结合，&lt;a href=&quot;https://travis-ci.org/&quot;&gt;https://travis-ci.org/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Trello：简单高效的项目管理平台，注重看板管理&lt;/li&gt;
-  &lt;li&gt;日志聚合：graylog、ELK（推荐新一代的graylog，基本上算作是开源的Splunk了）&lt;/li&gt;
-  &lt;li&gt;开源测试工具、社区（Selenium、OpenQA.org）&lt;/li&gt;
-  &lt;li&gt;Puppet:一个自动管理引擎，可以适用于Linux、Unix以及Windows平台。所谓配置管理系统，就是管理机器里面诸如文件、用户、进程、软件包这些资源。无论是管理1台，还是上万台机器Puppet都能轻松搞定。其他类似工具：CFEngine、SaltStack、Ansible&lt;/li&gt;
-  &lt;li&gt;Nagios：系统状态监控报警，还有个Icinga(完全兼容nagios所有的插件,工作原理,配置文件以及方法,几乎一模一样。配置简单,功能强大)&lt;/li&gt;
-  &lt;li&gt;Ganglia：分布式监控系统&lt;/li&gt;
-  &lt;li&gt;fleet：分布式init系统&lt;/li&gt;
-  &lt;li&gt;Ansible：能够大大简化Unix管理员的自动化配置管理与流程控制方式。&lt;/li&gt;
-  &lt;li&gt;GeoLite免费数据库&lt;/li&gt;
-  &lt;li&gt;jsHint:js代码验证工具&lt;/li&gt;
-  &lt;li&gt;haproxy: 高可用负载均衡（此外类似的系统还有nginx，lvs）&lt;/li&gt;
-  &lt;li&gt;linux OS性能分析工具：dstat，iostat，iotop，nmon&lt;/li&gt;
-  &lt;li&gt;kimono：将网页信息转换为api接口的工具&lt;/li&gt;
-  &lt;li&gt;集群管理工具：pdsh，ClusterSSH，mussh（可以用它快速管理Hadoop集群）ipa-server做统一的认证管理&lt;/li&gt;
-  &lt;li&gt;influxdb: 分布式时序数据库，结合Grafana可以进行实时数据分析&lt;/li&gt;
-  &lt;li&gt;dot: 程序员绘图利器（是种语言，也是个工具）&lt;/li&gt;
-  &lt;li&gt;Graph::Easy: （Ascii Art工具）字符流程图绘制，实乃程序员装逼神器。其他类似的工具Asciiflow, vi插件：drawit!&lt;/li&gt;
-  &lt;li&gt;spf13-vim: 让你的vim飞起来！&lt;/li&gt;
-  &lt;li&gt;Kubernetes: 容器集群管理系统&lt;/li&gt;
-  &lt;li&gt;Gatling: 服务器性能压力测试工具&lt;/li&gt;
-  &lt;li&gt;systemtap: Linux内核探测工具、内核调试神器&lt;/li&gt;
-  &lt;li&gt;Cygwin：Windows下的类UNIX模拟环境&lt;/li&gt;
-  &lt;li&gt;MinGW：Windows下的GNU工具集&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;常用工具&quot;&gt;常用工具&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://editorconfig.org/&quot;&gt;EditorConfig&lt;/a&gt;: 让我们在各种不同IDE或编辑器下写代码保持风格一致&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/hzlzh/Best-App&quot;&gt;Mac下的神兵利器&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://asciinema.org/&quot;&gt;asciinema&lt;/a&gt;: 终端录屏神器&lt;/li&gt;
-  &lt;li&gt;Fiddler：非常好用的Web前端调试工具，当然是针对底层http协议的，一般情况使用Chrome等自带的调试工具也足够了，特殊情况还得用它去处理&lt;/li&gt;
-  &lt;li&gt;Charles: Mac上的Web代理调试工具，类似Fiddler&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://fir.im/&quot;&gt;fir.im&lt;/a&gt;免费的移动App内测托管平台&lt;/li&gt;
-  &lt;li&gt;wireshark：知名的网络数据包分析工具&lt;/li&gt;
-  &lt;li&gt;PowerCmd:替代Windows Cmd的利器&lt;/li&gt;
-  &lt;li&gt;RegexBuddy:强大的正则表达式测试工具&lt;/li&gt;
-  &lt;li&gt;Soure Insight：源代码阅读神器&lt;/li&gt;
-  &lt;li&gt;SublimeText：程序员最爱的编辑器&lt;/li&gt;
-  &lt;li&gt;Database.NET：一个通用的关系型数据库客户端，基于.NET 4.0开发的，做简单的处理还是蛮方便的&lt;/li&gt;
-  &lt;li&gt;Navicat Premium：支持MySql、PostgreSQL、Oracle、Sqlite和SQL Server的客户端，通用性上不如Database.NET，但性能方面比Database.NET好很多，自带备份功能也用于数据库定时备份。&lt;/li&gt;
-  &lt;li&gt;Synergy : 局域网内一套键盘鼠标控制多台电脑&lt;/li&gt;
-  &lt;li&gt;DameWare：远程协助工具集（我在公司主要控制大屏幕用）&lt;/li&gt;
-  &lt;li&gt;Radmin: 远程控制工具，用了一段时间的DameWare，还要破解，对Win7支持的不好，还是发现这个好用&lt;/li&gt;
-  &lt;li&gt;Listary：能极大幅度提高你 Windows 文件浏览与搜索速度效率的「超级神器」&lt;/li&gt;
-  &lt;li&gt;Clover：给资源管理器加上多标签，我平时工作的时候就用它，像Chrome一样使用资源管理器，甚是方便啊（这是Windows平台的）&lt;/li&gt;
-  &lt;li&gt;WinLaunch：模拟Mac OS的Launch工具&lt;/li&gt;
-  &lt;li&gt;OllyDbg: OD大名鼎鼎的反汇编工具，Win平台&lt;/li&gt;
-  &lt;li&gt;Fritzing：绘制电路图&lt;/li&gt;
-  &lt;li&gt;LICEcap：gif教程制作&lt;/li&gt;
-  &lt;li&gt;git，svn：版本控制系统&lt;/li&gt;
-  &lt;li&gt;Enigma Virtual Box（将exe，dll等封装成一个可执行程序）&lt;/li&gt;
-  &lt;li&gt;Open DBDiff(针对SqlServer)数据库同步&lt;/li&gt;
-  &lt;li&gt;SymmetricDS：数据库同步&lt;/li&gt;
-  &lt;li&gt;BIEE,Infomatica，SPSS，weka，R语言：数据分析&lt;/li&gt;
-  &lt;li&gt;CodeSmith，LightSwitch：代码生成&lt;/li&gt;
-  &lt;li&gt;Pandoc：Markdown转换工具，出书用的。以前玩过docbook，不过现在还是Markdown盛行啊。&lt;/li&gt;
-  &lt;li&gt;Window Magnet[Mac]：增强Mac窗口管理功能，想Win7一样具有窗口拖放到屏幕边缘自动调整的功能&lt;/li&gt;
-  &lt;li&gt;log explorer：查看SqlServer日志&lt;/li&gt;
-  &lt;li&gt;dependency walker：查询Windows应用程序dll依赖项&lt;/li&gt;
-  &lt;li&gt;Shairport4w：将iPhone，iPad，iPod上的音频通过AirPlay协议传输到PC上&lt;/li&gt;
-  &lt;li&gt;ngrok：内网穿透工具&lt;/li&gt;
-  &lt;li&gt;Axure:快速原型制作工具，还有个在线作图的工具国内的一个创业团队做的，用着很不错&lt;a href=&quot;http://www.processon.com/&quot;&gt;http://www.processon.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Origami: 次世代交互设计神器&lt;/li&gt;
-  &lt;li&gt;百度脑图：&lt;a href=&quot;http://naotu.baidu.com/&quot;&gt;http://naotu.baidu.com/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;tinyproxy:（Linux）小型的代理服务器支持http和https协议&lt;/li&gt;
-  &lt;li&gt;EaseUS Partition Master：超级简单的分区调整工具，速度还是蛮快的，C盘不够用了就用它从D盘划点空间吧，不用重装系统这么折腾哦。&lt;/li&gt;
-  &lt;li&gt;CheatEngine：玩游戏修改内存值必备神器（记得我在玩轩辕剑6的时候就用的它，超级方便呢）&lt;/li&gt;
-  &lt;li&gt;ApkIDE:Android反编译神器&lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;翻、墙工具（自&lt;/td&gt;
-          &lt;td&gt;由&lt;/td&gt;
-          &lt;td&gt;门、天行浏览器，免费的VPN：http://www.mangovpn.com/）,发现最方便还属Lantern，免费用起来超级方便（更新于2015-08-22）&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
-  &lt;/li&gt;
-  &lt;li&gt;设计工具：Sketch、OmniGraffle&lt;/li&gt;
-  &lt;li&gt;MindManger：思维导图&lt;/li&gt;
-  &lt;li&gt;MagicDraw:Uml图工具&lt;/li&gt;
-  &lt;li&gt;innotop：MySql状态监测工具&lt;/li&gt;
-  &lt;li&gt;墨刀：比Axure更为简单的原型工具，可以快速制作原型&lt;/li&gt;
-  &lt;li&gt;Karabiner: Mac专用，修改键盘键位的神器，机械键盘必备&lt;/li&gt;
-  &lt;li&gt;Timing：Mac专用，统计你的时间都花在哪了&lt;/li&gt;
-  &lt;li&gt;f.lux: 护眼神器，过滤蓝光，程序员护眼必备良品&lt;/li&gt;
-  &lt;li&gt;LaTeX: 基于ΤΕΧ的排版系统, 让写论文更方便&lt;/li&gt;
-  &lt;li&gt;Antlr：开源的语法分析器，可以让你毫无压力的写个小parser&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;第三方服务&quot;&gt;第三方服务&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://letsencrypt.org/&quot;&gt;Let’s Encrypt&lt;/a&gt;: 免费、自动化、开放的证书签发服务&lt;/li&gt;
-  &lt;li&gt;DnsPod：一个不错的智能DNS服务解析提供商&lt;/li&gt;
-  &lt;li&gt;DigitalOcean：海外的云主机提供商，价格便宜，磁盘是SSD的，用过一段时间整体上还可以，不过毕竟是海外的，网速比较慢。国内的就是阿里云了。还有个比较知名的是：Linode，据说速度上比DigitalOcean好很多&lt;/li&gt;
-  &lt;li&gt;移动端推送服务：个推、JPush、云巴&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://leancloud.cn/&quot;&gt;LeanCloud&lt;/a&gt;：移动应用开发服务，包括:数据存储、用户管理、消息推送、应用统计、社交分享、实时聊天等服务&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.colorhunt.co/&quot;&gt;Color Hunt&lt;/a&gt;: 漂亮炫酷的配色网站，程序员的福音&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku: PaaS平台&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;爬虫相关好玩的工具&quot;&gt;爬虫相关(好玩的工具)&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Phantomjs(Web自动化测试，服务端渲染等)&lt;/li&gt;
-  &lt;li&gt;berserkJS(基于Phantomjs的改进版本)&lt;/li&gt;
-  &lt;li&gt;SlimerJS&lt;/li&gt;
-  &lt;li&gt;CasperJS&lt;/li&gt;
-  &lt;li&gt;selenium&lt;/li&gt;
-  &lt;li&gt;HtmlUnit（开源的java 页面分析工具，也是个Headless的浏览器）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;安全相关&quot;&gt;安全相关&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;sql注入检测：sqlmap、haviji&lt;/li&gt;
-  &lt;li&gt;端口扫描：nmap&lt;/li&gt;
-  &lt;li&gt;渗透测试：BurpLoader&lt;/li&gt;
-  &lt;li&gt;sqltools: sql漏洞利用工具&lt;/li&gt;
-  &lt;li&gt;snort: 入侵检测&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;web服务器性能压力测试工具负载均衡器&quot;&gt;Web服务器性能/压力测试工具/负载均衡器&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;ab: ab是apache自带的一款功能强大的测试工具&lt;/li&gt;
-  &lt;li&gt;curl-loader: 真实模拟、测试Web负载&lt;/li&gt;
-  &lt;li&gt;http_load: 程序非常小，解压后也不到100K&lt;/li&gt;
-  &lt;li&gt;webbench: 是Linux下的一个网站压力测试工具，最多可以模拟3万个并发连接去测试网站的负载能力。&lt;/li&gt;
-  &lt;li&gt;Siege: 一款开源的压力测试工具，可以根据配置对一个WEB站点进行多用户的并发访问，记录每个用户所有请求过程的相应时间，并在一定数量的并发访问下重复进行。&lt;/li&gt;
-  &lt;li&gt;squid（前端缓存），nginx（负载），nodejs（没错它也可以，自己写点代码就能实现高性能的负载均衡器）：常用的负载均衡器&lt;/li&gt;
-  &lt;li&gt;Piwik：开源网站访问量统计系统&lt;/li&gt;
-  &lt;li&gt;ClickHeat：开源的网站点击情况热力图&lt;/li&gt;
-  &lt;li&gt;HAProxy：高性能TCP /HTTP负载均衡器&lt;/li&gt;
-  &lt;li&gt;ElasticSearch：搜索引擎基于Lucene&lt;/li&gt;
-  &lt;li&gt;Page Speed SDK和YSLOW&lt;/li&gt;
-  &lt;li&gt;HAR Viewer: HAR分析工具&lt;/li&gt;
-  &lt;li&gt;protractor：E2E（end to end）自动化测试工具&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;大数据处理数据分析分布式工具&quot;&gt;大数据处理/数据分析/分布式工具&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Hadoop：分布式的文件系统，结合其MapReduce编程模型可以用来做海量数据的批处理（Hive，Pig，HBase啥的就不说了），值得介绍的是Cloudera的Hadoop分支CDH5，基于YARN MRv2集成了Spark可直接用于生产环境的Hadoop，对于企业快速构建数据仓库非常有用。&lt;/li&gt;
-  &lt;li&gt;Spark：大规模数据处理框架（可以应付企业中常见的三种数据处理场景：复杂的批量数据处理（batch data processing）；基于历史数据的交互式查询（interactive query）；基于实时数据流的数据处理（streaming data processing）），CSND有篇文章介绍的不错&lt;/li&gt;
-  &lt;li&gt;除了Spark，其他几个不错的计算框架还有：Kylin，Flink，Drill&lt;/li&gt;
-  &lt;li&gt;Ignite: In-Memory Data Fabric&lt;/li&gt;
-  &lt;li&gt;CarbonData: 华为的孵化项目，支持索引的列式存储&lt;/li&gt;
-  &lt;li&gt;Ceph:Linux分布式文件系统（特点：无中心）&lt;/li&gt;
-  &lt;li&gt;Storm：实时流数据处理，可以看下IBM的一篇介绍 （还有个Yahoo的S4，也是做流数据处理的）&lt;/li&gt;
-  &lt;li&gt;Druid: 实时数据分析存储系统&lt;/li&gt;
-  &lt;li&gt;Ambari: 大数据平台搭建、监控利器；类似的还有CDH&lt;/li&gt;
-  &lt;li&gt;Tachyon：分布式内存文件系统&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://greenplum.org/&quot;&gt;Greenplum&lt;/a&gt;: 基于PostgreSQL的分布式MPP数据库&lt;/li&gt;
-  &lt;li&gt;Mesos：计算框架一个集群管理器，提供了有效的、跨分布式应用或框架的资源隔离和共享&lt;/li&gt;
-  &lt;li&gt;Impala：新一代开源大数据分析引擎，提供Sql语义，比Hive强在速度上&lt;/li&gt;
-  &lt;li&gt;presto: facebook的开源工具，大数据分布式sql查询引擎&lt;/li&gt;
-  &lt;li&gt;SNAPPY：快速的数据压缩系统，适用于Hadoop生态系统中&lt;/li&gt;
-  &lt;li&gt;Kafka:高吞吐量的分布式消息队列系统&lt;/li&gt;
-  &lt;li&gt;ActiveMQ:是Apache出品，最流行的，能力强劲的开源消息总线&lt;/li&gt;
-  &lt;li&gt;MQTT:Message Queuing Telemetry Transport，消息队列遥测传输）是IBM开发的一个即时通讯协议，有可能成为物联网的重要组成部分&lt;/li&gt;
-  &lt;li&gt;RabbitMQ：记得OpenStack就是用的这个东西吧&lt;/li&gt;
-  &lt;li&gt;ZeroMQ：宣称是将分布式计算变得更简单，是个分布式消息队列，可以看下云风的一篇文章的介绍&lt;/li&gt;
-  &lt;li&gt;开源的日志收集系统：scribe、chukwa、kafka、flume。这有一篇对比文章&lt;/li&gt;
-  &lt;li&gt;Zookeeper：可靠的分布式协调的开源项目&lt;/li&gt;
-  &lt;li&gt;Databus：LinkedIn 实时低延迟数据抓取系统&lt;/li&gt;
-  &lt;li&gt;数据源获取：Flume、Google Refine、Needlebase、ScraperWiki、BloomReach&lt;/li&gt;
-  &lt;li&gt;序列化技术：JSON、BSON、Thrift、Avro、Google Protocol Buffers&lt;/li&gt;
-  &lt;li&gt;NoSql：ScyllaDB（宣称是世界上最快的NoSql）、Apache Casandra、MongoDB、Apache CouchDB、Redis、BigTable、HBase、Hypertable、Voldemort、Neo4j&lt;/li&gt;
-  &lt;li&gt;MapReduce相关：Hive、Pig、Cascading、Cascalog、mrjob、Caffeine、S4、MapR、Acunu、Flume、Kafka、Azkaban、Oozie、Greenplum&lt;/li&gt;
-  &lt;li&gt;数据处理：R、Yahoo! Pipes、Mechanical Turk、Solr/ Lucene、ElasticSearch、Datameer、Bigsheets、Tinkerpop&lt;/li&gt;
-  &lt;li&gt;NLP自然语言处理：Natural Language Toolkit、Apache OpenNLP、Boilerpipe、OpenCalais&lt;/li&gt;
-  &lt;li&gt;机器学习：TensorFlow（Google出品），WEKA、Mahout、scikits.learn、SkyTree&lt;/li&gt;
-  &lt;li&gt;可视化技术：GraphViz、Processing、Protovis、Google Fusion Tables、Tableau、Highcharts、EChats（百度的还不错）、Raphaël.js&lt;/li&gt;
-  &lt;li&gt;Kettle：开源的ETL工具&lt;/li&gt;
-  &lt;li&gt;Pentaho：以工作流为核心的开源BI系统&lt;/li&gt;
-  &lt;li&gt;Mondrian：开源的Rolap服务器&lt;/li&gt;
-  &lt;li&gt;Oozie：开源hadoop的工作流调度引擎，类似的还有：Azkaban&lt;/li&gt;
-  &lt;li&gt;开源的数据分析可视化工具：Weka、Orange、KNIME&lt;/li&gt;
-  &lt;li&gt;Cobar：阿里巴巴的MySql分布式中间件&lt;/li&gt;
-  &lt;li&gt;数据清洗：data wrangler， Google Refine&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;web前端&quot;&gt;Web前端&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://material.io/&quot;&gt;Material Design&lt;/a&gt;: 谷歌出品，必属精品&lt;/li&gt;
-  &lt;li&gt;Vue.js: 借鉴了Angular及React的JS框架，设计理念较为先进&lt;/li&gt;
-  &lt;li&gt;GRUNT: js task runner&lt;/li&gt;
-  &lt;li&gt;Sea.js: js模块化&lt;/li&gt;
-  &lt;li&gt;knockout.js：MVVM开发前台，绑定技术&lt;/li&gt;
-  &lt;li&gt;Angular.js: 使用超动感HTML &amp;amp; JS开发WEB应用！&lt;/li&gt;
-  &lt;li&gt;Highcharts.js, ECharts, Flot: 常用的数据可视化库&lt;/li&gt;
-  &lt;li&gt;D3.js: 是一个基于JavaScript数据展示库（类似的还有P5.js）&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://vega.github.io/vega/&quot;&gt;Vega&lt;/a&gt;: 基于D3的可视化语法&lt;/li&gt;
-  &lt;li&gt;NVD3: 基于d3.js的图表库&lt;/li&gt;
-  &lt;li&gt;Raw：非常不错的一款高级数据可视化工具&lt;/li&gt;
-  &lt;li&gt;Rickshaw:时序图标库，可用于构建实时图表&lt;/li&gt;
-  &lt;li&gt;JavaScript InfoVis Toolkit：另一款Web数据可视化插件&lt;/li&gt;
-  &lt;li&gt;Pdf.js，在html中展现pdf&lt;/li&gt;
-  &lt;li&gt;ACE，CodeMirror：Html代码编辑器（ACE甚好啊）&lt;/li&gt;
-  &lt;li&gt;NProcess：绚丽的加载进度条&lt;/li&gt;
-  &lt;li&gt;impress.js：让你制作出令人眩目的内容展示效果(类似的还有reveal)&lt;/li&gt;
-  &lt;li&gt;Threejs：3DWeb库&lt;/li&gt;
-  &lt;li&gt;Hightopo：基于Html5的2D、3D可视化UI库&lt;/li&gt;
-  &lt;li&gt;jQuery.dataTables.js:高度灵活的表格插件&lt;/li&gt;
-  &lt;li&gt;Raphaël：js，canvas绘图库，后来发现百度指数的图形就是用它绘出来的&lt;/li&gt;
-  &lt;li&gt;director.js：js路由模块，前端路由，Nodejs后端路由等，适合构造单页应用&lt;/li&gt;
-  &lt;li&gt;pace.js：页面加载进度条&lt;/li&gt;
-  &lt;li&gt;bower：Web包管理器&lt;/li&gt;
-  &lt;li&gt;jsnice：有趣的js反编译工具，猜压缩后的变量名，http://www.jsnice.org/&lt;/li&gt;
-  &lt;li&gt;Zepto.js：移动端替代jQuery的东东，当然也可以使用jquery-mobile.&lt;/li&gt;
-  &lt;li&gt;UI框架：Foundation，Boostrap，Pure，EasyUI，Polymer&lt;/li&gt;
-  &lt;li&gt;前段UI设计师必去的几个网站：Dribbble，awwwards，unmatchedstyle，UIMaker&lt;/li&gt;
-  &lt;li&gt;Mozilla 开发者中心：https://developer.mozilla.org/en-US/&lt;/li&gt;
-  &lt;li&gt;图标资源：IcoMoon（我的最爱），Font Awesome, Themify Icons，FreePik，Glyphicons&lt;/li&gt;
-  &lt;li&gt;artDialog:非常漂亮的对话框&lt;/li&gt;
-  &lt;li&gt;AdminLTE：github上的一个开源项目，基于Boostrap3的后台管理页面框架&lt;/li&gt;
-  &lt;li&gt;Respond.js：让不懂爱的IE6-8支持响应式设计&lt;/li&gt;
-  &lt;li&gt;require.js: js模块加载库&lt;/li&gt;
-  &lt;li&gt;select2：比chosen具有更多特性的选择框替代库&lt;/li&gt;
-  &lt;li&gt;AngularUI：集成angular.js的UI库&lt;/li&gt;
-  &lt;li&gt;normalize.css: 采用了现代化标准让各浏览器渲染出的html保持一致的库&lt;/li&gt;
-  &lt;li&gt;CreateJS：Html5游戏引擎&lt;/li&gt;
-  &lt;li&gt;Less,Compass:简化CSS开发&lt;/li&gt;
-  &lt;li&gt;emojify.js:用于自动识别网页上的Emoji文字并将其显示为图像&lt;/li&gt;
-  &lt;li&gt;simditor:一个不错的开源的html编辑器，简洁高效&lt;/li&gt;
-  &lt;li&gt;Sencha:  基于html5的移动端开发框架&lt;/li&gt;
-  &lt;li&gt;SuperScrollorama+TweenMax+skrollr:打造超酷的视差滚动效果网页动画&lt;/li&gt;
-  &lt;li&gt;jquery-smooth-scroll:同上，平滑滚动插件&lt;/li&gt;
-  &lt;li&gt;Animate.css:实现了各种动画效果的css库&lt;/li&gt;
-  &lt;li&gt;Emmet:前端工程师必备，前身为 Zen Coding&lt;/li&gt;
-  &lt;li&gt;React: facebook出品的js UI库&lt;/li&gt;
-  &lt;li&gt;highlight.js：专门用来做语法高亮的库&lt;/li&gt;
-  &lt;li&gt;GoJS: Html5交互式图表库，看demo更适合层次结构的图表。&lt;/li&gt;
-  &lt;li&gt;10 Pure CSS (Mostly) Flat Mobile Devices: &lt;a href=&quot;http://marvelapp.github.io/devices.css/&quot;&gt;http://marvelapp.github.io/devices.css/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;CodePen: &lt;a href=&quot;http://codepen.io/&quot;&gt;http://codepen.io/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;jsfiddle: &lt;a href=&quot;http://jsfiddle.net/&quot;&gt;http://jsfiddle.net/&lt;/a&gt; 前端js，html，css测试利器&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;语言篇&quot;&gt;语言篇&lt;/h1&gt;
-&lt;p&gt;折腾中：Scala、Python、Lua、JavaScript、Go&lt;/p&gt;
-
-&lt;p&gt;待折腾：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://racket-lang.org/&quot;&gt;Racket&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://ocaml.org/&quot;&gt;OCaml&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.rust-lang.org&quot;&gt;Rust&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://julialang.org/&quot;&gt;Julia&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;scala&quot;&gt;Scala&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.scala-lang.org/api/current/&quot;&gt;Scala Standard Library API&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://twitter.github.io/scala_school/&quot;&gt;Scala School!&lt;/a&gt;: A Scala tutorial by Twitter&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://docs.scala-lang.org/tutorials/tour/tour-of-scala.html&quot;&gt;A Tour of Scala&lt;/a&gt;: Tutorial introducing the main concepts of Scala&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/tags/scala/info&quot;&gt;Scala Overview on StackOverflow&lt;/a&gt;: A list of useful questions sorted by topic&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.artima.com/pins1ed/&quot;&gt;Programming in Scala&lt;/a&gt;，最新的第3版，还没有电子版，电子版是第一版&lt;/li&gt;
-  &lt;li&gt;《Scala for the Impatient》&lt;/li&gt;
-  &lt;li&gt;《Scala in Depth》&lt;/li&gt;
-  &lt;li&gt;《Programming Scala》Dean Wampler and Alex Payne. O’Reilly 2009&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.scala-lang.org/docu/files/ScalaByExample.pdf&quot;&gt;Scala By Example&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://docs.scala-lang.org/cheatsheets/&quot;&gt;Scala Cheatsheet&lt;/a&gt;学习模式匹配的好资料&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://docs.scala-lang.org/glossary/&quot;&gt;Glossary of Scala and FP terms&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/lihaoyi/Metascala&quot;&gt;Metascala: A JVM written in Scala&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://scala-lms.github.io/&quot;&gt;LMS: Program Generation and Embedded Compilers in Scala&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/sirthias/parboiled2&quot;&gt;parboiled2&lt;/a&gt;: 性能很好的parser&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;java&quot;&gt;Java&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;常用的IDE：IntelliJ IDEA(强烈推荐)，Eclipse，Netbeans&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://fastutil.di.unimi.it/&quot;&gt;fastutil&lt;/a&gt;: 性能更好的Java集合框架&lt;/li&gt;
-  &lt;li&gt;Guava: 谷歌的Java工具包，应用广泛&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.lagomframework.com/&quot;&gt;Lagom&lt;/a&gt;: 微服务框架，提供了Java、Scala API&lt;/li&gt;
-  &lt;li&gt;Curator：Netflix公司开源的一个Zookeeper client library，用于简化Zookeeper客户端编程，现在已经是apache下的一个独立项目了。Spark的HA也用的这货。&lt;/li&gt;
-  &lt;li&gt;Rx(Reactive Extensions)框架：Vert.x, RxJava(Android中用的比较多),  Quasar&lt;/li&gt;
-  &lt;li&gt;FindBugs: 代码静态分析工具，找出代码缺陷&lt;/li&gt;
-  &lt;li&gt;Java反编译工具：Luyten，JD-Gui&lt;/li&gt;
-  &lt;li&gt;Drools: 规则引擎&lt;/li&gt;
-  &lt;li&gt;Jersey: Java RESTful 框架&lt;/li&gt;
-  &lt;li&gt;canal: 阿里巴巴出品，binlog增量订阅&amp;amp;消费组件&lt;/li&gt;
-  &lt;li&gt;Web开发相关：Tomcat、Resin、Jetty、WebLogic等，常用的组件Struts，Spring，Hibernate&lt;/li&gt;
-  &lt;li&gt;Netty: 异步事件驱动网络应用编程框架，用于高并发网络编程比较好（NIO框架，spark 1.2.0就用netty替代了nio）&lt;/li&gt;
-  &lt;li&gt;MINA：简单地开发高性能和高可靠性的网络应用程序（也是个NIO框架），不少手游服务端是用它开发的&lt;/li&gt;
-  &lt;li&gt;jOOQ：java Orm框架&lt;/li&gt;
-  &lt;li&gt;Janino: 超级小又快的Java编译器，Spark的Tungsten引起用的它&lt;/li&gt;
-  &lt;li&gt;Activiti:工作流引擎，类似的还有jBPM、Snaker&lt;/li&gt;
-  &lt;li&gt;Perfuse:是一个用户界面包用来把有结构与无结构数据以具有交互性的可视化图形展示出来.&lt;/li&gt;
-  &lt;li&gt;Gephi:复杂网络分析软件, 其主要用于各种网络和复杂系统，动态和分层图的交互可视化与探测开源工具&lt;/li&gt;
-  &lt;li&gt;Nutch:知名的爬虫项目，hadoop就是从这个项目中发展出来的&lt;/li&gt;
-  &lt;li&gt;web-harvest：Web数据提取工具&lt;/li&gt;
-  &lt;li&gt;POM工具：Maven+Artifactory&lt;/li&gt;
-  &lt;li&gt;Akka:一款基于actor模型实现的 并发处理框架&lt;/li&gt;
-  &lt;li&gt;EclEmma：覆盖测试工具&lt;/li&gt;
-  &lt;li&gt;Shiro:安全框架&lt;/li&gt;
-  &lt;li&gt;joda-time:简化时间处理&lt;/li&gt;
-  &lt;li&gt;parboiled:表达式解析&lt;/li&gt;
-  &lt;li&gt;dozer: 深拷贝神器&lt;/li&gt;
-  &lt;li&gt;dubbo: 阿里巴巴出品的分布式服务框架&lt;/li&gt;
-  &lt;li&gt;jackson databind: json序列化工具(fastjson,simplejson)&lt;/li&gt;
-  &lt;li&gt;Atomikos: 分布式事务管理&lt;/li&gt;
-  &lt;li&gt;BoneCP：性能很赞的数据库连接池组件，据说比c3p0快好多&lt;/li&gt;
-  &lt;li&gt;ProGuard: obconfuscation tool, 强大的混淆工具&lt;/li&gt;
-  &lt;li&gt;S-99：Scala相关的99个问题&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;python&quot;&gt;Python&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;PyCharm：最佳Python IDE&lt;/li&gt;
-  &lt;li&gt;Eric,Eclipse+pydev,比较不错的Python IDE&lt;/li&gt;
-  &lt;li&gt;PyWin:Win32 api编程包&lt;/li&gt;
-  &lt;li&gt;numpy:科学计算包，主要用来处理大型矩阵计算等，此外还有SciPy，Matplotlib&lt;/li&gt;
-  &lt;li&gt;GUI相关：PyQt，PyQwt&lt;/li&gt;
-  &lt;li&gt;supervisor:进程监控工具&lt;/li&gt;
-  &lt;li&gt;PyGame: 基于Python的多媒体开发和游戏软件开发模块&lt;/li&gt;
-  &lt;li&gt;Web框架: Django 开源web开发框架，它鼓励快速开发,并遵循MVC设计&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;swift&quot;&gt;Swift&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ipader/SwiftGuide&quot;&gt;Swift精选资料&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.csdn.net/article/2015-01-09/2823502-swift-open-source-libs&quot;&gt;43个优秀的开源项目&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;客户端&lt;/strong&gt;==============&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/YANGReal/JokeClient-Swift&quot;&gt;糗事百科 Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/amitburst/HackerNews&quot;&gt;HackerNews Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/jxd001/Swift-ZhihuDaily&quot;&gt;知乎日报app&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;framework&quot;&gt;&lt;strong&gt;Framework&lt;/strong&gt;&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mattdonnelly/Swifter&quot;&gt;Twitter框架&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/glock45/swifter&quot;&gt;Mac下简单HTTP Server Swifter&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;小工具&quot;&gt;&lt;strong&gt;小工具&lt;/strong&gt;&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/ChrisChares/swift-alarm&quot;&gt;Swift Alarm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/mslathrop/SwiftNote&quot;&gt;Swift Note&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/wantedly/swift-rss-sample&quot;&gt;Swift RSS Reader&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/sxyx2008/Swift-PM25&quot;&gt;Swift-PM2.5查询app&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;游戏&quot;&gt;&lt;strong&gt;游戏&lt;/strong&gt;&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/fullstackio/FlappySwift&quot;&gt;Flappy Swift&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/geek5nan/FanFanSwift&quot;&gt;FanFan Swift&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;net&quot;&gt;.NET&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Xilium.CefGlue:基于CEF框架的.NET封装，基于.NET开发Chrome内核浏览器&lt;/li&gt;
-  &lt;li&gt;CefSharp：同上，有一款WebKit的封装，C#和Js交互会更简单&lt;/li&gt;
-  &lt;li&gt;netz:免费的 .NET 可执行文件压缩工具&lt;/li&gt;
-  &lt;li&gt;SmartAssembly:变态的.net代码优化混淆工具&lt;/li&gt;
-  &lt;li&gt;NETDeob0：.net反混淆工具，真是魔高一尺道高一丈啊(还有个de4dot，在GitHub上，都是开源的)&lt;/li&gt;
-  &lt;li&gt;ILMerge：将所有引用的DLL和exe文件打成一个exe文件&lt;/li&gt;
-  &lt;li&gt;ILSpy:开源.net程序反编译工具&lt;/li&gt;
-  &lt;li&gt;Javascript.NET：很不错的js执行引擎，对v8做了封装&lt;/li&gt;
-  &lt;li&gt;NPOI: Excel操作&lt;/li&gt;
-  &lt;li&gt;DotRAS:远程访问服务的模块&lt;/li&gt;
-  &lt;li&gt;WinHtmlEditor: Winform下的html编辑器&lt;/li&gt;
-  &lt;li&gt;SmartThreadPool:使用C#实现的，带高级特性的线程池&lt;/li&gt;
-  &lt;li&gt;Snoop: WPF Spy Utility&lt;/li&gt;
-  &lt;li&gt;Autofac: 轻量级IoC框架&lt;/li&gt;
-  &lt;li&gt;HtmlAgilityPack：Html解析利器&lt;/li&gt;
-  &lt;li&gt;Quartz.NET：Job调度&lt;/li&gt;
-  &lt;li&gt;HttpLib：@CodePlex，简化http请求&lt;/li&gt;
-  &lt;li&gt;SuperSocket：简化Socket操作，基于他的还有个SuperWebSocket，可以开发独立的WebSocket服务器了&lt;/li&gt;
-  &lt;li&gt;DocX：未安装Office的情况下操作Word文件&lt;/li&gt;
-  &lt;li&gt;Dapper：轻量级的ORM类，性能不错&lt;/li&gt;
-  &lt;li&gt;HubbleDotNet：支持接入数据库的全文搜索系统&lt;/li&gt;
-  &lt;li&gt;fastJSON：@CodeProject，高性能的json序列化类&lt;/li&gt;
-  &lt;li&gt;ZXing.NET：@CodePlex，QR，条形码相关&lt;/li&gt;
-  &lt;li&gt;Nancy：轻量级Http服务器，做个小型的Web应用可以摆脱IIS喽(Nancy.Viewengines.Razor,可以加入Razor引擎)&lt;/li&gt;
-  &lt;li&gt;AntiXSS：微软的XSS防御库Microsoft Web Protection Library&lt;/li&gt;
-  &lt;li&gt;Jint：JavaScript解释器&lt;/li&gt;
-  &lt;li&gt;CS-Script：将C#代码文件作为脚本执行&lt;/li&gt;
-  &lt;li&gt;Jexus：Linux下 高性能、易用、免费的ASP.NET服务器&lt;/li&gt;
-  &lt;li&gt;Clay：将dynamic发挥的更加灵活，像写js一样写C#&lt;/li&gt;
-  &lt;li&gt;DynamicJSON：不必定义数据模型获取json数据&lt;/li&gt;
-  &lt;li&gt;SharpPcap：C#版的WinPcap调用端，牛逼的网络包分析库（自带PacketNotNet用于包协议分析）&lt;/li&gt;
-  &lt;li&gt;Roslyn：C#，VB编译器&lt;/li&gt;
-  &lt;li&gt;ImageResizer: 服务端自由控制图片大小，真乃神器也，对手机端传小图，PC端传大图，CMS用它很方便&lt;/li&gt;
-  &lt;li&gt;UI相关：DevExpress, Fluent(Office 07风格), mui（Modern UI for WPF）&lt;/li&gt;
-  &lt;li&gt;NetSparkle：应用自动更新组件&lt;/li&gt;
-  &lt;li&gt;ConfuserEx: 开源.net混淆工具&lt;/li&gt;
-  &lt;li&gt;ServiceStack: 开源高性能Web服务框架，可用于构建高性能的REST服务&lt;/li&gt;
-  &lt;li&gt;Expression Evaluator：Eval for C#,处理字符串表达式&lt;/li&gt;
-  &lt;li&gt;http://nugetmusthaves.com/&lt;/li&gt;
-  &lt;li&gt;Reactive Extensions (Rx):异步，事件驱动编程包， Rx = Observables + LINQ + Schedulers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;c--c&quot;&gt;C &amp;amp; C++&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Thrift:用来进行可扩展且跨语言的服务的开发(类似的还有个Avro，Google protobuf)。&lt;/li&gt;
-  &lt;li&gt;libevent:是一个事件触发的网络库，适用于windows、linux、bsd等多种平台，内部使用select、epoll、kqueue等系统调用管理事件机制。（对了还有个libev呢）&lt;/li&gt;
-  &lt;li&gt;Boost:不多说了，准C++标准库&lt;/li&gt;
-  &lt;li&gt;Valgrind\Ptmalloc\Purify: 调试工具&lt;/li&gt;
-  &lt;li&gt;NetworkServer架构：acceptor-&amp;gt;dispatcher-&amp;gt;worker(这个不算工具哦)&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://pocoproject.org/&quot;&gt;POCO&lt;/a&gt; - 开源的C++类库及应用程序框架的集合,它主要提供简单的、快速的网络和可移植应用程序&lt;/li&gt;
-  &lt;li&gt;breakpad:崩溃转储和分析模块，很多crashreport会用到&lt;/li&gt;
-  &lt;li&gt;UI界面相关：MFC、BCG和QT这类的就不说了，高端一点的还有Html和DirectUI技术：libcef（基于chrome内核的，想想使用html5开发页面，还真有点小激动呢）、HtmlLayout、Duilib、Bolt，非C++的，还有node-webkit也不错，集成了node和webkit内核。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;其他&quot;&gt;其他&lt;/h1&gt;
-&lt;p&gt;游戏开发相关
-==============&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;MINA：使用Java开发手游和页游服务器(对了还有Netty，也很猛的，都是基于NIO的)&lt;/li&gt;
-  &lt;li&gt;HP-Socket：见有有些页游服务器使用这个构建的&lt;/li&gt;
-  &lt;li&gt;Unreal: 虚幻引擎，C++，基于这个引擎的游戏很多&lt;/li&gt;
-  &lt;li&gt;OGRE：大名鼎鼎的3D图形渲染引擎，天龙八部OL、火炬之光等不少游戏都用了这个引擎&lt;/li&gt;
-  &lt;li&gt;OpenVDB：梦工厂C++的特效库，开源的&lt;/li&gt;
-  &lt;li&gt;cocos2d：跨平台2D游戏引擎&lt;/li&gt;
-  &lt;li&gt;unity3d：跨平台3D游戏引擎，很火的哦&lt;/li&gt;
-  &lt;li&gt;Nodejs：也有不少使用它来开发手游和页游服务器（网易的Pomelo）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;日志聚合分布式日志收集&quot;&gt;日志聚合，分布式日志收集&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;Scribe：Facebook的（nodejs + scribe + inotify 同步日志）&lt;/li&gt;
-  &lt;li&gt;logstash:强大的日志收集系统，可以基于logstash+kibana+elasticsearch+redis开发强大的日志分析平台&lt;/li&gt;
-  &lt;li&gt;log.io: nodejs开发的实时日志收集系统&lt;/li&gt;
-  &lt;li&gt;Graylog: 易用、功能丰富的日志管理系统， 部署、维护、搜索比&lt;code class=&quot;highlighter-rouge&quot;&gt;ELK&lt;/code&gt;简单&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;rtp实时传输协议与音视频&quot;&gt;RTP,实时传输协议与音视频&lt;/h1&gt;
-&lt;ul&gt;
-  &lt;li&gt;RTP，RTCP，RTSP-&amp;gt; librtp，JRTPLIB(遵循了RFC1889标准)&lt;/li&gt;
-  &lt;li&gt;环形缓冲区，实时数据传输用&lt;/li&gt;
-  &lt;li&gt;SDL,ffmpeg,live555,Speex&lt;/li&gt;
-  &lt;li&gt;Red5:用Java开发开源的Flash流媒体服务器。它支持：把音频（MP3）和视频（FLV）转换成播放流； 录制客户端播放流（只支持FLV）；共享对象；现场直播流发布；远程调用。&lt;/li&gt;
-&lt;/ul&gt;
-
-</description>
-        <pubDate>Mon, 30 Oct 2017 10:41:15 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/10/30/study/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/10/30/study/</guid>
-        
-        <category>php</category>
-        
-        
-        <category>学习资料</category>
         
       </item>
     

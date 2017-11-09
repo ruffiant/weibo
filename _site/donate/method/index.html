@@ -155,6 +155,13 @@ function push_arr(obj,dimension,default_data_str){
     eval(default_data_str).push(obj);
   }else {
     var key=eval(default_data_str).length-1;
+
+    //修改只写三级标题,没写二级标题时出错问题
+    if(key<0){
+      eval(default_data_str)[0]=new Array();
+      eval(default_data_str)[0]['nodes']=new Array();
+      key=0;
+    }
     default_data_str+="["+key+"]['nodes']";
     push_arr(obj,--dimension,default_data_str)
   }
