@@ -11,3 +11,6 @@ native_cmd.bat 打开记事本
 ======================================
 git.ini为git项目路径相关配置
 INIReader.bat 读取ini文件
+================
+right
+右键菜单复制图片datauri

@@ -5,9 +5,378 @@
     <description>Actually, less is more!</description>
     <link>http://localhost:4000/weibo/</link>
     <atom:link href="http://localhost:4000/weibo/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 15 Nov 2017 10:43:41 +0800</pubDate>
-    <lastBuildDate>Wed, 15 Nov 2017 10:43:41 +0800</lastBuildDate>
+    <pubDate>Wed, 15 Nov 2017 14:57:15 +0800</pubDate>
+    <lastBuildDate>Wed, 15 Nov 2017 14:57:15 +0800</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
+    
+      <item>
+        <title>js execCommand命令</title>
+        <description>
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  document.execCommand()方法处理Html数据时常用语法格式如下:
+  document.execCommand(sCommand[,交互方式, 动态参数])
+  
+  其中：sCommand为指令参数（如下例中的”2D-Position”），交互方式参数如果是true的话将显示对话框，如果为false的话，则不显示对话框（下例中的”false”即表示不显示对话框），动态参数一般为一可用值或属性值（如下例中的”true”）。
+  
+  document.execCommand(”2D-Position”,”false”,”true”);
+  
+  调用execCommand()可以实现浏览器菜单的很多功能. 如保存文件,打开新文件,撤消、重做操作…等等. 有了这个方法,就可以很容易的实现网页中的文本编辑器.
+  
+  如果灵活运用,可以很好的辅助我们完成各种项目.
+  
+  使用的例子如下:
+  
+  1、〖全选〗命令的实现
+  [格式]:document.execCommand(”selectAll”)
+  [说明]将选种网页中的全部内容！
+  [举例]在之间加入：
+  全选
+  
+  2、〖打开〗命令的实现
+  [格式]:document.execCommand(”open”)
+  [说明]这跟VB等编程设计中的webbrowser控件中的命令有些相似，大家也可依此琢磨琢磨。
+  [举例]在之间加入：
+  打开
+  
+  3、〖另存为〗命令的实现
+  [格式]:document.execCommand(”saveAs”)
+  [说明]将该网页保存到本地盘的其它目录！
+  [举例]在之间加入：
+  另存为
+  
+  4、〖打印〗命令的实现
+  [格式]:document.execCommand(”print”)
+  [说明]当然，你必须装了打印机！
+  [举例]在之间加入：
+  打印
+  
+  Js代码 下面列出的是指令参数及意义
+  
+  //相当于单击文件中的打开按钮
+  document.execCommand(”Open”);
+  
+  //将当前页面另存为
+  document.execCommand(”SaveAs”);
+  
+  //剪贴选中的文字到剪贴板;
+  document.execCommand(”Cut”,”false”,null);
+  
+  //删除选中的文字;
+  document.execCommand(”Delete”,”false”,null);
+  
+  //改变选中区域的字体;
+  document.execCommand(”FontName”,”false”,sFontName);
+  
+  //改变选中区域的字体大小;
+  document.execCommand(”FontSize”,”false”,sSize
+  iSize);
+  
+  //设置前景颜色;
+  document.execCommand(”ForeColor”,”false”,sColor);
+  
+  //使绝对定位的对象可直接拖动;
+  document.execCommand(”2D-Position”,”false”,”true”);
+  
+  //使对象定位变成绝对定位;
+  document.execCommand(”AbsolutePosition”,”false”,”true”);
+  
+  //设置背景颜色;
+  document.execCommand(”BackColor”,”false”,sColor);
+  
+  //使选中区域的文字加粗;
+  document.execCommand(”Bold”,”false”,null);
+  
+  //复制选中的文字到剪贴板;
+  document.execCommand(”Copy”,”false”,null);
+  
+  //设置指定锚点为书签;
+  document.execCommand(”CreateBookmark”,”false”,sAnchorName);
+  
+  //将选中文本变成超连接,若第二个参数为true,会出现参数设置对话框;
+  document.execCommand(”CreateLink”,”false”,sLinkURL);
+  
+  //设置当前块的标签名;
+  document.execCommand(”FormatBlock”,”false”,sTagName);
+  
+  //相当于单击文件中的打开按钮
+  document.execCommand(”Open”);
+  
+  //将当前页面另存为
+  document.execCommand(”SaveAs”);
+  
+  //剪贴选中的文字到剪贴板;
+  document.execCommand(”Cut”,”false”,null);
+  
+  //删除选中的文字;
+  document.execCommand(”Delete”,”false”,null);
+  
+  //改变选中区域的字体;
+  document.execCommand(”FontName”,”false”,sFontName);
+  
+  //改变选中区域的字体大小;
+  document.execCommand(”FontSize”,”false”,sSize
+  iSize);
+  
+  //设置前景颜色;
+  document.execCommand(”ForeColor”,”false”,sColor);
+  
+  //使绝对定位的对象可直接拖动;
+  document.execCommand(”2D-Position”,”false”,”true”);
+  
+  //使对象定位变成绝对定位;
+  document.execCommand(”AbsolutePosition”,”false”,”true”);
+  
+  //设置背景颜色;
+  document.execCommand(”BackColor”,”false”,sColor);
+  
+  //使选中区域的文字加粗;
+  document.execCommand(”Bold”,”false”,null);
+  
+  //复制选中的文字到剪贴板;
+  document.execCommand(”Copy”,”false”,null);
+  
+  //设置指定锚点为书签;
+  document.execCommand(”CreateBookmark”,”false”,sAnchorName);
+  
+  //将选中文本变成超连接,若第二个参数为true,会出现参数设置对话框;
+  document.execCommand(”CreateLink”,”false”,sLinkURL);
+  
+  //设置当前块的标签名;
+  document.execCommand(”FormatBlock”,”false”,sTagName);
+  
+  document对象execCommand通常在IE中在线处理Html数据时非常有用，它可以让你轻而易举实现文字的加粗、加颜色、加字体等一系列的命令。
+  
+  D-Position 允许通过拖曳移动绝对定位的对象。
+  AbsolutePosition 设定元素的 position 属性为“absolute”(绝对)。
+  BackColor 设置或获取当前选中区的背景颜色。
+  BlockDirLTR 目前尚未支持。
+  BlockDirRTL 目前尚未支持。
+  Bold 切换当前选中区的粗体显示与否。
+  BrowseMode 目前尚未支持。
+  Copy 将当前选中区复制到剪贴板。
+  CreateBookmark 创建一个书签锚或获取当前选中区或插入点的书签锚的名称。
+  CreateLink 在当前选中区上插入超级链接，或显示一个对话框允许用户指定要为当前选中区插入的超级链接的 URL。
+  Cut 将当前选中区复制到剪贴板并删除之。
+  Delete 删除当前选中区。
+  DirLTR 目前尚未支持。
+  DirRTL 目前尚未支持。
+  EditMode 目前尚未支持。
+  FontName 设置或获取当前选中区的字体。
+  FontSize 设置或获取当前选中区的字体大小。
+  ForeColor 设置或获取当前选中区的前景(文本)颜色。
+  FormatBlock 设置当前块格式化标签。
+  Indent 增加选中文本的缩进。
+  InlineDirLTR 目前尚未支持。
+  InlineDirRTL 目前尚未支持。
+  InsertButton 用按钮控件覆盖当前选中区。
+  InsertFieldset 用方框覆盖当前选中区。
+  InsertHorizontalRule 用水平线覆盖当前选中区。
+  InsertIFrame 用内嵌框架覆盖当前选中区。
+  InsertImage 用图像覆盖当前选中区。
+  InsertInputButton 用按钮控件覆盖当前选中区。
+  InsertInputCheckbox 用复选框控件覆盖当前选中区。
+  InsertInputFileUpload 用文件上载控件覆盖当前选中区。
+  InsertInputHidden 插入隐藏控件覆盖当前选中区。
+  InsertInputImage 用图像控件覆盖当前选中区。
+  InsertInputPassword 用密码控件覆盖当前选中区。
+  InsertInputRadio 用单选钮控件覆盖当前选中区。
+  InsertInputReset 用重置控件覆盖当前选中区。
+  InsertInputSubmit 用提交控件覆盖当前选中区。
+  InsertInputText 用文本控件覆盖当前选中区。
+  InsertMarquee 用空字幕覆盖当前选中区。
+  InsertOrderedList 切换当前选中区是编号列表还是常规格式化块。
+  InsertParagraph 用换行覆盖当前选中区。
+  InsertSelectDropdown 用下拉框控件覆盖当前选中区。
+  InsertSelectListbox 用列表框控件覆盖当前选中区。
+  InsertTextArea 用多行文本输入控件覆盖当前选中区。
+  InsertUnorderedList 切换当前选中区是项目符号列表还是常规格式化块。
+  Italic 切换当前选中区斜体显示与否。
+  JustifyCenter 将当前选中区在所在格式化块置中。
+  JustifyFull 目前尚未支持。
+  JustifyLeft 将当前选中区所在格式化块左对齐。
+  JustifyNone 目前尚未支持。
+  JustifyRight 将当前选中区所在格式化块右对齐。
+  LiveResize 迫使 MSHTML 编辑器在缩放或移动过程中持续更新元素外观，而不是只在移动或缩放完成后更新。
+  MultipleSelection 允许当用户按住 Shift 或 Ctrl 键时一次选中多于一个站点可选元素。
+  Open 目前尚未支持。
+  Outdent 减少选中区所在格式化块的缩进。
+  OverWrite 切换文本状态的插入和覆盖。
+  Paste 用剪贴板内容覆盖当前选中区。
+  PlayImage 目前尚未支持。
+  Print 打开打印对话框以便用户可以打印当前页。
+  Redo 目前尚未支持。
+  Refresh 刷新当前文档。
+  RemoveFormat 从当前选中区中删除格式化标签。
+  RemoveParaFormat 目前尚未支持。
+  SaveAs 将当前 Web 页面保存为文件。
+  SelectAll 选中整个文档。
+  SizeToControl 目前尚未支持。
+  SizeToControlHeight 目前尚未支持。
+  SizeToControlWidth 目前尚未支持。
+  Stop 目前尚未支持。
+  StopImage 目前尚未支持。
+  StrikeThrough 目前尚未支持。
+  Subscript 目前尚未支持。
+  Superscript 目前尚未支持。
+  UnBookmark 从当前选中区中删除全部书签。
+  Underline 切换当前选中区的下划线显示与否。
+  Undo 目前尚未支持。
+  Unlink 从当前选中区中删除全部超级链接。
+  Unselect 清除当前选中区的选中状态。
+  
+  关于document.execCommand：
+  要执行编辑命令，可调用 document.execCommand，并传递对应于命令 ID 的字符串。另外还有可选的第二个参数，该参数指定如果可以应用的话是否显示此命令的用户界面。传递整数 1 将显示用户界面，整数 0 将跳过它。这个参数通常不用于编辑命令。因为默认值为 0，所以假如您没有使用第三个参数（在这种情况下，还必须为第二个参数传递值），一般可以不管它。第三个参数也是可选的，在可应用的情况下，使用它来将任何所需参数传递给该命令。
+  
+  Pixy方法受到IE的cache bug影响会闪烁。其实并没有说清楚这个问题，但其实该bug是有条件的，即IE的cache设置为Every visit to the page，而不是默认的Automatically。基本上，只有开发者才会把cache设置为每次访问检查更新，所以这个bug其实不会影响真正的用户（根据在winxpsp2的ie6下测试，虽然可能仍然调用了一次网络存取的api，但是并没有发生实际的请求，症状就是鼠标有极短时间的抖动，但是图像不会闪烁）。此外有人发现了一个未公开的方法来让IE对背景图进行缓存：
+  document.execCommand(”BackgroundImageCache”,false,true)
+  
+  用这种方法甚至避免了api调用，貌似是直接缓存在IE内存中。
+  
+  IE6下设置背景图片是不会被真正cache住的，就算服务器做了cache，如果想cache住只能~~~
+  
+  做过UI设计和开发的人一定知道，IE(不包括IE7)会经常从服务器端重新载入背景图片，好端端的UI界面在IE(不包括IE7)中就这样被折腾着……
+  
+  Erik发现了一个简单的解决办法（针对IE7以下的IE有效，其实在IE7中已经修复了这个Bug）
+  程序代码 程序代码
+  
+  document.execCommand(”BackgroundImageCache”, false, true);
+  
+  
+  今天阅读Ext的源码时发现Jack Slocum已经考虑到了这一点，在Ext.js中给出了他的实现，在其它Ajax框架中应该还没有这种类似的代码，从这一个细节上就能看出Ext的全面～
+  程序代码 程序代码
+  
+  var isIE = ua.indexOf(”msie”) &amp;gt; -1, isIE7 = ua.indexOf(”msie 7″) &amp;gt; -1;
+  // remove css image flicker
+  if(isIE &amp;amp;&amp;amp; !isIE7){
+  try{
+  document.execCommand(”BackgroundImageCache”, false, true);
+  }catch(e){}
+  }
+  
+  
+  今天阅读幻宇的dreamplayer播放器源码时发现幻宇也针对IE的背景缓存进行了修复，只是他并没考虑到IE7中已经不存在这个现象了，这是 evml.js中的一段相关代码～(顺便嘀咕两句：这家伙，写JS从来不加分号的，以前是这样，现在还是这样，这样的话怎么进行压缩呀，汗～下面的代码按照我的习惯都已加上分号，哪怕只有两三句而已～)
+  程序代码 程序代码
+  
+  windows.isIE=navigator.appName.indexOf(&quot;Microsoft&quot;)==0;
+  if(isIE){
+  document.documentElement.addBehavior(&quot;#default#userdata&quot;);
+  document.execCommand(&quot;BackgroundImageCache&quot;,false,true);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 15 Nov 2017 14:27:47 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/11/15/execCommand/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/15/execCommand/</guid>
+        
+        <category>js</category>
+        
+        
+        <category>系统</category>
+        
+      </item>
+    
+      <item>
+        <title>js 文件操作</title>
+        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#读取本地文件&quot; id=&quot;markdown-toc-读取本地文件&quot;&gt;#//读取本地文件&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#下载内容&quot; id=&quot;markdown-toc-下载内容&quot;&gt;##//下载内容&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#路径转blob对象&quot; id=&quot;markdown-toc-路径转blob对象&quot;&gt;#//路径转blob对象&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#url转成dataurl&quot; id=&quot;markdown-toc-url转成dataurl&quot;&gt;#//url,转成dataurl&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;读取本地文件&quot;&gt;#//读取本地文件&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;openfile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nBytes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nFiles&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nFileId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nFileId&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nFiles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nFileId&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;nBytes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nFileId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;//读取文件&lt;/span&gt;
+              &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FileReader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onloadend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#editor&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readAsText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;files&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;nFileId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;下载内容&quot;&gt;##//下载内容&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;writefile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;///////////////&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#title_input&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'a'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;c1&quot;&gt;//加入文本换行&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#editor&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;[\r\n]&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/g&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;n&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!==&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;标题&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;//var now=new Date();&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;//var month=now.getMonth()+1;&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;//var date=now.getDate();&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;//month=month&amp;lt;10?&quot;0&quot;+month:month;&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;//date=date&amp;lt;10?&quot;0&quot;+date:date;&lt;/span&gt;
+      
+              &lt;span class=&quot;nx&quot;&gt;file_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;.md&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;file_name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;#file_name&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;val&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;File&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;text/plain&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;  &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FileReader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onloadend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readyState&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FileReader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;DONE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;href&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;textContent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+                  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;download&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file_name&lt;/span&gt;
+                  &lt;span class=&quot;nx&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+                  &lt;span class=&quot;nb&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;URL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;revokeObjectURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readAsDataURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;file&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//  console.log(b);&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;路径转blob对象&quot;&gt;#//路径转blob对象&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataURLtoBlob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dataurl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;dataurl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;','&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;mime&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;].&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/:&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;.*&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;?)&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;bstr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;atob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]),&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bstr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;u8arr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Uint8Array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;u8arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;bstr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;charCodeAt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+          &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Blob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;u8arr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;mime&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;h1 id=&quot;url转成dataurl&quot;&gt;#//url,转成dataurl&lt;/h1&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;      &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;urlToDataurl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+          &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;XMLHttpRequest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onload&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FileReader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;onloadend&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+              &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;reader&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;readAsDataURL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'GET'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;responseType&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'blob'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+          &lt;span class=&quot;nx&quot;&gt;xhr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+      &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+</description>
+        <pubDate>Wed, 15 Nov 2017 13:54:40 +0800</pubDate>
+        <link>http://localhost:4000/weibo/2017/11/15/js_file/</link>
+        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/15/js_file/</guid>
+        
+        <category>js</category>
+        
+        
+        <category>前端</category>
+        
+      </item>
     
       <item>
         <title>cocos_ide建立第一个项目</title>
@@ -1239,247 +1608,6 @@ print(r.length)&lt;/p&gt;
         <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/06/ifconfig_netstat/</guid>
         
         <category>linux</category>
-        
-        
-        <category>系统</category>
-        
-      </item>
-    
-      <item>
-        <title>Windows中VirtualBox虚拟机实现桥接方式(Bridged+Adapter)</title>
-        <description>
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  安装完虚拟机默认是NAT网络连接,主机不能访问虚拟机.
-  所以需要选择桥接模式
-  在此之前需要安装一个服务器
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;==========================&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  本地网络&amp;gt;&amp;gt;&amp;gt;本地连接&amp;gt;&amp;gt;&amp;gt;属性&amp;gt;&amp;gt;&amp;gt;安装&amp;gt;&amp;gt;&amp;gt;服务 &amp;gt;&amp;gt;&amp;gt;添加&amp;gt;&amp;gt;&amp;gt;从磁盘安装&amp;gt;&amp;gt;&amp;gt;选择文件(
-  D:\Program Files\Oracle\VirtualBox\drivers\network\netlwf/VBoxNetLwf.inf
-  )安装, ========================== 之后在VirtualBox 设置&amp;gt;&amp;gt;&amp;gt;网络&amp;gt;&amp;gt;&amp;gt;网卡选择&amp;gt;&amp;gt;&amp;gt;桥接网卡就好了
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Mon, 06 Nov 2017 16:42:17 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/11/06/Bridged_Adapter/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/06/Bridged_Adapter/</guid>
-        
-        <category>虚拟机</category>
-        
-        
-        <category>系统</category>
-        
-      </item>
-    
-      <item>
-        <title>VirtualBox虚拟机网络设置</title>
-        <description>&lt;ul id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#第一种-nat模式&quot; id=&quot;markdown-toc-第一种-nat模式&quot;&gt;#第一种 NAT模式&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#第二种-bridged-adapter模式&quot; id=&quot;markdown-toc-第二种-bridged-adapter模式&quot;&gt;第二种 Bridged Adapter模式&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#第三种-internal模式&quot; id=&quot;markdown-toc-第三种-internal模式&quot;&gt;#第三种 Internal模式&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#第四种-host-only-adapter模式&quot; id=&quot;markdown-toc-第四种-host-only-adapter模式&quot;&gt;#第四种 Host-only Adapter模式&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  VirtualBox的提供了四种网络接入模式，它们分别是： 
-  1、NAT 网络地址转换模式(NAT,Network Address Translation) 
-  2、Bridged Adapter 桥接模式 
-  3、Internal 内部网络模式 
-  4、Host-only Adapter 主机模式 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;第一种-nat模式&quot;&gt;#第一种 NAT模式&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  解释： 
-  NAT模式是最简单的实现虚拟机上网的方式，你可以这样理解：Vhost访问网络的所有数据都是由主机提供的，vhost并不真实存在于网络中，主机与网络中的任何机器都不能查看和访问到Vhost的存在。 
-  虚拟机与主机关系： 
-  只能单向访问，虚拟机可以通过网络访问到主机，主机无法通过网络访问到虚拟机。 
-  虚拟机与网络中其他主机的关系： 
-  只能单向访问，虚拟机可以访问到网络中其他主机，其他主机不能通过网络访问到虚拟机。 
-  虚拟机与虚拟机之间的关系： 
-  相互不能访问，虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。 
-  IP:10.0.2.15 
-  网关：10.0.2.2 
-  DNS：10.0.2.3 
-  一台虚拟机的多个网卡可以被设定使用 NAT， 第一个网卡连接了到专用网 10.0.2.0，第二个网卡连接到专用网络 10.0.3.0，等等。默认得到的客户端ip（IP Address）是10.0.2.15，网关（Gateway）是10.0.2.2，域名服务器（DNS）是10.0.2.3，可以手动参考这个进行修改。 
-  NAT方案优缺点： 
-  笔记本已插网线时： 虚拟机可以访问主机，虚拟机可以访问互联网，在做了端口映射后（最后有说明），主机可以访问虚拟机上的服务（如数据库）。 
-  笔记本没插网线时： 主机的“本地连接”有红叉的，虚拟机可以访问主机，虚拟机不可以访问互联网，在做了端口映射后，主机可以访问虚拟机上的服务（如数据库）。 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;第二种-bridged-adapter模式&quot;&gt;第二种 Bridged Adapter模式&lt;/h1&gt;
-&lt;p&gt;===============&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  解释： 
-  网桥模式是我最喜欢的用的一种模式，同时，模拟度也是相当完美。你可以这样理解，它是通过主机网卡，架设了一条桥，直接连入到网络中了。因此，它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样。 
-  虚拟机与主机关系： 
-  可以相互访问，因为虚拟机在真实网络段中有独立IP，主机与虚拟机处于同一网络段中，彼此可以通过各自IP相互访问。 
-  虚拟机于网络中其他主机关系： 
-  可以相互访问，同样因为虚拟机在真实网络段中有独立IP，虚拟机与所有网络其他主机处于同一网络段中，彼此可以通过各自IP相互访问。 
-  虚拟机于虚拟机关系： 
-  可以相互访问，原因同上。 
-  IP：一般是DHCP分配的，与主机的“本地连接”的IP 是同一网段的。虚拟机就能与主机互相通信。 
-  笔记本已插网线时：（若网络中有DHCP服务器）主机与虚拟机会通过DHCP分别得到一个IP，这两个IP在同一网段。 主机与虚拟机可以ping通，虚拟机可以上互联网。 
-  笔记本没插网线时：主机与虚拟机不能通信。主机的“本地连接”有红叉，就不能手工指定IP。虚拟机也不能通过DHCP得到IP地址，手工指定IP后，也无法与主机通信，因为主机无IP。 
-  这时主机的VirtualBox Host-Only Network 网卡是有ip的，192.168.56.1。虚拟机就算手工指定了IP 192.168.56.*，也ping不能主机。 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;第三种-internal模式&quot;&gt;#第三种 Internal模式&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  解释： 
-  内网模式，顾名思义就是内部网络模式，虚拟机与外网完全断开，只实现虚拟机于虚拟机之间的内部网络模式。 
-  虚拟机与主机关系： 
-  不能相互访问，彼此不属于同一个网络，无法相互访问。 
-  虚拟机与网络中其他主机关系： 
-  不能相互访问，理由同上。 
-  虚拟机与虚拟机关系： 
-  可以相互访问，前提是在设置网络时，两台虚拟机设置同一网络名称。如上配置图中，名称为intnet。 
-  IP: VirtualBox的DHCP服务器会为它分配IP ，一般得到的是192.168.56.101，因为是从101起分的，也可手工指定192.168.56.*。 
-  笔记本已插网线时：虚拟机可以与主机的VirtualBox Host-Only Network 网卡通信 
-  这种方案不受主机本地连接（网卡）是否有红叉的影响。 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h1 id=&quot;第四种-host-only-adapter模式&quot;&gt;#第四种 Host-only Adapter模式&lt;/h1&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  解释： 
-  主机模式，这是一种比较复杂的模式，需要有比较扎实的网络基础知识才能玩转。可以说前面几种模式所实现的功能，在这种模式下，通过虚拟机及网卡的设置都可以被实现。 
-  我们可以理解为Vbox在主机中模拟出一张专供虚拟机使用的网卡，所有虚拟机都是连接到该网卡上的，我们可以通过设置这张网卡来实现上网及其他很多功能，比如（网卡共享、网卡桥接等）。
-  虚拟机与主机关系 
-  默认不能相互访问，双方不属于同一IP段，host-only网卡默认IP段为192.168.56.X 子网掩码为255.255.255.0，后面的虚拟机被分配到的也都是这个网段。通过网卡共享、网卡桥接等，可以实现虚拟机于主机相互访问。 
-  虚拟机与网络主机关系 
-  默认不能相互访问，原因同上，通过设置，可以实现相互访问。 
-  虚拟机与虚拟机关系 
-  默认可以相互访问，都是同处于一个网段。 
-  虚拟机访问主机 用的是主机的VirtualBox Host-Only Network网卡的IP：192.168.56.1 ，不管主机“本地连接”有无红叉，永远通。 
-  主机访问虚拟机，用是的虚拟机的网卡3的IP： 192.168.56.101 ，不管主机“本地连接”有无红叉，永远通。 
-  虚拟机访问互联网，用的是自己的网卡2， 这时主机要能通过“本地连接”有线上网，（无线网卡不行） 
-  
-  通过对以上几种网络模式的了解，我们就可以灵活运用，模拟组建出我们所想要的任何一种网络环境了。 
-  比如我想模拟出来一个一台主机，监控一个局域网上网情况的网络环境。 
-  首先我开启了两台虚拟机vhost1与vhost2，当然如果硬件允许，我同样可以再增加vhost3、vhost4… 
-  所有的vhost我都设置成internat内网模式，网络名称为intnal，网关为192.168.56.100，意思就是通过 192.168.56.100网卡上网。其中有一台vhost1我设置为双网卡，一张为内网模式（192.168.56.100），一张为网桥模式（192.168.1.101）。两张网卡设置双网卡共享上网 
-  虚拟机之间为局域网，其中有一台虚拟机vhost1通过与外网相连，所有局域网中的虚拟机又通过vhost1来实现上外网。这样vhost1就可以监控整个虚拟机局域网上网情况了。 
-  
-  NAT 设置端口映射 
-  http://huzhangsheng.blog.163.com/blog/static/34787784200802801435931/ 
-  你可以设置一个虚拟机的服务（比如 WEB 服务），通过使用命令行工具 VboxManage 代理。你需要知道虚拟机的服务使用哪个端口，然后决定在主机上使用哪个端口（通常但不总是想要使虚拟机和主机使用同一个端口）。在主机上提供一个服务需要使用一个端口，你能使用在主机上没有准备用来提供服务的任何端口。一个怎样设置新的 NAT 例子，在虚拟机上连接到一个 ssh 服务器，需要下面的三个命令： 
-  VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/Protocol' TCP 
-  VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/GuestPort' 22 
-  VBoxManage setextradata 'Linux Guest' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/guestssh/HostPort' 2222 
-  说明：VboxManage 是一个命令行程序，请查询你的 VirtualBox 安装目录，'Linux Guest' 是虚拟主机名。guestssh 是一个自定义的名称，你可以任意设置，通过上面的三个命令，把虚拟机的 22 端口 转发到主机的 2222 端口。 
-  又比如，我在虚拟机 debian 上安装了 apache2 服务器，使用 80 端口，映射到主机的 80 端口。使用下面的命令。 
-  'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/Protocol' TCP 
-  'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/GuestPort' 80 
-  'C:\Program Files\innotek VirtualBox\VBoxManage.exe' setextradata 'debian' 'VBoxInternal/Devices/pcnet/0/LUN#0/Config/huzhangsheng/HostPort' 80 
-  注意：要使设置生效，请关掉 VirtualBox 再运行虚拟机，我把 VirtualBox 安装在 winxp 上，在虚拟机中安装 debian 4.02r ，虚拟机名是 debian ，并安装了 apache2 php5 mysql-server ，在主机上用IE浏览 http://localhost，成功转发到虚拟机 debian 的 apache2 web 服务器上 
-  
-  上文出处：http://www.cnblogs.com/coltiam/archive/2010/03/26/1696939.html 
-  
-  个人感觉通过使用端口映射的方式很不爽，还不如直接桥接来的快，现在多数情况下连接到网络是没问题的，端口映射还需要在宿主跟虚拟机都额外开某个服务，感觉不爽。 
-  
-  “网络”配置页面有4个方案： 
-  
-  1：NAT 网络地址转换（Network Address Translation） 
-  
-  2：Birdged Network 桥接 
-  
-  3：Internal Network 内部网络（可以是虚拟机与虚拟机之间） 
-  
-  4：Host-Only 只与主机通信（大概吧） 
-  
-  安装完VirtualBox2.2后，主机多了一个“VirtualBox Host-Only Network ”本地网卡。 
-  
-  -------------------------------------------------------------------- 
-  
-  我的网络环境： 
-  
-  主机： 
-  
-  系统：xp 
-  
-  “本地连接”的IP：由于是笔记本，经常换工作网络环境，都是通过DHCP分配的，有时候还无网络，“本地连接”有红叉（对主机与虚拟机通信有影响）。 
-  
-  “VirtualBox Host-Only Network网卡”IP：192.168.56.1 ,因为VirtualBox的DHCP服务器IP是192.168.56.100，要在同一网段。 
-  
-  虚拟机：要能与主机互相通信，要能访问互联网（不须要被互联网访问）。 
-  
-  系统：win2003 
-  
-  网卡1，网卡2，网卡3 后面说各网卡的配置情况 
-  
-  ---------------------------------------------------------------------- 
-  
-  --------------------------- 各网卡的配置情况 -------------------------------------------- 
-  
-  网卡1： 用NAT方案 
-  
-  IP:10.0.2.15 
-  
-  网关：10.0.2.2 
-  
-  DNS：10.0.2.3 
-  
-  
-  为什么这样配置？因为VirtualBox的帮助中，有以下一段说明（英译汉）: 
-  
-  一台虚拟机的多个网卡可以被设定使用 NAT， 第一个网卡连接了到专用网 10.0.2.0，第二个网卡连接到专用网络 10.0.3.0，等等。默认得到的客户端ip（IP Address）是10.0.2.15，网关（Gateway）是10.0.2.2，域名服务器（DNS）是10.0.2.3，可以手动参考这个进行修改。 
-  
-  
-  NAT方案优缺点： 
-  
-  笔记本已插网线时： 虚拟机可以访问主机，虚拟机可以访问互联网，在做了端口映射后（最后有说明），主机可以访问虚拟机上的服务（如数据库）。 
-  
-  笔记本没插网线时： 主机的“本地连接”有红叉的，虚拟机可以访问主机，虚拟机不可以访问互联网，在做了端口映射后，主机可以访问虚拟机上的服务（如数据库）。 
-  
-  
-  网卡2：用Birdged Network 方案 
-  
-  IP：一般是DHCP分配的，与主机的“本地连接”的IP 是同一网段的。虚拟机就能与主机互相通信。 
-  
-  笔记本已插网线时：（若网络中有DHCP服务器）主机与虚拟机会通过DHCP分别得到一个IP，这两个IP在同一网段。 主机与虚拟机可以ping通，虚拟机可以上互联网。 
-  
-  笔记本没插网线时：主机与虚拟机不能通信。主机的“本地连接”有红叉，就不能手工指定IP。虚拟机也不能通过DHCP得到IP地址，手工指定IP后，也无法与主机通信，因为主机无IP。 
-  
-  这时主机的VirtualBox Host-Only Network 网卡是有ip的，192.168.56.1。虚拟机就算手工指定了IP 192.168.56.*，也ping不能主机。 
-  
-  网卡3： 用Host-Only 方案 
-  
-  ip: VirtualBox的DHCP服务器会为它分配IP ，一般得到的是192.168.56.101，因为是从101起分的，也可手工指定192.168.56.*。 
-  
-  笔记本已插网线时：虚拟机可以与主机的VirtualBox Host-Only Network 网卡通信 
-  
-  笔记本没插网线时：虚拟机可以与主机的VirtualBox Host-Only Network 网卡通信 
-  
-  这种方案不受主机本地连接（网卡）是否有红叉的影响。 
-  
-  
-  ------------------------------------------------------------------ 
-  
-  以上三种方案，可以右击虚拟机窗口最下边 两个小电视 的图标快速切换。满足各种网络环境。 
-  
-  关于Internal Network 方案，我也没试。 
-  
-  
-  上面三种方案的总结 
-  
-  
-  同进启用下面两个方案： 
-  
-  网卡2：用Birdged Network 方案 
-  
-  网卡3： 用Host-Only 方案 
-  
-  虚拟机访问主机 用的是主机的VirtualBox Host-Only Network网卡的IP：192.168.56.1 ，不管主机“本地连接”有无红叉，永远通。 
-  
-  主机访问虚拟机，用是的虚拟机的网卡3的IP： 192.168.56.101 ，不管主机“本地连接”有无红叉，永远通。 
-  
-  虚拟机访问互联网，用的是自己的网卡2， 这时主机要能通过“本地连接”有线上网，（无线网卡不行）
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-</description>
-        <pubDate>Mon, 06 Nov 2017 15:57:47 +0800</pubDate>
-        <link>http://localhost:4000/weibo/2017/11/06/virtualbox_network_config/</link>
-        <guid isPermaLink="true">http://localhost:4000/weibo/2017/11/06/virtualbox_network_config/</guid>
-        
-        <category>虚拟机</category>
         
         
         <category>系统</category>

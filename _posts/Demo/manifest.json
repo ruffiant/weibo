@@ -1,16 +1,19 @@
 {
-	//  Extension ID:
-	"manifest_version": 2,
-
-	"name": "CMD Application",
-	"description": "用批处理,快捷处理相关事情",
-	"version": "1.0",
-
-	"browser_action": {
-		"default_icon" : "icon.png",
-		"default_popup": "popup.html"
-	},
-	"permissions": [
-    	"nativeMessaging"
-  ]
+    "manifest_version": 2,
+    "name": "CMD Application",
+    "description": "用批处理,快捷处理相关事情",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "nativeMessaging",
+        "contextMenus"
+    ],
+    "background": {
+        "scripts": [
+            "right/menu.js"
+        ]
+    }
 }

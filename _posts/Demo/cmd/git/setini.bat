@@ -7,7 +7,7 @@ set /p name=ÇëÊäÈë±êÌâ:
 setlocal enabledelayedexpansion
   set time=%date:~0,4%-%date:~5,2%-%date:~8,2%
     if "!str:~0,9!" EQU "FILE_NAME" (
-        echo FILE_NAME=!time!-%name%.md
+        echo FILE_NAME=%name%.md
     )else echo,!str!
 endlocal
 ))>git.ini.tmp

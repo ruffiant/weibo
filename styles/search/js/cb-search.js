@@ -29,22 +29,22 @@
 
  		$("#cb-search-content").keyup(function (e) {
             var time2 = new Date().getTime();
-            if (e.keyCode == 17) {
-                var gap = time2 - time1;
-                time1 = time2;
-                if (gap < 500) {
-                    if (show) {
-                        $(".cb-search-tool").css("display", "none");
-                        show = false;
-                    } else {
-                        //$(".cb-search-tool").css("display", "block");
-                        //show = true;
-                        //$("#cb-search-content").val("");
-                        //$("#cb-search-content").focus();
-                    }
-                    time1 = 0;
-                }
-            }
+            //if (e.keyCode == 17) {
+            //    var gap = time2 - time1;
+            //    time1 = time2;
+            //    if (gap < 500) {
+            //        if (show) {
+            //            $(".cb-search-tool").css("display", "none");
+            //            show = false;
+            //        } else {
+            //            //$(".cb-search-tool").css("display", "block");
+            //            //show = true;
+            //            //$("#cb-search-content").val("");
+            //            //$("#cb-search-content").focus();
+            //        }
+            //        time1 = 0;
+            //    }
+            //}
         });
 
         $("#cb-close-btn").click(function () {
