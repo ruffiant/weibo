@@ -145,7 +145,7 @@ var line_code=function(){
 }
 //图片
 var w_img=function(){
-    var html_str="![html_str]({{ ''}})";
+    var html_str="![html_str]({{ 'img_src'}})";
     $("#editor").insertAtCaret(html_str);
 }
 //高亮这个是jekyll特意
