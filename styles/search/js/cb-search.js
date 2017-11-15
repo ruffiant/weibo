@@ -37,10 +37,10 @@
                         $(".cb-search-tool").css("display", "none");
                         show = false;
                     } else {
-                        $(".cb-search-tool").css("display", "block");
-                        show = true;
-                        $("#cb-search-content").val("");
-                        $("#cb-search-content").focus();
+                        //$(".cb-search-tool").css("display", "block");
+                        //show = true;
+                        //$("#cb-search-content").val("");
+                        //$("#cb-search-content").focus();
                     }
                     time1 = 0;
                 }
