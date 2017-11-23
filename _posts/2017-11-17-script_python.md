@@ -231,7 +231,7 @@ idle  位置 (python的ide)
               elif ordertime == '2':
                   while True:
                       area = '1_2810_6501_0'  # 地址编码，这里请替换成自己地区的编码
-                      stockurl = 'http://c0.3.cn/stock?skuId=' + self.pid + '&cat=652,829,854&area=' + area + '&extraParam={%22originid%22:%221%22}'
+                      stockurl = 'http://c0.3.cn/stock?skuId=' + self.pid + '&cat=652,829,854&area=' + area + '&extraParam={\%22originid\%22:\%221\%22}' 
                       resp = s.get(stockurl)
                       jsparser = json.loads(resp.text)
                       # 33 有货 34 无货
