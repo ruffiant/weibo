@@ -10,3 +10,5 @@ tag: [js]
 {:toc}
 
 canvas 话贝塞尔曲线,根据曲线求坐标,根据坐标话图
+
+https://github.com/ruffiant/weibo/tree/gh-pages/_posts/getpoints
