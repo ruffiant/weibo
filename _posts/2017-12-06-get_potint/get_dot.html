@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>根据曲线获取点属性</title>
+		<link href="get_dot.css" type="text/css" rel="stylesheet" />
+		<script src="js/seajs/sea.js" id="seajsnode" data-main="app/main"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+
+	</head>
+	<body>
+
+		<header id="header">根据曲线获取点属性</header>
+		<div id="content">
+
+			<div id="div1">
+
+				<section >
+					<!--工具区域-->
+					<ul id="tool">
+
+
+						<li><a href="javascript:void(0);" id="preview">预览</a></li>
+						<li>点数:<input type="text" value="100" id="point_num"></li>
+					</ul>
+					<canvas id="artCanvas" width="0" height="0"></canvas>
+					<canvas id="selectionCanvas" width="0" height="0"></canvas>
+					<canvas id="penCanvas" width="490" height="280">您的浏览器不支持canvas标签，请升级浏览器</canvas>
+
+
+
+
+				</section>
+
+			</div>
+			<div id="div2">
+				<canvas id="preview_can" width="490" height="280"></canvas>
+			</div>
+			<div id="div3">
+				33
+			</div>
+			<div id="div4">
+				44
+			</div>
+		</div>
+		<footer id="footer">
+			<!--请在canvas标签之后连入JS文件--->
+
+
+			<small>版权所有 @ ruffian</small>
+		</footer>
+	</body>
+</html>
