@@ -41,7 +41,7 @@ tag: [教程]
       链接：http://www.imooc.com/article/1183
       来源：慕课网
       
-
+[symfony中文]({{ "http://symfony.newlifeclan.com/" }} "http://symfony.newlifeclan.com/")
 
 
 
