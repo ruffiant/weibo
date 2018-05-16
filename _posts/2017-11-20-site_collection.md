@@ -50,6 +50,15 @@ tag: [教程]
 https://phpunit.de/manual/6.5/zh_cn/phpunit-book.html
 
 
+#symfony
+===============
+
+##调试
+===============
+
+https://www.cnblogs.com/Seekr/archive/2012/06/23/2559384.html
+
+
 
 
 
