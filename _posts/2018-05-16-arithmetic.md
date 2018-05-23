@@ -6,6 +6,10 @@ categories: [php]
 tag: [算法] 
 ---
 
+* content
+{:toc}
+
+
 {% highlight PHP %}
       <?    
       //--------------------    
