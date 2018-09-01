@@ -1,603 +1,330 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> - 记事</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - 记事</title>
 
-	<link rel="shortcut icon" href="/weibo/styles/images/favicon.jpg">
-	<link rel="icon" href="/weibo/styles/images/favicon.jpg">
+    <link rel="shortcut icon" href="/weibo/styles/images/favicon.jpg">
+    <link rel="icon" href="/weibo/styles/images/favicon.jpg">
 
-	<link rel="stylesheet" href="/weibo/styles/css/index.css">
-	<link rel="stylesheet" href="/weibo/styles/css/fontawesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="/weibo/styles/css/syntax.css">
-	<link rel="stylesheet" href="/weibo/styles/css/menu.css">
+    <link rel="stylesheet" href="/weibo/styles/css/index.css">
+    <link rel="stylesheet" href="/weibo/styles/css/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/weibo/styles/css/syntax.css">
+    <link rel="stylesheet" href="/weibo/styles/css/menu.css">
 
 
-	<link rel="stylesheet" href="/weibo/styles/css/bootstrap-combined.min.css">
+    <link rel="stylesheet" href="/weibo/styles/css/bootstrap-combined.min.css">
 
-	<link rel="canonical" href="/weibo/">
-	<link rel="alternate" type="application/rss+xml" title="记事" href="/weibo/feed.xml">
-	
-	<meta name="keywords" content=", 记事, RUFFIAN;个人博客;">
-	<meta name="description" content="RUFFIAN;个人博客;">
+    <link rel="canonical" href="/weibo/">
+    <link rel="alternate" type="application/rss+xml" title="记事" href="/weibo/feed.xml">
 
-	<script src="/weibo/styles/js/jquery.min.js"></script>
-	<!--[if lt IE 9]>
-    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  	<![endif]-->
+    <meta name="keywords" content=", 记事, RUFFIAN;个人博客;">
+    <meta name="description" content="RUFFIAN;个人博客;">
+
+    <script src="/weibo/styles/js/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
 
 </head>
 
-  <body class="index">
-    <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="/" class="navbar-brand">
-        <img src="/weibo/styles/images/logo.jpg">
-      </a>
+<body class="index">
+<header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+                <img src="/weibo/styles/images/logo.jpg">
+            </a>
+        </div>
+
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="/weibo/">Home</a>
+                </li>
+                <li>
+                    <a href="/weibo/categories/">大类分解</a>
+                </li>
+                <li>
+                    <a href="/weibo/tag">小类内聚</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right hidden-xs">
+                <li>
+                    <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
+                </li>
+                <li class="dropdown">
+                    <a href="/weibo/edit" target="_blank" class="dropdown-toggle">添加文章<b class="caret"></b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="https://github.com/" target="_blank" class="dropdown-toggle">Github<b
+                            class="caret"></b></a>
+                </li>
+                <li class="dropdown">
+                    <a href="http://less.bootcss.com" target="_blank" class="dropdown-toggle">Temp<b class="caret"></b></a>
+                </li>
+
+                <li>
+
+                </li>
+            </ul>
+        </nav>
     </div>
-
-    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">    
-        <li>
-          <a href="/weibo/">Home</a>
-        </li>
-        <li>
-          <a href="/weibo/categories/">大类分解</a>
-        </li>
-        <li>
-          <a href="/weibo/tag">小类内聚</a>
-        </li>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right hidden-xs">
-        <li>
-            <a><span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span></a>
-        </li>
-        <li class="dropdown">
-          <a href="/weibo/edit" target="_blank"  class="dropdown-toggle" >添加文章<b class="caret"></b></a>
-        </li>
-        <li class="dropdown">
-          <a href="https://github.com/" target="_blank"  class="dropdown-toggle" >Github<b class="caret"></b></a>
-        </li>
-        <li class="dropdown">
-          <a href="http://less.bootcss.com" target="_blank"  class="dropdown-toggle" >Temp<b class="caret"></b></a>
-        </li>
-
-        <li>
-
-        </li>
-      </ul>
-    </nav>
-  </div>
 </header>
-    <div class="docs-header hidden-xs" id="content">
-  <div class="container">
-  	
-	    <h1>记事</h1>
-	    <p>Actually, less is more!</p>
-    
-  </div>
+<div class="docs-header hidden-xs" id="content">
+    <div class="container">
+
+        <h1>记事</h1>
+        <p>Actually, less is more!</p>
+
+    </div>
 </div>
-    
 
-     <div class="container docs-container">
-      <div class="row">
+
+<div class="container docs-container">
+    <div class="row">
         <div class="col-md-3">
-          <div class="sidebar hidden-print" role="complementary">
-            <div id="navigation">
-              <h1>目录</h1>
+            <div class="sidebar hidden-print" role="complementary">
+                <div id="navigation">
+                    <h1>目录</h1>
 
-              <ul class="nav sidenav">
-                    <li><a href="#year_2017">2017</a>
-                      <ul class="nav">
-                        <li><a href="#month_2017_November">November</a></li>
-                          <li><a href="#month_2017_October">October</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#year_2014">2014</a>
-                        <ul class="nav">
-                          <li><a href="#month_2014_November">November</a></li>
-                        </ul>
-                      </li>
-              </ul>
+                    <ul class="nav sidenav">
+                        <li><a href="#year_2017">2017</a>
+                            <ul class="nav">
+                                <li><a href="#month_2017_November">November</a></li>
+                                <li><a href="#month_2017_October">October</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#year_2014">2014</a>
+                            <ul class="nav">
+                                <li><a href="#month_2014_November">November</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
         <div class="col-md-9" role="main">
-          <div class="panel docs-content">
-            <div class="wrapper">
-              <div class="home">
-                    <h1 id="year_2017">2017</h1>
-                    <h2 id="month_2017_November">November</h2>
-                    <ul>
-                  <ol class="breadcrumb">
-                   <li><span>November 23, 2017</span> &raquo; <a href="/weibo/2017/11/23/cocos_lua/">cocos学习基础记录</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+            <div class="panel docs-content">
+                <div class="wrapper">
+                    <div class="home">
+                        <h1 id="year_2017">2017</h1>
+                        <h2 id="month_2017_November">November</h2>
+                        <ul>
+                            <ol class="breadcrumb">
+                                <li><span>November 23, 2017</span> &raquo; <a href="/weibo/2017/11/23/cocos_lua/">cocos学习基础记录</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 22, 2017</span> &raquo; <a href="/weibo/2017/11/22/lua_api/">Lua 5.3 参考手册</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 22, 2017</span> &raquo; <a href="/weibo/2017/11/22/lua_api/">Lua 5.3
+                                    参考手册</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 21, 2017</span> &raquo; <a href="/weibo/2017/11/21/cocos2d_x_api/">COcos2d-X 中文API</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 21, 2017</span> &raquo; <a href="/weibo/2017/11/21/cocos2d_x_api/">COcos2d-X
+                                    中文API</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 20, 2017</span> &raquo; <a href="/weibo/2017/11/20/site_collection/">网站收藏</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 20, 2017</span> &raquo; <a href="/weibo/2017/11/20/site_collection/">网站收藏</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 17, 2017</span> &raquo; <a href="/weibo/2017/11/17/cmd_utf/">window常用备份</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 17, 2017</span> &raquo; <a href="/weibo/2017/11/17/cmd_utf/">window常用备份</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 17, 2017</span> &raquo; <a href="/weibo/2017/11/17/script_python/">python 入门记录</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 17, 2017</span> &raquo; <a href="/weibo/2017/11/17/script_python/">python
+                                    入门记录</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 15, 2017</span> &raquo; <a href="/weibo/2017/11/15/execCommand/">js execCommand命令</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 15, 2017</span> &raquo; <a href="/weibo/2017/11/15/execCommand/">js
+                                    execCommand命令</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 15, 2017</span> &raquo; <a href="/weibo/2017/11/15/js_file/">js 文件操作</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 15, 2017</span> &raquo; <a href="/weibo/2017/11/15/js_file/">js
+                                    文件操作</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 15, 2017</span> &raquo; <a href="/weibo/2017/11/15/cocos_ide/">cocos_ide建立第一个项目</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 15, 2017</span> &raquo; <a href="/weibo/2017/11/15/cocos_ide/">cocos_ide建立第一个项目</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 13, 2017</span> &raquo; <a href="/weibo/2017/11/13/lua_function/">lua 常用函数记录</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 13, 2017</span> &raquo; <a href="/weibo/2017/11/13/lua_function/">lua
+                                    常用函数记录</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 13, 2017</span> &raquo; <a href="/weibo/2017/11/13/cocos_qipai/">cocos棋牌项目记录</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 13, 2017</span> &raquo; <a href="/weibo/2017/11/13/cocos_qipai/">cocos棋牌项目记录</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 10, 2017</span> &raquo; <a href="/weibo/2017/11/10/lua/">lua基础知识</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November 10, 2017</span> &raquo; <a href="/weibo/2017/11/10/lua/">lua基础知识</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  8, 2017</span> &raquo; <a href="/weibo/2017/11/08/git_cmd/">GIT技巧收藏</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  8, 2017</span> &raquo; <a
+                                        href="/weibo/2017/11/08/git_cmd/">GIT技巧收藏</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  8, 2017</span> &raquo; <a href="/weibo/2017/11/08/chrome_test/">chrome_测试</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  8, 2017</span> &raquo; <a href="/weibo/2017/11/08/chrome_test/">chrome_测试</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  7, 2017</span> &raquo; <a href="/weibo/2017/11/07/vbox_centos7_ssh/">虚拟机下CentOS7开启SSH连接</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  7, 2017</span> &raquo; <a
+                                        href="/weibo/2017/11/07/vbox_centos7_ssh/">虚拟机下CentOS7开启SSH连接</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/ifconfig_netstat/">Centos7和RHEL7最小安装中竟然没有我最常用的ifconfig和netstat</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  6, 2017</span> &raquo; <a
+                                        href="/weibo/2017/11/06/ifconfig_netstat/">Centos7和RHEL7最小安装中竟然没有我最常用的ifconfig和netstat</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/Bridged_Adapter/">Windows中VirtualBox虚拟机实现桥接方式(Bridged+Adapter)</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/Bridged_Adapter/">Windows中VirtualBox虚拟机实现桥接方式(Bridged+Adapter)</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/virtualbox_network_config/">VirtualBox虚拟机网络设置</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  6, 2017</span> &raquo; <a
+                                        href="/weibo/2017/11/06/virtualbox_network_config/">VirtualBox虚拟机网络设置</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/firewalld/">CentOS7使用firewalld打开关闭防火墙与端口</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/firewalld/">CentOS7使用firewalld打开关闭防火墙与端口</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/zh_linux_cmd/">LINUX命令整理(中文)</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  6, 2017</span> &raquo; <a href="/weibo/2017/11/06/zh_linux_cmd/">LINUX命令整理(中文)</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  2, 2017</span> &raquo; <a href="/weibo/2017/11/02/some-book-code/">免费的编程中文书籍索引</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  2, 2017</span> &raquo; <a href="/weibo/2017/11/02/some-book-code/">免费的编程中文书籍索引</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  1, 2017</span> &raquo; <a href="/weibo/2017/11/01/bootstrap-show/">bootstrap-对于不同设备实现某一div块的自动隐藏或者显示</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>November  1, 2017</span> &raquo; <a href="/weibo/2017/11/01/bootstrap-show/">bootstrap-对于不同设备实现某一div块的自动隐藏或者显示</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November  1, 2017</span> &raquo; <a href="/weibo/2017/11/01/bat/">bat</a></li>
-                  </ol>
-                  
-                        
-                      
+                            <ol class="breadcrumb">
+                                <li><span>November  1, 2017</span> &raquo; <a href="/weibo/2017/11/01/bat/">bat</a></li>
+                            </ol>
+
+
                         </ul>
                         <h2 id="month_2017_October">October</h2>
                         <ul>
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>October 30, 2017</span> &raquo; <a href="/weibo/2017/10/30/study/">学习</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>October 30, 2017</span> &raquo; <a href="/weibo/2017/10/30/study/">学习</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>October 26, 2017</span> &raquo; <a href="/weibo/2017/10/26/PHP-data-Manual/">PHP材料目录</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>October 26, 2017</span> &raquo; <a href="/weibo/2017/10/26/PHP-data-Manual/">PHP材料目录</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>October 26, 2017</span> &raquo; <a href="/weibo/2017/10/26/PHP-data-Manual/">PHP材料目录</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>October 26, 2017</span> &raquo; <a href="/weibo/2017/10/26/PHP-data-Manual/">PHP材料目录</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>October 26, 2017</span> &raquo; <a href="/weibo/2017/10/26/php-skill-tree/">php学习技能树</a></li>
-                  </ol>
-                  
-                        
-                      
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>October 26, 2017</span> &raquo; <a href="/weibo/2017/10/26/php-skill-tree/">php学习技能树</a>
+                                </li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>October 26, 2017</span> &raquo; <a href="/weibo/2017/10/26/google-javascript%E8%AF%AD%E8%A8%80%E8%A7%84%E8%8C%83/">google javascript语言规范</a></li>
-                  </ol>
-                  
-                    
-                      </ul>
-                      <h1 id="year_2014">2014</h1>
-                      <h2 id="month_2014_November">November</h2>
-                      <ul>
-                    
-                  
-                
-                  
-                  
-                  
-                  
+                            <ol class="breadcrumb">
+                                <li><span>October 26, 2017</span> &raquo; <a
+                                        href="/weibo/2017/10/26/google-javascript%E8%AF%AD%E8%A8%80%E8%A7%84%E8%8C%83/">google
+                                    javascript语言规范</a></li>
+                            </ol>
 
-                  
 
-                  <ol class="breadcrumb">
-                   <li><span>November 17, 2014</span> &raquo; <a href="/weibo/2014/11/17/welcome-to-jekyll/">Welcome to Jekyll!</a></li>
-                  </ol>
-                  
-                    </ul>
-                  
-                
-              </div>
+                        </ul>
+                        <h1 id="year_2014">2014</h1>
+                        <h2 id="month_2014_November">November</h2>
+                        <ul>
+
+
+                            <ol class="breadcrumb">
+                                <li><span>November 17, 2014</span> &raquo; <a
+                                        href="/weibo/2014/11/17/welcome-to-jekyll/">Welcome to Jekyll!</a></li>
+                            </ol>
+
+                        </ul>
+
+
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 
 
-    <footer class="footer" role="contentinfo">
-	<div class="container">
-		<p class="copyright">Copyright &copy; 2014-2017 <a href=""><code>ruffian</code></a>.</p>
-		<p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>, refactored by <a href="https://ruffiant.github.io/weibo/">RUFFIAN T</a></p>
-	</div>
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <p class="copyright">Copyright &copy; 2014-2017 <a href=""><code>ruffian</code></a>.</p>
+        <p>Powered by <a href="http://jekyllrb.com">Jekyll</a>, themed from <a href="http://lesscss.cn/">Less</a>,
+            refactored by <a href="https://ruffiant.github.io/weibo/">RUFFIAN T</a></p>
+    </div>
 </footer>
 <script>
-	var baseurl="/weibo/";
+    var baseurl = "/weibo/";
 </script>
 
 <script src="/weibo/styles/js/jquery.min.js"></script>
@@ -615,32 +342,33 @@
 
 <script type="application/javascript">
 
-	var file_dir="E:\\pro\\weibo\\_posts";
-	var head_tag_str="---\r\nlayout: post\r\ntitle:  \r\ndate:    +0800\r\ncategories: [,] \r\ntag: [,] \r\n---\r\n";
-	var post_url="https://api.github.com/repos/ruffiant/weibo/contents/_posts/{file_name}?ref=gh-pages";
+    var file_dir = "E:\\DevKit\\weibo\\_posts";
+    var head_tag_str = "---\r\nlayout: post\r\ntitle:  \r\ndate:    +0800\r\ncategories: [,] \r\ntag: [,] \r\n---\r\n";
+    var post_url = "https://api.github.com/repos/ruffiant/weibo/contents/_posts/{file_name}?ref=gh-pages";
 
-	function toedit(file_dir){
-		var file_name;
-		var regex = /\//g;
-		file_name=file_dir.replace(regex, "-");
-		file_name=file_name.substr(1);
-		file_name=file_name.substr(0,file_name.length-1);
-		file_name+='.md';
-		location.href= '/weibo'+'/edit?file='+file_name;
-		console.log(file_name);
-	}
-	</script>
-    <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
+    function toedit(file_dir) {
+        var file_name;
+        var regex = /\//g;
+        file_name = file_dir.replace(regex, "-");
+        file_name = file_name.substr(1);
+        file_name = file_name.substr(0, file_name.length - 1);
+        file_name += '.md';
+        location.href = '/weibo' + '/edit?file=' + file_name;
+        console.log(file_name);
+    }
+</script>
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;
       opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
-    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 日期 标签" >
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px"
+           placeholder="文章标题 日期 标签">
 
     <div style="position: fixed; top: 16px; right: 16px;">
-        <img src="/weibo/styles/search/img/cb-close.png "  id="cb-close-btn"/>
+        <img src="/weibo/styles/search/img/cb-close.png " id="cb-close-btn"/>
     </div>
 </div>
 
 <div style="position: fixed; right: 16px; bottom: 20px;">
-    <img src="/weibo/styles/search/img/cb-search.png "  id="cb-search-btn"  title="双击ctrl试一下"/>
+    <img src="/weibo/styles/search/img/cb-search.png " id="cb-search-btn" title="双击ctrl试一下"/>
 </div>
 <link rel="stylesheet" href="/weibo/styles/search/css/cb-search.css">
 
@@ -649,5 +377,5 @@
 <script src="/weibo/styles/search/js/cb-search.js"></script>
 
 
-  </body>
+</body>
 </html>
