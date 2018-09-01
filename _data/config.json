@@ -1,6 +1,6 @@
 {
   "url": [ "edit" ],
-  "fileurl":["E:\\\\DevKit\\\\weibo\\\\_posts"],
+  "fileurl":["E:\\\\pro\\\\weibo\\\\_posts"],
   "post_url":["https://api.github.com/repos/ruffiant/weibo/contents/_posts/{file_name}?ref=gh-pages"],
   "head_tag":["---\\r\\nlayout: post\\r\\ntitle:  \\r\\ndate:    +0800\\r\\ncategories: [,] \\r\\ntag: [,] \\r\\n---\\r\\n"],
 }
