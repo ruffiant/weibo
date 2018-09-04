@@ -1,0 +1,92 @@
+---
+layout: default
+title: 编辑
+header: 编辑文章
+---
+<style>
+    #editor {
+        resize:vertical;
+        overflow:auto;
+        border:1px solid silver;
+        border-radius:5px;
+
+        box-shadow: inset 0 0 10px silver;
+        padding:1em;
+    }
+</style>
+
+<div class="container docs-container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidebar hidden-print" role="complementary">
+
+            </div>
+        </div>
+        <div class="col-md-9" role="main">
+            <div class="wrapper">
+                <div id="editparent">
+                    <div id='editControls' class='span9' style=' padding:5px;'>
+                        <div class='btn-group'>
+                            <a class='btn' data-role='undo' href='#'><b>后退</b></a>
+
+                            <a class='btn' data-role='redo' href='#'><b>前进</b></a>
+                        </div>
+                        <div class='btn-group'>
+                            <a class='btn'  href='javascript:void(0);' onclick="writefile();"><i class='icon-save'></i><b>保存</b></a>
+                            <a class='btn' data-role='bold' href='#' id="fileSelect"><i class='icon-road'></i><b>打开</b></a>
+                            <input type="file" id="fileElem" multiple accept="text/html" style="display:none" onchange="openfile(this.files)">
+                            <input type="hidden" id="file_name" name="file_name" value="">
+                        </div>
+                        <div class="btn-group">
+                            <a class='btn'  href='javascript:void(0);' onclick="head_tag();"><b>头标记</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="w_content();"><b>内容</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="w_img();"><b>图片</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="w_highlight();"><b>高亮</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="get_class_f();"><b>大分类</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="get_class_s();"><b>小分类</b></a>
+                            </div>
+                        ======================
+                        <div class='btn-group'>
+                            <a class='btn'  href='javascript:void(0);' onclick="blockquotes();"><b>引言</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="codeing();"><b>代码</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="write_line();"><b>分割线</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="w_herf();"><b>链接</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="w_em();"><b>EM</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="w_strong();"><b>strong</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="line_code();"><b>行内代码</b></a>
+                        </div>
+                        ======================
+                        <div class='btn-group'>
+                            <a class='btn'  href='javascript:void(0);' onclick="h(1);">h<sup>1</sup></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="h(2);">h<sup>2</sup></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="h(3);">h<sup>3</sup></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="h(4);">h<sup>4</sup></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="h(5);">h<sup>5</sup></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="h(6);">h<sup>6</sup></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="byorder();"><b>有序</b></a>
+                            <a class='btn'  href='javascript:void(0);' onclick="unorder();"><b>无序</b></a>
+                            <!--<a class='btn' data-role='p' href='#'>p</a>-->
+                        </div>
+
+                    </div>
+                    <input type="text" id="title_input" name="title_input" value="" class='span9' style="width:600px;">
+                    <div name="class_f_zoom" id="class_f_zoom">
+                        {% for category in site.categories %}
+                        [{{ category[0] | join: "/" }}]
+                        {% endfor %}
+                    </div>
+                    <div name="class_s_zoom" id="class_s_zoom">
+                        {% for tag in site.tags %}
+                        [{{ tag[0] }}]
+                        {% endfor %}
+                    </div>
+                    <textarea name="editor" id="editor" class='span9' contenteditable cols="80" rows="6" style="width:600px;height:520px;"></textarea>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+

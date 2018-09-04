@@ -1,0 +1,12 @@
+
+{
+  "name": "com.google.chrome.demo",
+  "description": "Chrome Native Messaging API Example Host",
+  "path": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\60.0.3112.113\\default_apps\\Demo\\native_cmd.bat",
+ // "path": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\60.0.3112.113\\default_apps\\Demo\\cmd\\git\\gitadd.bat",
+//  "path":"notepad.exe",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://gfflfnfndpfhajceciajphhgcahbfcde/"
+  ]
+}

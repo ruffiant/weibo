@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取图片冲撞区域</title>
+    <style>
+        body {
+            background: #dddddd;
+        }
+
+        #xy_canvas {
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            margin: 20px;
+            background: #ffffff;
+            border: thin solid #aaaaaa;
+        }
+
+        #img_canvas{
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            margin: 20px;
+            border: thin solid #aaaaaa;
+        }
+        #conent,#result{
+          /*display:inline*/
+        }
+    </style>
+</head>
+
+<body style="">
+
+<input type="file" id="upfile" name="upfile" value="上传图片" onchange="upfile(this);"><span>需要上传png的透明文件</span>
+<input type="button" id="get_arc_res" value="生成结果" onclick="write_arc();">
+<input type="button" id="set_arc_res" value="生成坐标" onclick="set_arc();">
+<span>拖动圆的时候注意先选中再ctrl</span>
+<div id="conent" style="width: 1500px; height:800px;">
+
+    <section id="pasteBoard" class="pasteBoard" style="position: relative;float:left; width: 800px; height:1100px;">
+        <canvas id="xy_canvas" width="1000" height="1000"></canvas>
+        <canvas id="img_canvas" width="1000" height="1000"></canvas>
+    </section>
+    <img src="" width="0" height="0" id="imgfile">
+<div id="attribute">
+</div>
+    <div id="result" style="visibility:hidden">
+</div>
+    <div id="result_1" style="visibility:hidden">
+    </div>
+    <div  style="float:left;margin-left: 50px;">
+        <textarea rows="50" id="arc_xy" cols="150" >json生成坐标系</textarea>
+    </div>
+</div>
+<!--<div id="result">-->
+    <!--1111-->
+    <!--</div>-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/image.js"></script>
+<script src="js/canvas.js"></script>
+<!--<script src="js/lines.js"></script>-->
+<script src="js/grape.js"></script>
+</body>
+</html>

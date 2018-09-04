@@ -1,0 +1,59 @@
+/*页面公共属性设置*/
+*{padding:0;margin:0;list-style:none;}
+
+body{background:#ABCDEF}
+/*页面顶部属性设置*/
+#header{width:900px;height:80px;font-size:40px;margin:0 auto;text-align:center;line-height:80px}
+/*页面中间部分(画图板)属性*/
+#content{width:1020px;height:700px;background:gray;margin:0 auto;padding:10px}
+#tool{height:30px;text-align:center}
+#tool li{float:left;width:100px;height:30px;background:#ccc;border-right:1px solid red}
+
+
+
+#div1 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:490px;
+    float:left;
+    padding:5px;
+}
+#div2 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:490px;
+    float:right;
+    padding:5px;
+}
+#div3 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:490px;
+    float:left;
+    padding:5px;
+
+    margin-top: 10px;
+
+}
+#div4 {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:490px;
+    float:right;
+    padding:5px;
+    margin-top: 10px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+
+
+
+}
