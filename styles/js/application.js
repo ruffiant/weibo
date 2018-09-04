@@ -24,13 +24,14 @@
     var $body   = $(document.body)
 
     $body.scrollspy({
-      target: '.sidebar',
+      target: '.treeview',
       offset: 20 // required to select the right thing. if this is smaller then you are at the top of one section
                  // but the next section is highlighted
     });
 
     $window.on('load', function () {
       $body.scrollspy('refresh')
+
     });
 
     $('.docs-container [href=#]').click(function (e) {
@@ -76,7 +77,8 @@
 
     // back to top
     setTimeout(function () {
-      var $sideBar = $('.sidebar')
+      //var $sideBar = $('#sidebar-wrapper')
+      var $sideBar = $('#nav_ul')
 
       $sideBar.affix({
         offset: {
@@ -84,12 +86,12 @@
             var offsetTop      = $sideBar.offset().top
             var sideBarMargin  = parseInt($sideBar.children(0).css('margin-top'), 10)
             var navOuterHeight = $('.docs-nav').height()
-
             return (this.top = offsetTop - navOuterHeight - sideBarMargin)
           },
-          bottom: function () {
-            return (this.bottom = $('.footer').outerHeight(true))
-          }
+          //bottom: function () {
+          //
+          //  //return (this.bottom = $('.footer').outerHeight(true))
+          //}
         }
       })
     }, 100);
@@ -99,5 +101,35 @@
     }, 100);
 
   })
+
+  //左侧菜单手机隐藏
+  var trigger = $('.hamburger'),
+      isClosed = false;
+
+  trigger.click(function () {
+    hamburger_cross();
+  });
+
+  function hamburger_cross() {
+
+    if (isClosed == true) {
+      trigger.removeClass('is-open');
+      trigger.addClass('is-closed');
+      isClosed = false;
+    } else {
+
+      trigger.removeClass('is-closed');
+      trigger.addClass('is-open');
+      isClosed = true;
+    }
+  }
+
+
+  $('[data-toggle="offcanvas"]').click(function () {
+    $('#wrapper').toggleClass('toggled');
+  });
+
+
+
 
 }(jQuery)

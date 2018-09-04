@@ -2,9 +2,8 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-11-17 13:31:01 +0800
-categories: [jekyll,翻译文章]
+categories: jekyll
 tag: jekyll
-
 ---
 
 * content
@@ -14,8 +13,14 @@ tag: jekyll
 First POST build by Jekyll.
 
 
-诫子书				{#zhugeliang}
+#诫子书				{#zhugeliang}
+==============
 ------------------------
+
+
+
+###3333333333333
+=======================
 
 ![诫子书]({{ '/styles/images/jiezishu.jpg' | prepend: site.baseurl  }})
 
