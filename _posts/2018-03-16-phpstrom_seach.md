@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  phpstrom 正则搜索
-date:    2018年3月16日11:31:24+0800
+date:    2018-3-16 11:31:24+0800
 categories: [工具] 
 tag: [phpstrom] 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:   symfony 官方视频整理
-date:    2018年7月19日10:24:20 +0800
+date:    2018-7-19 10:24:20 +0800
 categories: [php] 
 tag: [教程] 
 ---
@@ -121,11 +121,11 @@ composer require mailer. 安装email
 安装
 composer require asset
 
-              {% block stylesheets %}
+              { % block-stylesheets %}
       ... line 10
                      <link rel="stylesheet" href="{{ asset('css/font-awesome.css') }}">
       ... line 12
-              {% endblock %}
+              { % endblock %}
 
 
 #生成URLs
@@ -139,7 +139,7 @@ composer require asset
            * @Route("/news/{slug}", name="article_show")
            */
             
-      {{ path('article_show', {slug: 'why-asteroids-taste-like-bacon'}) }}使用路由
+      { { path('article_show', {slug: 'why-asteroids-taste-like-bacon'}) } }使用路由
 
 
 #JavaScript & Page-Specific Assets
@@ -147,11 +147,11 @@ composer require asset
 
 
 
-{% block javascripts %}
+{ % block javascripts % }
     {{ parent() }}  继承parent 添加js
     <script src="{{ asset('js/article_show.js') }}"></script>
 
-{% endblock %}
+{ % endblock % }
 
 
 #JSON API Endpoint 列表(重点)

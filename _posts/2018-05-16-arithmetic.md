@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  PHP实现各种经典算法详解
-date:   2018年5月16日09:12:45 +0800
+date:   2018-5-16 09:12:45 +0800
 categories: [php] 
 tag: [算法] 
 ---

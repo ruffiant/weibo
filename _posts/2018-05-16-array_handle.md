@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  PHP常见的数组
-date:    2018年5月16日09:48:42+0800
+date:    2018-5-16 09:48:42+0800
 categories: [php] 
 tag: [数组] 
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  前端实现在线预览pdf、word、xls、ppt等文件
-date:    +0800
+date:    2018-6-18 00:00:01 +0800
 categories: [js] 
 tag: [前端] 
 ---
