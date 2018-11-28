@@ -9,6 +9,10 @@ tag: [websocket ]
 {:toc}
 
 没open就放入列队,直到open一起发送
+### 代码
+```php
+
+
 
 (function(nameSpace) {
   function createMethod(method, options, stateCallback) {
@@ -107,3 +111,4 @@ var socket = new window.SocketWrapper({
   }
 });
 socket.send('i am message send to soon, but since i check the state of the ws object, i will be queued and send when appropriate');
+```
