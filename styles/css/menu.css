@@ -18,7 +18,7 @@
     transition: all 0.5s ease;
 }
 #wrapper.toggled  {
-    padding-left: 500px;
+    padding-left: 443px;
 }
 #wrapper.toggled #treeview {
     width: 500px;
@@ -290,7 +290,7 @@
 .toggled .treeview.affix {
     height: 600px;
     position:fixed;
-    left: 158px;
+
     top: 40px;
     width: 300px;
 }
@@ -318,12 +318,12 @@
     .toggled #page-content-wrapper{
         display: none;
     }
-    .toggled .treeview.affix {
+    /* .toggled .treeview.affix {
         height: auto;
         position:fixed;
         left: 50px;
         top: 40px;
         width: 450px;
-    }
+    } */
 
 }

@@ -966,6 +966,7 @@ pre code {
     width: 33.33333333%;
   }
   .col-md-3 {
+    left: -10px;
     width: 25%;
   }
   .col-md-2 {
@@ -6455,6 +6456,7 @@ hr {
   border-radius: 5px;
   overflow-y:scroll;
   height: 600px;
+
 
 }
 /* All levels of nav */
