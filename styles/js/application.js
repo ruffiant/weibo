@@ -112,6 +112,7 @@
 
   function hamburger_cross() {
 
+    
     if (isClosed == true) {
       trigger.removeClass('is-open');
       trigger.addClass('is-closed');
@@ -127,6 +128,8 @@
 
   $('[data-toggle="offcanvas"]').click(function () {
     $('#wrapper').toggleClass('toggled');
+    $('#page-content-wrapper').toggleClass('contentwidth');
+    $('#sidebar-wrapper').toggleClass('showitem');
   });
 
 

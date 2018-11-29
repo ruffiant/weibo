@@ -604,6 +604,7 @@ pre code {
 .row {
   margin-left: -15px;
   margin-right: -15px;
+  width: 100%;
 }
 .row:before,
 .row:after {
@@ -947,7 +948,7 @@ pre code {
     width: 83.33333333%;
   }
   .col-md-9 {
-    width: 75%;
+    width: 100%;
 
   }
   .col-md-8 {
@@ -6456,9 +6457,10 @@ hr {
   border-radius: 5px;
   overflow-y:scroll;
   height: 600px;
-
+  display: block;
 
 }
+
 /* All levels of nav */
 .sidebar .nav > li > a {
   display: block;
@@ -6493,7 +6495,7 @@ hr {
 }
 @media (min-width: 992px) {
   .sidebar {
-    display: block;
+    display:none;
     padding-top: 15px;
   }
   .sidebar .nav > .active > ul {
@@ -7157,4 +7159,24 @@ td.visible-print {
 #editControls {
   width: 200px;
   margin-top: 50px;
+}
+.contentwidth{
+  width:65%;
+}
+.showitem{
+  display: block;
+}
+
+.affix-top{
+  position: fixed;
+  width: 16%;
+  top: 274px;
+  left: 310px;
+
+}
+.affix{
+  position: fixed;
+  width: 16%;
+  left: 310px;
+  top:44px;
 }

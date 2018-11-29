@@ -7,10 +7,11 @@ header: Posts By Category
 <div class="container docs-container">
   <div class="row">
     <div class="col-md-3">
-      <div class="sidebar hidden-print" role="complementary">
+      <div class="sidebar hidden-print showitem "   role="complementary">
         <div id="navigation">
-        	<h1>目录</h1>
-      		<ul class="nav sidenav affix">
+		
+      		<ul class="nav sidenav affix-top" id="nav_ul" >
+						<h1>目录</h1>
 							<!-- <ul class="nav sidenav"> -->
 				{% if site.categories.first[0] == null %}
 					{% for category in site.categories %}
@@ -29,7 +30,7 @@ header: Posts By Category
         </div>
       </div>
     </div>
-    <div class="col-md-9" role="main">
+    <div class="col-md-9 contentwidth" role="main">
       <div class="panel docs-content">
         <div class="wrapper">
           <div class="home">

@@ -6,12 +6,12 @@ header: Posts By Tag
 <div class="container docs-container">
   <div class="row">
     <div class="col-md-3">
-      <div class="sidebar hidden-print" role="complementary">
+      <div class="sidebar hidden-print showitem "  role="complementary">
         <div id="navigation">
-        	<h1>目录</h1>
+        	
 
-      		<ul class="nav sidenav">
-
+      		<ul class="nav sidenav affix-top" id="nav_ul">
+						<h1>目录</h1>
 			  	{% if site.tags.first[0] == null %}
 				  	{% for tag in site.tags %}
 				  	<li><a href="{{ site.JB.tags_path }}#{{ tag }}-ref">{{ tag }} <span >({{ site.tags[tag].size }})</span></a></li>
@@ -26,7 +26,7 @@ header: Posts By Tag
       </div>
     </div>
 
-    <div class="col-md-9" role="main">
+    <div class="col-md-9 contentwidth" role="main">
       <div class="panel docs-content">
         <div class="wrapper">
           <div class="home">
