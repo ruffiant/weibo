@@ -7171,12 +7171,12 @@ td.visible-print {
   position: fixed;
   width: 16%;
   top: 274px;
-  left: 310px;
+  left: 10%;
 
 }
 .affix{
   position: fixed;
   width: 16%;
-  left: 310px;
+  left: 10%;
   top:44px;
 }
