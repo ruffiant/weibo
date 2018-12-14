@@ -7169,14 +7169,14 @@ td.visible-print {
 
 .affix-top{
   position: fixed;
-  width: 16%;
-  top: 274px;
-  left: 10%;
+  width: 19%;
+  top: 50%;
+  left: 5%;
 
 }
 .affix{
   position: fixed;
-  width: 16%;
-  left: 10%;
+  width: 19%;
+  left: 5%;
   top:44px;
 }
